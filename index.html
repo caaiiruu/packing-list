@@ -146,6 +146,21 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-seri
 .toast{position:fixed;bottom:28px;left:50%;transform:translateX(-50%) translateY(20px);background:#111;color:#fff;padding:10px 18px;border-radius:20px;font-size:13px;opacity:0;transition:all .25s;z-index:300;pointer-events:none;white-space:nowrap;font-weight:500}
 .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 @media(prefers-color-scheme:dark){.toast{background:#f0f0f0;color:#111}}
+
+/* Multi-select */
+.item-row.selecting{cursor:pointer}
+.item-row.sel-on{background:var(--accent-light)!important}
+.item-row.sel-on .item-name{color:var(--text)!important;text-decoration:none!important}
+.sel-check{width:21px;height:21px;border-radius:50%;border:2px solid var(--border2);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;transition:all .15s;background:var(--bg);cursor:pointer}
+.sel-check.on{background:var(--accent);border-color:var(--accent)}
+.sel-check.on::after{content:'✓';color:#fff;font-size:12px;font-weight:800}
+.sel-bar{position:fixed;bottom:0;left:0;right:0;background:var(--bg);border-top:1px solid var(--border);padding:12px 16px 28px;display:flex;align-items:center;gap:10px;z-index:150;transform:translateY(100%);transition:transform .25s cubic-bezier(.4,0,.2,1);box-shadow:0 -4px 20px rgba(0,0,0,.08)}
+.sel-bar.show{transform:translateY(0)}
+.sel-info{flex:1;font-size:14px;font-weight:600}
+.sel-info span{color:var(--accent)}
+body.select-mode .item-actions{display:none!important}
+body.select-mode .item-check{display:none!important}
+body.select-mode .m-check{pointer-events:none;opacity:.4}
 </style>
 </head>
 <body>
@@ -175,6 +190,11 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-seri
 
 <div id="modal-root"></div>
 <div class="toast" id="toast"></div>
+<div class="sel-bar" id="sel-bar">
+  <div class="sel-info">已選 <span id="sel-count">0</span> 項</div>
+  <button class="btn" id="sel-cancel"><i class="ti ti-x"></i>取消</button>
+  <button class="btn accent" id="sel-to-backlog"><i class="ti ti-archive"></i>移至備用</button>
+</div>
 
 <script>
 // ─── Constants ────────────────────────────────────────────────────
@@ -293,6 +313,42 @@ function uid(){return Math.random().toString(36).slice(2,9)}
 function save(){try{localStorage.setItem(STORAGE_KEY,JSON.stringify(S));}catch(e){}}
 function memberColor(name){const i=S.members.indexOf(name);return COLORS[i>=0?i%COLORS.length:0]}
 
+// ─── Multi-select state ───────────────────────────────────────────
+let selectMode=false;
+let selectedIds=new Set();
+
+function enterSelectMode(){
+  selectMode=true;
+  selectedIds=new Set();
+  document.body.classList.add('select-mode');
+  renderSections();
+  updateSelBar();
+}
+function exitSelectMode(){
+  selectMode=false;
+  selectedIds=new Set();
+  document.body.classList.remove('select-mode');
+  renderSections();
+  document.getElementById('sel-bar').classList.remove('show');
+}
+function updateSelBar(){
+  const bar=document.getElementById('sel-bar');
+  document.getElementById('sel-count').textContent=selectedIds.size;
+  bar.classList.toggle('show',selectedIds.size>0||selectMode);
+}
+function toggleSelectItem(id){
+  if(selectedIds.has(id)) selectedIds.delete(id);
+  else selectedIds.add(id);
+  updateSelBar();
+  // Update just this row's sel-check visually without full re-render
+  const row=document.querySelector(`[data-item-id="${id}"]`);
+  if(row){
+    row.classList.toggle('sel-on',selectedIds.has(id));
+    const sc=row.querySelector('.sel-check');
+    if(sc) sc.classList.toggle('on',selectedIds.has(id));
+  }
+}
+
 // ─── Render ───────────────────────────────────────────────────────
 function render(){
   save();
@@ -371,6 +427,7 @@ function renderSection(cat,ci){
 function renderItem(item,ci,ii,isBacklog){
   const done=isDone(item);
   const hasM=item.members.length>0;
+  const isSel=selectedIds.has(item.id);
   let mHtml='';
   if(hasM){
     mHtml='<div class="member-rows">';
@@ -386,20 +443,27 @@ function renderItem(item,ci,ii,isBacklog){
     mHtml+='</div>';
   }
   const ciAttr=isBacklog?-1:ci;
-  return `<div class="item-row${done?' done':''}">
-    <div class="item-check${done?' on':''}" data-action="check" data-ci="${ciAttr}" data-ii="${ii}" data-bl="${isBacklog?1:0}"></div>
+  const selCheckHtml=selectMode&&!isBacklog
+    ?`<div class="sel-check${isSel?' on':''}" data-action="sel-toggle" data-item-id="${item.id}"></div>`
+    :'';
+  const normalCheckHtml=!selectMode
+    ?`<div class="item-check${done?' on':''}" data-action="check" data-ci="${ciAttr}" data-ii="${ii}" data-bl="${isBacklog?1:0}"></div>`
+    :'';
+  const actionsHtml=!isBacklog
+    ?`<button class="iab" data-action="edit" data-ci="${ciAttr}" data-ii="${ii}" data-bl="${isBacklog?1:0}" title="編輯"><i class="ti ti-edit"></i></button>
+      <button class="iab" data-action="to-backlog" data-ci="${ciAttr}" data-ii="${ii}" title="移至備用"><i class="ti ti-archive"></i></button>
+      <button class="iab del" data-action="delete" data-ci="${ciAttr}" data-ii="${ii}" data-bl="0" title="刪除"><i class="ti ti-trash"></i></button>`
+    :`<button class="iab" data-action="edit" data-ci="${ciAttr}" data-ii="${ii}" data-bl="1" title="編輯"><i class="ti ti-edit"></i></button>
+      <button class="iab" data-action="restore" data-ci="${ciAttr}" data-ii="${ii}" title="加回清單"><i class="ti ti-arrow-back-up"></i></button>
+      <button class="iab del" data-action="delete" data-ci="${ciAttr}" data-ii="${ii}" data-bl="1" title="刪除"><i class="ti ti-trash"></i></button>`;
+  return `<div class="item-row${done&&!selectMode?' done':''}${isSel?' sel-on':''}${selectMode&&!isBacklog?' selecting':''}" data-item-id="${item.id}" data-ci="${ciAttr}" data-ii="${ii}" data-bl="${isBacklog?1:0}">
+    ${selCheckHtml}${normalCheckHtml}
     <div class="item-main">
       <div class="item-name">${esc(item.name)}</div>
       ${item.qty>1&&!hasM?`<span class="qty-badge">×${item.qty}</span>`:''}
       ${mHtml}
     </div>
-    <div class="item-actions">
-      <button class="iab" data-action="edit" data-ci="${ciAttr}" data-ii="${ii}" data-bl="${isBacklog?1:0}" title="編輯"><i class="ti ti-edit"></i></button>
-      <button class="iab" data-action="${isBacklog?'restore':'to-backlog'}" data-ci="${ciAttr}" data-ii="${ii}" title="${isBacklog?'加回清單':'移至備用'}">
-        <i class="ti ti-${isBacklog?'arrow-back-up':'archive'}"></i>
-      </button>
-      <button class="iab del" data-action="delete" data-ci="${ciAttr}" data-ii="${ii}" data-bl="${isBacklog?1:0}" title="刪除"><i class="ti ti-trash"></i></button>
-    </div>
+    <div class="item-actions">${actionsHtml}</div>
   </div>`;
 }
 
@@ -413,7 +477,35 @@ function renderBacklog(){
 }
 
 // ─── Event delegation ─────────────────────────────────────────────
+// Long-press to enter select mode
+let lpTimer=null;
+document.addEventListener('pointerdown',function(e){
+  const row=e.target.closest('.item-row.selecting, .item-row:not(.selecting)');
+  if(!row||selectMode) return;
+  if(e.target.closest('[data-action]')) return; // don't trigger on buttons
+  lpTimer=setTimeout(()=>{
+    lpTimer=null;
+    enterSelectMode();
+    const id=row.dataset.itemId;
+    if(id){toggleSelectItem(id);}
+    if(navigator.vibrate) navigator.vibrate(30);
+  },450);
+});
+document.addEventListener('pointerup',()=>{clearTimeout(lpTimer);lpTimer=null;});
+document.addEventListener('pointermove',()=>{clearTimeout(lpTimer);lpTimer=null;});
+
 document.addEventListener('click',function(e){
+  // In select mode: clicking a row (not a button) toggles selection
+  if(selectMode){
+    const row=e.target.closest('.item-row[data-item-id]');
+    const action=e.target.closest('[data-action]');
+    if(row&&!action){
+      const id=row.dataset.itemId;
+      if(id) toggleSelectItem(id);
+      return;
+    }
+  }
+
   const el=e.target.closest('[data-action]');
   if(el) handleAction(el,e);
 
@@ -437,6 +529,7 @@ document.addEventListener('click',function(e){
     const t=tab.dataset.tab;
     document.getElementById('tab-main').style.display=t==='main'?'':'none';
     document.getElementById('tab-backlog').style.display=t==='backlog'?'':'none';
+    if(selectMode) exitSelectMode();
   }
 });
 
@@ -461,13 +554,35 @@ document.getElementById('btn-add-backlog').addEventListener('click',()=>{
   openAddBacklogModal();
 });
 
+// Select bar
+document.getElementById('sel-cancel').addEventListener('click',exitSelectMode);
+document.getElementById('sel-to-backlog').addEventListener('click',()=>{
+  if(selectedIds.size===0){toast('請先選擇項目');return;}
+  // Collect all selected items from cats (not backlog)
+  const toMove=[];
+  S.cats.forEach((cat,ci)=>{
+    cat.items=cat.items.filter(it=>{
+      if(selectedIds.has(it.id)){toMove.push(it);return false;}
+      return true;
+    });
+  });
+  toMove.forEach(it=>S.backlog.push(it));
+  const n=toMove.length;
+  exitSelectMode();
+  toast(`已將 ${n} 個項目移至備用`);
+  render();
+});
+
 function handleAction(el,e){
   const a=el.dataset.action;
   const ci=parseInt(el.dataset.ci);
   const ii=parseInt(el.dataset.ii);
   const bl=el.dataset.bl==='1';
 
-  if(a==='toggle-cat'){
+  if(a==='sel-toggle'){
+    const id=el.dataset.itemId||el.closest('[data-item-id]')?.dataset.itemId;
+    if(id) toggleSelectItem(id);
+  } else if(a==='toggle-cat'){
     S.cats[ci].expanded=!S.cats[ci].expanded;render();
   } else if(a==='check'){
     const item=bl?S.backlog[ii]:S.cats[ci].items[ii];
