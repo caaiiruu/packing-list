@@ -3,608 +3,709 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#ffffff">
+<meta name="theme-color" content="#1D9E75">
 <title>出國行李清單</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.0.0/tabler-icons.min.css">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --bg:#ffffff;--bg2:#f5f5f5;--bg3:#eeeeee;
+  --bg:#ffffff;--bg2:#f5f5f5;--bg3:#e8e8e8;
   --text:#1a1a1a;--text2:#666;--text3:#999;
   --border:#e0e0e0;--border2:#ccc;
-  --accent:#1D9E75;--accent-bg:#e1f5ee;
-  --info:#378ADD;--info-bg:#e6f1fb;
-  --danger:#E24B4A;--danger-bg:#fcebeb;
-  --radius:8px;--radius-lg:12px;
+  --accent:#1D9E75;--accent-light:#e1f5ee;
+  --danger:#E24B4A;--danger-light:#fcebeb;
+  --radius:8px;--radius-lg:14px;
 }
-@media(prefers-color-scheme:dark){
-  :root{
-    --bg:#1e1e1e;--bg2:#2a2a2a;--bg3:#333;
-    --text:#f0f0f0;--text2:#aaa;--text3:#666;
-    --border:#3a3a3a;--border2:#555;
-    --accent:#1D9E75;--accent-bg:#04342c;
-    --info:#378ADD;--info-bg:#042c53;
-    --danger:#E24B4A;--danger-bg:#501313;
-  }
-}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
-.app{max-width:720px;margin:0 auto;padding:16px}
-.header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;flex-wrap:wrap;gap:8px}
-.title{font-size:20px;font-weight:600;display:flex;align-items:center;gap:8px}
-.header-actions{display:flex;gap:6px;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;gap:5px;padding:7px 12px;border:1px solid var(--border2);background:var(--bg);border-radius:var(--radius);font-size:13px;cursor:pointer;color:var(--text);transition:background 0.15s;white-space:nowrap}
+@media(prefers-color-scheme:dark){:root{
+  --bg:#1c1c1e;--bg2:#2c2c2e;--bg3:#3a3a3c;
+  --text:#f2f2f7;--text2:#aeaeb2;--text3:#636366;
+  --border:#38383a;--border2:#48484a;
+  --accent-light:#0a3025;--danger-light:#3d1212;
+}}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+.app{max-width:720px;margin:0 auto;padding:16px 16px 80px}
+
+/* Header */
+.header{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;gap:8px}
+.title{font-size:19px;font-weight:700;display:flex;align-items:center;gap:7px;white-space:nowrap}
+.title i{color:var(--accent)}
+.header-actions{display:flex;gap:6px;flex-shrink:0}
+.btn{display:inline-flex;align-items:center;gap:5px;padding:7px 11px;border:1px solid var(--border2);background:var(--bg);border-radius:var(--radius);font-size:13px;cursor:pointer;color:var(--text);transition:all 0.15s;white-space:nowrap;font-weight:500}
 .btn:hover{background:var(--bg2)}
-.btn.danger{color:var(--danger);border-color:var(--danger)}
-.btn.success{color:var(--accent);border-color:var(--accent)}
-.btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
-.btn.primary:hover{opacity:0.9}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:16px}
-.stat{background:var(--bg2);border-radius:var(--radius);padding:10px 12px;text-align:center}
-.stat-num{font-size:22px;font-weight:600}
-.stat-label{font-size:11px;color:var(--text2);margin-top:2px}
-.tabs{display:flex;gap:0;margin-bottom:12px;border-bottom:1px solid var(--border)}
-.tab{padding:9px 18px;font-size:14px;cursor:pointer;border:none;background:none;color:var(--text2);border-bottom:2px solid transparent;margin-bottom:-1px;font-weight:500}
-.tab.active{color:var(--text);border-bottom-color:var(--text)}
-.section{margin-bottom:10px}
-.section-header{display:flex;align-items:center;justify-content:space-between;padding:9px 12px;background:var(--bg2);border-radius:var(--radius);cursor:pointer;border:1px solid var(--border)}
+.btn:active{transform:scale(0.97)}
+.btn.accent{background:var(--accent);color:#fff;border-color:var(--accent)}
+.btn.accent:hover{opacity:0.88}
+.btn.danger-outline{color:var(--danger);border-color:var(--danger)}
+.btn.success-outline{color:var(--accent);border-color:var(--accent)}
+
+/* Stats */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:14px}
+.stat{background:var(--bg2);border-radius:var(--radius);padding:10px 8px;text-align:center}
+.stat-num{font-size:21px;font-weight:700}
+.stat-num.accent{color:var(--accent)}
+.stat-label{font-size:10px;color:var(--text2);margin-top:1px;text-transform:uppercase;letter-spacing:.3px}
+
+/* Top tabs */
+.tabs{display:flex;gap:0;margin-bottom:14px;border-bottom:1px solid var(--border)}
+.tab{padding:9px 16px;font-size:14px;cursor:pointer;border:none;background:none;color:var(--text2);border-bottom:2px solid transparent;margin-bottom:-1px;font-weight:500;transition:color .15s}
+.tab.active{color:var(--accent);border-bottom-color:var(--accent)}
+
+/* Category chips */
+.cat-chips-wrap{position:relative;margin-bottom:12px}
+.cat-chips{display:flex;gap:7px;overflow-x:auto;padding-bottom:4px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.cat-chips::-webkit-scrollbar{display:none}
+.cat-chip{display:inline-flex;align-items:center;gap:5px;padding:6px 12px;border-radius:20px;font-size:13px;font-weight:500;cursor:pointer;white-space:nowrap;border:1.5px solid var(--border);background:var(--bg);color:var(--text2);transition:all .15s;flex-shrink:0}
+.cat-chip:active{transform:scale(0.95)}
+.cat-chip.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.cat-chip .chip-count{font-size:10px;background:rgba(255,255,255,0.3);border-radius:8px;padding:1px 5px;margin-left:2px}
+.cat-chip:not(.active) .chip-count{background:var(--bg3);color:var(--text2)}
+
+/* Section */
+.section{margin-bottom:8px;scroll-margin-top:20px}
+.section-header{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;background:var(--bg2);border-radius:var(--radius) var(--radius) 0 0;cursor:pointer;border:1px solid var(--border);border-bottom:none;user-select:none}
+.section-header.collapsed{border-radius:var(--radius);border-bottom:1px solid var(--border)}
 .section-title{font-size:14px;font-weight:600;display:flex;align-items:center;gap:7px}
-.section-count{font-size:12px;color:var(--text2)}
-.section-progress{height:3px;background:var(--border);border-radius:2px;margin-top:4px;overflow:hidden}
-.section-progress-bar{height:100%;background:var(--accent);transition:width 0.3s}
+.section-right{display:flex;align-items:center;gap:8px}
+.section-count{font-size:12px;color:var(--text2);font-weight:500}
+.section-progress-wrap{height:2px;background:var(--border);overflow:hidden;border-radius:0}
+.section-progress-bar{height:100%;background:var(--accent);transition:width .4s}
+
+/* Items */
 .items-list{border:1px solid var(--border);border-top:none;border-radius:0 0 var(--radius) var(--radius);overflow:hidden}
-.item-row{display:flex;align-items:flex-start;gap:10px;padding:10px 12px;border-bottom:1px solid var(--border);background:var(--bg);transition:background 0.1s}
-.item-row:last-of-type{border-bottom:none}
-.item-row.checked{background:var(--bg2)}
-.item-row.checked .item-name{color:var(--text3);text-decoration:line-through}
-.item-check{width:20px;height:20px;border-radius:5px;border:2px solid var(--border2);cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;transition:all 0.15s;background:var(--bg)}
-.item-check.checked{background:var(--accent);border-color:var(--accent)}
-.item-check.checked::after{content:'✓';color:white;font-size:12px;font-weight:700}
+.item-row{display:flex;align-items:flex-start;gap:10px;padding:10px 12px;border-bottom:1px solid var(--border);background:var(--bg);transition:background .12s}
+.item-row:last-child{border-bottom:none}
+.item-row.done{background:var(--bg2)}
+.item-row.done .item-name{color:var(--text3);text-decoration:line-through}
+.item-check{width:21px;height:21px;border-radius:5px;border:2px solid var(--border2);cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;transition:all .15s;background:var(--bg)}
+.item-check.on{background:var(--accent);border-color:var(--accent)}
+.item-check.on::after{content:'✓';color:#fff;font-size:12px;font-weight:800}
 .item-main{flex:1;min-width:0}
-.item-name{font-size:14px;line-height:1.4}
-.item-meta{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-top:4px}
-.qty-badge{font-size:11px;color:var(--text3);background:var(--bg3);padding:2px 6px;border-radius:10px}
-.member-tag{font-size:11px;padding:2px 8px;border-radius:10px;white-space:nowrap;font-weight:500}
-.member-rows{margin-top:6px;display:flex;flex-direction:column;gap:4px}
-.member-item-row{display:flex;align-items:center;gap:7px;padding:3px 0 3px 4px}
-.member-item-check{width:16px;height:16px;border-radius:3px;border:2px solid var(--border2);cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all 0.15s;background:var(--bg)}
-.member-item-check.checked{background:var(--accent);border-color:var(--accent)}
-.member-item-check.checked::after{content:'✓';color:white;font-size:9px;font-weight:700}
-.member-item-name{font-size:12px;color:var(--text2)}
-.item-actions{display:flex;gap:2px;flex-shrink:0;opacity:0;transition:opacity 0.15s}
+.item-name{font-size:14px;line-height:1.45;word-break:break-word}
+.qty-badge{display:inline-block;font-size:11px;color:var(--text3);background:var(--bg3);padding:1px 7px;border-radius:9px;margin-top:4px}
+.member-rows{margin-top:6px;display:flex;flex-direction:column;gap:3px}
+.member-row{display:flex;align-items:center;gap:7px;padding:3px 0}
+.m-check{width:17px;height:17px;border-radius:4px;border:2px solid var(--border2);cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .15s;background:var(--bg)}
+.m-check.on{background:var(--accent);border-color:var(--accent)}
+.m-check.on::after{content:'✓';color:#fff;font-size:9px;font-weight:800}
+.m-tag{font-size:11px;padding:2px 8px;border-radius:9px;font-weight:600;white-space:nowrap}
+.m-qty{font-size:11px;color:var(--text3)}
+
+/* Item actions */
+.item-actions{display:flex;gap:2px;flex-shrink:0;opacity:0;transition:opacity .15s}
 .item-row:hover .item-actions{opacity:1}
-@media(max-width:500px){.item-actions{opacity:1}}
-.icon-btn{width:30px;height:30px;display:flex;align-items:center;justify-content:center;border:none;background:none;cursor:pointer;border-radius:var(--radius);color:var(--text2);font-size:16px;transition:all 0.15s}
-.icon-btn:hover{background:var(--bg3);color:var(--text)}
-.icon-btn.del:hover{color:var(--danger)}
-.add-item-row{display:flex;align-items:center;gap:8px;padding:8px 12px;border-top:1px solid var(--border);background:var(--bg)}
-.add-item-input{flex:1;border:none;background:transparent;font-size:14px;color:var(--text);outline:none}
-.add-item-input::placeholder{color:var(--text3)}
-.no-items{padding:32px 16px;text-align:center;color:var(--text2)}
-.no-items i{font-size:36px;display:block;margin-bottom:10px;color:var(--text3)}
+@media(hover:none){.item-actions{opacity:1}}
+.iab{width:30px;height:30px;display:flex;align-items:center;justify-content:center;border:none;background:none;cursor:pointer;border-radius:6px;color:var(--text2);font-size:16px;transition:all .15s}
+.iab:hover{background:var(--bg3);color:var(--text)}
+.iab.del:hover{color:var(--danger)}
+
+/* Add item row */
+.add-row{display:flex;align-items:center;gap:8px;padding:8px 12px;border-top:1px solid var(--border);background:var(--bg)}
+.add-input{flex:1;border:none;background:transparent;font-size:14px;color:var(--text);outline:none;min-width:0}
+.add-input::placeholder{color:var(--text3)}
+
+/* Backlog empty */
+.empty{padding:40px 16px;text-align:center;color:var(--text2)}
+.empty i{font-size:40px;display:block;margin-bottom:10px;color:var(--text3)}
+.empty p{font-size:14px;margin-bottom:4px}
+.empty small{font-size:12px;color:var(--text3)}
 
 /* Modal */
-.modal-bg{position:fixed;inset:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:100;padding:16px}
-.modal{background:var(--bg);border-radius:var(--radius-lg);padding:20px;width:100%;max-width:440px;border:1px solid var(--border);max-height:90vh;overflow-y:auto}
-.modal h3{font-size:16px;font-weight:600;margin-bottom:14px}
-.form-group{margin-bottom:12px}
-.form-group label{display:block;font-size:12px;color:var(--text2);margin-bottom:4px;font-weight:500}
-.form-group input,.form-group select,.form-group textarea{width:100%;padding:8px 10px;border:1px solid var(--border2);border-radius:var(--radius);font-size:14px;background:var(--bg);color:var(--text);outline:none}
-.form-group input:focus,.form-group select:focus{border-color:var(--accent)}
-.modal-actions{display:flex;gap:8px;justify-content:flex-end;margin-top:14px}
-.member-checks{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
-.member-check-item{display:flex;align-items:center;gap:6px;font-size:13px;padding:6px 10px;border:1px solid var(--border);border-radius:var(--radius);cursor:pointer}
-.member-check-item input[type=checkbox]{cursor:pointer}
-.member-qty-wrap{display:flex;align-items:center;gap:4px;margin-top:4px;font-size:12px;color:var(--text2)}
-.member-qty{width:52px;padding:4px 6px;border:1px solid var(--border2);border-radius:var(--radius);font-size:12px;text-align:center;background:var(--bg);color:var(--text)}
+.mbg{position:fixed;inset:0;background:rgba(0,0,0,.5);display:flex;align-items:flex-end;justify-content:center;z-index:200;padding:0}
+@media(min-width:500px){.mbg{align-items:center;padding:16px}}
+.modal{background:var(--bg);border-radius:var(--radius-lg) var(--radius-lg) 0 0;padding:20px 20px 32px;width:100%;max-width:460px;max-height:92vh;overflow-y:auto}
+@media(min-width:500px){.modal{border-radius:var(--radius-lg);padding:20px}}
+.modal-handle{width:36px;height:4px;background:var(--border2);border-radius:2px;margin:0 auto 16px;display:block}
+@media(min-width:500px){.modal-handle{display:none}}
+.modal h3{font-size:16px;font-weight:700;margin-bottom:14px}
+.fg{margin-bottom:12px}
+.fg label{display:block;font-size:12px;color:var(--text2);margin-bottom:5px;font-weight:600;text-transform:uppercase;letter-spacing:.3px}
+.fg input,.fg select{width:100%;padding:9px 11px;border:1px solid var(--border2);border-radius:var(--radius);font-size:14px;background:var(--bg);color:var(--text);outline:none;transition:border .15s}
+.fg input:focus,.fg select:focus{border-color:var(--accent)}
+.mactions{display:flex;gap:8px;justify-content:flex-end;margin-top:16px}
+.member-checks{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.mci{display:flex;flex-direction:column;gap:4px;font-size:13px;padding:8px 10px;border:1.5px solid var(--border);border-radius:var(--radius);cursor:pointer;min-width:80px}
+.mci-top{display:flex;align-items:center;gap:6px}
+.mci-qty{display:flex;align-items:center;gap:4px;font-size:12px;color:var(--text2)}
+.mci-qty input{width:50px;padding:3px 6px;border:1px solid var(--border2);border-radius:5px;font-size:12px;text-align:center;background:var(--bg);color:var(--text)}
 
 /* Members modal */
-.members-list{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
-.member-chip{display:flex;align-items:center;gap:6px;padding:6px 12px;border:1px solid var(--border);border-radius:20px;font-size:13px;background:var(--bg)}
-.member-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
-.member-del{cursor:pointer;color:var(--text3);font-size:14px;margin-left:2px;line-height:1}
-.member-del:hover{color:var(--danger)}
-.add-member-row{display:flex;gap:8px}
-.add-member-row input{flex:1;padding:7px 10px;border:1px solid var(--border2);border-radius:var(--radius);font-size:14px;background:var(--bg);color:var(--text);outline:none}
+.mlist{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.mchip{display:flex;align-items:center;gap:6px;padding:6px 11px;border:1px solid var(--border);border-radius:20px;font-size:13px;background:var(--bg);font-weight:500}
+.mdot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.mdel{cursor:pointer;color:var(--text3);font-size:15px;margin-left:2px;line-height:1;padding:0 2px}
+.mdel:hover{color:var(--danger)}
+.add-m-row{display:flex;gap:8px}
+.add-m-row input{flex:1;padding:8px 11px;border:1px solid var(--border2);border-radius:var(--radius);font-size:14px;background:var(--bg);color:var(--text);outline:none}
+
+/* Confirm modal */
+.confirm-modal{background:var(--bg);border-radius:var(--radius-lg);padding:20px;width:100%;max-width:320px;border:1px solid var(--border)}
+.confirm-modal p{font-size:14px;color:var(--text2);margin-bottom:16px;line-height:1.5}
 
 /* Toast */
-.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(80px);background:#1a1a1a;color:#fff;padding:10px 20px;border-radius:20px;font-size:13px;opacity:0;transition:all 0.3s;z-index:200;white-space:nowrap}
+.toast{position:fixed;bottom:28px;left:50%;transform:translateX(-50%) translateY(20px);background:#111;color:#fff;padding:10px 18px;border-radius:20px;font-size:13px;opacity:0;transition:all .25s;z-index:300;pointer-events:none;white-space:nowrap;font-weight:500}
 .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+@media(prefers-color-scheme:dark){.toast{background:#f0f0f0;color:#111}}
 </style>
 </head>
 <body>
 <div class="app">
   <div class="header">
-    <div class="title"><i class="ti ti-plane" aria-hidden="true"></i>出國行李清單</div>
+    <div class="title"><i class="ti ti-plane-tilt"></i>行李清單</div>
     <div class="header-actions">
-      <button class="btn" onclick="openMembersModal()"><i class="ti ti-users" aria-hidden="true"></i>成員</button>
-      <button class="btn success" onclick="addAllBacklog()"><i class="ti ti-download" aria-hidden="true"></i>加入全部備用</button>
-      <button class="btn danger" onclick="uncheckAll()"><i class="ti ti-refresh" aria-hidden="true"></i>全部反勾選</button>
+      <button class="btn" id="btn-members"><i class="ti ti-users"></i>成員</button>
+      <button class="btn success-outline" id="btn-add-backlog"><i class="ti ti-download"></i><span class="hide-xs">加入備用</span></button>
+      <button class="btn danger-outline" id="btn-uncheck"><i class="ti ti-refresh"></i><span class="hide-xs">反勾選</span></button>
     </div>
   </div>
 
   <div class="stats" id="stats"></div>
 
   <div class="tabs">
-    <button class="tab active" onclick="switchTab('main',this)">主要清單</button>
-    <button class="tab" onclick="switchTab('backlog',this)">備用 Backlog <span id="backlog-count"></span></button>
+    <button class="tab active" data-tab="main">主要清單</button>
+    <button class="tab" data-tab="backlog">備用 <span id="backlog-badge"></span></button>
   </div>
 
-  <div id="tab-main"></div>
+  <div id="tab-main">
+    <div class="cat-chips-wrap"><div class="cat-chips" id="cat-chips"></div></div>
+    <div id="sections-list"></div>
+  </div>
   <div id="tab-backlog" style="display:none"></div>
 </div>
 
-<div id="modal-container"></div>
+<div id="modal-root"></div>
 <div class="toast" id="toast"></div>
 
 <script>
-const MEMBER_COLORS=['#378ADD','#D4537E','#1D9E75','#BA7517','#7F77DD','#D85A30','#E24B4A'];
+// ─── Constants ────────────────────────────────────────────────────
+const COLORS=['#378ADD','#D4537E','#1D9E75','#BA7517','#7F77DD','#D85A30','#E24B4A'];
+const STORAGE_KEY='packing-v2';
 
-const RAW_DATA=[
+const RAW=[
   {cat:'服飾',icon:'ti-shirt',items:[
-    {name:'內衣褲'},{name:'暖暖衣',qty:4},{name:'防水手套'},{name:'防蒼蠅頭套'},
-    {name:'厚長襪'},{name:'靴子'},{name:'拖鞋'},{name:'耳罩'},{name:'毛帽'},
-    {name:'泳衣'},{name:'冰爪'},{name:'冰爪防水束袋'},{name:'睡衣黑色短袖'},
-    {name:'睡衣短褲'},{name:'棉褲'},{name:'圍巾'},{name:'防曬帽'},{name:'雨傘'},{name:'防水褲'},
-    {name:'登山杖',qty:4,members:[{name:'境',qty:4}]}
+    {n:'內衣褲'},{n:'暖暖衣',q:4},{n:'防水手套'},{n:'防蒼蠅頭套'},
+    {n:'厚長襪'},{n:'靴子'},{n:'拖鞋'},{n:'耳罩'},{n:'毛帽'},
+    {n:'泳衣'},{n:'冰爪'},{n:'冰爪防水束袋'},{n:'睡衣黑色短袖'},
+    {n:'睡衣短褲'},{n:'棉褲'},{n:'圍巾'},{n:'防曬帽'},{n:'雨傘'},{n:'防水褲'},
+    {n:'登山杖',q:4,m:[{n:'境',q:4}]}
   ]},
   {cat:'電器',icon:'ti-device-laptop',items:[
-    {name:'煮水器',members:[{name:'貝',qty:1}]},
-    {name:'洗衣蛋',members:[{name:'貝',qty:1}]},
-    {name:'行動洗衣袋',members:[{name:'貝',qty:1}]},
-    {name:'轉接頭'},{name:'延長線',members:[{name:'貝',qty:1}]},
-    {name:'吹風機',members:[{name:'貝',qty:1}]},
-    {name:'行動電源',qty:2},{name:'Google TV + 遙控器'},{name:'Insta 360'},
-    {name:'360充電器'},{name:'360夾背帶'},{name:'手機掛繩'},{name:'Apple Watch'},
-    {name:'手機充電線',qty:2},{name:'行動電源充電線'},{name:'Type C充電線'},
-    {name:'行李秤'},{name:'自拍棒'},{name:'頭燈',qty:2},{name:'旅行鍋'},
-    {name:'手電筒'},{name:'鎖頭',qty:4},{name:'電蚊香'},{name:'手機腳架'},
-    {name:'防水手機袋（泡溫泉用）'}
+    {n:'煮水器',m:[{n:'貝',q:1}]},{n:'洗衣蛋',m:[{n:'貝',q:1}]},
+    {n:'行動洗衣袋',m:[{n:'貝',q:1}]},{n:'轉接頭'},
+    {n:'延長線',m:[{n:'貝',q:1}]},{n:'吹風機',m:[{n:'貝',q:1}]},
+    {n:'行動電源',q:2},{n:'Google TV + 遙控器'},{n:'Insta 360'},
+    {n:'360充電器'},{n:'360夾背帶'},{n:'手機掛繩'},{n:'Apple Watch'},
+    {n:'手機充電線',q:2},{n:'行動電源充電線'},{n:'Type C充電線'},
+    {n:'行李秤'},{n:'自拍棒'},{n:'頭燈',q:2},{n:'旅行鍋'},
+    {n:'手電筒'},{n:'鎖頭',q:4},{n:'電蚊香'},{n:'手機腳架'},
+    {n:'防水手機袋（泡溫泉用）'}
   ]},
-  {cat:'食物 & 廚具',icon:'ti-bowl',items:[
-    {name:'湯包/沖泡包',members:[{name:'媽',qty:1}]},
-    {name:'食物保鮮袋',members:[{name:'媽',qty:1}]},
-    {name:'菜瓜布',members:[{name:'媽',qty:1}]},
-    {name:'洗碗精',members:[{name:'媽',qty:1}]},
-    {name:'水果刀',members:[{name:'貝',qty:1}]},
-    {name:'刨刀',members:[{name:'媽',qty:1}]},
-    {name:'泡麵'},
-    {name:'食物保鮮矽膠盒',members:[{name:'卡',qty:1}]}
+  {cat:'食物廚具',icon:'ti-bowl',items:[
+    {n:'湯包/沖泡包',m:[{n:'媽',q:1}]},{n:'食物保鮮袋',m:[{n:'媽',q:1}]},
+    {n:'菜瓜布',m:[{n:'媽',q:1}]},{n:'洗碗精',m:[{n:'媽',q:1}]},
+    {n:'水果刀',m:[{n:'貝',q:1}]},{n:'刨刀',m:[{n:'媽',q:1}]},
+    {n:'泡麵'},{n:'食物保鮮矽膠盒',m:[{n:'卡',q:1}]}
   ]},
   {cat:'開車必備',icon:'ti-car',items:[
-    {name:'大保溫瓶'},{name:'悶燒罐（裡面塞咖啡包）'},
-    {name:'濕紙巾（大）',qty:2,members:[{name:'卡',qty:1},{name:'媽',qty:1}]},
-    {name:'濕紙巾（小）',qty:4,members:[{name:'媽',qty:2},{name:'卡',qty:2}]},
-    {name:'保冷袋',members:[{name:'境',qty:1}]},
-    {name:'小酒精瓶'},{name:'2公升水袋',qty:2},{name:'脖枕'},
-    {name:'垃圾袋'},{name:'黏土'},{name:'墨鏡'},{name:'手機架'},
-    {name:'行車記錄器'},{name:'USB線'},{name:'蛋白粉杯'},
-    {name:'鏟雪刷',qty:2,members:[{name:'境',qty:2}]},
-    {name:'露營車上馬桶分解劑'},{name:'除臭噴霧'}
+    {n:'大保溫瓶'},{n:'悶燒罐（含咖啡包）'},
+    {n:'濕紙巾（大）',q:2,m:[{n:'卡',q:1},{n:'媽',q:1}]},
+    {n:'濕紙巾（小）',q:4,m:[{n:'媽',q:2},{n:'卡',q:2}]},
+    {n:'保冷袋',m:[{n:'境',q:1}]},{n:'小酒精瓶'},
+    {n:'2公升水袋',q:2},{n:'脖枕'},{n:'垃圾袋'},{n:'黏土'},
+    {n:'墨鏡'},{n:'手機架'},{n:'行車記錄器'},{n:'USB線'},
+    {n:'蛋白粉杯'},{n:'鏟雪刷',q:2,m:[{n:'境',q:2}]},
+    {n:'露營車馬桶分解劑'},{n:'除臭噴霧'}
   ]},
-  {cat:'梳妝品',icon:'ti-sparkles',items:[
-    {name:'隱形眼鏡（拋棄式）'},{name:'身體乳'},{name:'面膜'},
-    {name:'洗髮乳'},{name:'沐浴乳'},{name:'化妝棉'},{name:'酒精棉片'},
-    {name:'木瓜霜'},{name:'頭皮藥'},{name:'指甲剪',qty:2},{name:'棉花棒'},
-    {name:'牙線棒'},{name:'眼霜'},{name:'護手霜（Aesop）'},{name:'眼鏡'},
-    {name:'眼鏡盒'},{name:'蒸眼罩'},{name:'白花油'},{name:'護髮油'},
-    {name:'卸妝水'},{name:'防曬乳',qty:3},{name:'爽身膏'},{name:'生髮水'},
-    {name:'護髮素'},{name:'化妝包'},{name:'小瓶化妝水',qty:2},
-    {name:'小瓶乳霜',qty:4},{name:'刮鬍刀'}
+  {cat:'梳妝保養',icon:'ti-sparkles',items:[
+    {n:'隱形眼鏡（拋棄式）'},{n:'身體乳'},{n:'面膜'},{n:'洗髮乳'},
+    {n:'沐浴乳'},{n:'化妝棉'},{n:'酒精棉片'},{n:'木瓜霜'},
+    {n:'頭皮藥'},{n:'指甲剪',q:2},{n:'棉花棒'},{n:'牙線棒'},
+    {n:'眼霜'},{n:'護手霜（Aesop）'},{n:'眼鏡'},{n:'眼鏡盒'},
+    {n:'蒸眼罩'},{n:'白花油'},{n:'護髮油'},{n:'卸妝水'},
+    {n:'防曬乳',q:3},{n:'爽身膏'},{n:'生髮水'},{n:'護髮素'},
+    {n:'化妝包'},{n:'小瓶化妝水',q:2},{n:'小瓶乳霜',q:4},{n:'刮鬍刀'}
   ]},
   {cat:'藥品',icon:'ti-pill',items:[
-    {name:'Eve（止痛藥）'},{name:'OK蹦'},{name:'暈車藥'},{name:'益生菌'},
-    {name:'痠痛貼布'},{name:'綁腳趾頭繃帶'},{name:'喉糖（隨身）'},{name:'胃藥'},
-    {name:'隨身藥罐'},{name:'中藥'},{name:'噴鼻藥'},{name:'防蚊貼'},{name:'感冒藥'}
+    {n:'Eve（止痛藥）'},{n:'OK蹦'},{n:'暈車藥'},{n:'益生菌'},
+    {n:'痠痛貼布'},{n:'綁腳趾頭繃帶'},{n:'喉糖'},{n:'胃藥'},
+    {n:'隨身藥罐'},{n:'中藥'},{n:'噴鼻藥'},{n:'防蚊貼'},{n:'感冒藥'}
   ]},
-  {cat:'備品 & 雜物',icon:'ti-tools',items:[
-    {name:'衣架（境）',qty:4,members:[{name:'境',qty:4}]},
-    {name:'衣架（媽）',qty:10,members:[{name:'媽',qty:10}]},
-    {name:'衣架（貝）',qty:10,members:[{name:'貝',qty:10}]},
-    {name:'衣夾子',qty:6,members:[{name:'卡',qty:6}]},
-    {name:'吊衣繩（貝）',members:[{name:'貝',qty:1}]},
-    {name:'吊衣繩（媽）',members:[{name:'媽',qty:1}]},
-    {name:'洗衣精小瓶',qty:2,members:[{name:'媽',qty:2}]},
-    {name:'洗衣袋（大）',qty:2,members:[{name:'媽',qty:2}]},
-    {name:'內衣洗衣袋',members:[{name:'媽',qty:1}]},
-    {name:'食物夾（隨身）'},{name:'環保袋'},{name:'口罩（隨身）'},{name:'夾鏈袋'},
-    {name:'小塑膠袋'},{name:'折疊碗',qty:2},{name:'木頭推拿棒'},{name:'髮圈'},
-    {name:'洗衣折疊袋（洗衣蛋用）'},{name:'絲瓜巾'}
+  {cat:'備品雜物',icon:'ti-tools',items:[
+    {n:'衣架（境）',q:4,m:[{n:'境',q:4}]},{n:'衣架（媽）',q:10,m:[{n:'媽',q:10}]},
+    {n:'衣架（貝）',q:10,m:[{n:'貝',q:10}]},{n:'衣夾子',q:6,m:[{n:'卡',q:6}]},
+    {n:'吊衣繩（貝）',m:[{n:'貝',q:1}]},{n:'吊衣繩（媽）',m:[{n:'媽',q:1}]},
+    {n:'洗衣精小瓶',q:2,m:[{n:'媽',q:2}]},{n:'洗衣袋（大）',q:2,m:[{n:'媽',q:2}]},
+    {n:'內衣洗衣袋',m:[{n:'媽',q:1}]},{n:'食物夾'},{n:'環保袋'},
+    {n:'口罩'},{n:'夾鏈袋'},{n:'小塑膠袋'},{n:'折疊碗',q:2},
+    {n:'木頭推拿棒'},{n:'髮圈'},{n:'洗衣折疊袋（洗衣蛋用）'},{n:'絲瓜巾'}
   ]},
-  {cat:'文件',icon:'ti-file-text',items:[
-    {name:'台灣駕照'},{name:'國際駕照'},{name:'金剛經'},{name:'筆'},
-    {name:'申根國家文件',qty:5},{name:'Costco卡'},{name:'大小照片各兩張'},
-    {name:'護照'},{name:'SIM卡（卡套不能丟）'}
+  {cat:'重要文件',icon:'ti-file-text',items:[
+    {n:'台灣駕照'},{n:'國際駕照'},{n:'金剛經'},{n:'筆'},
+    {n:'申根國家文件',q:5},{n:'Costco卡'},{n:'大小照片各兩張'},
+    {n:'護照'},{n:'SIM卡（卡套不能丟）'}
   ]},
   {cat:'臥鋪盥洗包',icon:'ti-moon',items:[
-    {name:'一包衛生紙'},{name:'黑色短袖'},{name:'內褲'},{name:'內衣'},
-    {name:'免洗浴巾'},{name:'小罐沐浴乳'},{name:'小罐洗髮乳'},{name:'小罐洗臉'},
-    {name:'絲瓜巾'},{name:'睡衣短褲'}
+    {n:'一包衛生紙'},{n:'黑色短袖'},{n:'內褲'},{n:'內衣'},
+    {n:'免洗浴巾'},{n:'小罐沐浴乳'},{n:'小罐洗髮乳'},{n:'小罐洗臉'},
+    {n:'絲瓜巾'},{n:'睡衣短褲'}
   ]},
   {cat:'飛機過夜包',icon:'ti-plane',items:[
-    {name:'牙線'},{name:'面膜'},{name:'乳霜'},{name:'眼鏡盒'},
-    {name:'隱形眼鏡'},{name:'眼藥水'},{name:'木瓜霜'},{name:'發熱眼罩'},
-    {name:'耳塞',qty:4},{name:'綁頭髮'},{name:'水袋'},{name:'護手霜'},
-    {name:'洗臉肥皂'},{name:'喉糖'},{name:'胃藥'},
-    {name:'大腿綁帶（固定腳睡覺）'},{name:'折疊椅（放腳用）'}
+    {n:'牙線'},{n:'面膜'},{n:'乳霜'},{n:'眼鏡盒'},
+    {n:'隱形眼鏡'},{n:'眼藥水'},{n:'木瓜霜'},{n:'發熱眼罩'},
+    {n:'耳塞',q:4},{n:'綁頭髮'},{n:'水袋'},{n:'護手霜'},
+    {n:'洗臉肥皂'},{n:'喉糖'},{n:'胃藥'},
+    {n:'大腿綁帶（固定腳用）'},{n:'折疊椅（放腳用）'}
   ]}
 ];
 
-let state;
-const STORAGE_KEY='packing-list-v1';
+// ─── State ────────────────────────────────────────────────────────
+let S;
 
 function loadState(){
   try{
-    const saved=localStorage.getItem(STORAGE_KEY);
-    if(saved){state=JSON.parse(saved);return;}
+    const raw=localStorage.getItem(STORAGE_KEY);
+    if(raw){S=JSON.parse(raw);return;}
   }catch(e){}
-  initDefaultState();
+  resetState();
 }
-
-function saveState(){
-  try{localStorage.setItem(STORAGE_KEY,JSON.stringify(state));}catch(e){}
-}
-
-function initDefaultState(){
-  state={
+function resetState(){
+  S={
     members:['媽','貝','境','卡'],
-    categories:RAW_DATA.map(c=>({
-      cat:c.cat,icon:c.icon,expanded:true,
-      items:c.items.map(it=>({
-        id:uid(),name:it.name,qty:it.qty||1,
-        checked:false,members:it.members||[],memberChecks:{}
-      }))
+    cats:RAW.map(r=>({
+      cat:r.cat,icon:r.icon,expanded:true,
+      items:r.items.map(it=>mkItem(it))
     })),
-    backlog:[]
+    backlog:[],
+    activeCat:null
   };
 }
-
-function uid(){return Math.random().toString(36).slice(2)+Date.now().toString(36)}
-function getMemberColor(name){
-  const i=state.members.indexOf(name);
-  return MEMBER_COLORS[i%MEMBER_COLORS.length]||'#888';
+function mkItem(it){
+  return {
+    id:uid(),
+    name:it.n||it.name||'',
+    qty:it.q||it.qty||1,
+    checked:false,
+    members:(it.m||it.members||[]).map(m=>({name:m.n||m.name,qty:m.q||m.qty||1})),
+    mc:{}
+  };
 }
+function uid(){return Math.random().toString(36).slice(2,9)}
+function save(){try{localStorage.setItem(STORAGE_KEY,JSON.stringify(S));}catch(e){}}
+function memberColor(name){const i=S.members.indexOf(name);return COLORS[i>=0?i%COLORS.length:0]}
 
+// ─── Render ───────────────────────────────────────────────────────
 function render(){
-  saveState();
-  updateStats();
-  renderMain();
+  save();
+  renderStats();
+  renderChips();
+  renderSections();
   renderBacklog();
-  document.getElementById('backlog-count').textContent=state.backlog.length?`(${state.backlog.length})`:'';
+  document.getElementById('backlog-badge').textContent=S.backlog.length?`(${S.backlog.length})`:'';
 }
 
-function updateStats(){
-  let total=0,checked=0;
-  state.categories.forEach(c=>c.items.forEach(it=>{
-    total++;
-    const allDone=it.members.length>0?it.members.every(m=>it.memberChecks[m.name]):it.checked;
-    if(allDone)checked++;
-  }));
-  const pct=total?Math.round(checked/total*100):0;
+function renderStats(){
+  let total=0,done=0;
+  S.cats.forEach(c=>c.items.forEach(it=>{total++;if(isDone(it))done++;}));
+  const pct=total?Math.round(done/total*100):0;
   document.getElementById('stats').innerHTML=`
-    <div class="stat"><div class="stat-num" style="color:var(--accent)">${checked}/${total}</div><div class="stat-label">已勾選 / 總計</div></div>
-    <div class="stat"><div class="stat-num">${total-checked}</div><div class="stat-label">待確認</div></div>
-    <div class="stat"><div class="stat-num">${pct}%</div><div class="stat-label">完成進度</div></div>
-  `;
+    <div class="stat"><div class="stat-num accent">${done}/${total}</div><div class="stat-label">已勾選</div></div>
+    <div class="stat"><div class="stat-num">${total-done}</div><div class="stat-label">待確認</div></div>
+    <div class="stat"><div class="stat-num">${pct}%</div><div class="stat-label">完成度</div></div>`;
 }
 
-function renderMain(){
-  const el=document.getElementById('tab-main');
-  let html='';
-  state.categories.forEach((cat,ci)=>{
-    const total=cat.items.length;
-    const done=cat.items.filter(it=>it.members.length>0?it.members.every(m=>it.memberChecks[m.name]):it.checked).length;
-    const pct=total?Math.round(done/total*100):0;
-    html+=`<div class="section">
-      <div class="section-header" onclick="toggleCat(${ci})">
-        <div class="section-title">
-          <i class="ti ${cat.icon}" aria-hidden="true"></i>${cat.cat}
-        </div>
-        <div style="display:flex;align-items:center;gap:8px">
-          <span class="section-count">${done}/${total}</span>
-          <i class="ti ti-chevron-${cat.expanded?'up':'down'}" aria-hidden="true" style="font-size:14px;color:var(--text2)"></i>
-        </div>
+function isDone(item){
+  if(item.members.length>0) return item.members.every(m=>item.mc[m.name]);
+  return item.checked;
+}
+
+function renderChips(){
+  const el=document.getElementById('cat-chips');
+  el.innerHTML=S.cats.map((c,ci)=>{
+    const done=c.items.filter(it=>isDone(it)).length;
+    const active=S.activeCat===ci;
+    return `<div class="cat-chip${active?' active':''}" data-ci="${ci}">
+      <i class="ti ${c.icon}" style="font-size:13px"></i>
+      ${c.cat}
+      <span class="chip-count">${done}/${c.items.length}</span>
+    </div>`;
+  }).join('');
+}
+
+function renderSections(){
+  const el=document.getElementById('sections-list');
+  // If a chip is active, only show that category
+  const catsToShow = S.activeCat!==null ? [S.cats[S.activeCat]].map((c,_)=>({c,ci:S.activeCat})) : S.cats.map((c,ci)=>({c,ci}));
+  el.innerHTML=catsToShow.map(({c,ci})=>renderSection(c,ci)).join('');
+}
+
+function renderSection(cat,ci){
+  const total=cat.items.length;
+  const done=cat.items.filter(it=>isDone(it)).length;
+  const pct=total?Math.round(done/total*100):0;
+  const collapsed=!cat.expanded;
+  let html=`<div class="section" id="sec-${ci}">
+    <div class="section-header${collapsed?' collapsed':''}" data-action="toggle-cat" data-ci="${ci}">
+      <div class="section-title"><i class="ti ${cat.icon}" style="font-size:15px"></i>${cat.cat}</div>
+      <div class="section-right">
+        <span class="section-count">${done}/${total}</span>
+        <i class="ti ti-chevron-${collapsed?'down':'up'}" style="font-size:14px;color:var(--text2)"></i>
       </div>
-      <div class="section-progress"><div class="section-progress-bar" style="width:${pct}%"></div></div>`;
-    if(cat.expanded){
-      html+=`<div class="items-list">`;
-      if(cat.items.length===0){
-        html+=`<div style="padding:12px 14px;font-size:13px;color:var(--text3)">暫無項目</div>`;
-      } else {
-        cat.items.forEach((item,ii)=>{html+=renderItemRow(item,ci,ii,false);});
-      }
-      html+=`<div class="add-item-row">
-        <i class="ti ti-plus" aria-hidden="true" style="font-size:14px;color:var(--text3)"></i>
-        <input class="add-item-input" type="text" placeholder="新增項目..." onkeydown="if(event.key==='Enter')addItem(${ci},this)">
-      </div></div>`;
+    </div>
+    <div class="section-progress-wrap"><div class="section-progress-bar" style="width:${pct}%"></div></div>`;
+  if(cat.expanded){
+    html+=`<div class="items-list">`;
+    if(cat.items.length===0){
+      html+=`<div style="padding:12px 14px;font-size:13px;color:var(--text3)">暫無項目，請在下方輸入新增</div>`;
+    } else {
+      cat.items.forEach((item,ii)=>{html+=renderItem(item,ci,ii,false);});
     }
-    html+=`</div>`;
-  });
-  el.innerHTML=html;
+    html+=`<div class="add-row">
+      <i class="ti ti-plus" style="font-size:14px;color:var(--text3);flex-shrink:0"></i>
+      <input class="add-input" type="text" placeholder="新增項目..." data-action="add-item" data-ci="${ci}">
+    </div></div>`;
+  }
+  html+=`</div>`;
+  return html;
 }
 
-function renderItemRow(item,ci,ii,isBacklog){
-  const hasMembers=item.members.length>0;
-  const allDone=hasMembers?item.members.every(m=>item.memberChecks[m.name]):item.checked;
-  let memberHtml='';
-  if(hasMembers){
-    memberHtml='<div class="member-rows">';
+function renderItem(item,ci,ii,isBacklog){
+  const done=isDone(item);
+  const hasM=item.members.length>0;
+  let mHtml='';
+  if(hasM){
+    mHtml='<div class="member-rows">';
     item.members.forEach(m=>{
-      const mc=item.memberChecks[m.name]||false;
-      const col=getMemberColor(m.name);
-      memberHtml+=`<div class="member-item-row">
-        <div class="member-item-check${mc?' checked':''}" onclick="toggleMemberCheck(${ci},${ii},'${m.name}',${isBacklog})"></div>
-        <span class="member-tag" style="background:${col}22;color:${col}">${m.name}</span>
-        ${m.qty>1?`<span style="font-size:11px;color:var(--text3)">×${m.qty}</span>`:''}
+      const on=item.mc[m.name]||false;
+      const col=memberColor(m.name);
+      mHtml+=`<div class="member-row">
+        <div class="m-check${on?' on':''}" data-action="m-check" data-ci="${ci}" data-ii="${ii}" data-mn="${escAttr(m.name)}" data-bl="${isBacklog?1:0}"></div>
+        <span class="m-tag" style="background:${col}22;color:${col}">${esc(m.name)}</span>
+        ${m.qty>1?`<span class="m-qty">×${m.qty}</span>`:''}
       </div>`;
     });
-    memberHtml+='</div>';
+    mHtml+='</div>';
   }
-  return `<div class="item-row${allDone?' checked':''}">
-    <div class="item-check${allDone?' checked':''}" onclick="toggleCheck(${ci},${ii},${isBacklog})"></div>
+  const ciAttr=isBacklog?-1:ci;
+  return `<div class="item-row${done?' done':''}">
+    <div class="item-check${done?' on':''}" data-action="check" data-ci="${ciAttr}" data-ii="${ii}" data-bl="${isBacklog?1:0}"></div>
     <div class="item-main">
-      <div class="item-name">${item.name}</div>
-      ${item.qty>1&&!hasMembers?`<div class="item-meta"><span class="qty-badge">×${item.qty}</span></div>`:''}
-      ${memberHtml}
+      <div class="item-name">${esc(item.name)}</div>
+      ${item.qty>1&&!hasM?`<span class="qty-badge">×${item.qty}</span>`:''}
+      ${mHtml}
     </div>
     <div class="item-actions">
-      <button class="icon-btn" onclick="editItem(${ci},${ii},${isBacklog})" title="編輯"><i class="ti ti-edit" aria-hidden="true"></i></button>
-      <button class="icon-btn" onclick="${isBacklog?`restoreItem(${ii})`:`moveToBacklog(${ci},${ii})`}" title="${isBacklog?'加回清單':'移至備用'}">
-        <i class="ti ti-${isBacklog?'arrow-back-up':'archive'}" aria-hidden="true"></i>
+      <button class="iab" data-action="edit" data-ci="${ciAttr}" data-ii="${ii}" data-bl="${isBacklog?1:0}" title="編輯"><i class="ti ti-edit"></i></button>
+      <button class="iab" data-action="${isBacklog?'restore':'to-backlog'}" data-ci="${ciAttr}" data-ii="${ii}" title="${isBacklog?'加回清單':'移至備用'}">
+        <i class="ti ti-${isBacklog?'arrow-back-up':'archive'}"></i>
       </button>
-      <button class="icon-btn del" onclick="${isBacklog?`deleteBacklog(${ii})`:`deleteItem(${ci},${ii})`}" title="刪除"><i class="ti ti-trash" aria-hidden="true"></i></button>
+      <button class="iab del" data-action="delete" data-ci="${ciAttr}" data-ii="${ii}" data-bl="${isBacklog?1:0}" title="刪除"><i class="ti ti-trash"></i></button>
     </div>
   </div>`;
 }
 
 function renderBacklog(){
   const el=document.getElementById('tab-backlog');
-  if(state.backlog.length===0){
-    el.innerHTML='<div class="no-items"><i class="ti ti-inbox" aria-hidden="true"></i>沒有備用項目<br><small style="color:var(--text3);margin-top:6px;display:block">將主清單項目移至此處，下次旅程可一鍵加回</small></div>';
+  if(S.backlog.length===0){
+    el.innerHTML=`<div class="empty"><i class="ti ti-inbox"></i><p>沒有備用項目</p><small>將主清單項目移至此處，下次旅程可一鍵加回</small></div>`;
     return;
   }
-  let html='<div class="items-list">';
-  state.backlog.forEach((item,ii)=>{html+=renderItemRow(item,-1,ii,true);});
-  html+='</div>';
-  el.innerHTML=html;
+  el.innerHTML=`<div class="items-list">${S.backlog.map((item,ii)=>renderItem(item,-1,ii,true)).join('')}</div>`;
 }
 
-function switchTab(tab,el){
-  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
-  el.classList.add('active');
-  document.getElementById('tab-main').style.display=tab==='main'?'':'none';
-  document.getElementById('tab-backlog').style.display=tab==='backlog'?'':'none';
+// ─── Event delegation ─────────────────────────────────────────────
+document.addEventListener('click',function(e){
+  const el=e.target.closest('[data-action]');
+  if(el) handleAction(el,e);
+
+  // Cat chips
+  const chip=e.target.closest('.cat-chip');
+  if(chip){
+    const ci=parseInt(chip.dataset.ci);
+    S.activeCat=(S.activeCat===ci)?null:ci;
+    render();
+    if(S.activeCat!==null){
+      const sec=document.getElementById('sec-'+ci);
+      if(sec)sec.scrollIntoView({behavior:'smooth',block:'start'});
+    }
+  }
+
+  // Tabs
+  const tab=e.target.closest('.tab');
+  if(tab){
+    document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+    tab.classList.add('active');
+    const t=tab.dataset.tab;
+    document.getElementById('tab-main').style.display=t==='main'?'':'none';
+    document.getElementById('tab-backlog').style.display=t==='backlog'?'':'none';
+  }
+});
+
+document.addEventListener('keydown',function(e){
+  if(e.key==='Enter'){
+    const el=e.target.closest('[data-action="add-item"]');
+    if(el) doAddItem(parseInt(el.dataset.ci),el);
+  }
+});
+
+document.getElementById('btn-members').addEventListener('click',openMembersModal);
+document.getElementById('btn-uncheck').addEventListener('click',()=>{
+  showConfirm('全部反勾選？','所有項目的勾選狀態將會清除',()=>{
+    S.cats.forEach(c=>c.items.forEach(it=>{it.checked=false;it.mc={};}));
+    S.backlog.forEach(it=>{it.checked=false;it.mc={};});
+    render();
+    toast('已全部反勾選');
+  });
+});
+document.getElementById('btn-add-backlog').addEventListener('click',()=>{
+  if(S.backlog.length===0){toast('沒有備用項目');return;}
+  openAddBacklogModal();
+});
+
+function handleAction(el,e){
+  const a=el.dataset.action;
+  const ci=parseInt(el.dataset.ci);
+  const ii=parseInt(el.dataset.ii);
+  const bl=el.dataset.bl==='1';
+
+  if(a==='toggle-cat'){
+    S.cats[ci].expanded=!S.cats[ci].expanded;render();
+  } else if(a==='check'){
+    const item=bl?S.backlog[ii]:S.cats[ci].items[ii];
+    item.checked=!item.checked;
+    if(item.members.length>0) item.members.forEach(m=>{item.mc[m.name]=item.checked;});
+    render();
+  } else if(a==='m-check'){
+    const mn=el.dataset.mn;
+    const item=bl?S.backlog[ii]:S.cats[ci].items[ii];
+    item.mc[mn]=!item.mc[mn];
+    item.checked=item.members.every(m=>item.mc[m.name]);
+    render();
+  } else if(a==='edit'){
+    openEditModal(ci,ii,bl);
+  } else if(a==='to-backlog'){
+    const item=S.cats[ci].items.splice(ii,1)[0];
+    S.backlog.push(item);
+    toast(`「${item.name}」已移至備用`);render();
+  } else if(a==='restore'){
+    const item=S.backlog.splice(ii,1)[0];
+    render();
+    openRestoreModal(item);
+  } else if(a==='delete'){
+    const name=bl?S.backlog[ii].name:S.cats[ci].items[ii].name;
+    showConfirm(`刪除「${name}」？`,'此動作無法復原',()=>{
+      if(bl) S.backlog.splice(ii,1);
+      else S.cats[ci].items.splice(ii,1);
+      render();
+    });
+  } else if(a==='add-item'){
+    // handled via keydown
+  }
 }
 
-function toggleCat(ci){state.categories[ci].expanded=!state.categories[ci].expanded;render();}
-
-function toggleCheck(ci,ii,isBacklog){
-  const item=isBacklog?state.backlog[ii]:state.categories[ci].items[ii];
-  item.checked=!item.checked;
-  if(item.members.length>0){item.members.forEach(m=>{item.memberChecks[m.name]=item.checked;});}
-  render();
-}
-
-function toggleMemberCheck(ci,ii,memberName,isBacklog){
-  const item=isBacklog?state.backlog[ii]:state.categories[ci].items[ii];
-  item.memberChecks[memberName]=!item.memberChecks[memberName];
-  item.checked=item.members.every(m=>item.memberChecks[m.name]);
-  render();
-}
-
-function addItem(ci,inputEl){
+function doAddItem(ci,inputEl){
   const name=inputEl.value.trim();
   if(!name)return;
-  state.categories[ci].items.push({id:uid(),name,qty:1,checked:false,members:[],memberChecks:{}});
+  S.cats[ci].items.push(mkItem({n:name}));
   inputEl.value='';
   render();
+  // refocus input
+  setTimeout(()=>{
+    const inp=document.querySelector(`[data-action="add-item"][data-ci="${ci}"]`);
+    if(inp)inp.focus();
+  },50);
 }
 
-function moveToBacklog(ci,ii){
-  const item=state.categories[ci].items.splice(ii,1)[0];
-  state.backlog.push(item);
-  showToast(`「${item.name}」已移至備用`);
-  render();
+// ─── Modals ───────────────────────────────────────────────────────
+function modal(content){
+  document.getElementById('modal-root').innerHTML=`<div class="mbg" id="mbg">${content}</div>`;
+  document.getElementById('mbg').addEventListener('click',e=>{if(e.target.id==='mbg')closeModal();});
 }
+function closeModal(){document.getElementById('modal-root').innerHTML='';}
 
-function restoreItem(ii){
-  const item=state.backlog.splice(ii,1)[0];
-  openRestoreModal(item);
-}
-
-function deleteItem(ci,ii){
-  if(!confirm(`確定刪除「${state.categories[ci].items[ii].name}」？`))return;
-  state.categories[ci].items.splice(ii,1);
-  render();
-}
-
-function deleteBacklog(ii){
-  if(!confirm(`確定刪除「${state.backlog[ii].name}」？`))return;
-  state.backlog.splice(ii,1);
-  render();
-}
-
-function uncheckAll(){
-  if(!confirm('確定要將所有項目反勾選？'))return;
-  state.categories.forEach(c=>c.items.forEach(it=>{it.checked=false;it.memberChecks={};}));
-  state.backlog.forEach(it=>{it.checked=false;it.memberChecks={};});
-  showToast('已全部反勾選');render();
-}
-
-function addAllBacklog(){
-  if(state.backlog.length===0){showToast('沒有備用項目');return;}
-  const count=state.backlog.length;
-  openAddBacklogModal(count);
-}
-
-function openAddBacklogModal(count){
-  const mc=document.getElementById('modal-container');
-  mc.innerHTML=`<div class="modal-bg" onclick="if(event.target===this)closeModal()">
-    <div class="modal">
-      <h3>加入備用項目</h3>
-      <div class="form-group">
-        <label>選擇加入的分類（共 ${count} 個項目）</label>
-        <select id="restore-cat-all">
-          ${state.categories.map((c,i)=>`<option value="${i}">${c.cat}</option>`).join('')}
-        </select>
-      </div>
-      <div class="modal-actions">
-        <button class="btn" onclick="closeModal()">取消</button>
-        <button class="btn primary" onclick="confirmAddAllBacklog()">加入</button>
-      </div>
+function showConfirm(title,sub,onOk){
+  modal(`<div class="confirm-modal">
+    <span class="modal-handle"></span>
+    <h3>${esc(title)}</h3>
+    <p>${esc(sub)}</p>
+    <div class="mactions">
+      <button class="btn" id="cf-cancel">取消</button>
+      <button class="btn accent" id="cf-ok">確定</button>
     </div>
-  </div>`;
+  </div>`);
+  document.getElementById('cf-cancel').onclick=closeModal;
+  document.getElementById('cf-ok').onclick=()=>{closeModal();onOk();};
 }
 
-function confirmAddAllBacklog(){
-  const ci=parseInt(document.getElementById('restore-cat-all').value);
-  const count=state.backlog.length;
-  state.backlog.forEach(item=>state.categories[ci].items.push(item));
-  state.backlog=[];
-  closeModal();
-  showToast(`已將 ${count} 個項目加入「${state.categories[ci].cat}」`);
-  render();
+function openEditModal(ci,ii,isBacklog){
+  const item=isBacklog?S.backlog[ii]:S.cats[ci].items[ii];
+  const memberInputs=S.members.length===0
+    ?'<span style="color:var(--text3);font-size:13px">請先在「成員」中新增成員</span>'
+    :S.members.map(m=>{
+      const ex=item.members.find(x=>x.name===m);
+      const chk=!!ex; const qty=ex?ex.qty:1;
+      const col=memberColor(m);
+      return `<div class="mci${chk?` active`:''}" id="mci-${m}" style="${chk?`border-color:${col};background:${col}11`:''}">
+        <div class="mci-top">
+          <input type="checkbox" id="em-${m}"${chk?' checked':''}>
+          <label for="em-${m}" style="cursor:pointer;font-weight:600;color:${chk?col:'var(--text)'}" id="eml-${m}">${esc(m)}</label>
+        </div>
+        <div class="mci-qty"><span>×</span><input type="number" id="emq-${m}" value="${qty}" min="1"${!chk?' disabled':''}></div>
+      </div>`;
+    }).join('');
+
+  modal(`<div class="modal">
+    <span class="modal-handle"></span>
+    <h3>編輯項目</h3>
+    <div class="fg"><label>名稱</label><input id="edit-name" value="${escAttr(item.name)}"></div>
+    <div class="fg"><label>總數量</label><input id="edit-qty" type="number" min="1" value="${item.qty}"></div>
+    <div class="fg"><label>指定成員</label><div class="member-checks">${memberInputs}</div></div>
+    <div class="mactions">
+      <button class="btn" id="edit-cancel">取消</button>
+      <button class="btn accent" id="edit-save">儲存</button>
+    </div>
+  </div>`);
+
+  document.getElementById('edit-cancel').onclick=closeModal;
+  document.getElementById('edit-name').focus();
+
+  // Member checkbox handlers
+  S.members.forEach(m=>{
+    const cb=document.getElementById('em-'+m);
+    if(!cb)return;
+    cb.addEventListener('change',()=>{
+      const col=memberColor(m);
+      const qi=document.getElementById('emq-'+m);
+      const ci2=document.getElementById('mci-'+m);
+      const lbl=document.getElementById('eml-'+m);
+      qi.disabled=!cb.checked;
+      if(cb.checked){ci2.style.borderColor=col;ci2.style.background=col+'11';lbl.style.color=col;}
+      else{ci2.style.borderColor='';ci2.style.background='';lbl.style.color='var(--text)';}
+    });
+  });
+
+  document.getElementById('edit-save').onclick=()=>{
+    const target=isBacklog?S.backlog[ii]:S.cats[ci].items[ii];
+    target.name=document.getElementById('edit-name').value.trim()||target.name;
+    target.qty=parseInt(document.getElementById('edit-qty').value)||1;
+    target.members=S.members.filter(m=>{
+      const cb=document.getElementById('em-'+m);return cb&&cb.checked;
+    }).map(m=>({name:m,qty:parseInt(document.getElementById('emq-'+m).value)||1}));
+    closeModal();render();
+  };
 }
 
 function openRestoreModal(item){
-  const mc=document.getElementById('modal-container');
-  mc.innerHTML=`<div class="modal-bg" onclick="if(event.target===this)closeModal()">
-    <div class="modal">
-      <h3>選擇加入的分類</h3>
-      <div class="form-group">
-        <label>「${item.name}」要加入哪個分類？</label>
-        <select id="restore-cat">
-          ${state.categories.map((c,i)=>`<option value="${i}">${c.cat}</option>`).join('')}
-        </select>
-      </div>
-      <div class="modal-actions">
-        <button class="btn" onclick="closeModal();render()">取消</button>
-        <button class="btn primary" onclick="confirmRestore(${JSON.stringify(JSON.stringify(item))})">加入</button>
-      </div>
+  modal(`<div class="modal">
+    <span class="modal-handle"></span>
+    <h3>選擇加入的分類</h3>
+    <div class="fg">
+      <label>「${esc(item.name)}」要加入哪個分類？</label>
+      <select id="restore-cat">${S.cats.map((c,i)=>`<option value="${i}">${esc(c.cat)}</option>`).join('')}</select>
     </div>
-  </div>`;
-  window._restoreItem=item;
-}
-
-function confirmRestore(itemJson){
-  const ci=parseInt(document.getElementById('restore-cat').value);
-  state.categories[ci].items.push(window._restoreItem);
-  closeModal();showToast('已加回主清單');render();
-}
-
-function editItem(ci,ii,isBacklog){
-  const item=isBacklog?state.backlog[ii]:state.categories[ci].items[ii];
-  window._editCtx={ci,ii,isBacklog};
-  const mc=document.getElementById('modal-container');
-  let memberInputs=state.members.map(m=>{
-    const existing=item.members.find(x=>x.name===m);
-    const chk=!!existing;const qty=existing?existing.qty:1;
-    const col=getMemberColor(m);
-    return `<div class="member-check-item" style="${chk?`border-color:${col};background:${col}11`:''}" id="mci_${m}">
-      <input type="checkbox" id="em_${m}" ${chk?'checked':''} onchange="toggleEditMember('${m}','${col}')">
-      <label for="em_${m}" style="cursor:pointer;color:${chk?col:'var(--text)'}">${m}</label>
-      <div class="member-qty-wrap">
-        <span>×</span><input type="number" class="member-qty" id="emq_${m}" value="${qty}" min="1" ${!chk?'disabled':''}>
-      </div>
-    </div>`;
-  }).join('');
-  mc.innerHTML=`<div class="modal-bg" onclick="if(event.target===this)closeModal()">
-    <div class="modal">
-      <h3>編輯項目</h3>
-      <div class="form-group"><label>名稱</label><input id="edit-name" value="${item.name}"></div>
-      <div class="form-group"><label>總數量</label><input id="edit-qty" type="number" min="1" value="${item.qty}"></div>
-      <div class="form-group"><label>指定成員</label><div class="member-checks">${memberInputs||'<span style="color:var(--text3);font-size:13px">尚未設定成員，請先在「成員」中新增</span>'}</div></div>
-      <div class="modal-actions">
-        <button class="btn" onclick="closeModal()">取消</button>
-        <button class="btn primary" onclick="saveEdit()">儲存</button>
-      </div>
+    <div class="mactions">
+      <button class="btn" id="restore-cancel">取消</button>
+      <button class="btn accent" id="restore-ok">加入</button>
     </div>
-  </div>`;
+  </div>`);
+  document.getElementById('restore-cancel').onclick=()=>{closeModal();};
+  document.getElementById('restore-ok').onclick=()=>{
+    const ci=parseInt(document.getElementById('restore-cat').value);
+    S.cats[ci].items.push(item);
+    closeModal();toast('已加回主清單');render();
+  };
 }
 
-function toggleEditMember(name,col){
-  const cb=document.getElementById('em_'+name);
-  const qi=document.getElementById('emq_'+name);
-  const ci=document.getElementById('mci_'+name);
-  qi.disabled=!cb.checked;
-  if(cb.checked){ci.style.borderColor=col;ci.style.background=col+'11';ci.querySelector('label').style.color=col;}
-  else{ci.style.borderColor='';ci.style.background='';ci.querySelector('label').style.color='var(--text)';}
-}
-
-function saveEdit(){
-  const ctx=window._editCtx;
-  const item=ctx.isBacklog?state.backlog[ctx.ii]:state.categories[ctx.ci].items[ctx.ii];
-  item.name=document.getElementById('edit-name').value.trim()||item.name;
-  item.qty=parseInt(document.getElementById('edit-qty').value)||1;
-  const newMembers=[];
-  state.members.forEach(m=>{
-    const cb=document.getElementById('em_'+m);
-    if(cb&&cb.checked){const qty=parseInt(document.getElementById('emq_'+m).value)||1;newMembers.push({name:m,qty});}
-  });
-  item.members=newMembers;
-  closeModal();render();
+function openAddBacklogModal(){
+  const count=S.backlog.length;
+  modal(`<div class="modal">
+    <span class="modal-handle"></span>
+    <h3>加入全部備用項目</h3>
+    <div class="fg">
+      <label>將 ${count} 個備用項目加入哪個分類？</label>
+      <select id="abl-cat">${S.cats.map((c,i)=>`<option value="${i}">${esc(c.cat)}</option>`).join('')}</select>
+    </div>
+    <div class="mactions">
+      <button class="btn" id="abl-cancel">取消</button>
+      <button class="btn accent" id="abl-ok">加入</button>
+    </div>
+  </div>`);
+  document.getElementById('abl-cancel').onclick=closeModal;
+  document.getElementById('abl-ok').onclick=()=>{
+    const ci=parseInt(document.getElementById('abl-cat').value);
+    S.backlog.forEach(it=>S.cats[ci].items.push(it));
+    S.backlog=[];
+    closeModal();toast(`已將 ${count} 個項目加入「${S.cats[ci].cat}」`);render();
+  };
 }
 
 function openMembersModal(){
-  const mc=document.getElementById('modal-container');
-  const chips=state.members.map((m,i)=>{
-    const col=getMemberColor(m);
-    return `<div class="member-chip">
-      <div class="member-dot" style="background:${col}"></div>
-      ${m}
-      <span class="member-del" onclick="deleteMember(${i})">×</span>
-    </div>`;
-  }).join('');
-  mc.innerHTML=`<div class="modal-bg" onclick="if(event.target===this)closeModal()">
-    <div class="modal">
-      <h3>成員管理</h3>
-      <div class="members-list">${chips||'<span style="color:var(--text3);font-size:13px">尚未新增成員</span>'}</div>
-      <div class="form-group">
-        <label>新增成員</label>
-        <div class="add-member-row">
-          <input id="new-member" placeholder="輸入名稱" onkeydown="if(event.key==='Enter')addMember()">
-          <button class="btn primary" onclick="addMember()"><i class="ti ti-plus" aria-hidden="true"></i>新增</button>
-        </div>
-      </div>
-      <div class="modal-actions">
-        <button class="btn primary" onclick="closeModal()">完成</button>
+  const chips=S.members.length===0
+    ?'<span style="color:var(--text3);font-size:13px">尚未新增成員</span>'
+    :S.members.map((m,i)=>{
+      const col=memberColor(m);
+      return `<div class="mchip"><div class="mdot" style="background:${col}"></div>${esc(m)}<span class="mdel" data-mi="${i}">×</span></div>`;
+    }).join('');
+
+  modal(`<div class="modal">
+    <span class="modal-handle"></span>
+    <h3>成員管理</h3>
+    <div class="mlist">${chips}</div>
+    <div class="fg">
+      <label>新增成員</label>
+      <div class="add-m-row">
+        <input id="new-m" placeholder="輸入名稱">
+        <button class="btn accent" id="add-m-btn"><i class="ti ti-plus"></i>新增</button>
       </div>
     </div>
-  </div>`;
-  setTimeout(()=>{const el=document.getElementById('new-member');if(el)el.focus();},100);
+    <div class="mactions"><button class="btn accent" id="m-done">完成</button></div>
+  </div>`);
+
+  document.getElementById('m-done').onclick=closeModal;
+  document.getElementById('new-m').addEventListener('keydown',e=>{if(e.key==='Enter')doAddMember();});
+  document.getElementById('add-m-btn').onclick=doAddMember;
+  document.querySelectorAll('.mdel').forEach(el=>{
+    el.addEventListener('click',()=>doDeleteMember(parseInt(el.dataset.mi)));
+  });
+  setTimeout(()=>{const el=document.getElementById('new-m');if(el)el.focus();},80);
 }
 
-function addMember(){
-  const input=document.getElementById('new-member');
+function doAddMember(){
+  const input=document.getElementById('new-m');
   const name=input.value.trim();
-  if(!name){showToast('請輸入名稱');return;}
-  if(state.members.includes(name)){showToast('成員已存在');return;}
-  state.members.push(name);
-  saveState();
+  if(!name){toast('請輸入名稱');return;}
+  if(S.members.includes(name)){toast('成員已存在');return;}
+  S.members.push(name);
+  save();
   openMembersModal();
 }
 
-function deleteMember(i){
-  const name=state.members[i];
-  if(!confirm(`確定移除「${name}」？相關指定記錄也會一併刪除`))return;
-  state.members.splice(i,1);
-  state.categories.forEach(c=>c.items.forEach(it=>{
-    it.members=it.members.filter(m=>m.name!==name);
-    delete it.memberChecks[name];
-  }));
-  saveState();
-  openMembersModal();
-  render();
+function doDeleteMember(i){
+  const name=S.members[i];
+  showConfirm(`移除成員「${name}」？`,'相關指定記錄也會一併移除',()=>{
+    S.members.splice(i,1);
+    S.cats.forEach(c=>c.items.forEach(it=>{
+      it.members=it.members.filter(m=>m.name!==name);
+      delete it.mc[name];
+    }));
+    save();
+    openMembersModal();
+    render();
+  });
 }
 
-function closeModal(){document.getElementById('modal-container').innerHTML='';}
+// ─── Utils ────────────────────────────────────────────────────────
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function escAttr(s){return esc(s);}
 
-function showToast(msg){
-  const t=document.getElementById('toast');
-  t.textContent=msg;t.classList.add('show');
-  setTimeout(()=>t.classList.remove('show'),2500);
+let toastTimer;
+function toast(msg){
+  const el=document.getElementById('toast');
+  el.textContent=msg;el.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer=setTimeout(()=>el.classList.remove('show'),2600);
 }
 
+// ─── Init ─────────────────────────────────────────────────────────
 loadState();
 render();
 </script>
