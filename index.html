@@ -23,11 +23,17 @@
   --border:#38383a;--border2:#48484a;
   --accent-light:#0a3025;
 }}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
-.app{max-width:720px;margin:0 auto;padding:16px 16px 40px}
+html,body{height:100%;height:100dvh;overflow:hidden}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);display:flex;flex-direction:column}
+
+/* Full-height shell */
+.app{flex:1;display:flex;flex-direction:column;max-width:720px;width:100%;margin:0 auto;min-height:0}
+
+/* Sticky top zone */
+.sticky-top{flex-shrink:0;padding:14px 16px 0;background:var(--bg)}
 
 /* Header */
-.header{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;gap:8px}
+.header{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;gap:8px}
 .title{font-size:19px;font-weight:700;display:flex;align-items:center;gap:7px;white-space:nowrap}
 .title i{color:var(--accent)}
 .header-actions{display:flex;gap:6px;flex-shrink:0}
@@ -40,19 +46,25 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-seri
 .btn.success-ol{color:var(--accent);border-color:var(--accent)}
 
 /* Stats */
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:14px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px}
 .stat{background:var(--bg2);border-radius:var(--radius);padding:10px 8px;text-align:center}
 .stat-num{font-size:21px;font-weight:700}
 .stat-num.green{color:var(--accent)}
 .stat-label{font-size:10px;color:var(--text2);margin-top:1px;text-transform:uppercase;letter-spacing:.3px}
 
-/* Tabs */
-.tabs{display:flex;gap:0;margin-bottom:14px;border-bottom:1px solid var(--border)}
+/* Tabs row */
+.tabs{display:flex;border-bottom:1px solid var(--border)}
 .tab{padding:9px 16px;font-size:14px;cursor:pointer;border:none;background:none;color:var(--text2);border-bottom:2px solid transparent;margin-bottom:-1px;font-weight:500;transition:color .15s}
 .tab.active{color:var(--accent);border-bottom-color:var(--accent)}
 
+/* Tab content wrapper: fills remaining height, contains sticky subheader + scroll pane */
+.tab-content{flex:1;display:flex;flex-direction:column;min-height:0}
+
+/* Per-tab sticky subheader (chips + sel-toolbar) */
+.tab-sticky{flex-shrink:0;padding:10px 16px 0;background:var(--bg)}
+
 /* Cat chips */
-.cat-chips{display:flex;gap:7px;overflow-x:auto;padding-bottom:4px;-webkit-overflow-scrolling:touch;scrollbar-width:none;margin-bottom:12px}
+.cat-chips{display:flex;gap:7px;overflow-x:auto;padding-bottom:8px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
 .cat-chips::-webkit-scrollbar{display:none}
 .cat-chip{display:inline-flex;align-items:center;gap:5px;padding:6px 12px;border-radius:20px;font-size:13px;font-weight:500;cursor:pointer;white-space:nowrap;border:1.5px solid var(--border);background:var(--bg);color:var(--text2);transition:all .15s;flex-shrink:0}
 .cat-chip:active{transform:scale(.95)}
@@ -66,6 +78,9 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-seri
 .sel-all-label{font-size:13px;font-weight:500;color:var(--text2);white-space:nowrap}
 .sel-count-label{font-size:13px;font-weight:600;color:var(--accent);white-space:nowrap}
 .sel-toolbar .btn{padding:6px 10px;font-size:12px}
+
+/* Scrollable list pane */
+.tab-pane{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;min-height:0;padding:0 16px 32px}
 
 /* Round checkbox used in sel-toolbar and items */
 .rcheck{width:20px;height:20px;border-radius:50%;border:2px solid var(--border2);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .15s;background:var(--bg);cursor:pointer}
@@ -164,55 +179,64 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-seri
 </head>
 <body>
 <div class="app">
-  <div class="header">
-    <div class="title"><i class="ti ti-plane-tilt"></i>行李清單</div>
-    <div class="header-actions">
-      <button class="btn" id="btn-members"><i class="ti ti-users"></i>成員</button>
-      <button class="btn success-ol" id="btn-add-backlog"><i class="ti ti-download"></i>加入備用</button>
-      <button class="btn danger-ol" id="btn-uncheck"><i class="ti ti-refresh"></i>反勾選</button>
-    </div>
-  </div>
-
-  <div class="stats" id="stats"></div>
-
-  <div class="tabs">
-    <button class="tab active" data-tab="main">主要清單</button>
-    <button class="tab" data-tab="backlog">備用 <span id="backlog-badge"></span></button>
-  </div>
-
-  <!-- MAIN TAB -->
-  <div id="tab-main">
-    <div class="cat-chips" id="cat-chips"></div>
-
-    <!-- Main select toolbar -->
-    <div class="sel-toolbar" id="main-sel-toolbar">
-      <div class="sel-all-wrap" id="main-sel-all">
-        <div class="rcheck" id="main-rcheck"></div>
-        <span class="sel-all-label" id="main-sel-label">多選</span>
+  <!-- ① Sticky top: header + stats + tabs -->
+  <div class="sticky-top">
+    <div class="header">
+      <div class="title"><i class="ti ti-plane-tilt"></i>行李清單</div>
+      <div class="header-actions">
+        <button class="btn" id="btn-members"><i class="ti ti-users"></i>成員</button>
+        <button class="btn success-ol" id="btn-add-backlog"><i class="ti ti-download"></i>加入備用</button>
+        <button class="btn danger-ol" id="btn-uncheck"><i class="ti ti-refresh"></i>反勾選</button>
       </div>
-      <span class="sel-count-label" id="main-sel-count" style="display:none"></span>
-      <button class="btn" id="main-sel-cancel" style="display:none"><i class="ti ti-x"></i>取消</button>
-      <button class="btn accent" id="main-sel-move" style="display:none"><i class="ti ti-archive"></i>移至備用</button>
     </div>
-
-    <div id="sections-list"></div>
+    <div class="stats" id="stats"></div>
+    <div class="tabs">
+      <button class="tab active" data-tab="main">主要清單</button>
+      <button class="tab" data-tab="backlog">備用 <span id="backlog-badge"></span></button>
+    </div>
   </div>
 
-  <!-- BACKLOG TAB -->
-  <div id="tab-backlog" style="display:none">
-    <!-- Backlog select toolbar -->
-    <div class="sel-toolbar" id="bl-sel-toolbar">
-      <div class="sel-all-wrap" id="bl-sel-all">
-        <div class="rcheck" id="bl-rcheck"></div>
-        <span class="sel-all-label" id="bl-sel-label">多選</span>
+  <!-- ② Tab content area: fills remaining height -->
+  <div class="tab-content">
+
+    <!-- MAIN TAB -->
+    <div id="tab-main" style="display:flex;flex-direction:column;flex:1;min-height:0">
+      <!-- sticky subheader: chips + sel-toolbar -->
+      <div class="tab-sticky">
+        <div class="cat-chips" id="cat-chips"></div>
+        <div class="sel-toolbar">
+          <div class="sel-all-wrap" id="main-sel-all">
+            <div class="rcheck" id="main-rcheck"></div>
+            <span class="sel-all-label" id="main-sel-label">多選</span>
+          </div>
+          <span class="sel-count-label" id="main-sel-count" style="display:none"></span>
+          <button class="btn" id="main-sel-cancel" style="display:none"><i class="ti ti-x"></i>取消</button>
+          <button class="btn accent" id="main-sel-move" style="display:none"><i class="ti ti-archive"></i>移至備用</button>
+        </div>
       </div>
-      <span class="sel-count-label" id="bl-sel-count" style="display:none"></span>
-      <button class="btn" id="bl-sel-cancel" style="display:none"><i class="ti ti-x"></i>取消</button>
-      <button class="btn accent" id="bl-sel-add" style="display:none"><i class="ti ti-list-check"></i>加入清單</button>
+      <!-- scrollable list -->
+      <div class="tab-pane" id="sections-list"></div>
     </div>
 
-    <div id="backlog-list"></div>
-  </div>
+    <!-- BACKLOG TAB -->
+    <div id="tab-backlog" style="display:none;flex-direction:column;flex:1;min-height:0">
+      <!-- sticky subheader: sel-toolbar -->
+      <div class="tab-sticky">
+        <div class="sel-toolbar">
+          <div class="sel-all-wrap" id="bl-sel-all">
+            <div class="rcheck" id="bl-rcheck"></div>
+            <span class="sel-all-label" id="bl-sel-label">多選</span>
+          </div>
+          <span class="sel-count-label" id="bl-sel-count" style="display:none"></span>
+          <button class="btn" id="bl-sel-cancel" style="display:none"><i class="ti ti-x"></i>取消</button>
+          <button class="btn accent" id="bl-sel-add" style="display:none"><i class="ti ti-list-check"></i>加入清單</button>
+        </div>
+      </div>
+      <!-- scrollable list -->
+      <div class="tab-pane" id="backlog-list"></div>
+    </div>
+
+  </div><!-- end tab-content -->
 </div>
 
 <div id="modal-root"></div>
@@ -539,8 +563,9 @@ document.addEventListener('click',e=>{
     S.activeCat=(S.activeCat===ci)?null:ci;
     render();
     if(S.activeCat!==null){
-      const sec=document.getElementById('sec-'+ci);
-      if(sec) sec.scrollIntoView({behavior:'smooth',block:'start'});
+      // When a single cat is active, pane always starts at top
+      const pane=document.getElementById('sections-list');
+      if(pane) pane.scrollTop=0;
     }
     return;
   }
@@ -551,8 +576,10 @@ document.addEventListener('click',e=>{
     document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
     tab.classList.add('active');
     const t=tab.dataset.tab;
-    document.getElementById('tab-main').style.display=t==='main'?'':'none';
-    document.getElementById('tab-backlog').style.display=t==='backlog'?'':'none';
+    const tabMain=document.getElementById('tab-main');
+    const tabBl=document.getElementById('tab-backlog');
+    tabMain.style.display=t==='main'?'flex':'none';
+    tabBl.style.display=t==='backlog'?'flex':'none';
     exitSel();
     return;
   }
