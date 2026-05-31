@@ -11,7 +11,7 @@
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
   --bg:#fff;--bg2:#f5f5f5;--bg3:#e8e8e8;
-  --text:#1a1a1a;--text2:#666;--text3:#999;
+  --text:#1a1a1a;--text2:#666;--text3:#aaa;
   --border:#e0e0e0;--border2:#ccc;
   --accent:#1D9E75;--accent-light:#e1f5ee;
   --danger:#E24B4A;
@@ -24,19 +24,15 @@
   --accent-light:#0a3025;
 }}
 html,body{height:100%;height:100dvh;overflow:hidden}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text);display:flex;flex-direction:column}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;background:var(--bg2);color:var(--text);display:flex;flex-direction:column}
 
-/* Full-height shell */
-.app{flex:1;display:flex;flex-direction:column;max-width:720px;width:100%;margin:0 auto;min-height:0}
-
-/* Sticky top zone */
-.sticky-top{flex-shrink:0;padding:14px 16px 0;background:var(--bg)}
-
-/* Header */
-.header{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;gap:8px}
-.title{font-size:19px;font-weight:700;display:flex;align-items:center;gap:7px;white-space:nowrap}
-.title i{color:var(--accent)}
-.header-actions{display:flex;gap:6px;flex-shrink:0}
+/* ── Shared ── */
+.screen{display:none;flex:1;flex-direction:column;min-height:0}
+.screen.active{display:flex}
+.sticky-top{flex-shrink:0;background:var(--bg);border-bottom:1px solid var(--border)}
+.tab-content{flex:1;display:flex;flex-direction:column;min-height:0}
+.tab-pane{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;padding:0 16px 32px}
+.tab-sticky{flex-shrink:0;padding:10px 16px 0;background:var(--bg)}
 .btn{display:inline-flex;align-items:center;gap:5px;padding:7px 11px;border:1px solid var(--border2);background:var(--bg);border-radius:var(--radius);font-size:13px;cursor:pointer;color:var(--text);transition:all .15s;white-space:nowrap;font-weight:500}
 .btn:hover{background:var(--bg2)}
 .btn:active{transform:scale(.97)}
@@ -44,52 +40,73 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-seri
 .btn.accent:hover{opacity:.88}
 .btn.danger-ol{color:var(--danger);border-color:var(--danger)}
 .btn.success-ol{color:var(--accent);border-color:var(--accent)}
+.btn.ghost{border-color:transparent;background:transparent}
+.btn.ghost:hover{background:var(--bg2)}
 
-/* Stats */
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px}
-.stat{background:var(--bg2);border-radius:var(--radius);padding:10px 8px;text-align:center}
-.stat-num{font-size:21px;font-weight:700}
+/* ── Home screen ── */
+#screen-home{background:var(--bg2)}
+.home-header{padding:20px 16px 16px;background:var(--bg2)}
+.home-title{font-size:22px;font-weight:700;display:flex;align-items:center;gap:8px;margin-bottom:4px}
+.home-title i{color:var(--accent)}
+.home-sub{font-size:13px;color:var(--text2)}
+.home-scroll{flex:1;overflow-y:auto;padding:0 16px 32px}
+.trip-list{display:flex;flex-direction:column;gap:10px;padding-top:4px}
+.trip-card{background:var(--bg);border-radius:var(--radius-lg);border:1px solid var(--border);overflow:hidden;cursor:pointer;transition:all .15s}
+.trip-card:hover{border-color:var(--accent);box-shadow:0 2px 12px rgba(29,158,117,.12)}
+.trip-card:active{transform:scale(.99)}
+.trip-card-body{padding:14px 16px 12px}
+.trip-name{font-size:16px;font-weight:700;margin-bottom:4px;display:flex;align-items:center;gap:8px}
+.trip-meta{font-size:12px;color:var(--text2);display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.trip-progress-wrap{height:4px;background:var(--border);border-radius:0 0 var(--radius-lg) var(--radius-lg);overflow:hidden}
+.trip-progress-bar{height:100%;background:var(--accent);transition:width .4s}
+.trip-card-actions{display:flex;justify-content:flex-end;gap:6px;padding:8px 12px;border-top:1px solid var(--border);background:var(--bg2)}
+.add-trip-card{background:transparent;border:2px dashed var(--border2);border-radius:var(--radius-lg);padding:20px;display:flex;align-items:center;justify-content:center;gap:8px;cursor:pointer;color:var(--text2);font-size:14px;font-weight:500;transition:all .15s}
+.add-trip-card:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-light)}
+.empty-home{padding:48px 24px;text-align:center;color:var(--text2)}
+.empty-home i{font-size:48px;display:block;margin-bottom:12px;color:var(--text3)}
+.empty-home h3{font-size:16px;font-weight:600;margin-bottom:6px}
+.empty-home p{font-size:13px}
+
+/* ── Trip screen header ── */
+.trip-header{display:flex;align-items:center;gap:8px;padding:12px 16px;min-height:52px}
+.back-btn{width:34px;height:34px;display:flex;align-items:center;justify-content:center;border:none;background:none;cursor:pointer;border-radius:var(--radius);color:var(--text2);font-size:20px;flex-shrink:0;transition:all .15s}
+.back-btn:hover{background:var(--bg2)}
+.trip-header-name{flex:1;font-size:16px;font-weight:700;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.trip-header-actions{display:flex;gap:4px;flex-shrink:0}
+
+/* ── Stats ── */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:12px 16px}
+.stat{background:var(--bg2);border-radius:var(--radius);padding:9px 8px;text-align:center}
+.stat-num{font-size:20px;font-weight:700}
 .stat-num.green{color:var(--accent)}
 .stat-label{font-size:10px;color:var(--text2);margin-top:1px;text-transform:uppercase;letter-spacing:.3px}
 
-/* Tabs row */
-.tabs{display:flex;border-bottom:1px solid var(--border)}
-.tab{padding:9px 16px;font-size:14px;cursor:pointer;border:none;background:none;color:var(--text2);border-bottom:2px solid transparent;margin-bottom:-1px;font-weight:500;transition:color .15s}
+/* ── Tabs ── */
+.tabs{display:flex;padding:0 16px;border-bottom:1px solid var(--border)}
+.tab{padding:9px 14px;font-size:14px;cursor:pointer;border:none;background:none;color:var(--text2);border-bottom:2px solid transparent;margin-bottom:-1px;font-weight:500;transition:color .15s}
 .tab.active{color:var(--accent);border-bottom-color:var(--accent)}
 
-/* Tab content wrapper: fills remaining height, contains sticky subheader + scroll pane */
-.tab-content{flex:1;display:flex;flex-direction:column;min-height:0}
-
-/* Per-tab sticky subheader (chips + sel-toolbar) */
-.tab-sticky{flex-shrink:0;padding:10px 16px 0;background:var(--bg)}
-
-/* Cat chips */
+/* ── Cat chips ── */
 .cat-chips{display:flex;gap:7px;overflow-x:auto;padding-bottom:8px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
 .cat-chips::-webkit-scrollbar{display:none}
 .cat-chip{display:inline-flex;align-items:center;gap:5px;padding:6px 12px;border-radius:20px;font-size:13px;font-weight:500;cursor:pointer;white-space:nowrap;border:1.5px solid var(--border);background:var(--bg);color:var(--text2);transition:all .15s;flex-shrink:0}
-.cat-chip:active{transform:scale(.95)}
 .cat-chip.active{background:var(--accent);color:#fff;border-color:var(--accent)}
 .chip-count{font-size:10px;border-radius:8px;padding:1px 5px;margin-left:2px;background:rgba(255,255,255,.3)}
 .cat-chip:not(.active) .chip-count{background:var(--bg3);color:var(--text2)}
 
-/* Multi-select toolbar */
+/* ── Sel toolbar ── */
 .sel-toolbar{display:flex;align-items:center;gap:8px;padding:8px 12px;background:var(--bg2);border-radius:var(--radius);margin-bottom:10px;border:1px solid var(--border)}
 .sel-all-wrap{display:flex;align-items:center;gap:8px;flex:1;cursor:pointer;min-width:0}
 .sel-all-label{font-size:13px;font-weight:500;color:var(--text2);white-space:nowrap}
 .sel-count-label{font-size:13px;font-weight:600;color:var(--accent);white-space:nowrap}
 .sel-toolbar .btn{padding:6px 10px;font-size:12px}
-
-/* Scrollable list pane */
-.tab-pane{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;min-height:0;padding:0 16px 32px}
-
-/* Round checkbox used in sel-toolbar and items */
 .rcheck{width:20px;height:20px;border-radius:50%;border:2px solid var(--border2);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .15s;background:var(--bg);cursor:pointer}
 .rcheck.on{background:var(--accent);border-color:var(--accent)}
 .rcheck.on::after{content:'✓';color:#fff;font-size:11px;font-weight:800}
-.rcheck.indeterminate{background:var(--bg);border-color:var(--accent)}
+.rcheck.indeterminate{border-color:var(--accent)}
 .rcheck.indeterminate::after{content:'–';color:var(--accent);font-size:13px;font-weight:800}
 
-/* Section */
+/* ── Sections & items ── */
 .section{margin-bottom:8px}
 .section-header{display:flex;align-items:center;justify-content:space-between;padding:10px 12px;background:var(--bg2);border-radius:var(--radius) var(--radius) 0 0;cursor:pointer;border:1px solid var(--border);border-bottom:none;user-select:none}
 .section-header.collapsed{border-radius:var(--radius);border-bottom:1px solid var(--border)}
@@ -98,22 +115,17 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-seri
 .section-count{font-size:12px;color:var(--text2);font-weight:500}
 .prog-wrap{height:2px;background:var(--border);overflow:hidden}
 .prog-bar{height:100%;background:var(--accent);transition:width .4s}
-
-/* Items */
 .items-list{border:1px solid var(--border);border-top:none;border-radius:0 0 var(--radius) var(--radius);overflow:hidden}
-.item-row{display:flex;align-items:flex-start;gap:10px;padding:10px 12px;border-bottom:1px solid var(--border);background:var(--bg);transition:background .12s;cursor:default}
+.item-row{display:flex;align-items:flex-start;gap:10px;padding:10px 12px;border-bottom:1px solid var(--border);background:var(--bg);transition:background .12s}
 .item-row:last-child{border-bottom:none}
 .item-row.done{background:var(--bg2)}
 .item-row.done .item-name{color:var(--text3);text-decoration:line-through}
 .item-row.sel-on{background:var(--accent-light)!important}
 .item-row.sel-on .item-name{color:var(--text)!important;text-decoration:none!important}
 .item-row.selectable{cursor:pointer}
-
-/* Normal check */
 .item-check{width:21px;height:21px;border-radius:5px;border:2px solid var(--border2);cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;transition:all .15s;background:var(--bg)}
 .item-check.on{background:var(--accent);border-color:var(--accent)}
 .item-check.on::after{content:'✓';color:#fff;font-size:12px;font-weight:800}
-
 .item-main{flex:1;min-width:0}
 .item-name{font-size:14px;line-height:1.45;word-break:break-word}
 .qty-badge{display:inline-block;font-size:11px;color:var(--text3);background:var(--bg3);padding:1px 7px;border-radius:9px;margin-top:4px}
@@ -124,26 +136,19 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-seri
 .m-check.on::after{content:'✓';color:#fff;font-size:9px;font-weight:800}
 .m-tag{font-size:11px;padding:2px 8px;border-radius:9px;font-weight:600;white-space:nowrap}
 .m-qty{font-size:11px;color:var(--text3)}
-
 .item-actions{display:flex;gap:2px;flex-shrink:0;opacity:0;transition:opacity .15s}
 .item-row:hover .item-actions{opacity:1}
 @media(hover:none){.item-actions{opacity:1}}
 .iab{width:30px;height:30px;display:flex;align-items:center;justify-content:center;border:none;background:none;cursor:pointer;border-radius:6px;color:var(--text2);font-size:16px;transition:all .15s}
 .iab:hover{background:var(--bg3);color:var(--text)}
 .iab.del:hover{color:var(--danger)}
-
-/* Add row */
 .add-row{display:flex;align-items:center;gap:8px;padding:8px 12px;border-top:1px solid var(--border);background:var(--bg)}
 .add-input{flex:1;border:none;background:transparent;font-size:14px;color:var(--text);outline:none;min-width:0}
 .add-input::placeholder{color:var(--text3)}
-
-/* Empty */
 .empty{padding:40px 16px;text-align:center;color:var(--text2)}
-.empty i{font-size:40px;display:block;margin-bottom:10px;color:var(--text3)}
-.empty p{font-size:14px;margin-bottom:4px}
-.empty small{font-size:12px;color:var(--text3)}
+.empty i{font-size:36px;display:block;margin-bottom:10px;color:var(--text3)}
 
-/* Modal – bottom sheet on mobile */
+/* ── Modal ── */
 .mbg{position:fixed;inset:0;background:rgba(0,0,0,.5);display:flex;align-items:flex-end;justify-content:center;z-index:200}
 @media(min-width:500px){.mbg{align-items:center;padding:16px}}
 .modal{background:var(--bg);border-radius:var(--radius-lg) var(--radius-lg) 0 0;padding:20px 20px 36px;width:100%;max-width:460px;max-height:92vh;overflow-y:auto}
@@ -153,8 +158,8 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-seri
 .modal h3{font-size:16px;font-weight:700;margin-bottom:14px}
 .fg{margin-bottom:12px}
 .fg label{display:block;font-size:12px;color:var(--text2);margin-bottom:5px;font-weight:600;text-transform:uppercase;letter-spacing:.3px}
-.fg input,.fg select{width:100%;padding:9px 11px;border:1px solid var(--border2);border-radius:var(--radius);font-size:14px;background:var(--bg);color:var(--text);outline:none}
-.fg input:focus,.fg select:focus{border-color:var(--accent)}
+.fg input,.fg select,.fg textarea{width:100%;padding:9px 11px;border:1px solid var(--border2);border-radius:var(--radius);font-size:14px;background:var(--bg);color:var(--text);outline:none}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--accent)}
 .mactions{display:flex;gap:8px;justify-content:flex-end;margin-top:16px}
 .member-checks{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
 .mci{display:flex;flex-direction:column;gap:4px;font-size:13px;padding:8px 10px;border:1.5px solid var(--border);border-radius:var(--radius);min-width:80px}
@@ -171,22 +176,36 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-seri
 .confirm-modal{background:var(--bg);border-radius:var(--radius-lg);padding:20px;width:100%;max-width:320px;border:1px solid var(--border)}
 .confirm-modal p{font-size:14px;color:var(--text2);margin-bottom:16px;line-height:1.5}
 
-/* Toast */
+/* ── Toast ── */
 .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(20px);background:#111;color:#fff;padding:10px 18px;border-radius:20px;font-size:13px;opacity:0;transition:all .25s;z-index:300;pointer-events:none;white-space:nowrap;font-weight:500}
 .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 @media(prefers-color-scheme:dark){.toast{background:#f0f0f0;color:#111}}
 </style>
 </head>
 <body>
-<div class="app">
-  <!-- ① Sticky top: header + stats + tabs -->
+
+<!-- ══════════════ HOME SCREEN ══════════════ -->
+<div id="screen-home" class="screen active">
+  <div class="home-header sticky-top" style="border-bottom:none">
+    <div class="home-title"><i class="ti ti-plane-tilt"></i>出國行李清單</div>
+    <div class="home-sub">管理你的每趟旅程行李</div>
+  </div>
+  <div class="home-scroll">
+    <div class="trip-list" id="trip-list"></div>
+  </div>
+</div>
+
+<!-- ══════════════ TRIP SCREEN ══════════════ -->
+<div id="screen-trip" class="screen">
+  <!-- sticky top -->
   <div class="sticky-top">
-    <div class="header">
-      <div class="title"><i class="ti ti-plane-tilt"></i>行李清單</div>
-      <div class="header-actions">
-        <button class="btn" id="btn-members"><i class="ti ti-users"></i>成員</button>
-        <button class="btn success-ol" id="btn-add-backlog"><i class="ti ti-download"></i>加入備用</button>
-        <button class="btn danger-ol" id="btn-uncheck"><i class="ti ti-refresh"></i>反勾選</button>
+    <div class="trip-header">
+      <button class="back-btn" id="btn-back"><i class="ti ti-chevron-left"></i></button>
+      <div class="trip-header-name" id="trip-title"></div>
+      <div class="trip-header-actions">
+        <button class="btn ghost" id="btn-members"><i class="ti ti-users"></i></button>
+        <button class="btn ghost" id="btn-add-backlog" title="加入全部備用"><i class="ti ti-download"></i></button>
+        <button class="btn ghost danger-ol" id="btn-uncheck" title="全部反勾選"><i class="ti ti-refresh"></i></button>
       </div>
     </div>
     <div class="stats" id="stats"></div>
@@ -196,12 +215,10 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-seri
     </div>
   </div>
 
-  <!-- ② Tab content area: fills remaining height -->
+  <!-- tab content -->
   <div class="tab-content">
-
     <!-- MAIN TAB -->
     <div id="tab-main" style="display:flex;flex-direction:column;flex:1;min-height:0">
-      <!-- sticky subheader: chips + sel-toolbar -->
       <div class="tab-sticky">
         <div class="cat-chips" id="cat-chips"></div>
         <div class="sel-toolbar">
@@ -214,13 +231,10 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-seri
           <button class="btn accent" id="main-sel-move" style="display:none"><i class="ti ti-archive"></i>移至備用</button>
         </div>
       </div>
-      <!-- scrollable list -->
       <div class="tab-pane" id="sections-list"></div>
     </div>
-
     <!-- BACKLOG TAB -->
     <div id="tab-backlog" style="display:none;flex-direction:column;flex:1;min-height:0">
-      <!-- sticky subheader: sel-toolbar -->
       <div class="tab-sticky">
         <div class="sel-toolbar">
           <div class="sel-all-wrap" id="bl-sel-all">
@@ -232,20 +246,20 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-seri
           <button class="btn accent" id="bl-sel-add" style="display:none"><i class="ti ti-list-check"></i>加入清單</button>
         </div>
       </div>
-      <!-- scrollable list -->
       <div class="tab-pane" id="backlog-list"></div>
     </div>
-
-  </div><!-- end tab-content -->
+  </div>
 </div>
 
 <div id="modal-root"></div>
 <div class="toast" id="toast"></div>
 
 <script>
-// ── Constants ──────────────────────────────────────────────────────
+// ── Constants ─────────────────────────────────────────────────────
 const COLORS=['#378ADD','#D4537E','#1D9E75','#BA7517','#7F77DD','#D85A30','#E24B4A'];
-const STORAGE_KEY='packing-v3';
+const STORAGE_KEY='packing-v4';
+
+const TRIP_EMOJIS=['✈️','🧳','🏔️','🏖️','🚗','🚢','🌍','🎒','🏕️','🌸'];
 
 const RAW=[
   {cat:'服飾',icon:'ti-shirt',items:[
@@ -263,8 +277,7 @@ const RAW=[
     {n:'360充電器'},{n:'360夾背帶'},{n:'手機掛繩'},{n:'Apple Watch'},
     {n:'手機充電線',q:2},{n:'行動電源充電線'},{n:'Type C充電線'},
     {n:'行李秤'},{n:'自拍棒'},{n:'頭燈',q:2},{n:'旅行鍋'},
-    {n:'手電筒'},{n:'鎖頭',q:4},{n:'電蚊香'},{n:'手機腳架'},
-    {n:'防水手機袋（泡溫泉用）'}
+    {n:'手電筒'},{n:'鎖頭',q:4},{n:'電蚊香'},{n:'手機腳架'},{n:'防水手機袋（泡溫泉用）'}
   ]},
   {cat:'食物廚具',icon:'ti-bowl',items:[
     {n:'湯包/沖泡包',m:[{n:'媽',q:1}]},{n:'食物保鮮袋',m:[{n:'媽',q:1}]},
@@ -276,474 +289,608 @@ const RAW=[
     {n:'大保溫瓶'},{n:'悶燒罐（含咖啡包）'},
     {n:'濕紙巾（大）',q:2,m:[{n:'卡',q:1},{n:'媽',q:1}]},
     {n:'濕紙巾（小）',q:4,m:[{n:'媽',q:2},{n:'卡',q:2}]},
-    {n:'保冷袋',m:[{n:'境',q:1}]},{n:'小酒精瓶'},
-    {n:'2公升水袋',q:2},{n:'脖枕'},{n:'垃圾袋'},{n:'黏土'},
-    {n:'墨鏡'},{n:'手機架'},{n:'行車記錄器'},{n:'USB線'},
-    {n:'蛋白粉杯'},{n:'鏟雪刷',q:2,m:[{n:'境',q:2}]},
-    {n:'露營車馬桶分解劑'},{n:'除臭噴霧'}
+    {n:'保冷袋',m:[{n:'境',q:1}]},{n:'小酒精瓶'},{n:'2公升水袋',q:2},{n:'脖枕'},
+    {n:'垃圾袋'},{n:'黏土'},{n:'墨鏡'},{n:'手機架'},{n:'行車記錄器'},{n:'USB線'},
+    {n:'蛋白粉杯'},{n:'鏟雪刷',q:2,m:[{n:'境',q:2}]},{n:'露營車馬桶分解劑'},{n:'除臭噴霧'}
   ]},
   {cat:'梳妝保養',icon:'ti-sparkles',items:[
-    {n:'隱形眼鏡（拋棄式）'},{n:'身體乳'},{n:'面膜'},{n:'洗髮乳'},
-    {n:'沐浴乳'},{n:'化妝棉'},{n:'酒精棉片'},{n:'木瓜霜'},
-    {n:'頭皮藥'},{n:'指甲剪',q:2},{n:'棉花棒'},{n:'牙線棒'},
-    {n:'眼霜'},{n:'護手霜（Aesop）'},{n:'眼鏡'},{n:'眼鏡盒'},
-    {n:'蒸眼罩'},{n:'白花油'},{n:'護髮油'},{n:'卸妝水'},
-    {n:'防曬乳',q:3},{n:'爽身膏'},{n:'生髮水'},{n:'護髮素'},
-    {n:'化妝包'},{n:'小瓶化妝水',q:2},{n:'小瓶乳霜',q:4},{n:'刮鬍刀'}
+    {n:'隱形眼鏡（拋棄式）'},{n:'身體乳'},{n:'面膜'},{n:'洗髮乳'},{n:'沐浴乳'},
+    {n:'化妝棉'},{n:'酒精棉片'},{n:'木瓜霜'},{n:'頭皮藥'},{n:'指甲剪',q:2},
+    {n:'棉花棒'},{n:'牙線棒'},{n:'眼霜'},{n:'護手霜（Aesop）'},{n:'眼鏡'},{n:'眼鏡盒'},
+    {n:'蒸眼罩'},{n:'白花油'},{n:'護髮油'},{n:'卸妝水'},{n:'防曬乳',q:3},
+    {n:'爽身膏'},{n:'生髮水'},{n:'護髮素'},{n:'化妝包'},
+    {n:'小瓶化妝水',q:2},{n:'小瓶乳霜',q:4},{n:'刮鬍刀'}
   ]},
   {cat:'藥品',icon:'ti-pill',items:[
-    {n:'Eve（止痛藥）'},{n:'OK蹦'},{n:'暈車藥'},{n:'益生菌'},
-    {n:'痠痛貼布'},{n:'綁腳趾頭繃帶'},{n:'喉糖'},{n:'胃藥'},
-    {n:'隨身藥罐'},{n:'中藥'},{n:'噴鼻藥'},{n:'防蚊貼'},{n:'感冒藥'}
+    {n:'Eve（止痛藥）'},{n:'OK蹦'},{n:'暈車藥'},{n:'益生菌'},{n:'痠痛貼布'},
+    {n:'綁腳趾頭繃帶'},{n:'喉糖'},{n:'胃藥'},{n:'隨身藥罐'},{n:'中藥'},
+    {n:'噴鼻藥'},{n:'防蚊貼'},{n:'感冒藥'}
   ]},
   {cat:'備品雜物',icon:'ti-tools',items:[
     {n:'衣架（境）',q:4,m:[{n:'境',q:4}]},{n:'衣架（媽）',q:10,m:[{n:'媽',q:10}]},
     {n:'衣架（貝）',q:10,m:[{n:'貝',q:10}]},{n:'衣夾子',q:6,m:[{n:'卡',q:6}]},
     {n:'吊衣繩（貝）',m:[{n:'貝',q:1}]},{n:'吊衣繩（媽）',m:[{n:'媽',q:1}]},
     {n:'洗衣精小瓶',q:2,m:[{n:'媽',q:2}]},{n:'洗衣袋（大）',q:2,m:[{n:'媽',q:2}]},
-    {n:'內衣洗衣袋',m:[{n:'媽',q:1}]},{n:'食物夾'},{n:'環保袋'},
-    {n:'口罩'},{n:'夾鏈袋'},{n:'小塑膠袋'},{n:'折疊碗',q:2},
-    {n:'木頭推拿棒'},{n:'髮圈'},{n:'洗衣折疊袋（洗衣蛋用）'},{n:'絲瓜巾'}
+    {n:'內衣洗衣袋',m:[{n:'媽',q:1}]},{n:'食物夾'},{n:'環保袋'},{n:'口罩'},
+    {n:'夾鏈袋'},{n:'小塑膠袋'},{n:'折疊碗',q:2},{n:'木頭推拿棒'},
+    {n:'髮圈'},{n:'洗衣折疊袋（洗衣蛋用）'},{n:'絲瓜巾'}
   ]},
   {cat:'重要文件',icon:'ti-file-text',items:[
     {n:'台灣駕照'},{n:'國際駕照'},{n:'金剛經'},{n:'筆'},
-    {n:'申根國家文件',q:5},{n:'Costco卡'},{n:'大小照片各兩張'},
-    {n:'護照'},{n:'SIM卡（卡套不能丟）'}
+    {n:'申根國家文件',q:5},{n:'Costco卡'},{n:'大小照片各兩張'},{n:'護照'},{n:'SIM卡（卡套不能丟）'}
   ]},
   {cat:'臥鋪盥洗包',icon:'ti-moon',items:[
-    {n:'一包衛生紙'},{n:'黑色短袖'},{n:'內褲'},{n:'內衣'},
-    {n:'免洗浴巾'},{n:'小罐沐浴乳'},{n:'小罐洗髮乳'},{n:'小罐洗臉'},
-    {n:'絲瓜巾'},{n:'睡衣短褲'}
+    {n:'一包衛生紙'},{n:'黑色短袖'},{n:'內褲'},{n:'內衣'},{n:'免洗浴巾'},
+    {n:'小罐沐浴乳'},{n:'小罐洗髮乳'},{n:'小罐洗臉'},{n:'絲瓜巾'},{n:'睡衣短褲'}
   ]},
   {cat:'飛機過夜包',icon:'ti-plane',items:[
-    {n:'牙線'},{n:'面膜'},{n:'乳霜'},{n:'眼鏡盒'},
-    {n:'隱形眼鏡'},{n:'眼藥水'},{n:'木瓜霜'},{n:'發熱眼罩'},
-    {n:'耳塞',q:4},{n:'綁頭髮'},{n:'水袋'},{n:'護手霜'},
-    {n:'洗臉肥皂'},{n:'喉糖'},{n:'胃藥'},
+    {n:'牙線'},{n:'面膜'},{n:'乳霜'},{n:'眼鏡盒'},{n:'隱形眼鏡'},{n:'眼藥水'},
+    {n:'木瓜霜'},{n:'發熱眼罩'},{n:'耳塞',q:4},{n:'綁頭髮'},{n:'水袋'},
+    {n:'護手霜'},{n:'洗臉肥皂'},{n:'喉糖'},{n:'胃藥'},
     {n:'大腿綁帶（固定腳用）'},{n:'折疊椅（放腳用）'}
   ]}
 ];
 
-// ── State ──────────────────────────────────────────────────────────
-let S;
+// ── Global state ─────────────────────────────────────────────────
+let G; // { members, trips: [{id,name,emoji,createdAt,cats,backlog,activeCat}] }
+let currentTripId = null;
 
-function loadState(){
-  try{const r=localStorage.getItem(STORAGE_KEY);if(r){S=JSON.parse(r);return;}}catch(e){}
-  resetState();
-}
-function resetState(){
-  S={members:['媽','貝','境','卡'],
-    cats:RAW.map(r=>({cat:r.cat,icon:r.icon,expanded:true,items:r.items.map(mkItem)})),
-    backlog:[],activeCat:null};
-}
-function mkItem(it){
-  return{id:uid(),name:it.n||it.name||'',qty:it.q||it.qty||1,checked:false,
-    members:(it.m||it.members||[]).map(m=>({name:m.n||m.name,qty:m.q||m.qty||1})),mc:{}};
-}
-function uid(){return Math.random().toString(36).slice(2,9)+Date.now().toString(36).slice(-3)}
-function save(){try{localStorage.setItem(STORAGE_KEY,JSON.stringify(S));}catch(e){}}
-function mcolor(name){const i=S.members.indexOf(name);return COLORS[i>=0?i%COLORS.length:0]}
+function trip() { return G.trips.find(t => t.id === currentTripId); }
 
-// ── Multi-select state ─────────────────────────────────────────────
-// mode: null | 'main' | 'backlog'
-let selMode=null;
-let selIds=new Set();
+function loadGlobal() {
+  try {
+    const r = localStorage.getItem(STORAGE_KEY);
+    if (r) { G = JSON.parse(r); return; }
+  } catch(e) {}
+  G = { members: ['媽','貝','境','卡'], trips: [] };
+}
 
-function getAllMainIds(){
-  const ids=[];
-  S.cats.forEach(c=>c.items.forEach(it=>ids.push(it.id)));
+function saveGlobal() {
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(G)); } catch(e) {}
+}
+
+function uid() { return Math.random().toString(36).slice(2,9) + Date.now().toString(36).slice(-3); }
+function mcolor(name) { const i = G.members.indexOf(name); return COLORS[i >= 0 ? i % COLORS.length : 0]; }
+
+function mkItem(it) {
+  return {
+    id: uid(), name: it.n || it.name || '', qty: it.q || it.qty || 1,
+    checked: false,
+    members: (it.m || it.members || []).map(m => ({ name: m.n || m.name, qty: m.q || m.qty || 1 })),
+    mc: {}
+  };
+}
+
+function newTripFromTemplate(name, emoji) {
+  return {
+    id: uid(), name, emoji: emoji || '✈️',
+    createdAt: Date.now(),
+    activeCat: null,
+    cats: RAW.map(r => ({ cat: r.cat, icon: r.icon, expanded: true, items: r.items.map(mkItem) })),
+    backlog: []
+  };
+}
+
+// ── Home screen ───────────────────────────────────────────────────
+function renderHome() {
+  const list = document.getElementById('trip-list');
+  if (G.trips.length === 0) {
+    list.innerHTML = `
+      <div class="empty-home">
+        <i class="ti ti-luggage"></i>
+        <h3>還沒有旅程</h3>
+        <p>新增第一趟旅程，開始打包行李！</p>
+      </div>
+      <div class="add-trip-card" id="add-trip-btn"><i class="ti ti-plus" style="font-size:20px"></i>新增旅程</div>`;
+  } else {
+    let html = G.trips.slice().reverse().map(t => {
+      let total = 0, done = 0;
+      t.cats.forEach(c => c.items.forEach(it => { total++; if (isDone(it)) done++; }));
+      const pct = total ? Math.round(done / total * 100) : 0;
+      const date = new Date(t.createdAt).toLocaleDateString('zh-TW', { month: 'short', day: 'numeric', year: 'numeric' });
+      return `<div class="trip-card" data-tid="${t.id}">
+        <div class="trip-card-body">
+          <div class="trip-name">${t.emoji} ${e(t.name)}</div>
+          <div class="trip-meta">
+            <span><i class="ti ti-calendar" style="font-size:12px"></i> ${date}</span>
+            <span style="color:var(--accent);font-weight:600">${done}/${total} 項已完成</span>
+            ${t.backlog.length ? `<span style="color:var(--text3)">${t.backlog.length} 項備用中</span>` : ''}
+          </div>
+        </div>
+        <div class="trip-progress-wrap"><div class="trip-progress-bar" style="width:${pct}%"></div></div>
+        <div class="trip-card-actions">
+          <button class="btn" style="font-size:12px;padding:5px 10px" data-action="rename-trip" data-tid="${t.id}"><i class="ti ti-edit"></i>重新命名</button>
+          <button class="btn danger-ol" style="font-size:12px;padding:5px 10px" data-action="delete-trip" data-tid="${t.id}"><i class="ti ti-trash"></i>刪除</button>
+        </div>
+      </div>`;
+    }).join('');
+    html += `<div class="add-trip-card" id="add-trip-btn"><i class="ti ti-plus" style="font-size:20px"></i>新增旅程</div>`;
+    list.innerHTML = html;
+  }
+  document.getElementById('add-trip-btn').addEventListener('click', openAddTripModal);
+  document.querySelectorAll('.trip-card[data-tid]').forEach(card => {
+    card.addEventListener('click', e => {
+      if (e.target.closest('[data-action]')) return;
+      openTrip(card.dataset.tid);
+    });
+  });
+  document.querySelectorAll('[data-action="rename-trip"]').forEach(btn => {
+    btn.addEventListener('click', () => openRenameTripModal(btn.dataset.tid));
+  });
+  document.querySelectorAll('[data-action="delete-trip"]').forEach(btn => {
+    btn.addEventListener('click', () => confirmDeleteTrip(btn.dataset.tid));
+  });
+}
+
+function openAddTripModal() {
+  const emoji = TRIP_EMOJIS[Math.floor(Math.random() * TRIP_EMOJIS.length)];
+  modal(`<div class="modal"><span class="mhandle"></span>
+    <h3>新增旅程</h3>
+    <div class="fg">
+      <label>旅程名稱</label>
+      <input id="trip-name-input" placeholder="例：2025 北海道冬季" value="">
+    </div>
+    <div class="fg">
+      <label>選個 Emoji</label>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:4px" id="emoji-picker">
+        ${TRIP_EMOJIS.map(em => `<div class="emoji-opt${em===emoji?' sel':''}" data-em="${em}" style="font-size:22px;padding:6px 8px;border-radius:8px;cursor:pointer;border:2px solid ${em===emoji?'var(--accent)':'transparent'};transition:all .15s">${em}</div>`).join('')}
+      </div>
+    </div>
+    <div style="background:var(--bg2);border-radius:var(--radius);padding:10px 12px;font-size:12px;color:var(--text2);margin-bottom:4px">
+      <i class="ti ti-info-circle" style="margin-right:4px"></i>新旅程將自動載入全部 ${RAW.reduce((a,c)=>a+c.items.length,0)} 個預設項目，你可以再自行編輯。
+    </div>
+    <div class="mactions">
+      <button class="btn" id="add-trip-cancel">取消</button>
+      <button class="btn accent" id="add-trip-ok"><i class="ti ti-plus"></i>建立旅程</button>
+    </div>
+  </div>`);
+
+  let selectedEmoji = emoji;
+  document.getElementById('trip-name-input').focus();
+  document.querySelectorAll('.emoji-opt').forEach(opt => {
+    opt.addEventListener('click', () => {
+      document.querySelectorAll('.emoji-opt').forEach(o => { o.style.borderColor='transparent'; o.classList.remove('sel'); });
+      opt.style.borderColor = 'var(--accent)';
+      selectedEmoji = opt.dataset.em;
+    });
+  });
+  document.getElementById('add-trip-cancel').onclick = closeModal;
+  document.getElementById('trip-name-input').addEventListener('keydown', ev => { if(ev.key==='Enter') doAddTrip(); });
+  document.getElementById('add-trip-ok').onclick = doAddTrip;
+  function doAddTrip() {
+    const name = document.getElementById('trip-name-input').value.trim();
+    if (!name) { document.getElementById('trip-name-input').focus(); return; }
+    const t = newTripFromTemplate(name, selectedEmoji);
+    G.trips.push(t);
+    saveGlobal();
+    closeModal();
+    renderHome();
+    toast(`旅程「${name}」已建立`);
+    // Auto-open new trip
+    openTrip(t.id);
+  }
+}
+
+function openRenameTripModal(tid) {
+  const t = G.trips.find(x => x.id === tid);
+  if (!t) return;
+  modal(`<div class="modal"><span class="mhandle"></span>
+    <h3>重新命名旅程</h3>
+    <div class="fg"><label>旅程名稱</label><input id="rename-input" value="${ea(t.name)}"></div>
+    <div class="mactions">
+      <button class="btn" id="rn-cancel">取消</button>
+      <button class="btn accent" id="rn-ok">儲存</button>
+    </div>
+  </div>`);
+  const inp = document.getElementById('rename-input');
+  inp.focus(); inp.select();
+  document.getElementById('rn-cancel').onclick = closeModal;
+  document.getElementById('rn-ok').onclick = () => {
+    const name = inp.value.trim();
+    if (!name) return;
+    t.name = name;
+    saveGlobal(); closeModal(); renderHome();
+    if (currentTripId === tid) document.getElementById('trip-title').textContent = name;
+  };
+}
+
+function confirmDeleteTrip(tid) {
+  const t = G.trips.find(x => x.id === tid);
+  if (!t) return;
+  showConfirm(`刪除旅程「${t.name}」？`, '所有勾選紀錄與修改都會消失，無法復原', () => {
+    G.trips = G.trips.filter(x => x.id !== tid);
+    saveGlobal(); renderHome(); toast('旅程已刪除');
+  });
+}
+
+// ── Trip open / close ─────────────────────────────────────────────
+function openTrip(tid) {
+  currentTripId = tid;
+  const t = trip();
+  document.getElementById('trip-title').textContent = t.emoji + ' ' + t.name;
+  selMode = null; selIds = new Set();
+  showScreen('screen-trip');
+  // Reset tab to main
+  document.querySelectorAll('.tab').forEach(tb => tb.classList.remove('active'));
+  document.querySelector('.tab[data-tab="main"]').classList.add('active');
+  document.getElementById('tab-main').style.display = 'flex';
+  document.getElementById('tab-backlog').style.display = 'none';
+  render();
+}
+
+function goHome() {
+  currentTripId = null;
+  showScreen('screen-home');
+  renderHome();
+}
+
+function showScreen(id) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+
+// ── Multi-select ──────────────────────────────────────────────────
+let selMode = null;
+let selIds = new Set();
+
+function getAllMainIds() {
+  const t = trip(); if (!t) return [];
+  const ids = [];
+  t.cats.forEach(c => c.items.forEach(it => ids.push(it.id)));
   return ids;
 }
-function getAllBacklogIds(){return S.backlog.map(it=>it.id);}
+function getAllBacklogIds() { const t = trip(); return t ? t.backlog.map(it => it.id) : []; }
 
-function enterSel(mode){
-  selMode=mode; selIds=new Set();
+function enterSel(mode) { selMode = mode; selIds = new Set(); updateSelToolbar(); renderItems(); }
+function exitSel() { selMode = null; selIds = new Set(); updateSelToolbar(); renderItems(); }
+
+function toggleSelId(id) {
+  if (selIds.has(id)) selIds.delete(id); else selIds.add(id);
   updateSelToolbar();
-  renderItems();
-}
-function exitSel(){
-  selMode=null; selIds=new Set();
-  updateSelToolbar();
-  renderItems();
-}
-function toggleSelId(id){
-  if(selIds.has(id)) selIds.delete(id); else selIds.add(id);
-  updateSelToolbar();
-  // Patch just this row
-  const row=document.querySelector(`[data-id="${id}"]`);
-  if(row){
-    const on=selIds.has(id);
-    row.classList.toggle('sel-on',on);
-    const rc=row.querySelector('.rcheck');
-    if(rc) rc.classList.toggle('on',on);
+  const row = document.querySelector(`[data-id="${id}"]`);
+  if (row) {
+    row.classList.toggle('sel-on', selIds.has(id));
+    const rc = row.querySelector('.rcheck');
+    if (rc) rc.classList.toggle('on', selIds.has(id));
   }
 }
 
-function updateSelToolbar(){
-  // Main toolbar
-  const mainActive=selMode==='main';
-  const mainIds=getAllMainIds();
-  const mainSel=mainIds.filter(id=>selIds.has(id)).length;
-  const mainAll=mainIds.length;
-  const mrc=document.getElementById('main-rcheck');
-  const mLabel=document.getElementById('main-sel-label');
-  const mCount=document.getElementById('main-sel-count');
-  const mCancel=document.getElementById('main-sel-cancel');
-  const mMove=document.getElementById('main-sel-move');
-  if(mainActive){
-    mLabel.style.display='none'; mCount.style.display='';
-    mCancel.style.display=''; mMove.style.display='';
-    mCount.textContent=`已選 ${mainSel} 項`;
-    mrc.className='rcheck'+(mainSel===0?'':mainSel===mainAll?' on':' indeterminate');
-    mMove.disabled=mainSel===0;
-    mMove.style.opacity=mainSel===0?'0.4':'1';
+function updateSelToolbar() {
+  const mainActive = selMode === 'main';
+  const mainIds = getAllMainIds();
+  const mainSel = mainIds.filter(id => selIds.has(id)).length;
+  const mrc = document.getElementById('main-rcheck');
+  const mLabel = document.getElementById('main-sel-label');
+  const mCount = document.getElementById('main-sel-count');
+  const mCancel = document.getElementById('main-sel-cancel');
+  const mMove = document.getElementById('main-sel-move');
+  if (mainActive) {
+    mLabel.style.display = 'none'; mCount.style.display = '';
+    mCancel.style.display = ''; mMove.style.display = '';
+    mCount.textContent = `已選 ${mainSel} 項`;
+    mrc.className = 'rcheck' + (mainSel === 0 ? '' : mainSel === mainIds.length ? ' on' : ' indeterminate');
+    mMove.style.opacity = mainSel === 0 ? '0.4' : '1';
   } else {
-    mLabel.style.display=''; mCount.style.display='none';
-    mCancel.style.display='none'; mMove.style.display='none';
-    mrc.className='rcheck';
+    mLabel.style.display = ''; mCount.style.display = 'none';
+    mCancel.style.display = 'none'; mMove.style.display = 'none';
+    mrc.className = 'rcheck';
   }
-
-  // Backlog toolbar
-  const blActive=selMode==='backlog';
-  const blIds=getAllBacklogIds();
-  const blSel=blIds.filter(id=>selIds.has(id)).length;
-  const blAll=blIds.length;
-  const brc=document.getElementById('bl-rcheck');
-  const bLabel=document.getElementById('bl-sel-label');
-  const bCount=document.getElementById('bl-sel-count');
-  const bCancel=document.getElementById('bl-sel-cancel');
-  const bAdd=document.getElementById('bl-sel-add');
-  if(blActive){
-    bLabel.style.display='none'; bCount.style.display='';
-    bCancel.style.display=''; bAdd.style.display='';
-    bCount.textContent=`已選 ${blSel} 項`;
-    brc.className='rcheck'+(blSel===0?'':blSel===blAll?' on':' indeterminate');
-    bAdd.disabled=blSel===0;
-    bAdd.style.opacity=blSel===0?'0.4':'1';
+  const blActive = selMode === 'backlog';
+  const blIds = getAllBacklogIds();
+  const blSel = blIds.filter(id => selIds.has(id)).length;
+  const brc = document.getElementById('bl-rcheck');
+  const bLabel = document.getElementById('bl-sel-label');
+  const bCount = document.getElementById('bl-sel-count');
+  const bCancel = document.getElementById('bl-sel-cancel');
+  const bAdd = document.getElementById('bl-sel-add');
+  if (blActive) {
+    bLabel.style.display = 'none'; bCount.style.display = '';
+    bCancel.style.display = ''; bAdd.style.display = '';
+    bCount.textContent = `已選 ${blSel} 項`;
+    brc.className = 'rcheck' + (blSel === 0 ? '' : blSel === blIds.length ? ' on' : ' indeterminate');
+    bAdd.style.opacity = blSel === 0 ? '0.4' : '1';
   } else {
-    bLabel.style.display=''; bCount.style.display='none';
-    bCancel.style.display='none'; bAdd.style.display='none';
-    brc.className='rcheck';
+    bLabel.style.display = ''; bCount.style.display = 'none';
+    bCancel.style.display = 'none'; bAdd.style.display = 'none';
+    brc.className = 'rcheck';
   }
-
-  // badge
-  document.getElementById('backlog-badge').textContent=S.backlog.length?`(${S.backlog.length})`:'';
+  const t = trip();
+  document.getElementById('backlog-badge').textContent = t && t.backlog.length ? `(${t.backlog.length})` : '';
 }
 
-// ── Render ─────────────────────────────────────────────────────────
-function render(){
-  save();
+// ── Render ────────────────────────────────────────────────────────
+function render() {
+  saveGlobal();
   renderStats();
   renderChips();
   renderItems();
   updateSelToolbar();
 }
 
-function renderItems(){
-  renderSections();
-  renderBacklog();
+function renderItems() { renderSections(); renderBacklog(); }
+
+function isDone(it) {
+  return it.members.length > 0 ? it.members.every(m => it.mc[m.name]) : it.checked;
 }
 
-function renderStats(){
-  let total=0,done=0;
-  S.cats.forEach(c=>c.items.forEach(it=>{total++;if(isDone(it))done++;}));
-  const pct=total?Math.round(done/total*100):0;
-  document.getElementById('stats').innerHTML=`
+function renderStats() {
+  const t = trip(); if (!t) return;
+  let total = 0, done = 0;
+  t.cats.forEach(c => c.items.forEach(it => { total++; if (isDone(it)) done++; }));
+  const pct = total ? Math.round(done / total * 100) : 0;
+  document.getElementById('stats').innerHTML = `
     <div class="stat"><div class="stat-num green">${done}/${total}</div><div class="stat-label">已勾選</div></div>
-    <div class="stat"><div class="stat-num">${total-done}</div><div class="stat-label">待確認</div></div>
+    <div class="stat"><div class="stat-num">${total - done}</div><div class="stat-label">待確認</div></div>
     <div class="stat"><div class="stat-num">${pct}%</div><div class="stat-label">完成度</div></div>`;
 }
-function isDone(it){return it.members.length>0?it.members.every(m=>it.mc[m.name]):it.checked;}
 
-function renderChips(){
-  document.getElementById('cat-chips').innerHTML=S.cats.map((c,ci)=>{
-    const done=c.items.filter(isDone).length;
-    const active=S.activeCat===ci;
-    return `<div class="cat-chip${active?' active':''}" data-ci="${ci}">
+function renderChips() {
+  const t = trip(); if (!t) return;
+  document.getElementById('cat-chips').innerHTML = t.cats.map((c, ci) => {
+    const done = c.items.filter(isDone).length;
+    return `<div class="cat-chip${t.activeCat === ci ? ' active' : ''}" data-ci="${ci}">
       <i class="ti ${c.icon}" style="font-size:13px"></i>${c.cat}
       <span class="chip-count">${done}/${c.items.length}</span>
     </div>`;
   }).join('');
 }
 
-function renderSections(){
-  const isSelMain=selMode==='main';
-  const catsToShow=S.activeCat!==null?[{c:S.cats[S.activeCat],ci:S.activeCat}]:S.cats.map((c,ci)=>({c,ci}));
-  document.getElementById('sections-list').innerHTML=catsToShow.map(({c,ci})=>{
-    const total=c.items.length;
-    const done=c.items.filter(isDone).length;
-    const pct=total?Math.round(done/total*100):0;
-    const collapsed=!c.expanded;
-    let html=`<div class="section" id="sec-${ci}">
-      <div class="section-header${collapsed?' collapsed':''}" data-action="toggle-cat" data-ci="${ci}">
+function renderSections() {
+  const t = trip(); if (!t) return;
+  const isSel = selMode === 'main';
+  const catsToShow = t.activeCat !== null
+    ? [{ c: t.cats[t.activeCat], ci: t.activeCat }]
+    : t.cats.map((c, ci) => ({ c, ci }));
+  document.getElementById('sections-list').innerHTML = catsToShow.map(({ c, ci }) => {
+    const total = c.items.length;
+    const done = c.items.filter(isDone).length;
+    const pct = total ? Math.round(done / total * 100) : 0;
+    const collapsed = !c.expanded;
+    let html = `<div class="section" id="sec-${ci}">
+      <div class="section-header${collapsed ? ' collapsed' : ''}" data-action="toggle-cat" data-ci="${ci}">
         <div class="section-title"><i class="ti ${c.icon}" style="font-size:15px"></i>${c.cat}</div>
         <div class="section-right">
           <span class="section-count">${done}/${total}</span>
-          <i class="ti ti-chevron-${collapsed?'down':'up'}" style="font-size:14px;color:var(--text2)"></i>
+          <i class="ti ti-chevron-${collapsed ? 'down' : 'up'}" style="font-size:14px;color:var(--text2)"></i>
         </div>
       </div>
       <div class="prog-wrap"><div class="prog-bar" style="width:${pct}%"></div></div>`;
-    if(c.expanded){
-      html+=`<div class="items-list">`;
-      if(c.items.length===0){
-        html+=`<div style="padding:12px 14px;font-size:13px;color:var(--text3)">暫無項目</div>`;
+    if (c.expanded) {
+      html += `<div class="items-list">`;
+      if (c.items.length === 0) {
+        html += `<div style="padding:12px 14px;font-size:13px;color:var(--text3)">暫無項目</div>`;
       } else {
-        c.items.forEach((item,ii)=>{html+=renderItemRow(item,ci,ii,false,isSelMain);});
+        c.items.forEach((item, ii) => { html += renderItemRow(item, ci, ii, false, isSel); });
       }
-      html+=`<div class="add-row">
+      html += `<div class="add-row">
         <i class="ti ti-plus" style="font-size:14px;color:var(--text3);flex-shrink:0"></i>
         <input class="add-input" placeholder="新增項目..." data-action="add-item" data-ci="${ci}">
       </div></div>`;
     }
-    return html+'</div>';
+    return html + '</div>';
   }).join('');
 }
 
-function renderBacklog(){
-  const isSelBl=selMode==='backlog';
-  const el=document.getElementById('backlog-list');
-  if(S.backlog.length===0){
-    el.innerHTML=`<div class="empty"><i class="ti ti-inbox"></i><p>沒有備用項目</p><small>從主清單多選後移至此處</small></div>`;
+function renderBacklog() {
+  const t = trip(); if (!t) return;
+  const isSel = selMode === 'backlog';
+  const el = document.getElementById('backlog-list');
+  if (t.backlog.length === 0) {
+    el.innerHTML = `<div class="empty"><i class="ti ti-inbox"></i><p style="font-size:14px">沒有備用項目</p><small style="font-size:12px;color:var(--text3)">從主清單多選後移至此處</small></div>`;
     return;
   }
-  el.innerHTML=`<div class="items-list">${S.backlog.map((item,ii)=>renderItemRow(item,-1,ii,true,isSelBl)).join('')}</div>`;
+  el.innerHTML = `<div class="items-list">${t.backlog.map((item, ii) => renderItemRow(item, -1, ii, true, isSel)).join('')}</div>`;
 }
 
-function renderItemRow(item,ci,ii,isBacklog,isSel){
-  const done=isDone(item);
-  const hasM=item.members.length>0;
-  const selected=selIds.has(item.id);
-  const ciA=isBacklog?-1:ci;
-
-  let mHtml='';
-  if(hasM){
-    mHtml='<div class="member-rows">';
-    item.members.forEach(m=>{
-      const on=item.mc[m.name]||false;
-      const col=mcolor(m.name);
-      mHtml+=`<div class="member-row">
-        <div class="m-check${on?' on':''}" data-action="m-check" data-ci="${ciA}" data-ii="${ii}" data-mn="${ea(m.name)}" data-bl="${isBacklog?1:0}"${isSel?' style="pointer-events:none;opacity:.4"':''}></div>
+function renderItemRow(item, ci, ii, isBacklog, isSel) {
+  const done = isDone(item);
+  const hasM = item.members.length > 0;
+  const selected = selIds.has(item.id);
+  const ciA = isBacklog ? -1 : ci;
+  let mHtml = '';
+  if (hasM) {
+    mHtml = '<div class="member-rows">';
+    item.members.forEach(m => {
+      const on = item.mc[m.name] || false;
+      const col = mcolor(m.name);
+      mHtml += `<div class="member-row">
+        <div class="m-check${on ? ' on' : ''}" data-action="m-check" data-ci="${ciA}" data-ii="${ii}" data-mn="${ea(m.name)}" data-bl="${isBacklog ? 1 : 0}"${isSel ? ' style="pointer-events:none;opacity:.4"' : ''}></div>
         <span class="m-tag" style="background:${col}22;color:${col}">${e(m.name)}</span>
-        ${m.qty>1?`<span class="m-qty">×${m.qty}</span>`:''}
+        ${m.qty > 1 ? `<span class="m-qty">×${m.qty}</span>` : ''}
       </div>`;
     });
-    mHtml+='</div>';
+    mHtml += '</div>';
   }
-
-  // Left control: round sel-check in sel mode, normal check otherwise
-  const leftCtrl=isSel
-    ?`<div class="rcheck${selected?' on':''}" data-action="sel-toggle" data-id="${item.id}"></div>`
-    :`<div class="item-check${done?' on':''}" data-action="check" data-ci="${ciA}" data-ii="${ii}" data-bl="${isBacklog?1:0}"></div>`;
-
-  const actions=isBacklog
-    ?`<button class="iab" data-action="edit" data-ci="${ciA}" data-ii="${ii}" data-bl="1" title="編輯"><i class="ti ti-edit"></i></button>
-      <button class="iab" data-action="restore" data-ci="${ciA}" data-ii="${ii}" title="加回清單"><i class="ti ti-arrow-back-up"></i></button>
-      <button class="iab del" data-action="delete" data-ci="${ciA}" data-ii="${ii}" data-bl="1" title="刪除"><i class="ti ti-trash"></i></button>`
-    :`<button class="iab" data-action="edit" data-ci="${ciA}" data-ii="${ii}" data-bl="0" title="編輯"><i class="ti ti-edit"></i></button>
-      <button class="iab" data-action="to-backlog" data-ci="${ciA}" data-ii="${ii}" title="移至備用"><i class="ti ti-archive"></i></button>
-      <button class="iab del" data-action="delete" data-ci="${ciA}" data-ii="${ii}" data-bl="0" title="刪除"><i class="ti ti-trash"></i></button>`;
-
-  return `<div class="item-row${!isSel&&done?' done':''}${selected?' sel-on':''}${isSel?' selectable':''}" data-id="${item.id}" data-ci="${ciA}" data-ii="${ii}" data-bl="${isBacklog?1:0}">
+  const leftCtrl = isSel
+    ? `<div class="rcheck${selected ? ' on' : ''}" data-action="sel-toggle" data-id="${item.id}"></div>`
+    : `<div class="item-check${done ? ' on' : ''}" data-action="check" data-ci="${ciA}" data-ii="${ii}" data-bl="${isBacklog ? 1 : 0}"></div>`;
+  const actions = isBacklog
+    ? `<button class="iab" data-action="edit" data-ci="${ciA}" data-ii="${ii}" data-bl="1"><i class="ti ti-edit"></i></button>
+       <button class="iab" data-action="restore" data-ci="${ciA}" data-ii="${ii}"><i class="ti ti-arrow-back-up"></i></button>
+       <button class="iab del" data-action="delete" data-ci="${ciA}" data-ii="${ii}" data-bl="1"><i class="ti ti-trash"></i></button>`
+    : `<button class="iab" data-action="edit" data-ci="${ciA}" data-ii="${ii}" data-bl="0"><i class="ti ti-edit"></i></button>
+       <button class="iab" data-action="to-backlog" data-ci="${ciA}" data-ii="${ii}"><i class="ti ti-archive"></i></button>
+       <button class="iab del" data-action="delete" data-ci="${ciA}" data-ii="${ii}" data-bl="0"><i class="ti ti-trash"></i></button>`;
+  return `<div class="item-row${!isSel && done ? ' done' : ''}${selected ? ' sel-on' : ''}${isSel ? ' selectable' : ''}" data-id="${item.id}" data-ci="${ciA}" data-ii="${ii}" data-bl="${isBacklog ? 1 : 0}">
     ${leftCtrl}
     <div class="item-main">
       <div class="item-name">${e(item.name)}</div>
-      ${item.qty>1&&!hasM?`<span class="qty-badge">×${item.qty}</span>`:''}
+      ${item.qty > 1 && !hasM ? `<span class="qty-badge">×${item.qty}</span>` : ''}
       ${mHtml}
     </div>
-    ${isSel?'':`<div class="item-actions">${actions}</div>`}
+    ${isSel ? '' : `<div class="item-actions">${actions}</div>`}
   </div>`;
 }
 
-// ── Event delegation ───────────────────────────────────────────────
-document.addEventListener('click',e=>{
-  // Cat chip
-  const chip=e.target.closest('.cat-chip');
-  if(chip&&!selMode){
-    const ci=parseInt(chip.dataset.ci);
-    S.activeCat=(S.activeCat===ci)?null:ci;
+// ── Event delegation ──────────────────────────────────────────────
+document.addEventListener('click', ev => {
+  const chip = ev.target.closest('.cat-chip');
+  if (chip && !selMode) {
+    const t = trip(); if (!t) return;
+    const ci = parseInt(chip.dataset.ci);
+    t.activeCat = (t.activeCat === ci) ? null : ci;
     render();
-    if(S.activeCat!==null){
-      // When a single cat is active, pane always starts at top
-      const pane=document.getElementById('sections-list');
-      if(pane) pane.scrollTop=0;
-    }
+    document.getElementById('sections-list').scrollTop = 0;
     return;
   }
-
-  // Tab
-  const tab=e.target.closest('.tab');
-  if(tab){
-    document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  const tab = ev.target.closest('.tab');
+  if (tab) {
+    document.querySelectorAll('.tab').forEach(tb => tb.classList.remove('active'));
     tab.classList.add('active');
-    const t=tab.dataset.tab;
-    const tabMain=document.getElementById('tab-main');
-    const tabBl=document.getElementById('tab-backlog');
-    tabMain.style.display=t==='main'?'flex':'none';
-    tabBl.style.display=t==='backlog'?'flex':'none';
-    exitSel();
-    return;
+    const tn = tab.dataset.tab;
+    document.getElementById('tab-main').style.display = tn === 'main' ? 'flex' : 'none';
+    document.getElementById('tab-backlog').style.display = tn === 'backlog' ? 'flex' : 'none';
+    exitSel(); return;
   }
-
-  // In sel mode: click row body toggles selection
-  if(selMode){
-    const row=e.target.closest('.item-row.selectable[data-id]');
-    const onAction=e.target.closest('[data-action]');
-    if(row&&(!onAction||onAction.dataset.action==='sel-toggle')){
-      toggleSelId(row.dataset.id);
-      return;
+  if (selMode) {
+    const row = ev.target.closest('.item-row.selectable[data-id]');
+    const onAct = ev.target.closest('[data-action]');
+    if (row && (!onAct || onAct.dataset.action === 'sel-toggle')) {
+      toggleSelId(row.dataset.id); return;
     }
   }
-
-  const el=e.target.closest('[data-action]');
-  if(el) handleAction(el,e);
+  const el = ev.target.closest('[data-action]');
+  if (el) handleAction(el);
 });
 
-document.addEventListener('keydown',e=>{
-  if(e.key==='Enter'){
-    const el=e.target.closest('[data-action="add-item"]');
-    if(el) doAddItem(parseInt(el.dataset.ci),el);
+document.addEventListener('keydown', ev => {
+  if (ev.key === 'Enter') {
+    const el = ev.target.closest('[data-action="add-item"]');
+    if (el) doAddItem(parseInt(el.dataset.ci), el);
   }
 });
 
-// ── Toolbar button wiring ──────────────────────────────────────────
-// Main sel-all toggle
-document.getElementById('main-sel-all').addEventListener('click',()=>{
-  if(selMode!=='main'){enterSel('main');return;}
-  const all=getAllMainIds();
-  const allSelected=all.every(id=>selIds.has(id));
-  if(allSelected) selIds=new Set();
-  else all.forEach(id=>selIds.add(id));
-  updateSelToolbar();
-  renderItems();
+// Toolbar buttons
+document.getElementById('btn-back').addEventListener('click', goHome);
+
+document.getElementById('main-sel-all').addEventListener('click', () => {
+  if (selMode !== 'main') { enterSel('main'); return; }
+  const all = getAllMainIds();
+  if (all.every(id => selIds.has(id))) selIds = new Set();
+  else all.forEach(id => selIds.add(id));
+  updateSelToolbar(); renderItems();
 });
-document.getElementById('main-sel-cancel').addEventListener('click',exitSel);
-document.getElementById('main-sel-move').addEventListener('click',()=>{
-  if(selIds.size===0) return;
-  const toMove=[];
-  S.cats.forEach(cat=>{
-    cat.items=cat.items.filter(it=>{
-      if(selIds.has(it.id)){toMove.push(it);return false;}
-      return true;
-    });
+document.getElementById('main-sel-cancel').addEventListener('click', exitSel);
+document.getElementById('main-sel-move').addEventListener('click', () => {
+  if (selIds.size === 0) return;
+  const t = trip();
+  const toMove = [];
+  t.cats.forEach(cat => {
+    cat.items = cat.items.filter(it => { if (selIds.has(it.id)) { toMove.push(it); return false; } return true; });
   });
-  toMove.forEach(it=>S.backlog.push(it));
-  const n=toMove.length;
-  exitSel();
-  toast(`已將 ${n} 個項目移至備用`);
-  render();
+  toMove.forEach(it => t.backlog.push(it));
+  exitSel(); toast(`已將 ${toMove.length} 個項目移至備用`); render();
 });
 
-// Backlog sel-all toggle
-document.getElementById('bl-sel-all').addEventListener('click',()=>{
-  if(selMode!=='backlog'){enterSel('backlog');return;}
-  const all=getAllBacklogIds();
-  const allSelected=all.every(id=>selIds.has(id));
-  if(allSelected) selIds=new Set();
-  else all.forEach(id=>selIds.add(id));
-  updateSelToolbar();
-  renderItems();
+document.getElementById('bl-sel-all').addEventListener('click', () => {
+  if (selMode !== 'backlog') { enterSel('backlog'); return; }
+  const all = getAllBacklogIds();
+  if (all.every(id => selIds.has(id))) selIds = new Set();
+  else all.forEach(id => selIds.add(id));
+  updateSelToolbar(); renderItems();
 });
-document.getElementById('bl-sel-cancel').addEventListener('click',exitSel);
-document.getElementById('bl-sel-add').addEventListener('click',()=>{
-  if(selIds.size===0) return;
-  const selected=[...selIds];
-  openRestoreMultiModal(selected);
+document.getElementById('bl-sel-cancel').addEventListener('click', exitSel);
+document.getElementById('bl-sel-add').addEventListener('click', () => {
+  if (selIds.size === 0) return;
+  openRestoreMultiModal([...selIds]);
 });
 
-// Header buttons
-document.getElementById('btn-members').addEventListener('click',openMembersModal);
-document.getElementById('btn-uncheck').addEventListener('click',()=>{
-  showConfirm('全部反勾選？','所有項目的勾選狀態將會清除',()=>{
-    S.cats.forEach(c=>c.items.forEach(it=>{it.checked=false;it.mc={};}));
-    S.backlog.forEach(it=>{it.checked=false;it.mc={};});
+document.getElementById('btn-members').addEventListener('click', openMembersModal);
+document.getElementById('btn-uncheck').addEventListener('click', () => {
+  showConfirm('全部反勾選？', '所有項目的勾選狀態將會清除', () => {
+    const t = trip();
+    t.cats.forEach(c => c.items.forEach(it => { it.checked = false; it.mc = {}; }));
+    t.backlog.forEach(it => { it.checked = false; it.mc = {}; });
     render(); toast('已全部反勾選');
   });
 });
-document.getElementById('btn-add-backlog').addEventListener('click',()=>{
-  if(S.backlog.length===0){toast('沒有備用項目');return;}
+document.getElementById('btn-add-backlog').addEventListener('click', () => {
+  const t = trip();
+  if (!t || t.backlog.length === 0) { toast('沒有備用項目'); return; }
   openAddBacklogModal();
 });
 
-// ── Action handler ─────────────────────────────────────────────────
-function handleAction(el,e){
-  const a=el.dataset.action;
-  const ci=parseInt(el.dataset.ci);
-  const ii=parseInt(el.dataset.ii);
-  const bl=el.dataset.bl==='1';
+// ── Action handler ────────────────────────────────────────────────
+function handleAction(el) {
+  const a = el.dataset.action;
+  const ci = parseInt(el.dataset.ci);
+  const ii = parseInt(el.dataset.ii);
+  const bl = el.dataset.bl === '1';
+  const t = trip();
 
-  if(a==='sel-toggle'){
-    toggleSelId(el.dataset.id||el.closest('[data-id]')?.dataset.id);
-  } else if(a==='toggle-cat'){
-    S.cats[ci].expanded=!S.cats[ci].expanded; render();
-  } else if(a==='check'){
-    const item=bl?S.backlog[ii]:S.cats[ci].items[ii];
-    item.checked=!item.checked;
-    if(item.members.length>0) item.members.forEach(m=>{item.mc[m.name]=item.checked;});
+  if (a === 'sel-toggle') {
+    toggleSelId(el.dataset.id || el.closest('[data-id]')?.dataset.id);
+  } else if (a === 'toggle-cat') {
+    t.cats[ci].expanded = !t.cats[ci].expanded; render();
+  } else if (a === 'check') {
+    const item = bl ? t.backlog[ii] : t.cats[ci].items[ii];
+    item.checked = !item.checked;
+    if (item.members.length > 0) item.members.forEach(m => { item.mc[m.name] = item.checked; });
     render();
-  } else if(a==='m-check'){
-    const item=bl?S.backlog[ii]:S.cats[ci].items[ii];
-    const mn=el.dataset.mn;
-    item.mc[mn]=!item.mc[mn];
-    item.checked=item.members.every(m=>item.mc[m.name]);
+  } else if (a === 'm-check') {
+    const item = bl ? t.backlog[ii] : t.cats[ci].items[ii];
+    const mn = el.dataset.mn;
+    item.mc[mn] = !item.mc[mn];
+    item.checked = item.members.every(m => item.mc[m.name]);
     render();
-  } else if(a==='edit'){
-    openEditModal(ci,ii,bl);
-  } else if(a==='to-backlog'){
-    const item=S.cats[ci].items.splice(ii,1)[0];
-    S.backlog.push(item);
+  } else if (a === 'edit') {
+    openEditModal(ci, ii, bl);
+  } else if (a === 'to-backlog') {
+    const item = t.cats[ci].items.splice(ii, 1)[0];
+    t.backlog.push(item);
     toast(`「${item.name}」已移至備用`); render();
-  } else if(a==='restore'){
-    const item=S.backlog.splice(ii,1)[0];
+  } else if (a === 'restore') {
+    const item = t.backlog.splice(ii, 1)[0];
     render(); openRestoreModal(item);
-  } else if(a==='delete'){
-    const name=bl?S.backlog[ii].name:S.cats[ci].items[ii].name;
-    showConfirm(`刪除「${name}」？`,'此動作無法復原',()=>{
-      if(bl) S.backlog.splice(ii,1); else S.cats[ci].items.splice(ii,1);
+  } else if (a === 'delete') {
+    const name = bl ? t.backlog[ii].name : t.cats[ci].items[ii].name;
+    showConfirm(`刪除「${name}」？`, '此動作無法復原', () => {
+      if (bl) t.backlog.splice(ii, 1); else t.cats[ci].items.splice(ii, 1);
       render();
     });
-  }
+  } else if (a === 'add-item') { /* handled by keydown */ }
 }
 
-function doAddItem(ci,inputEl){
-  const name=inputEl.value.trim();if(!name)return;
-  S.cats[ci].items.push(mkItem({n:name}));
-  inputEl.value=''; render();
-  setTimeout(()=>{
-    const inp=document.querySelector(`[data-action="add-item"][data-ci="${ci}"]`);
-    if(inp)inp.focus();
-  },50);
+function doAddItem(ci, inputEl) {
+  const name = inputEl.value.trim(); if (!name) return;
+  trip().cats[ci].items.push(mkItem({ n: name }));
+  inputEl.value = ''; render();
+  setTimeout(() => {
+    const inp = document.querySelector(`[data-action="add-item"][data-ci="${ci}"]`);
+    if (inp) inp.focus();
+  }, 50);
 }
 
-// ── Modals ─────────────────────────────────────────────────────────
-function modal(content){
-  document.getElementById('modal-root').innerHTML=`<div class="mbg" id="mbg">${content}</div>`;
-  document.getElementById('mbg').addEventListener('click',ev=>{if(ev.target.id==='mbg')closeModal();});
+// ── Modals ────────────────────────────────────────────────────────
+function modal(content) {
+  document.getElementById('modal-root').innerHTML = `<div class="mbg" id="mbg">${content}</div>`;
+  document.getElementById('mbg').addEventListener('click', ev => { if (ev.target.id === 'mbg') closeModal(); });
 }
-function closeModal(){document.getElementById('modal-root').innerHTML='';}
+function closeModal() { document.getElementById('modal-root').innerHTML = ''; }
 
-function showConfirm(title,sub,onOk){
-  modal(`<div class="confirm-modal">
-    <span class="mhandle"></span>
+function showConfirm(title, sub, onOk) {
+  modal(`<div class="confirm-modal"><span class="mhandle"></span>
     <h3>${e(title)}</h3><p>${e(sub)}</p>
     <div class="mactions">
       <button class="btn" id="cf-no">取消</button>
       <button class="btn accent" id="cf-yes">確定</button>
     </div></div>`);
-  document.getElementById('cf-no').onclick=closeModal;
-  document.getElementById('cf-yes').onclick=()=>{closeModal();onOk();};
+  document.getElementById('cf-no').onclick = closeModal;
+  document.getElementById('cf-yes').onclick = () => { closeModal(); onOk(); };
 }
 
-function openEditModal(ci,ii,isBacklog){
-  const item=isBacklog?S.backlog[ii]:S.cats[ci].items[ii];
-  const mInputs=S.members.length===0
-    ?'<span style="color:var(--text3);font-size:13px">請先新增成員</span>'
-    :S.members.map(m=>{
-      const ex=item.members.find(x=>x.name===m);
-      const chk=!!ex; const qty=ex?ex.qty:1; const col=mcolor(m);
-      return `<div class="mci" id="mci-${m}" style="${chk?`border-color:${col};background:${col}11`:''}">
-        <div class="mci-top"><input type="checkbox" id="em-${m}"${chk?' checked':''}>
-          <label for="em-${m}" style="cursor:pointer;font-weight:600;color:${chk?col:'var(--text)'}" id="eml-${m}">${e(m)}</label></div>
-        <div class="mci-qty"><span>×</span><input type="number" id="emq-${m}" value="${qty}" min="1"${!chk?' disabled':''}></div>
+function openEditModal(ci, ii, isBacklog) {
+  const t = trip();
+  const item = isBacklog ? t.backlog[ii] : t.cats[ci].items[ii];
+  const mInputs = G.members.length === 0
+    ? '<span style="color:var(--text3);font-size:13px">請先新增成員</span>'
+    : G.members.map(m => {
+      const ex = item.members.find(x => x.name === m);
+      const chk = !!ex; const qty = ex ? ex.qty : 1; const col = mcolor(m);
+      return `<div class="mci" id="mci-${m}" style="${chk ? `border-color:${col};background:${col}11` : ''}">
+        <div class="mci-top"><input type="checkbox" id="em-${m}"${chk ? ' checked' : ''}>
+          <label for="em-${m}" style="cursor:pointer;font-weight:600;color:${chk ? col : 'var(--text)'}" id="eml-${m}">${e(m)}</label></div>
+        <div class="mci-qty"><span>×</span><input type="number" id="emq-${m}" value="${qty}" min="1"${!chk ? ' disabled' : ''}></div>
       </div>`;
     }).join('');
   modal(`<div class="modal"><span class="mhandle"></span><h3>編輯項目</h3>
@@ -752,80 +899,82 @@ function openEditModal(ci,ii,isBacklog){
     <div class="fg"><label>指定成員</label><div class="member-checks">${mInputs}</div></div>
     <div class="mactions"><button class="btn" id="edit-no">取消</button><button class="btn accent" id="edit-yes">儲存</button></div>
   </div>`);
-  document.getElementById('edit-no').onclick=closeModal;
+  document.getElementById('edit-no').onclick = closeModal;
   document.getElementById('edit-name').focus();
-  S.members.forEach(m=>{
-    const cb=document.getElementById('em-'+m);if(!cb)return;
-    cb.addEventListener('change',()=>{
-      const col=mcolor(m);
-      const qi=document.getElementById('emq-'+m);
-      const box=document.getElementById('mci-'+m);
-      const lbl=document.getElementById('eml-'+m);
-      qi.disabled=!cb.checked;
-      if(cb.checked){box.style.borderColor=col;box.style.background=col+'11';lbl.style.color=col;}
-      else{box.style.borderColor='';box.style.background='';lbl.style.color='var(--text)';}
+  G.members.forEach(m => {
+    const cb = document.getElementById('em-' + m); if (!cb) return;
+    cb.addEventListener('change', () => {
+      const col = mcolor(m);
+      const qi = document.getElementById('emq-' + m);
+      const box = document.getElementById('mci-' + m);
+      const lbl = document.getElementById('eml-' + m);
+      qi.disabled = !cb.checked;
+      if (cb.checked) { box.style.borderColor = col; box.style.background = col + '11'; lbl.style.color = col; }
+      else { box.style.borderColor = ''; box.style.background = ''; lbl.style.color = 'var(--text)'; }
     });
   });
-  document.getElementById('edit-yes').onclick=()=>{
-    const t=isBacklog?S.backlog[ii]:S.cats[ci].items[ii];
-    t.name=document.getElementById('edit-name').value.trim()||t.name;
-    t.qty=parseInt(document.getElementById('edit-qty').value)||1;
-    t.members=S.members.filter(m=>{const cb=document.getElementById('em-'+m);return cb&&cb.checked;})
-      .map(m=>({name:m,qty:parseInt(document.getElementById('emq-'+m).value)||1}));
-    closeModal();render();
+  document.getElementById('edit-yes').onclick = () => {
+    const target = isBacklog ? t.backlog[ii] : t.cats[ci].items[ii];
+    target.name = document.getElementById('edit-name').value.trim() || target.name;
+    target.qty = parseInt(document.getElementById('edit-qty').value) || 1;
+    target.members = G.members.filter(m => { const cb = document.getElementById('em-' + m); return cb && cb.checked; })
+      .map(m => ({ name: m, qty: parseInt(document.getElementById('emq-' + m).value) || 1 }));
+    closeModal(); render();
   };
 }
 
-function openRestoreModal(item){
+function openRestoreModal(item) {
+  const t = trip();
   modal(`<div class="modal"><span class="mhandle"></span><h3>加回主要清單</h3>
     <div class="fg"><label>「${e(item.name)}」加入哪個分類？</label>
-      <select id="rc-cat">${S.cats.map((c,i)=>`<option value="${i}">${e(c.cat)}</option>`).join('')}</select></div>
+      <select id="rc-cat">${t.cats.map((c, i) => `<option value="${i}">${e(c.cat)}</option>`).join('')}</select></div>
     <div class="mactions"><button class="btn" id="rc-no">取消</button><button class="btn accent" id="rc-yes">加入</button></div>
   </div>`);
-  document.getElementById('rc-no').onclick=closeModal;
-  document.getElementById('rc-yes').onclick=()=>{
-    const ci=parseInt(document.getElementById('rc-cat').value);
-    S.cats[ci].items.push(item); closeModal(); toast('已加回主清單'); render();
+  document.getElementById('rc-no').onclick = closeModal;
+  document.getElementById('rc-yes').onclick = () => {
+    const ci = parseInt(document.getElementById('rc-cat').value);
+    t.cats[ci].items.push(item); closeModal(); toast('已加回主清單'); render();
   };
 }
 
-function openRestoreMultiModal(ids){
-  const count=ids.length;
+function openRestoreMultiModal(ids) {
+  const t = trip();
   modal(`<div class="modal"><span class="mhandle"></span><h3>加回主要清單</h3>
-    <div class="fg"><label>將 ${count} 個項目加入哪個分類？</label>
-      <select id="rm-cat">${S.cats.map((c,i)=>`<option value="${i}">${e(c.cat)}</option>`).join('')}</select></div>
+    <div class="fg"><label>將 ${ids.length} 個項目加入哪個分類？</label>
+      <select id="rm-cat">${t.cats.map((c, i) => `<option value="${i}">${e(c.cat)}</option>`).join('')}</select></div>
     <div class="mactions"><button class="btn" id="rm-no">取消</button><button class="btn accent" id="rm-yes">加入</button></div>
   </div>`);
-  document.getElementById('rm-no').onclick=closeModal;
-  document.getElementById('rm-yes').onclick=()=>{
-    const ci=parseInt(document.getElementById('rm-cat').value);
-    const idSet=new Set(ids);
-    const toAdd=S.backlog.filter(it=>idSet.has(it.id));
-    S.backlog=S.backlog.filter(it=>!idSet.has(it.id));
-    toAdd.forEach(it=>S.cats[ci].items.push(it));
-    closeModal(); exitSel(); toast(`已將 ${toAdd.length} 個項目加入「${S.cats[ci].cat}」`); render();
+  document.getElementById('rm-no').onclick = closeModal;
+  document.getElementById('rm-yes').onclick = () => {
+    const ci = parseInt(document.getElementById('rm-cat').value);
+    const idSet = new Set(ids);
+    const toAdd = t.backlog.filter(it => idSet.has(it.id));
+    t.backlog = t.backlog.filter(it => !idSet.has(it.id));
+    toAdd.forEach(it => t.cats[ci].items.push(it));
+    closeModal(); exitSel(); toast(`已將 ${toAdd.length} 個項目加入「${t.cats[ci].cat}」`); render();
   };
 }
 
-function openAddBacklogModal(){
-  const count=S.backlog.length;
+function openAddBacklogModal() {
+  const t = trip();
   modal(`<div class="modal"><span class="mhandle"></span><h3>加入全部備用項目</h3>
-    <div class="fg"><label>將全部 ${count} 個備用項目加入哪個分類？</label>
-      <select id="ab-cat">${S.cats.map((c,i)=>`<option value="${i}">${e(c.cat)}</option>`).join('')}</select></div>
+    <div class="fg"><label>將全部 ${t.backlog.length} 個備用項目加入哪個分類？</label>
+      <select id="ab-cat">${t.cats.map((c, i) => `<option value="${i}">${e(c.cat)}</option>`).join('')}</select></div>
     <div class="mactions"><button class="btn" id="ab-no">取消</button><button class="btn accent" id="ab-yes">加入</button></div>
   </div>`);
-  document.getElementById('ab-no').onclick=closeModal;
-  document.getElementById('ab-yes').onclick=()=>{
-    const ci=parseInt(document.getElementById('ab-cat').value);
-    S.backlog.forEach(it=>S.cats[ci].items.push(it));
-    S.backlog=[]; closeModal(); toast(`已將 ${count} 個項目加入「${S.cats[ci].cat}」`); render();
+  document.getElementById('ab-no').onclick = closeModal;
+  document.getElementById('ab-yes').onclick = () => {
+    const ci = parseInt(document.getElementById('ab-cat').value);
+    t.backlog.forEach(it => t.cats[ci].items.push(it));
+    t.backlog = []; closeModal(); toast(`已將項目加入「${t.cats[ci].cat}」`); render();
   };
 }
 
-function openMembersModal(){
-  const chips=S.members.length===0
-    ?'<span style="color:var(--text3);font-size:13px">尚未新增成員</span>'
-    :S.members.map((m,i)=>{const col=mcolor(m);
+function openMembersModal() {
+  const chips = G.members.length === 0
+    ? '<span style="color:var(--text3);font-size:13px">尚未新增成員</span>'
+    : G.members.map((m, i) => {
+      const col = mcolor(m);
       return `<div class="mchip"><div class="mdot" style="background:${col}"></div>${e(m)}<span class="mdel" data-mi="${i}">×</span></div>`;
     }).join('');
   modal(`<div class="modal"><span class="mhandle"></span><h3>成員管理</h3>
@@ -835,44 +984,46 @@ function openMembersModal(){
         <button class="btn accent" id="add-m-btn"><i class="ti ti-plus"></i>新增</button></div></div>
     <div class="mactions"><button class="btn accent" id="m-done">完成</button></div>
   </div>`);
-  document.getElementById('m-done').onclick=closeModal;
-  document.getElementById('new-m').addEventListener('keydown',ev=>{if(ev.key==='Enter')doAddMember();});
-  document.getElementById('add-m-btn').onclick=doAddMember;
-  document.querySelectorAll('.mdel').forEach(el=>{
-    el.addEventListener('click',()=>doDelMember(parseInt(el.dataset.mi)));
+  document.getElementById('m-done').onclick = closeModal;
+  document.getElementById('new-m').addEventListener('keydown', ev => { if (ev.key === 'Enter') doAddMember(); });
+  document.getElementById('add-m-btn').onclick = doAddMember;
+  document.querySelectorAll('.mdel').forEach(el => {
+    el.addEventListener('click', () => doDelMember(parseInt(el.dataset.mi)));
   });
-  setTimeout(()=>{const el=document.getElementById('new-m');if(el)el.focus();},80);
+  setTimeout(() => { const el = document.getElementById('new-m'); if (el) el.focus(); }, 80);
 }
-function doAddMember(){
-  const input=document.getElementById('new-m');const name=input.value.trim();
-  if(!name){toast('請輸入名稱');return;}
-  if(S.members.includes(name)){toast('成員已存在');return;}
-  S.members.push(name); save(); openMembersModal();
+function doAddMember() {
+  const input = document.getElementById('new-m'); const name = input.value.trim();
+  if (!name) { toast('請輸入名稱'); return; }
+  if (G.members.includes(name)) { toast('成員已存在'); return; }
+  G.members.push(name); saveGlobal(); openMembersModal();
 }
-function doDelMember(i){
-  const name=S.members[i];
-  showConfirm(`移除成員「${name}」？`,'相關指定記錄也會一併移除',()=>{
-    S.members.splice(i,1);
-    S.cats.forEach(c=>c.items.forEach(it=>{it.members=it.members.filter(m=>m.name!==name);delete it.mc[name];}));
-    save(); openMembersModal(); render();
+function doDelMember(i) {
+  const name = G.members[i];
+  showConfirm(`移除成員「${name}」？`, '相關指定記錄也會一併移除', () => {
+    G.members.splice(i, 1);
+    G.trips.forEach(t => t.cats.forEach(c => c.items.forEach(it => {
+      it.members = it.members.filter(m => m.name !== name); delete it.mc[name];
+    })));
+    saveGlobal(); openMembersModal(); if (currentTripId) render();
   });
 }
 
-// ── Utils ──────────────────────────────────────────────────────────
-function e(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
-function ea(s){return e(s);}
+// ── Utils ─────────────────────────────────────────────────────────
+function e(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function ea(s) { return e(s); }
 
 let toastTimer;
-function toast(msg){
-  const el=document.getElementById('toast');
-  el.textContent=msg; el.classList.add('show');
+function toast(msg) {
+  const el = document.getElementById('toast');
+  el.textContent = msg; el.classList.add('show');
   clearTimeout(toastTimer);
-  toastTimer=setTimeout(()=>el.classList.remove('show'),2600);
+  toastTimer = setTimeout(() => el.classList.remove('show'), 2600);
 }
 
-// ── Init ───────────────────────────────────────────────────────────
-loadState();
-render();
+// ── Init ──────────────────────────────────────────────────────────
+loadGlobal();
+renderHome();
 </script>
 </body>
 </html>
