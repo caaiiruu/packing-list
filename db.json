@@ -1210,15 +1210,24 @@
               "id": "4rfeus20vf",
               "name": "鏟雪刷",
               "qty": 2,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "境",
                   "qty": 2
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "境": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "境",
+                  "ts": 1780415797502,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "開車必備::鏟雪刷",
               "templateCategory": "開車必備",
@@ -2796,5 +2805,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780415775053
+  "updatedAt": 1780415798380
 }
