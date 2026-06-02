@@ -1081,7 +1081,7 @@
               "id": "ypp7xfj0vf",
               "name": "脖枕",
               "qty": 1,
-              "checked": true,
+              "checked": false,
               "members": [],
               "mc": {},
               "checkLog": [
@@ -1090,6 +1090,12 @@
                   "memberName": "貝",
                   "ts": 1780415772534,
                   "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780415773533,
+                  "action": "uncheck"
                 }
               ],
               "source": "template",
@@ -2778,5 +2784,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780415773228
+  "updatedAt": 1780415774249
 }
