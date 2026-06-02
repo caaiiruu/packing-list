@@ -736,7 +736,7 @@
               "id": "ufeomi20vf",
               "name": "食物保鮮袋",
               "qty": 1,
-              "checked": true,
+              "checked": false,
               "members": [
                 {
                   "name": "媽",
@@ -744,7 +744,7 @@
                 }
               ],
               "mc": {
-                "媽": true
+                "媽": false
               },
               "checkLog": [
                 {
@@ -752,6 +752,12 @@
                   "memberName": "媽",
                   "ts": 1780415749004,
                   "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "媽",
+                  "ts": 1780415752733,
+                  "action": "uncheck"
                 }
               ],
               "source": "template",
@@ -832,7 +838,7 @@
               "id": "qd8ua930vf",
               "name": "刨刀",
               "qty": 1,
-              "checked": true,
+              "checked": false,
               "members": [
                 {
                   "name": "媽",
@@ -840,7 +846,7 @@
                 }
               ],
               "mc": {
-                "媽": true
+                "媽": false
               },
               "checkLog": [
                 {
@@ -848,6 +854,12 @@
                   "memberName": "媽",
                   "ts": 1780415750836,
                   "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "媽",
+                  "ts": 1780415751684,
+                  "action": "uncheck"
                 }
               ],
               "source": "template",
@@ -2716,5 +2728,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780415751546
+  "updatedAt": 1780415753423
 }
