@@ -598,7 +598,16 @@
               "name": "電蚊香",
               "qty": 1,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                },
+                {
+                  "name": "卡老公",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [],
               "source": "template",
@@ -2849,5 +2858,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780415942807
+  "updatedAt": 1780416210159
 }
