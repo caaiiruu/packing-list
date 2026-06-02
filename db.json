@@ -685,7 +685,7 @@
                 }
               ],
               "mc": {
-                "阿靜": true,
+                "阿靜": false,
                 "小盈盈": false,
                 "媽": false
               },
@@ -718,6 +718,12 @@
                   "memberId": "eup4vt8kxk",
                   "memberName": "小盈盈",
                   "ts": 1780415716201,
+                  "action": "uncheck"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "阿靜",
+                  "ts": 1780415717017,
                   "action": "uncheck"
                 }
               ],
@@ -2662,5 +2668,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780415716757
+  "updatedAt": 1780415717678
 }
