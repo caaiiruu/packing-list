@@ -1,18 +1,5 @@
 {
-  "trips": [
-    {
-      "id": "deploy-smoke",
-      "name": "deploy smoke",
-      "emoji": "✈️",
-      "createdAt": 1780387500000,
-      "secret": "smoke-secret",
-      "activeCat": null,
-      "members": [],
-      "cats": [],
-      "backlog": [],
-      "templateCatalog": []
-    }
-  ],
+  "trips": [],
   "members": [],
-  "updatedAt": 1780387551573
+  "updatedAt": 1780389366818
 }
