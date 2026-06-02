@@ -1244,6 +1244,18 @@
                   "memberName": "境",
                   "ts": 1780415801898,
                   "action": "uncheck"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "境",
+                  "ts": 1780415802401,
+                  "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "境",
+                  "ts": 1780415803955,
+                  "action": "uncheck"
                 }
               ],
               "source": "template",
@@ -2823,5 +2835,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780415802500
+  "updatedAt": 1780415804517
 }
