@@ -2571,10 +2571,17 @@
               "id": "c7a0cto0vf",
               "name": "乳霜",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [],
               "mc": {},
-              "checkLog": [],
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780417464883,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "飛機過夜包::乳霜",
               "templateCategory": "飛機過夜包",
@@ -3013,5 +3020,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780416372075
+  "updatedAt": 1780417465654
 }
