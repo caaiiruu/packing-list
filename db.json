@@ -1171,7 +1171,7 @@
               "id": "9kti66s0vf",
               "name": "行車記錄器",
               "qty": 1,
-              "checked": true,
+              "checked": false,
               "members": [],
               "mc": {},
               "checkLog": [
@@ -1192,6 +1192,12 @@
                   "memberName": "貝",
                   "ts": 1780415923552,
                   "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780415924051,
+                  "action": "uncheck"
                 }
               ],
               "source": "template",
@@ -2860,5 +2866,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780415924085
+  "updatedAt": 1780415925036
 }
