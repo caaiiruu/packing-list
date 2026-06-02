@@ -2740,7 +2740,7 @@
               "id": "q39yp9w0vf",
               "name": "大腿綁帶（固定腳用）",
               "qty": 1,
-              "checked": true,
+              "checked": false,
               "members": [],
               "mc": {},
               "checkLog": [
@@ -2749,6 +2749,12 @@
                   "memberName": "貝",
                   "ts": 1780416362927,
                   "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780416364012,
+                  "action": "uncheck"
                 }
               ],
               "source": "template",
@@ -2994,5 +3000,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780416363526
+  "updatedAt": 1780416364561
 }
