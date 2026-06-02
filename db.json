@@ -2702,7 +2702,7 @@
               "id": "ykk81x47iq",
               "name": "煮水器",
               "qty": 1,
-              "checked": true,
+              "checked": false,
               "members": [
                 {
                   "name": "貝",
@@ -2710,7 +2710,7 @@
                 }
               ],
               "mc": {
-                "貝": true
+                "貝": false
               },
               "checkLog": [
                 {
@@ -2718,6 +2718,12 @@
                   "memberName": "貝",
                   "ts": 1780394043121,
                   "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780402838682,
+                  "action": "uncheck"
                 }
               ],
               "source": "template",
@@ -4902,5 +4908,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780394060329
+  "updatedAt": 1780402839338
 }
