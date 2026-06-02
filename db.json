@@ -669,7 +669,7 @@
               "id": "2o0yjlt0vf",
               "name": "湯包/沖泡包",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "媽",
@@ -685,13 +685,27 @@
                 }
               ],
               "mc": {
-                "阿靜": true
+                "阿靜": true,
+                "小盈盈": true,
+                "媽": true
               },
               "checkLog": [
                 {
                   "memberId": "eup4vt8kxk",
                   "memberName": "阿靜",
                   "ts": 1780415713799,
+                  "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "小盈盈",
+                  "ts": 1780415714318,
+                  "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "媽",
+                  "ts": 1780415714832,
                   "action": "check"
                 }
               ],
@@ -2636,5 +2650,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780415714320
+  "updatedAt": 1780415715574
 }
