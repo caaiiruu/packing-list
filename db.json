@@ -3118,7 +3118,7 @@
               "id": "1if9cu97iq",
               "name": "洗碗精",
               "qty": 1,
-              "checked": true,
+              "checked": false,
               "members": [
                 {
                   "name": "媽",
@@ -3126,7 +3126,7 @@
                 }
               ],
               "mc": {
-                "媽": true
+                "媽": false
               },
               "checkLog": [
                 {
@@ -3134,6 +3134,12 @@
                   "memberName": "媽",
                   "ts": 1780394053833,
                   "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "媽",
+                  "ts": 1780394057800,
+                  "action": "uncheck"
                 }
               ],
               "source": "template",
@@ -4890,5 +4896,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780394054725
+  "updatedAt": 1780394058444
 }
