@@ -1171,10 +1171,17 @@
               "id": "9kti66s0vf",
               "name": "行車記錄器",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [],
               "mc": {},
-              "checkLog": [],
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780415921552,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "開車必備::行車記錄器",
               "templateCategory": "開車必備",
@@ -2841,5 +2848,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780415809048
+  "updatedAt": 1780415922693
 }
