@@ -684,11 +684,7 @@
                   "qty": 1
                 }
               ],
-              "mc": {
-                "阿靜": false,
-                "小盈盈": false,
-                "媽": false
-              },
+              "mc": {},
               "checkLog": [
                 {
                   "memberId": "eup4vt8kxk",
@@ -743,9 +739,7 @@
                   "qty": 1
                 }
               ],
-              "mc": {
-                "媽": false
-              },
+              "mc": {},
               "checkLog": [
                 {
                   "memberId": "eup4vt8kxk",
@@ -776,9 +770,7 @@
                   "qty": 1
                 }
               ],
-              "mc": {
-                "媽": false
-              },
+              "mc": {},
               "checkLog": [
                 {
                   "memberId": "eup4vt8kxk",
@@ -827,9 +819,7 @@
                   "qty": 1
                 }
               ],
-              "mc": {
-                "貝": false
-              },
+              "mc": {},
               "checkLog": [
                 {
                   "memberId": "eup4vt8kxk",
@@ -860,9 +850,7 @@
                   "qty": 1
                 }
               ],
-              "mc": {
-                "媽": false
-              },
+              "mc": {},
               "checkLog": [
                 {
                   "memberId": "eup4vt8kxk",
@@ -906,9 +894,7 @@
                   "qty": 1
                 }
               ],
-              "mc": {
-                "卡": false
-              },
+              "mc": {},
               "checkLog": [
                 {
                   "memberId": "eup4vt8kxk",
@@ -1009,16 +995,14 @@
               "id": "chzilhn0vf",
               "name": "保冷袋",
               "qty": 1,
-              "checked": true,
+              "checked": false,
               "members": [
                 {
                   "name": "境",
                   "qty": 1
                 }
               ],
-              "mc": {
-                "境": true
-              },
+              "mc": {},
               "checkLog": [
                 {
                   "memberId": "eup4vt8kxk",
@@ -1061,7 +1045,7 @@
               "id": "vvacvwx0vf",
               "name": "2公升水袋",
               "qty": 2,
-              "checked": true,
+              "checked": false,
               "members": [],
               "mc": {},
               "checkLog": [
@@ -1235,16 +1219,14 @@
               "id": "4rfeus20vf",
               "name": "鏟雪刷",
               "qty": 2,
-              "checked": true,
+              "checked": false,
               "members": [
                 {
                   "name": "境",
                   "qty": 2
                 }
               ],
-              "mc": {
-                "境": true
-              },
+              "mc": {},
               "checkLog": [
                 {
                   "memberId": "eup4vt8kxk",
@@ -2866,5 +2848,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780415925036
+  "updatedAt": 1780415931371
 }
