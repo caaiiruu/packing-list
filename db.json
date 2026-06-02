@@ -397,16 +397,14 @@
               "id": "09dpfam0vf",
               "name": "吹風機",
               "qty": 1,
-              "checked": true,
+              "checked": false,
               "members": [
                 {
                   "name": "貝",
                   "qty": 1
                 }
               ],
-              "mc": {
-                "貝": true
-              },
+              "mc": {},
               "checkLog": [
                 {
                   "memberId": "eup4vt8kxk",
@@ -606,7 +604,7 @@
               "id": "h8gkif50vf",
               "name": "電蚊香",
               "qty": 1,
-              "checked": true,
+              "checked": false,
               "members": [
                 {
                   "name": "貝",
@@ -617,10 +615,7 @@
                   "qty": 1
                 }
               ],
-              "mc": {
-                "卡老公": true,
-                "貝": true
-              },
+              "mc": {},
               "checkLog": [
                 {
                   "memberId": "eup4vt8kxk",
@@ -687,7 +682,7 @@
               "id": "wnvgqdd0vf",
               "name": "防水手機袋（泡溫泉用）",
               "qty": 1,
-              "checked": true,
+              "checked": false,
               "members": [],
               "mc": {},
               "checkLog": [
@@ -2920,5 +2915,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780416216959
+  "updatedAt": 1780416258473
 }
