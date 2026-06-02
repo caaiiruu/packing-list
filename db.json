@@ -5,7 +5,7 @@
       "name": "冰島",
       "emoji": "✈️",
       "createdAt": 1780391066661,
-      "secret": "fa21f1216415850736a70683",
+      "secret": "fec5019c983d688e6dde6067",
       "activeCat": null,
       "members": [
         {
@@ -2397,7 +2397,8 @@
         "飛機過夜包::大腿綁帶（固定腳用）",
         "飛機過夜包::折疊椅（放腳用）"
       ],
-      "removedTemplateKeys": []
+      "removedTemplateKeys": [],
+      "secretIssuedAt": 1780414411915
     },
     {
       "id": "fil8b607iq",
@@ -4948,5 +4949,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780411729035
+  "updatedAt": 1780414412713
 }
