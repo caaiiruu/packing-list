@@ -1619,19 +1619,6 @@
               "templateKey": "藥品::感冒藥",
               "templateCategory": "藥品",
               "retiredByTemplate": false
-            },
-            {
-              "id": "hash7aoab6",
-              "name": "發燒藥",
-              "qty": 1,
-              "checked": false,
-              "members": [],
-              "mc": {},
-              "checkLog": [],
-              "source": "custom",
-              "templateKey": null,
-              "templateCategory": null,
-              "retiredByTemplate": false
             }
           ]
         },
@@ -2619,5 +2606,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780415392637
+  "updatedAt": 1780415461735
 }
