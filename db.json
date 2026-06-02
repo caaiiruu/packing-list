@@ -769,15 +769,24 @@
               "id": "f03572g0vf",
               "name": "菜瓜布",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "媽",
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "媽": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "媽",
+                  "ts": 1780415754667,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "食物廚具::菜瓜布",
               "templateCategory": "食物廚具",
@@ -2728,5 +2737,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780415753423
+  "updatedAt": 1780415755310
 }
