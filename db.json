@@ -790,15 +790,24 @@
               "id": "yo60w620vf",
               "name": "水果刀",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780415725449,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "食物廚具::水果刀",
               "templateCategory": "食物廚具",
@@ -2668,5 +2677,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780415717678
+  "updatedAt": 1780415726646
 }
