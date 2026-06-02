@@ -610,7 +610,7 @@
               ],
               "mc": {
                 "卡老公": false,
-                "貝": true
+                "貝": false
               },
               "checkLog": [
                 {
@@ -630,6 +630,24 @@
                   "memberName": "貝",
                   "ts": 1780416212397,
                   "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780416212846,
+                  "action": "uncheck"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780416213329,
+                  "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780416213896,
+                  "action": "uncheck"
                 }
               ],
               "source": "template",
@@ -2880,5 +2898,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780416212993
+  "updatedAt": 1780416214415
 }
