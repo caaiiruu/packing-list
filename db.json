@@ -684,8 +684,17 @@
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "阿靜": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "阿靜",
+                  "ts": 1780415713799,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "食物廚具::湯包/沖泡包",
               "templateCategory": "食物廚具",
@@ -2627,5 +2636,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780415712085
+  "updatedAt": 1780415714320
 }
