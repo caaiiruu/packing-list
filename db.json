@@ -7,7 +7,12 @@
       "createdAt": 1780391066661,
       "secret": "fa21f1216415850736a70683",
       "activeCat": null,
-      "members": [],
+      "members": [
+        {
+          "id": "eup4vt8kxk",
+          "name": "貝"
+        }
+      ],
       "cats": [
         {
           "cat": "服飾",
@@ -2400,5 +2405,5 @@
       "name": "貝"
     }
   ],
-  "updatedAt": 1780391074571
+  "updatedAt": 1780391076140
 }
