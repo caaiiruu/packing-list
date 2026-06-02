@@ -404,13 +404,27 @@
                   "qty": 1
                 }
               ],
-              "mc": {},
+              "mc": {
+                "貝": false
+              },
               "checkLog": [
                 {
                   "memberId": "eup4vt8kxk",
                   "memberName": "貝",
                   "ts": 1780416215228,
                   "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780416351511,
+                  "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780416352094,
+                  "action": "uncheck"
                 }
               ],
               "source": "template",
@@ -2915,5 +2929,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780416258473
+  "updatedAt": 1780416352880
 }
