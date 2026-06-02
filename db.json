@@ -2571,7 +2571,7 @@
               "id": "c7a0cto0vf",
               "name": "乳霜",
               "qty": 1,
-              "checked": true,
+              "checked": false,
               "members": [],
               "mc": {},
               "checkLog": [
@@ -2580,6 +2580,12 @@
                   "memberName": "貝",
                   "ts": 1780417464883,
                   "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780417465734,
+                  "action": "uncheck"
                 }
               ],
               "source": "template",
@@ -3020,5 +3026,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780417465654
+  "updatedAt": 1780417466603
 }
