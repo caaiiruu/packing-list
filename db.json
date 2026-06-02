@@ -4343,7 +4343,7 @@
               "id": "4u3z88g7ir",
               "name": "申根國家文件",
               "qty": 5,
-              "checked": true,
+              "checked": false,
               "members": [],
               "mc": {},
               "checkLog": [
@@ -4352,6 +4352,12 @@
                   "memberName": "貝",
                   "ts": 1780402953049,
                   "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780402954548,
+                  "action": "uncheck"
                 }
               ],
               "source": "template",
@@ -4941,5 +4947,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780402953600
+  "updatedAt": 1780402955152
 }
