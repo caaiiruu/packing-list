@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "baf5c2a4ec00b5cca67211b2",
       "secretIssuedAt": 1780414656171,
-      "activeCat": 3,
+      "activeCat": 1,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -447,32 +447,6 @@
               "checkLog": [],
               "source": "template",
               "templateKey": "電器::Insta 360",
-              "templateCategory": "電器",
-              "retiredByTemplate": false
-            },
-            {
-              "id": "7uk9fmh0vf",
-              "name": "360充電器",
-              "qty": 1,
-              "checked": false,
-              "members": [],
-              "mc": {},
-              "checkLog": [],
-              "source": "template",
-              "templateKey": "電器::360充電器",
-              "templateCategory": "電器",
-              "retiredByTemplate": false
-            },
-            {
-              "id": "fpttfy60vf",
-              "name": "360夾背帶",
-              "qty": 1,
-              "checked": false,
-              "members": [],
-              "mc": {},
-              "checkLog": [],
-              "source": "template",
-              "templateKey": "電器::360夾背帶",
               "templateCategory": "電器",
               "retiredByTemplate": false
             },
@@ -2653,7 +2627,34 @@
           ]
         }
       ],
-      "backlog": [],
+      "backlog": [
+        {
+          "id": "7uk9fmh0vf",
+          "name": "360充電器",
+          "qty": 1,
+          "checked": false,
+          "members": [],
+          "mc": {},
+          "checkLog": [],
+          "source": "template",
+          "templateKey": "電器::360充電器",
+          "templateCategory": "電器",
+          "retiredByTemplate": false
+        },
+        {
+          "id": "fpttfy60vf",
+          "name": "360夾背帶",
+          "qty": 1,
+          "checked": false,
+          "members": [],
+          "mc": {},
+          "checkLog": [],
+          "source": "template",
+          "templateKey": "電器::360夾背帶",
+          "templateCategory": "電器",
+          "retiredByTemplate": false
+        }
+      ],
       "templateCatalog": [
         "服飾::內衣褲",
         "服飾::暖暖衣",
@@ -2848,5 +2849,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780415931371
+  "updatedAt": 1780415942807
 }
