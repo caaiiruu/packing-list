@@ -1009,15 +1009,24 @@
               "id": "chzilhn0vf",
               "name": "保冷袋",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "境",
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "境": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780415770298,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "開車必備::保冷袋",
               "templateCategory": "開車必備",
@@ -2750,5 +2759,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780415769045
+  "updatedAt": 1780415771728
 }
