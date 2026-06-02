@@ -618,7 +618,7 @@
               "id": "h8gkif50vf",
               "name": "電蚊香",
               "qty": 1,
-              "checked": true,
+              "checked": false,
               "members": [
                 {
                   "name": "貝",
@@ -630,8 +630,8 @@
                 }
               ],
               "mc": {
-                "貝": true,
-                "卡老公": true
+                "貝": false,
+                "卡老公": false
               },
               "checkLog": [
                 {
@@ -687,6 +687,12 @@
                   "memberName": "卡老公",
                   "ts": 1780416353394,
                   "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780416356244,
+                  "action": "uncheck"
                 }
               ],
               "source": "template",
@@ -2944,5 +2950,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780416354004
+  "updatedAt": 1780416356909
 }
