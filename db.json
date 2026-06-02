@@ -2437,7 +2437,7 @@
               "id": "777ooue7iq",
               "name": "內衣褲",
               "qty": 1,
-              "checked": true,
+              "checked": false,
               "members": [],
               "mc": {},
               "checkLog": [
@@ -2446,6 +2446,12 @@
                   "memberName": "匿名",
                   "ts": 1780393770193,
                   "action": "check"
+                },
+                {
+                  "memberId": "anon",
+                  "memberName": "匿名",
+                  "ts": 1780393771144,
+                  "action": "uncheck"
                 }
               ],
               "source": "template",
@@ -4842,5 +4848,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780393770866
+  "updatedAt": 1780393771998
 }
