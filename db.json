@@ -2829,7 +2829,7 @@
               "id": "qnrto0m7iq",
               "name": "行動電源",
               "qty": 2,
-              "checked": true,
+              "checked": false,
               "members": [],
               "mc": {},
               "checkLog": [
@@ -2838,6 +2838,12 @@
                   "memberName": "貝",
                   "ts": 1780402910850,
                   "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780402912550,
+                  "action": "uncheck"
                 }
               ],
               "source": "template",
@@ -4915,5 +4921,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780402911486
+  "updatedAt": 1780402913138
 }
