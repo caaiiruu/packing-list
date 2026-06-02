@@ -1,5 +1,2399 @@
 {
-  "trips": [],
+  "trips": [
+    {
+      "id": "e322u2bf39",
+      "name": "冰島",
+      "emoji": "✈️",
+      "createdAt": 1780391066661,
+      "secret": "fa21f1216415850736a70683",
+      "activeCat": null,
+      "members": [],
+      "cats": [
+        {
+          "cat": "服飾",
+          "icon": "ti-shirt",
+          "expanded": true,
+          "items": [
+            {
+              "id": "hebg4r5f3a",
+              "name": "內衣褲",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "服飾::內衣褲",
+              "templateCategory": "服飾"
+            },
+            {
+              "id": "o0wejfkf3a",
+              "name": "暖暖衣",
+              "qty": 4,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "服飾::暖暖衣",
+              "templateCategory": "服飾"
+            },
+            {
+              "id": "rjayc0ff3a",
+              "name": "防水手套",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "服飾::防水手套",
+              "templateCategory": "服飾"
+            },
+            {
+              "id": "bexebj4f3a",
+              "name": "防蒼蠅頭套",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "服飾::防蒼蠅頭套",
+              "templateCategory": "服飾"
+            },
+            {
+              "id": "mwl0jojf3a",
+              "name": "厚長襪",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "服飾::厚長襪",
+              "templateCategory": "服飾"
+            },
+            {
+              "id": "6c6ag7mf3a",
+              "name": "靴子",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "服飾::靴子",
+              "templateCategory": "服飾"
+            },
+            {
+              "id": "hyjk2w6f3a",
+              "name": "拖鞋",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "服飾::拖鞋",
+              "templateCategory": "服飾"
+            },
+            {
+              "id": "u8xs85df3a",
+              "name": "耳罩",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "服飾::耳罩",
+              "templateCategory": "服飾"
+            },
+            {
+              "id": "1zy41ajf3a",
+              "name": "毛帽",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "服飾::毛帽",
+              "templateCategory": "服飾"
+            },
+            {
+              "id": "uuwc6fif3a",
+              "name": "泳衣",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "服飾::泳衣",
+              "templateCategory": "服飾"
+            },
+            {
+              "id": "7w2fco8f3a",
+              "name": "冰爪",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "服飾::冰爪",
+              "templateCategory": "服飾"
+            },
+            {
+              "id": "1hccqjff3a",
+              "name": "冰爪防水束袋",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "服飾::冰爪防水束袋",
+              "templateCategory": "服飾"
+            },
+            {
+              "id": "fn8xqr7f3a",
+              "name": "睡衣黑色短袖",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "服飾::睡衣黑色短袖",
+              "templateCategory": "服飾"
+            },
+            {
+              "id": "56ikvwif3a",
+              "name": "睡衣短褲",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "服飾::睡衣短褲",
+              "templateCategory": "服飾"
+            },
+            {
+              "id": "6gkknf4f3a",
+              "name": "棉褲",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "服飾::棉褲",
+              "templateCategory": "服飾"
+            },
+            {
+              "id": "gs7e2qkf3a",
+              "name": "圍巾",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "服飾::圍巾",
+              "templateCategory": "服飾"
+            },
+            {
+              "id": "qyxgcsrf3a",
+              "name": "防曬帽",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "服飾::防曬帽",
+              "templateCategory": "服飾"
+            },
+            {
+              "id": "z79pd4qf3a",
+              "name": "雨傘",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "服飾::雨傘",
+              "templateCategory": "服飾"
+            },
+            {
+              "id": "jhhfxwvf3a",
+              "name": "防水褲",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "服飾::防水褲",
+              "templateCategory": "服飾"
+            },
+            {
+              "id": "t30i75xf3a",
+              "name": "登山杖",
+              "qty": 4,
+              "checked": false,
+              "members": [
+                {
+                  "name": "境",
+                  "qty": 4
+                }
+              ],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "服飾::登山杖",
+              "templateCategory": "服飾"
+            }
+          ]
+        },
+        {
+          "cat": "電器",
+          "icon": "ti-device-laptop",
+          "expanded": true,
+          "items": [
+            {
+              "id": "aobwkwuf3b",
+              "name": "煮水器",
+              "qty": 1,
+              "checked": false,
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                }
+              ],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "電器::煮水器",
+              "templateCategory": "電器"
+            },
+            {
+              "id": "gezb193f3b",
+              "name": "洗衣蛋",
+              "qty": 1,
+              "checked": false,
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                }
+              ],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "電器::洗衣蛋",
+              "templateCategory": "電器"
+            },
+            {
+              "id": "n3iny85f3b",
+              "name": "行動洗衣袋",
+              "qty": 1,
+              "checked": false,
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                }
+              ],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "電器::行動洗衣袋",
+              "templateCategory": "電器"
+            },
+            {
+              "id": "tgt5qmdf3b",
+              "name": "轉接頭",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "電器::轉接頭",
+              "templateCategory": "電器"
+            },
+            {
+              "id": "ze32zb9f3b",
+              "name": "延長線",
+              "qty": 1,
+              "checked": false,
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                }
+              ],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "電器::延長線",
+              "templateCategory": "電器"
+            },
+            {
+              "id": "ulyou0ef3b",
+              "name": "吹風機",
+              "qty": 1,
+              "checked": false,
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                }
+              ],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "電器::吹風機",
+              "templateCategory": "電器"
+            },
+            {
+              "id": "66qpij3f3b",
+              "name": "行動電源",
+              "qty": 2,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "電器::行動電源",
+              "templateCategory": "電器"
+            },
+            {
+              "id": "8h3mcqof3b",
+              "name": "Google TV + 遙控器",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "電器::Google TV + 遙控器",
+              "templateCategory": "電器"
+            },
+            {
+              "id": "p1ftu80f3b",
+              "name": "Insta 360",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "電器::Insta 360",
+              "templateCategory": "電器"
+            },
+            {
+              "id": "47j9p3cf3b",
+              "name": "360充電器",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "電器::360充電器",
+              "templateCategory": "電器"
+            },
+            {
+              "id": "yko13ryf3b",
+              "name": "360夾背帶",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "電器::360夾背帶",
+              "templateCategory": "電器"
+            },
+            {
+              "id": "h7ljk2nf3b",
+              "name": "手機掛繩",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "電器::手機掛繩",
+              "templateCategory": "電器"
+            },
+            {
+              "id": "6ad1qibf3b",
+              "name": "Apple Watch",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "電器::Apple Watch",
+              "templateCategory": "電器"
+            },
+            {
+              "id": "0ebz0h4f3b",
+              "name": "手機充電線",
+              "qty": 2,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "電器::手機充電線",
+              "templateCategory": "電器"
+            },
+            {
+              "id": "fa5n9czf3b",
+              "name": "行動電源充電線",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "電器::行動電源充電線",
+              "templateCategory": "電器"
+            },
+            {
+              "id": "zbgjub6f3b",
+              "name": "Type C充電線",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "電器::Type C充電線",
+              "templateCategory": "電器"
+            },
+            {
+              "id": "c6qejwrf3b",
+              "name": "行李秤",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "電器::行李秤",
+              "templateCategory": "電器"
+            },
+            {
+              "id": "3lxxw12f3b",
+              "name": "自拍棒",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "電器::自拍棒",
+              "templateCategory": "電器"
+            },
+            {
+              "id": "ca88jg2f3b",
+              "name": "頭燈",
+              "qty": 2,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "電器::頭燈",
+              "templateCategory": "電器"
+            },
+            {
+              "id": "i0aqvy4f3b",
+              "name": "旅行鍋",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "電器::旅行鍋",
+              "templateCategory": "電器"
+            },
+            {
+              "id": "qzn6k7kf3b",
+              "name": "手電筒",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "電器::手電筒",
+              "templateCategory": "電器"
+            },
+            {
+              "id": "wyyldpyf3b",
+              "name": "鎖頭",
+              "qty": 4,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "電器::鎖頭",
+              "templateCategory": "電器"
+            },
+            {
+              "id": "bumdr0pf3b",
+              "name": "電蚊香",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "電器::電蚊香",
+              "templateCategory": "電器"
+            },
+            {
+              "id": "2a459h9f3b",
+              "name": "手機腳架",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "電器::手機腳架",
+              "templateCategory": "電器"
+            },
+            {
+              "id": "llx1vqcf3b",
+              "name": "防水手機袋（泡溫泉用）",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "電器::防水手機袋（泡溫泉用）",
+              "templateCategory": "電器"
+            }
+          ]
+        },
+        {
+          "cat": "食物廚具",
+          "icon": "ti-bowl",
+          "expanded": true,
+          "items": [
+            {
+              "id": "3a814d0f3b",
+              "name": "湯包/沖泡包",
+              "qty": 1,
+              "checked": false,
+              "members": [
+                {
+                  "name": "媽",
+                  "qty": 1
+                }
+              ],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "食物廚具::湯包/沖泡包",
+              "templateCategory": "食物廚具"
+            },
+            {
+              "id": "gfxf8ctf3b",
+              "name": "食物保鮮袋",
+              "qty": 1,
+              "checked": false,
+              "members": [
+                {
+                  "name": "媽",
+                  "qty": 1
+                }
+              ],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "食物廚具::食物保鮮袋",
+              "templateCategory": "食物廚具"
+            },
+            {
+              "id": "zf6emx6f3b",
+              "name": "菜瓜布",
+              "qty": 1,
+              "checked": false,
+              "members": [
+                {
+                  "name": "媽",
+                  "qty": 1
+                }
+              ],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "食物廚具::菜瓜布",
+              "templateCategory": "食物廚具"
+            },
+            {
+              "id": "ikectabf3b",
+              "name": "洗碗精",
+              "qty": 1,
+              "checked": false,
+              "members": [
+                {
+                  "name": "媽",
+                  "qty": 1
+                }
+              ],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "食物廚具::洗碗精",
+              "templateCategory": "食物廚具"
+            },
+            {
+              "id": "fj8lacrf3b",
+              "name": "水果刀",
+              "qty": 1,
+              "checked": false,
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                }
+              ],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "食物廚具::水果刀",
+              "templateCategory": "食物廚具"
+            },
+            {
+              "id": "31jfylhf3b",
+              "name": "刨刀",
+              "qty": 1,
+              "checked": false,
+              "members": [
+                {
+                  "name": "媽",
+                  "qty": 1
+                }
+              ],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "食物廚具::刨刀",
+              "templateCategory": "食物廚具"
+            },
+            {
+              "id": "2e0q2k0f3b",
+              "name": "泡麵",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "食物廚具::泡麵",
+              "templateCategory": "食物廚具"
+            },
+            {
+              "id": "ffrlihyf3b",
+              "name": "食物保鮮矽膠盒",
+              "qty": 1,
+              "checked": false,
+              "members": [
+                {
+                  "name": "卡",
+                  "qty": 1
+                }
+              ],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "食物廚具::食物保鮮矽膠盒",
+              "templateCategory": "食物廚具"
+            }
+          ]
+        },
+        {
+          "cat": "開車必備",
+          "icon": "ti-car",
+          "expanded": true,
+          "items": [
+            {
+              "id": "qhqi6fhf3b",
+              "name": "大保溫瓶",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "開車必備::大保溫瓶",
+              "templateCategory": "開車必備"
+            },
+            {
+              "id": "fjd8th8f3b",
+              "name": "悶燒罐（含咖啡包）",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "開車必備::悶燒罐（含咖啡包）",
+              "templateCategory": "開車必備"
+            },
+            {
+              "id": "o2h65oof3b",
+              "name": "濕紙巾（大）",
+              "qty": 2,
+              "checked": false,
+              "members": [
+                {
+                  "name": "卡",
+                  "qty": 1
+                },
+                {
+                  "name": "媽",
+                  "qty": 1
+                }
+              ],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "開車必備::濕紙巾（大）",
+              "templateCategory": "開車必備"
+            },
+            {
+              "id": "j2b3imff3b",
+              "name": "濕紙巾（小）",
+              "qty": 4,
+              "checked": false,
+              "members": [
+                {
+                  "name": "媽",
+                  "qty": 2
+                },
+                {
+                  "name": "卡",
+                  "qty": 2
+                }
+              ],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "開車必備::濕紙巾（小）",
+              "templateCategory": "開車必備"
+            },
+            {
+              "id": "0bq3kkvf3b",
+              "name": "保冷袋",
+              "qty": 1,
+              "checked": false,
+              "members": [
+                {
+                  "name": "境",
+                  "qty": 1
+                }
+              ],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "開車必備::保冷袋",
+              "templateCategory": "開車必備"
+            },
+            {
+              "id": "ngcnddtf3b",
+              "name": "小酒精瓶",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "開車必備::小酒精瓶",
+              "templateCategory": "開車必備"
+            },
+            {
+              "id": "oqq94q1f3b",
+              "name": "2公升水袋",
+              "qty": 2,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "開車必備::2公升水袋",
+              "templateCategory": "開車必備"
+            },
+            {
+              "id": "j0jibddf3b",
+              "name": "脖枕",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "開車必備::脖枕",
+              "templateCategory": "開車必備"
+            },
+            {
+              "id": "lna81juf3b",
+              "name": "垃圾袋",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "開車必備::垃圾袋",
+              "templateCategory": "開車必備"
+            },
+            {
+              "id": "pu2wosvf3b",
+              "name": "黏土",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "開車必備::黏土",
+              "templateCategory": "開車必備"
+            },
+            {
+              "id": "8t7s46af3b",
+              "name": "墨鏡",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "開車必備::墨鏡",
+              "templateCategory": "開車必備"
+            },
+            {
+              "id": "q733zrrf3b",
+              "name": "手機架",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "開車必備::手機架",
+              "templateCategory": "開車必備"
+            },
+            {
+              "id": "94jplksf3b",
+              "name": "行車記錄器",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "開車必備::行車記錄器",
+              "templateCategory": "開車必備"
+            },
+            {
+              "id": "i8brruzf3b",
+              "name": "USB線",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "開車必備::USB線",
+              "templateCategory": "開車必備"
+            },
+            {
+              "id": "q4eh48vf3b",
+              "name": "蛋白粉杯",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "開車必備::蛋白粉杯",
+              "templateCategory": "開車必備"
+            },
+            {
+              "id": "ijlx463f3b",
+              "name": "鏟雪刷",
+              "qty": 2,
+              "checked": false,
+              "members": [
+                {
+                  "name": "境",
+                  "qty": 2
+                }
+              ],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "開車必備::鏟雪刷",
+              "templateCategory": "開車必備"
+            },
+            {
+              "id": "ywa5i1ef3b",
+              "name": "露營車馬桶分解劑",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "開車必備::露營車馬桶分解劑",
+              "templateCategory": "開車必備"
+            },
+            {
+              "id": "kcn94bof3b",
+              "name": "除臭噴霧",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "開車必備::除臭噴霧",
+              "templateCategory": "開車必備"
+            }
+          ]
+        },
+        {
+          "cat": "梳妝保養",
+          "icon": "ti-sparkles",
+          "expanded": true,
+          "items": [
+            {
+              "id": "cf3564df3b",
+              "name": "隱形眼鏡（拋棄式）",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "梳妝保養::隱形眼鏡（拋棄式）",
+              "templateCategory": "梳妝保養"
+            },
+            {
+              "id": "sb093z6f3b",
+              "name": "身體乳",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "梳妝保養::身體乳",
+              "templateCategory": "梳妝保養"
+            },
+            {
+              "id": "ppkezftf3b",
+              "name": "面膜",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "梳妝保養::面膜",
+              "templateCategory": "梳妝保養"
+            },
+            {
+              "id": "09ngbtnf3b",
+              "name": "洗髮乳",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "梳妝保養::洗髮乳",
+              "templateCategory": "梳妝保養"
+            },
+            {
+              "id": "dypy8gef3b",
+              "name": "沐浴乳",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "梳妝保養::沐浴乳",
+              "templateCategory": "梳妝保養"
+            },
+            {
+              "id": "hzht36gf3b",
+              "name": "化妝棉",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "梳妝保養::化妝棉",
+              "templateCategory": "梳妝保養"
+            },
+            {
+              "id": "7u5jm02f3b",
+              "name": "酒精棉片",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "梳妝保養::酒精棉片",
+              "templateCategory": "梳妝保養"
+            },
+            {
+              "id": "rpfodb6f3b",
+              "name": "木瓜霜",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "梳妝保養::木瓜霜",
+              "templateCategory": "梳妝保養"
+            },
+            {
+              "id": "h94mi7qf3b",
+              "name": "頭皮藥",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "梳妝保養::頭皮藥",
+              "templateCategory": "梳妝保養"
+            },
+            {
+              "id": "dqrf2mcf3b",
+              "name": "指甲剪",
+              "qty": 2,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "梳妝保養::指甲剪",
+              "templateCategory": "梳妝保養"
+            },
+            {
+              "id": "hwr2l0gf3b",
+              "name": "棉花棒",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "梳妝保養::棉花棒",
+              "templateCategory": "梳妝保養"
+            },
+            {
+              "id": "tqqekyqf3b",
+              "name": "牙線棒",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "梳妝保養::牙線棒",
+              "templateCategory": "梳妝保養"
+            },
+            {
+              "id": "toviwn5f3b",
+              "name": "眼霜",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "梳妝保養::眼霜",
+              "templateCategory": "梳妝保養"
+            },
+            {
+              "id": "vsdo3ojf3b",
+              "name": "護手霜（Aesop）",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "梳妝保養::護手霜（Aesop）",
+              "templateCategory": "梳妝保養"
+            },
+            {
+              "id": "a03dkgrf3b",
+              "name": "眼鏡",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "梳妝保養::眼鏡",
+              "templateCategory": "梳妝保養"
+            },
+            {
+              "id": "ruo8nttf3b",
+              "name": "眼鏡盒",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "梳妝保養::眼鏡盒",
+              "templateCategory": "梳妝保養"
+            },
+            {
+              "id": "f5n4ij5f3b",
+              "name": "蒸眼罩",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "梳妝保養::蒸眼罩",
+              "templateCategory": "梳妝保養"
+            },
+            {
+              "id": "1k8zwodf3b",
+              "name": "白花油",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "梳妝保養::白花油",
+              "templateCategory": "梳妝保養"
+            },
+            {
+              "id": "o7zq08af3b",
+              "name": "護髮油",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "梳妝保養::護髮油",
+              "templateCategory": "梳妝保養"
+            },
+            {
+              "id": "ny0v8kwf3b",
+              "name": "卸妝水",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "梳妝保養::卸妝水",
+              "templateCategory": "梳妝保養"
+            },
+            {
+              "id": "16yw7ctf3b",
+              "name": "防曬乳",
+              "qty": 3,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "梳妝保養::防曬乳",
+              "templateCategory": "梳妝保養"
+            },
+            {
+              "id": "cduw4l9f3b",
+              "name": "爽身膏",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "梳妝保養::爽身膏",
+              "templateCategory": "梳妝保養"
+            },
+            {
+              "id": "tcwqtalf3b",
+              "name": "生髮水",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "梳妝保養::生髮水",
+              "templateCategory": "梳妝保養"
+            },
+            {
+              "id": "vf6zpulf3b",
+              "name": "護髮素",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "梳妝保養::護髮素",
+              "templateCategory": "梳妝保養"
+            },
+            {
+              "id": "hogr01df3b",
+              "name": "化妝包",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "梳妝保養::化妝包",
+              "templateCategory": "梳妝保養"
+            },
+            {
+              "id": "sz2bmxjf3b",
+              "name": "小瓶化妝水",
+              "qty": 2,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "梳妝保養::小瓶化妝水",
+              "templateCategory": "梳妝保養"
+            },
+            {
+              "id": "e5yqlfyf3b",
+              "name": "小瓶乳霜",
+              "qty": 4,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "梳妝保養::小瓶乳霜",
+              "templateCategory": "梳妝保養"
+            },
+            {
+              "id": "8j82ls0f3b",
+              "name": "刮鬍刀",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "梳妝保養::刮鬍刀",
+              "templateCategory": "梳妝保養"
+            }
+          ]
+        },
+        {
+          "cat": "藥品",
+          "icon": "ti-pill",
+          "expanded": true,
+          "items": [
+            {
+              "id": "m242j2nf3b",
+              "name": "Eve（止痛藥）",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "藥品::Eve（止痛藥）",
+              "templateCategory": "藥品"
+            },
+            {
+              "id": "gqnxr2pf3b",
+              "name": "OK蹦",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "藥品::OK蹦",
+              "templateCategory": "藥品"
+            },
+            {
+              "id": "7q6dc11f3b",
+              "name": "暈車藥",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "藥品::暈車藥",
+              "templateCategory": "藥品"
+            },
+            {
+              "id": "mu6d0nkf3b",
+              "name": "益生菌",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "藥品::益生菌",
+              "templateCategory": "藥品"
+            },
+            {
+              "id": "v0ext26f3b",
+              "name": "痠痛貼布",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "藥品::痠痛貼布",
+              "templateCategory": "藥品"
+            },
+            {
+              "id": "uwhrsjff3b",
+              "name": "綁腳趾頭繃帶",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "藥品::綁腳趾頭繃帶",
+              "templateCategory": "藥品"
+            },
+            {
+              "id": "gng4q36f3b",
+              "name": "喉糖",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "藥品::喉糖",
+              "templateCategory": "藥品"
+            },
+            {
+              "id": "efxxucsf3b",
+              "name": "胃藥",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "藥品::胃藥",
+              "templateCategory": "藥品"
+            },
+            {
+              "id": "vv82kagf3b",
+              "name": "隨身藥罐",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "藥品::隨身藥罐",
+              "templateCategory": "藥品"
+            },
+            {
+              "id": "fnygyc8f3b",
+              "name": "中藥",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "藥品::中藥",
+              "templateCategory": "藥品"
+            },
+            {
+              "id": "jaf9nucf3b",
+              "name": "噴鼻藥",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "藥品::噴鼻藥",
+              "templateCategory": "藥品"
+            },
+            {
+              "id": "o12b02ef3b",
+              "name": "防蚊貼",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "藥品::防蚊貼",
+              "templateCategory": "藥品"
+            },
+            {
+              "id": "1ok5wtkf3b",
+              "name": "感冒藥",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "藥品::感冒藥",
+              "templateCategory": "藥品"
+            }
+          ]
+        },
+        {
+          "cat": "備品雜物",
+          "icon": "ti-tools",
+          "expanded": true,
+          "items": [
+            {
+              "id": "fro3lj6f3b",
+              "name": "衣架（境）",
+              "qty": 4,
+              "checked": false,
+              "members": [
+                {
+                  "name": "境",
+                  "qty": 4
+                }
+              ],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "備品雜物::衣架（境）",
+              "templateCategory": "備品雜物"
+            },
+            {
+              "id": "vrsxfjqf3b",
+              "name": "衣架（媽）",
+              "qty": 10,
+              "checked": false,
+              "members": [
+                {
+                  "name": "媽",
+                  "qty": 10
+                }
+              ],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "備品雜物::衣架（媽）",
+              "templateCategory": "備品雜物"
+            },
+            {
+              "id": "5cn3lk9f3b",
+              "name": "衣架（貝）",
+              "qty": 10,
+              "checked": false,
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 10
+                }
+              ],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "備品雜物::衣架（貝）",
+              "templateCategory": "備品雜物"
+            },
+            {
+              "id": "0ctu3lvf3b",
+              "name": "衣夾子",
+              "qty": 6,
+              "checked": false,
+              "members": [
+                {
+                  "name": "卡",
+                  "qty": 6
+                }
+              ],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "備品雜物::衣夾子",
+              "templateCategory": "備品雜物"
+            },
+            {
+              "id": "chksgqtf3b",
+              "name": "吊衣繩（貝）",
+              "qty": 1,
+              "checked": false,
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                }
+              ],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "備品雜物::吊衣繩（貝）",
+              "templateCategory": "備品雜物"
+            },
+            {
+              "id": "r1v9m3gf3b",
+              "name": "吊衣繩（媽）",
+              "qty": 1,
+              "checked": false,
+              "members": [
+                {
+                  "name": "媽",
+                  "qty": 1
+                }
+              ],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "備品雜物::吊衣繩（媽）",
+              "templateCategory": "備品雜物"
+            },
+            {
+              "id": "8xks6u8f3b",
+              "name": "洗衣精小瓶",
+              "qty": 2,
+              "checked": false,
+              "members": [
+                {
+                  "name": "媽",
+                  "qty": 2
+                }
+              ],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "備品雜物::洗衣精小瓶",
+              "templateCategory": "備品雜物"
+            },
+            {
+              "id": "ag94ir4f3b",
+              "name": "洗衣袋（大）",
+              "qty": 2,
+              "checked": false,
+              "members": [
+                {
+                  "name": "媽",
+                  "qty": 2
+                }
+              ],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "備品雜物::洗衣袋（大）",
+              "templateCategory": "備品雜物"
+            },
+            {
+              "id": "ft20xnxf3b",
+              "name": "內衣洗衣袋",
+              "qty": 1,
+              "checked": false,
+              "members": [
+                {
+                  "name": "媽",
+                  "qty": 1
+                }
+              ],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "備品雜物::內衣洗衣袋",
+              "templateCategory": "備品雜物"
+            },
+            {
+              "id": "ss3rndbf3b",
+              "name": "食物夾",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "備品雜物::食物夾",
+              "templateCategory": "備品雜物"
+            },
+            {
+              "id": "rmiznrzf3b",
+              "name": "環保袋",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "備品雜物::環保袋",
+              "templateCategory": "備品雜物"
+            },
+            {
+              "id": "zwf6yohf3b",
+              "name": "口罩",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "備品雜物::口罩",
+              "templateCategory": "備品雜物"
+            },
+            {
+              "id": "pof6k13f3b",
+              "name": "夾鏈袋",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "備品雜物::夾鏈袋",
+              "templateCategory": "備品雜物"
+            },
+            {
+              "id": "xt2jenhf3b",
+              "name": "小塑膠袋",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "備品雜物::小塑膠袋",
+              "templateCategory": "備品雜物"
+            },
+            {
+              "id": "jcidv44f3b",
+              "name": "折疊碗",
+              "qty": 2,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "備品雜物::折疊碗",
+              "templateCategory": "備品雜物"
+            },
+            {
+              "id": "1s48thzf3b",
+              "name": "木頭推拿棒",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "備品雜物::木頭推拿棒",
+              "templateCategory": "備品雜物"
+            },
+            {
+              "id": "d8bwmblf3b",
+              "name": "髮圈",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "備品雜物::髮圈",
+              "templateCategory": "備品雜物"
+            },
+            {
+              "id": "qxbbdvaf3b",
+              "name": "洗衣折疊袋（洗衣蛋用）",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "備品雜物::洗衣折疊袋（洗衣蛋用）",
+              "templateCategory": "備品雜物"
+            },
+            {
+              "id": "yywxdglf3b",
+              "name": "絲瓜巾",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "備品雜物::絲瓜巾",
+              "templateCategory": "備品雜物"
+            }
+          ]
+        },
+        {
+          "cat": "重要文件",
+          "icon": "ti-file-text",
+          "expanded": true,
+          "items": [
+            {
+              "id": "tnvcfkxf3b",
+              "name": "台灣駕照",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "重要文件::台灣駕照",
+              "templateCategory": "重要文件"
+            },
+            {
+              "id": "7uf1ufqf3b",
+              "name": "國際駕照",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "重要文件::國際駕照",
+              "templateCategory": "重要文件"
+            },
+            {
+              "id": "cabsck6f3b",
+              "name": "金剛經",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "重要文件::金剛經",
+              "templateCategory": "重要文件"
+            },
+            {
+              "id": "tv1m3xnf3b",
+              "name": "筆",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "重要文件::筆",
+              "templateCategory": "重要文件"
+            },
+            {
+              "id": "txlgequf3b",
+              "name": "申根國家文件",
+              "qty": 5,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "重要文件::申根國家文件",
+              "templateCategory": "重要文件"
+            },
+            {
+              "id": "c7qj8bif3b",
+              "name": "Costco卡",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "重要文件::Costco卡",
+              "templateCategory": "重要文件"
+            },
+            {
+              "id": "7vvmmwnf3b",
+              "name": "大小照片各兩張",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "重要文件::大小照片各兩張",
+              "templateCategory": "重要文件"
+            },
+            {
+              "id": "l7o3b65f3b",
+              "name": "護照",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "重要文件::護照",
+              "templateCategory": "重要文件"
+            },
+            {
+              "id": "xj8gyo5f3b",
+              "name": "SIM卡（卡套不能丟）",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "重要文件::SIM卡（卡套不能丟）",
+              "templateCategory": "重要文件"
+            }
+          ]
+        },
+        {
+          "cat": "臥鋪盥洗包",
+          "icon": "ti-moon",
+          "expanded": true,
+          "items": [
+            {
+              "id": "g191lsaf3b",
+              "name": "一包衛生紙",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "臥鋪盥洗包::一包衛生紙",
+              "templateCategory": "臥鋪盥洗包"
+            },
+            {
+              "id": "rwgbzm7f3b",
+              "name": "黑色短袖",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "臥鋪盥洗包::黑色短袖",
+              "templateCategory": "臥鋪盥洗包"
+            },
+            {
+              "id": "q4b305jf3b",
+              "name": "內褲",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "臥鋪盥洗包::內褲",
+              "templateCategory": "臥鋪盥洗包"
+            },
+            {
+              "id": "ngqul47f3b",
+              "name": "內衣",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "臥鋪盥洗包::內衣",
+              "templateCategory": "臥鋪盥洗包"
+            },
+            {
+              "id": "kpwhftaf3b",
+              "name": "免洗浴巾",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "臥鋪盥洗包::免洗浴巾",
+              "templateCategory": "臥鋪盥洗包"
+            },
+            {
+              "id": "c9pqsukf3b",
+              "name": "小罐沐浴乳",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "臥鋪盥洗包::小罐沐浴乳",
+              "templateCategory": "臥鋪盥洗包"
+            },
+            {
+              "id": "hn0w6saf3b",
+              "name": "小罐洗髮乳",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "臥鋪盥洗包::小罐洗髮乳",
+              "templateCategory": "臥鋪盥洗包"
+            },
+            {
+              "id": "s7ftknlf3b",
+              "name": "小罐洗臉",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "臥鋪盥洗包::小罐洗臉",
+              "templateCategory": "臥鋪盥洗包"
+            },
+            {
+              "id": "0bj5lnff3b",
+              "name": "絲瓜巾",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "臥鋪盥洗包::絲瓜巾",
+              "templateCategory": "臥鋪盥洗包"
+            },
+            {
+              "id": "ej2wypaf3b",
+              "name": "睡衣短褲",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "臥鋪盥洗包::睡衣短褲",
+              "templateCategory": "臥鋪盥洗包"
+            }
+          ]
+        },
+        {
+          "cat": "飛機過夜包",
+          "icon": "ti-plane",
+          "expanded": true,
+          "items": [
+            {
+              "id": "c2mgbb1f3b",
+              "name": "牙線",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "飛機過夜包::牙線",
+              "templateCategory": "飛機過夜包"
+            },
+            {
+              "id": "m7a7deaf3b",
+              "name": "面膜",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "飛機過夜包::面膜",
+              "templateCategory": "飛機過夜包"
+            },
+            {
+              "id": "c9e91csf3b",
+              "name": "乳霜",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "飛機過夜包::乳霜",
+              "templateCategory": "飛機過夜包"
+            },
+            {
+              "id": "yj5qpqgf3b",
+              "name": "眼鏡盒",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "飛機過夜包::眼鏡盒",
+              "templateCategory": "飛機過夜包"
+            },
+            {
+              "id": "4ynzn49f3b",
+              "name": "隱形眼鏡",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "飛機過夜包::隱形眼鏡",
+              "templateCategory": "飛機過夜包"
+            },
+            {
+              "id": "o31co25f3b",
+              "name": "眼藥水",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "飛機過夜包::眼藥水",
+              "templateCategory": "飛機過夜包"
+            },
+            {
+              "id": "3ekq327f3b",
+              "name": "木瓜霜",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "飛機過夜包::木瓜霜",
+              "templateCategory": "飛機過夜包"
+            },
+            {
+              "id": "o9j90qpf3b",
+              "name": "發熱眼罩",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "飛機過夜包::發熱眼罩",
+              "templateCategory": "飛機過夜包"
+            },
+            {
+              "id": "58qz6qmf3b",
+              "name": "耳塞",
+              "qty": 4,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "飛機過夜包::耳塞",
+              "templateCategory": "飛機過夜包"
+            },
+            {
+              "id": "vg4dxbgf3b",
+              "name": "綁頭髮",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "飛機過夜包::綁頭髮",
+              "templateCategory": "飛機過夜包"
+            },
+            {
+              "id": "blfx0ocf3b",
+              "name": "水袋",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "飛機過夜包::水袋",
+              "templateCategory": "飛機過夜包"
+            },
+            {
+              "id": "8w8jrd3f3b",
+              "name": "護手霜",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "飛機過夜包::護手霜",
+              "templateCategory": "飛機過夜包"
+            },
+            {
+              "id": "c41xb7lf3b",
+              "name": "洗臉肥皂",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "飛機過夜包::洗臉肥皂",
+              "templateCategory": "飛機過夜包"
+            },
+            {
+              "id": "17cj51df3b",
+              "name": "喉糖",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "飛機過夜包::喉糖",
+              "templateCategory": "飛機過夜包"
+            },
+            {
+              "id": "3ts4awbf3b",
+              "name": "胃藥",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "飛機過夜包::胃藥",
+              "templateCategory": "飛機過夜包"
+            },
+            {
+              "id": "o9qs980f3b",
+              "name": "大腿綁帶（固定腳用）",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "飛機過夜包::大腿綁帶（固定腳用）",
+              "templateCategory": "飛機過夜包"
+            },
+            {
+              "id": "le02bqtf3b",
+              "name": "折疊椅（放腳用）",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "template",
+              "templateKey": "飛機過夜包::折疊椅（放腳用）",
+              "templateCategory": "飛機過夜包"
+            }
+          ]
+        }
+      ],
+      "backlog": [],
+      "templateCatalog": [
+        "服飾::內衣褲",
+        "服飾::暖暖衣",
+        "服飾::防水手套",
+        "服飾::防蒼蠅頭套",
+        "服飾::厚長襪",
+        "服飾::靴子",
+        "服飾::拖鞋",
+        "服飾::耳罩",
+        "服飾::毛帽",
+        "服飾::泳衣",
+        "服飾::冰爪",
+        "服飾::冰爪防水束袋",
+        "服飾::睡衣黑色短袖",
+        "服飾::睡衣短褲",
+        "服飾::棉褲",
+        "服飾::圍巾",
+        "服飾::防曬帽",
+        "服飾::雨傘",
+        "服飾::防水褲",
+        "服飾::登山杖",
+        "電器::煮水器",
+        "電器::洗衣蛋",
+        "電器::行動洗衣袋",
+        "電器::轉接頭",
+        "電器::延長線",
+        "電器::吹風機",
+        "電器::行動電源",
+        "電器::Google TV + 遙控器",
+        "電器::Insta 360",
+        "電器::360充電器",
+        "電器::360夾背帶",
+        "電器::手機掛繩",
+        "電器::Apple Watch",
+        "電器::手機充電線",
+        "電器::行動電源充電線",
+        "電器::Type C充電線",
+        "電器::行李秤",
+        "電器::自拍棒",
+        "電器::頭燈",
+        "電器::旅行鍋",
+        "電器::手電筒",
+        "電器::鎖頭",
+        "電器::電蚊香",
+        "電器::手機腳架",
+        "電器::防水手機袋（泡溫泉用）",
+        "食物廚具::湯包/沖泡包",
+        "食物廚具::食物保鮮袋",
+        "食物廚具::菜瓜布",
+        "食物廚具::洗碗精",
+        "食物廚具::水果刀",
+        "食物廚具::刨刀",
+        "食物廚具::泡麵",
+        "食物廚具::食物保鮮矽膠盒",
+        "開車必備::大保溫瓶",
+        "開車必備::悶燒罐（含咖啡包）",
+        "開車必備::濕紙巾（大）",
+        "開車必備::濕紙巾（小）",
+        "開車必備::保冷袋",
+        "開車必備::小酒精瓶",
+        "開車必備::2公升水袋",
+        "開車必備::脖枕",
+        "開車必備::垃圾袋",
+        "開車必備::黏土",
+        "開車必備::墨鏡",
+        "開車必備::手機架",
+        "開車必備::行車記錄器",
+        "開車必備::USB線",
+        "開車必備::蛋白粉杯",
+        "開車必備::鏟雪刷",
+        "開車必備::露營車馬桶分解劑",
+        "開車必備::除臭噴霧",
+        "梳妝保養::隱形眼鏡（拋棄式）",
+        "梳妝保養::身體乳",
+        "梳妝保養::面膜",
+        "梳妝保養::洗髮乳",
+        "梳妝保養::沐浴乳",
+        "梳妝保養::化妝棉",
+        "梳妝保養::酒精棉片",
+        "梳妝保養::木瓜霜",
+        "梳妝保養::頭皮藥",
+        "梳妝保養::指甲剪",
+        "梳妝保養::棉花棒",
+        "梳妝保養::牙線棒",
+        "梳妝保養::眼霜",
+        "梳妝保養::護手霜（Aesop）",
+        "梳妝保養::眼鏡",
+        "梳妝保養::眼鏡盒",
+        "梳妝保養::蒸眼罩",
+        "梳妝保養::白花油",
+        "梳妝保養::護髮油",
+        "梳妝保養::卸妝水",
+        "梳妝保養::防曬乳",
+        "梳妝保養::爽身膏",
+        "梳妝保養::生髮水",
+        "梳妝保養::護髮素",
+        "梳妝保養::化妝包",
+        "梳妝保養::小瓶化妝水",
+        "梳妝保養::小瓶乳霜",
+        "梳妝保養::刮鬍刀",
+        "藥品::Eve（止痛藥）",
+        "藥品::OK蹦",
+        "藥品::暈車藥",
+        "藥品::益生菌",
+        "藥品::痠痛貼布",
+        "藥品::綁腳趾頭繃帶",
+        "藥品::喉糖",
+        "藥品::胃藥",
+        "藥品::隨身藥罐",
+        "藥品::中藥",
+        "藥品::噴鼻藥",
+        "藥品::防蚊貼",
+        "藥品::感冒藥",
+        "備品雜物::衣架（境）",
+        "備品雜物::衣架（媽）",
+        "備品雜物::衣架（貝）",
+        "備品雜物::衣夾子",
+        "備品雜物::吊衣繩（貝）",
+        "備品雜物::吊衣繩（媽）",
+        "備品雜物::洗衣精小瓶",
+        "備品雜物::洗衣袋（大）",
+        "備品雜物::內衣洗衣袋",
+        "備品雜物::食物夾",
+        "備品雜物::環保袋",
+        "備品雜物::口罩",
+        "備品雜物::夾鏈袋",
+        "備品雜物::小塑膠袋",
+        "備品雜物::折疊碗",
+        "備品雜物::木頭推拿棒",
+        "備品雜物::髮圈",
+        "備品雜物::洗衣折疊袋（洗衣蛋用）",
+        "備品雜物::絲瓜巾",
+        "重要文件::台灣駕照",
+        "重要文件::國際駕照",
+        "重要文件::金剛經",
+        "重要文件::筆",
+        "重要文件::申根國家文件",
+        "重要文件::Costco卡",
+        "重要文件::大小照片各兩張",
+        "重要文件::護照",
+        "重要文件::SIM卡（卡套不能丟）",
+        "臥鋪盥洗包::一包衛生紙",
+        "臥鋪盥洗包::黑色短袖",
+        "臥鋪盥洗包::內褲",
+        "臥鋪盥洗包::內衣",
+        "臥鋪盥洗包::免洗浴巾",
+        "臥鋪盥洗包::小罐沐浴乳",
+        "臥鋪盥洗包::小罐洗髮乳",
+        "臥鋪盥洗包::小罐洗臉",
+        "臥鋪盥洗包::絲瓜巾",
+        "臥鋪盥洗包::睡衣短褲",
+        "飛機過夜包::牙線",
+        "飛機過夜包::面膜",
+        "飛機過夜包::乳霜",
+        "飛機過夜包::眼鏡盒",
+        "飛機過夜包::隱形眼鏡",
+        "飛機過夜包::眼藥水",
+        "飛機過夜包::木瓜霜",
+        "飛機過夜包::發熱眼罩",
+        "飛機過夜包::耳塞",
+        "飛機過夜包::綁頭髮",
+        "飛機過夜包::水袋",
+        "飛機過夜包::護手霜",
+        "飛機過夜包::洗臉肥皂",
+        "飛機過夜包::喉糖",
+        "飛機過夜包::胃藥",
+        "飛機過夜包::大腿綁帶（固定腳用）",
+        "飛機過夜包::折疊椅（放腳用）"
+      ]
+    }
+  ],
   "members": [],
-  "updatedAt": 1780389366818
+  "updatedAt": 1780391067263
 }
