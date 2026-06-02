@@ -2762,10 +2762,17 @@
               "id": "2w4ilp97iq",
               "name": "轉接頭",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [],
               "mc": {},
-              "checkLog": [],
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780394050167,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "電器::轉接頭",
               "templateCategory": "電器"
@@ -4872,5 +4879,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780394048538
+  "updatedAt": 1780394050770
 }
