@@ -736,15 +736,24 @@
               "id": "ufeomi20vf",
               "name": "食物保鮮袋",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "媽",
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "媽": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "媽",
+                  "ts": 1780415749004,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "食物廚具::食物保鮮袋",
               "templateCategory": "食物廚具",
@@ -854,7 +863,7 @@
               "id": "qjwvo2t0vf",
               "name": "食物保鮮矽膠盒",
               "qty": 1,
-              "checked": true,
+              "checked": false,
               "members": [
                 {
                   "name": "卡",
@@ -862,7 +871,7 @@
                 }
               ],
               "mc": {
-                "卡": true
+                "卡": false
               },
               "checkLog": [
                 {
@@ -870,6 +879,12 @@
                   "memberName": "卡",
                   "ts": 1780415727732,
                   "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "卡",
+                  "ts": 1780415728183,
+                  "action": "uncheck"
                 }
               ],
               "source": "template",
@@ -2692,5 +2707,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780415728272
+  "updatedAt": 1780415749447
 }
