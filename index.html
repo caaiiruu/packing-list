@@ -10,21 +10,21 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --bg:#FAFAF8;--bg2:#F0EDE6;--bg3:#E4E0D8;
-  --text:#2C2C28;--text2:#6E6B62;--text3:#A8A49A;
-  --border:#DDD9D0;--border2:#C8C4BA;
-  --accent:#5B8A6F;--accent-light:#EAF2ED;--accent2:#7BA693;
-  --danger:#C96B5A;--danger-light:#F7EDE9;
-  --info:#5A7FA8;--info-light:#EAF0F7;
+  --bg:#FAFAF8;--bg2:#EEEBE3;--bg3:#E0DDD4;
+  --text:#1E1E1A;--text2:#4A4740;--text3:#706D65;
+  --border:#C9C5BC;--border2:#A8A49A;
+  --accent:#3D6B56;--accent-bg:#3D6B56;--accent-light:#E4F0EB;--accent2:#2E5242;
+  --danger:#B34E3E;--danger-light:#FAECE9;
+  --info:#3A6490;--info-light:#E5EFF7;
   --radius:8px;--radius-lg:14px;
 }
 @media(prefers-color-scheme:dark){:root{
-  --bg:#1E1E1A;--bg2:#28271F;--bg3:#333028;
-  --text:#EDEAE2;--text2:#9A9788;--text3:#5C5A52;
-  --border:#3A3830;--border2:#4A4840;
-  --accent:#7BA693;--accent-light:#1A2E24;--accent2:#5B8A6F;
-  --danger:#D4786A;--danger-light:#2E1A16;
-  --info:#7BA0C4;--info-light:#1A2433;
+  --bg:#1A1A16;--bg2:#242420;--bg3:#2E2E28;
+  --text:#F0EDE4;--text2:#C0BCB0;--text3:#8A8780;
+  --border:#3C3A34;--border2:#504E46;
+  --accent:#7FC4A4;--accent-bg:#4A7A62;--accent-light:#1C3028;--accent2:#6AB090;
+  --danger:#E07868;--danger-light:#2A1612;
+  --info:#7AAED4;--info-light:#162030;
 }}
 html,body{height:100%;height:100dvh;overflow:hidden}
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;background:var(--bg2);color:var(--text);display:flex;flex-direction:column}
@@ -36,15 +36,16 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-seri
 .tab-content{flex:1;display:flex;flex-direction:column;min-height:0}
 .tab-pane{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;padding:0 16px 32px}
 .tab-sticky{flex-shrink:0;padding:10px 16px 0;background:var(--bg)}
-.btn{display:inline-flex;align-items:center;gap:5px;padding:7px 11px;border:1px solid var(--border2);background:var(--bg);border-radius:var(--radius);font-size:13px;cursor:pointer;color:var(--text);transition:all .15s;white-space:nowrap;font-weight:500}
+.btn{display:inline-flex;align-items:center;gap:5px;padding:7px 11px;border:1.5px solid var(--border2);background:var(--bg);border-radius:var(--radius);font-size:13px;cursor:pointer;color:var(--text);transition:all .15s;white-space:nowrap;font-weight:500}
 .btn:hover{background:var(--bg2)}
 .btn:active{transform:scale(.97)}
-.btn.accent{background:var(--accent);color:#fff;border-color:var(--accent)}
+.btn.accent{background:var(--accent-bg);color:#fff;border-color:var(--accent-bg)}
 .btn.accent:hover{background:var(--accent2);border-color:var(--accent2)}
 .btn.danger-ol{color:var(--danger);border-color:var(--danger)}
 .btn.danger-ol:hover{background:var(--danger-light)}
-.btn.ghost{border-color:transparent;background:transparent}
-.btn.ghost:hover{background:var(--bg2)}
+/* ghost: visible border so icon-only buttons are tappable & discoverable */
+.btn.ghost{border-color:var(--border);background:transparent;color:var(--text2)}
+.btn.ghost:hover{background:var(--bg2);color:var(--text);border-color:var(--border2)}
 
 /* ── Sync bar ── */
 .sync-bar{display:flex;align-items:center;gap:6px;padding:5px 16px;font-size:11px;font-weight:500;transition:all .3s;height:0;overflow:hidden;opacity:0}
@@ -129,7 +130,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-seri
 .cat-chips{display:flex;gap:7px;overflow-x:auto;padding-bottom:8px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
 .cat-chips::-webkit-scrollbar{display:none}
 .cat-chip{display:inline-flex;align-items:center;gap:5px;padding:5px 11px;border-radius:20px;font-size:12px;font-weight:500;cursor:pointer;white-space:nowrap;border:1.5px solid var(--border);background:var(--bg);color:var(--text2);transition:all .15s;flex-shrink:0}
-.cat-chip.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.cat-chip.active{background:var(--accent-bg);color:#fff;border-color:var(--accent-bg)}
 .chip-count{font-size:10px;border-radius:8px;padding:1px 5px;margin-left:2px;background:rgba(255,255,255,.25)}
 .cat-chip:not(.active) .chip-count{background:var(--bg3);color:var(--text2)}
 
@@ -140,7 +141,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-seri
 .sel-count-label{font-size:13px;font-weight:600;color:var(--accent);white-space:nowrap}
 .sel-toolbar .btn{padding:5px 10px;font-size:12px}
 .rcheck{width:20px;height:20px;border-radius:50%;border:2px solid var(--border2);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .15s;background:var(--bg);cursor:pointer}
-.rcheck.on{background:var(--accent);border-color:var(--accent)}
+.rcheck.on{background:var(--accent-bg);border-color:var(--accent-bg)}
 .rcheck.on::after{content:'✓';color:#fff;font-size:11px;font-weight:800}
 .rcheck.indeterminate{border-color:var(--accent)}
 .rcheck.indeterminate::after{content:'–';color:var(--accent);font-size:13px;font-weight:800}
@@ -168,7 +169,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-seri
 .item-row.sel-on .item-name{color:var(--text)!important;text-decoration:none!important}
 .item-row.selectable{cursor:pointer}
 .item-check{width:19px;height:19px;border-radius:4px;border:2px solid var(--border2);cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;transition:all .15s;background:var(--bg)}
-.item-check.on{background:var(--accent);border-color:var(--accent)}
+.item-check.on{background:var(--accent-bg);border-color:var(--accent-bg)}
 .item-check.on::after{content:'✓';color:#fff;font-size:11px;font-weight:800}
 .item-main{flex:1;min-width:0}
 .item-name{font-size:13px;line-height:1.45;word-break:break-word}
@@ -183,7 +184,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-seri
 .member-rows{margin-top:5px;display:flex;flex-direction:column;gap:2px}
 .member-row{display:flex;align-items:center;gap:7px;padding:2px 0}
 .m-check{width:15px;height:15px;border-radius:3px;border:2px solid var(--border2);cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .15s;background:var(--bg)}
-.m-check.on{background:var(--accent);border-color:var(--accent)}
+.m-check.on{background:var(--accent-bg);border-color:var(--accent-bg)}
 .m-check.on::after{content:'✓';color:#fff;font-size:8px;font-weight:800}
 .m-tag{font-size:10px;padding:1px 7px;border-radius:8px;font-weight:600;white-space:nowrap}
 .m-qty{font-size:10px;color:var(--text3)}
@@ -615,7 +616,7 @@ function showIdentityScreen(tripId, cb) {
     if (identityCallback) { identityCallback(); identityCallback = null; }
   };
   document.getElementById('identity-new-name').addEventListener('keydown', ev => {
-    if (ev.key === 'Enter') document.getElementById('identity-add-btn').click();
+    if (ev.key === 'Enter' && !ev.isComposing) { ev.preventDefault(); document.getElementById('identity-add-btn').click(); }
   });
 
   showScreen('screen-identity');
@@ -717,7 +718,6 @@ function openTrip(tid) {
   currentTripId = tid;
   const t = trip();
   document.getElementById('trip-title').textContent = t.emoji + ' ' + t.name;
-  // Identity banner
   if (myName) {
     document.getElementById('id-banner-dot').style.background = memberColor(myName);
     document.getElementById('id-banner-name').textContent = `以「${myName}」身份操作`;
@@ -1072,15 +1072,21 @@ function openAddTripModal() {
   document.getElementById('at-cancel').onclick = closeModal;
   const doCreate = async () => {
     const name = document.getElementById('trip-name-input').value.trim();
-    if (!name) return;
+    if (!name) { document.getElementById('trip-name-input').focus(); return; }
     const t = newTrip(name, selEmoji);
     DB.trips.push(t);
     closeModal(); renderHome(); toast(`旅程「${name}」已建立`);
     await pushTrip(t);
+    // Auto-open members modal if trip has no members
     openTrip(t.id);
+    if (t.members.length === 0) {
+      setTimeout(() => openMembersModal(), 300);
+    }
   };
   document.getElementById('at-ok').onclick = doCreate;
-  document.getElementById('trip-name-input').addEventListener('keydown', ev => { if (ev.key==='Enter') doCreate(); });
+  document.getElementById('trip-name-input').addEventListener('keydown', ev => {
+    if (ev.key === 'Enter' && !ev.isComposing) { ev.preventDefault(); doCreate(); }
+  });
 }
 
 function openRenameTripModal(tid) {
@@ -1097,6 +1103,7 @@ function openRenameTripModal(tid) {
     if (currentTripId===tid) document.getElementById('trip-title').textContent = t.emoji+' '+name;
     await pushTrip(t);
   };
+  inp.addEventListener('keydown', ev => { if (ev.key==='Enter' && !ev.isComposing) { ev.preventDefault(); document.getElementById('rn-ok').click(); } });
 }
 
 function confirmDeleteTrip(tid) {
@@ -1216,7 +1223,7 @@ function openMembersModal() {
     <div class="mactions"><button class="btn accent" id="m-done">完成</button></div>
   </div>`);
   document.getElementById('m-done').onclick = closeModal;
-  document.getElementById('new-m').addEventListener('keydown', ev => { if(ev.key==='Enter') doAddMember(); });
+  document.getElementById('new-m').addEventListener('keydown', ev => { if (ev.key==='Enter' && !ev.isComposing) { ev.preventDefault(); doAddMember(); } });
   document.getElementById('add-m-btn').onclick = doAddMember;
   document.querySelectorAll('.mdel').forEach(el => el.addEventListener('click', () => doDelMember(parseInt(el.dataset.mi))));
   setTimeout(()=>{ const el=document.getElementById('new-m'); if(el)el.focus(); },80);
