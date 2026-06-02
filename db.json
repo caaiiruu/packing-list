@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "baf5c2a4ec00b5cca67211b2",
       "secretIssuedAt": 1780414656171,
-      "activeCat": 1,
+      "activeCat": 9,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -2740,10 +2740,17 @@
               "id": "q39yp9w0vf",
               "name": "大腿綁帶（固定腳用）",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [],
               "mc": {},
-              "checkLog": [],
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780416362927,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "飛機過夜包::大腿綁帶（固定腳用）",
               "templateCategory": "飛機過夜包",
@@ -2987,5 +2994,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780416361027
+  "updatedAt": 1780416363526
 }
