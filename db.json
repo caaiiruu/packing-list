@@ -790,7 +790,7 @@
               "id": "yo60w620vf",
               "name": "水果刀",
               "qty": 1,
-              "checked": true,
+              "checked": false,
               "members": [
                 {
                   "name": "貝",
@@ -798,7 +798,7 @@
                 }
               ],
               "mc": {
-                "貝": true
+                "貝": false
               },
               "checkLog": [
                 {
@@ -806,6 +806,12 @@
                   "memberName": "貝",
                   "ts": 1780415725449,
                   "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780415726032,
+                  "action": "uncheck"
                 }
               ],
               "source": "template",
@@ -848,15 +854,24 @@
               "id": "qjwvo2t0vf",
               "name": "食物保鮮矽膠盒",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "卡",
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "卡": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "卡",
+                  "ts": 1780415727732,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "食物廚具::食物保鮮矽膠盒",
               "templateCategory": "食物廚具",
@@ -2677,5 +2692,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780415726646
+  "updatedAt": 1780415728272
 }
