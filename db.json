@@ -608,8 +608,17 @@
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "卡老公": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "卡老公",
+                  "ts": 1780416210846,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "電器::電蚊香",
               "templateCategory": "電器",
@@ -2858,5 +2867,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780416210159
+  "updatedAt": 1780416211646
 }
