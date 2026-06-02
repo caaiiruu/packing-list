@@ -769,7 +769,7 @@
               "id": "f03572g0vf",
               "name": "菜瓜布",
               "qty": 1,
-              "checked": true,
+              "checked": false,
               "members": [
                 {
                   "name": "媽",
@@ -777,7 +777,7 @@
                 }
               ],
               "mc": {
-                "媽": true
+                "媽": false
               },
               "checkLog": [
                 {
@@ -785,6 +785,12 @@
                   "memberName": "媽",
                   "ts": 1780415754667,
                   "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "媽",
+                  "ts": 1780415755533,
+                  "action": "uncheck"
                 }
               ],
               "source": "template",
@@ -2737,5 +2743,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780415755310
+  "updatedAt": 1780415756102
 }
