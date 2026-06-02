@@ -706,6 +706,18 @@
                   "memberName": "貝",
                   "ts": 1780416356244,
                   "action": "uncheck"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780416359527,
+                  "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780416360295,
+                  "action": "uncheck"
                 }
               ],
               "source": "template",
@@ -2975,5 +2987,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780416359471
+  "updatedAt": 1780416361027
 }
