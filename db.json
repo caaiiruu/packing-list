@@ -2404,7 +2404,7 @@
       "emoji": "✈️",
       "createdAt": 1780393716242,
       "secret": "e7c0c281d82d3c2a5d10fd7b",
-      "activeCat": null,
+      "activeCat": 7,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -4343,10 +4343,17 @@
               "id": "4u3z88g7ir",
               "name": "申根國家文件",
               "qty": 5,
-              "checked": false,
+              "checked": true,
               "members": [],
               "mc": {},
-              "checkLog": [],
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780402953049,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "重要文件::申根國家文件",
               "templateCategory": "重要文件"
@@ -4934,5 +4941,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780402917554
+  "updatedAt": 1780402953600
 }
