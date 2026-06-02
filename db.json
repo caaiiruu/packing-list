@@ -2762,17 +2762,10 @@
               "id": "2w4ilp97iq",
               "name": "轉接頭",
               "qty": 1,
-              "checked": true,
+              "checked": false,
               "members": [],
               "mc": {},
-              "checkLog": [
-                {
-                  "memberId": "eup4vt8kxk",
-                  "memberName": "貝",
-                  "ts": 1780394050167,
-                  "action": "check"
-                }
-              ],
+              "checkLog": [],
               "source": "template",
               "templateKey": "電器::轉接頭",
               "templateCategory": "電器"
@@ -2781,15 +2774,24 @@
               "id": "dl978le7iq",
               "name": "延長線",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780394051585,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "電器::延長線",
               "templateCategory": "電器"
@@ -4879,5 +4881,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780394050770
+  "updatedAt": 1780394052374
 }
