@@ -2652,7 +2652,20 @@
               "checked": false,
               "members": [],
               "mc": {},
-              "checkLog": [],
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780416365044,
+                  "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780416365827,
+                  "action": "uncheck"
+                }
+              ],
               "source": "template",
               "templateKey": "飛機過夜包::耳塞",
               "templateCategory": "飛機過夜包",
@@ -3000,5 +3013,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780416364561
+  "updatedAt": 1780416366533
 }
