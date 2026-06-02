@@ -2854,10 +2854,17 @@
               "id": "df6a7hx7iq",
               "name": "Google TV + 遙控器",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [],
               "mc": {},
-              "checkLog": [],
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780402913147,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "電器::Google TV + 遙控器",
               "templateCategory": "電器"
@@ -4921,5 +4928,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780402913138
+  "updatedAt": 1780402914016
 }
