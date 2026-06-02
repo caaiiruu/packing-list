@@ -1025,6 +1025,18 @@
                   "memberName": "貝",
                   "ts": 1780415770298,
                   "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780415771017,
+                  "action": "uncheck"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780415771431,
+                  "action": "check"
                 }
               ],
               "source": "template",
@@ -1069,10 +1081,17 @@
               "id": "ypp7xfj0vf",
               "name": "脖枕",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [],
               "mc": {},
-              "checkLog": [],
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780415772534,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "開車必備::脖枕",
               "templateCategory": "開車必備",
@@ -2759,5 +2778,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780415771728
+  "updatedAt": 1780415773228
 }
