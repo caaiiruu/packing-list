@@ -397,15 +397,24 @@
               "id": "09dpfam0vf",
               "name": "吹風機",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780416215228,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "電器::吹風機",
               "templateCategory": "電器",
@@ -597,7 +606,7 @@
               "id": "h8gkif50vf",
               "name": "電蚊香",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
@@ -609,8 +618,8 @@
                 }
               ],
               "mc": {
-                "卡老公": false,
-                "貝": false
+                "卡老公": true,
+                "貝": true
               },
               "checkLog": [
                 {
@@ -648,6 +657,12 @@
                   "memberName": "貝",
                   "ts": 1780416213896,
                   "action": "uncheck"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780416214296,
+                  "action": "check"
                 }
               ],
               "source": "template",
@@ -2898,5 +2913,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780416214415
+  "updatedAt": 1780416215817
 }
