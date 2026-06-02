@@ -2774,7 +2774,7 @@
               "id": "dl978le7iq",
               "name": "延長線",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
@@ -2782,7 +2782,7 @@
                 }
               ],
               "mc": {
-                "貝": false
+                "貝": true
               },
               "checkLog": [
                 {
@@ -2790,12 +2790,6 @@
                   "memberName": "貝",
                   "ts": 1780394051585,
                   "action": "check"
-                },
-                {
-                  "memberId": "eup4vt8kxk",
-                  "memberName": "貝",
-                  "ts": 1780394052567,
-                  "action": "uncheck"
                 }
               ],
               "source": "template",
@@ -3124,15 +3118,24 @@
               "id": "1if9cu97iq",
               "name": "洗碗精",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "媽",
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "媽": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "媽",
+                  "ts": 1780394053833,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "食物廚具::洗碗精",
               "templateCategory": "食物廚具"
@@ -4887,5 +4890,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780394053417
+  "updatedAt": 1780394054725
 }
