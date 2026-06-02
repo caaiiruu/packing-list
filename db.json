@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "baf5c2a4ec00b5cca67211b2",
       "secretIssuedAt": 1780414656171,
-      "activeCat": 2,
+      "activeCat": 3,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -1040,10 +1040,17 @@
               "id": "vvacvwx0vf",
               "name": "2公升水袋",
               "qty": 2,
-              "checked": false,
+              "checked": true,
               "members": [],
               "mc": {},
-              "checkLog": [],
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780415768316,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "開車必備::2公升水袋",
               "templateCategory": "開車必備",
@@ -2743,5 +2750,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780415756102
+  "updatedAt": 1780415769045
 }
