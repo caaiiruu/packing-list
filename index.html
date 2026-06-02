@@ -341,7 +341,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-seri
 // ── Constants ─────────────────────────────────────────────────────
 const MCOLORS=['#5B8A6F','#7B6FA0','#A07840','#5A7FA8','#A06070','#6A9090','#8A7050','#7A6858'];
 const TRIP_EMOJIS=['✈️','🧳','🏔️','🏖️','🚗','🚢','🌍','🎒','🏕️','🌸'];
-const LOCAL_KEY='packing-local-v1'; // local only: myMemberId, myMemberName
+const LOCAL_KEY='packing-local-v2'; // stores: id, name, secrets{tripId:secret}
 const POLL_MS = 3000;
 
 const RAW=[
@@ -415,19 +415,34 @@ const RAW=[
 ];
 
 // ── Local identity (per device) ───────────────────────────────────
-let myId = null;   // member id
-let myName = null; // member name
+let myId = null;       // member id
+let myName = null;     // member name
+let myTripSecrets = {}; // { tripId: secret } — trips this device has been granted access to
 
 function loadIdentity() {
   try {
     const s = localStorage.getItem(LOCAL_KEY);
-    if (s) { const d = JSON.parse(s); myId = d.id; myName = d.name; }
+    if (s) { const d = JSON.parse(s); myId = d.id; myName = d.name; myTripSecrets = d.secrets || {}; }
   } catch(e) {}
 }
 function saveIdentity() {
-  localStorage.setItem(LOCAL_KEY, JSON.stringify({ id: myId, name: myName }));
+  localStorage.setItem(LOCAL_KEY, JSON.stringify({ id: myId, name: myName, secrets: myTripSecrets }));
 }
-function clearIdentity() { myId = null; myName = null; localStorage.removeItem(LOCAL_KEY); }
+function clearIdentity() { myId = null; myName = null; myTripSecrets = {}; localStorage.removeItem(LOCAL_KEY); }
+
+function grantTripAccess(tripId, secret) {
+  myTripSecrets[tripId] = secret;
+  saveIdentity();
+}
+function myAccessibleTrips() {
+  // Only show trips whose secret we hold
+  return DB.trips.filter(t => myTripSecrets[t.id] !== undefined);
+}
+function genSecret() {
+  const arr = new Uint8Array(12);
+  crypto.getRandomValues(arr);
+  return Array.from(arr).map(b => b.toString(16).padStart(2,'0')).join('');
+}
 
 // ── Remote DB state ───────────────────────────────────────────────
 let DB = { trips: [], members: [], updatedAt: 0 };
@@ -527,6 +542,18 @@ function startPoll() {
 }
 function stopPoll() { if (pollTimer) { clearInterval(pollTimer); pollTimer = null; } }
 
+// ── Invalid invite screen ────────────────────────────────────────
+function showInvalidInvite() {
+  document.getElementById('modal-root').innerHTML = '';
+  showScreen('screen-home');
+  document.getElementById('trip-list').innerHTML = `
+    <div class="empty-home" style="grid-column:1/-1">
+      <i class="ti ti-link-off" style="font-size:48px;display:block;margin-bottom:12px;color:var(--danger)"></i>
+      <h3 style="color:var(--danger)">邀請連結無效或已失效</h3>
+      <p style="margin-top:8px;font-size:13px">請向旅程建立者重新索取邀請連結</p>
+    </div>`;
+}
+
 // ── Init ──────────────────────────────────────────────────────────
 async function init() {
   loadIdentity();
@@ -543,28 +570,32 @@ async function init() {
   startPoll();
 
   if (joinTripId) {
-    // Joining via invite link
+    const joinSecret = params.get('s') || '';
     const t = DB.trips.find(x => x.id === joinTripId);
     if (t) {
-      if (!myId || !t.members.find(m => m.id === myId)) {
+      // Validate secret
+      if (t.secret && t.secret !== joinSecret && myTripSecrets[t.id] === undefined) {
+        showInvalidInvite();
+        return;
+      }
+      // Grant access
+      grantTripAccess(joinTripId, t.secret || joinSecret);
+      // Clean URL so refresh doesn't re-trigger join flow
+      history.replaceState({}, '', location.pathname);
+      if (!myId) {
         showIdentityScreen(joinTripId, () => { openTrip(joinTripId); });
         return;
       }
       openTrip(joinTripId);
       return;
+    } else {
+      showInvalidInvite(); return;
     }
   }
 
-  if (!myId) {
-    // New user, go to home and show identity inline
-    showScreen('screen-home');
-    renderHome();
-    hideSync('home');
-  } else {
-    showScreen('screen-home');
-    renderHome();
-    hideSync('home');
-  }
+  showScreen('screen-home');
+  renderHome();
+  hideSync('home');
 }
 
 // ── Identity screen ───────────────────────────────────────────────
@@ -640,7 +671,7 @@ function mkItem(it) {
 }
 function newTrip(name, emoji) {
   return {
-    id: uid(), name, emoji: emoji || '✈️', createdAt: Date.now(),
+    id: uid(), name, emoji: emoji || '✈️', createdAt: Date.now(), secret: genSecret(),
     activeCat: null,
     members: DB.members.length > 0 ? [...DB.members] : [],
     cats: RAW.map(r => ({ cat: r.cat, icon: r.icon, expanded: true, items: r.items.map(mkItem) })),
@@ -663,7 +694,8 @@ function renderHome() {
   else lbl.textContent = '管理你的每趟旅程行李';
 
   const list = document.getElementById('trip-list');
-  if (DB.trips.length === 0) {
+  const accessible = myAccessibleTrips();
+  if (accessible.length === 0) {
     list.innerHTML = `
       <div class="empty-home">
         <i class="ti ti-luggage"></i><h3>還沒有旅程</h3>
@@ -671,7 +703,7 @@ function renderHome() {
       </div>
       <div class="add-trip-card" id="add-trip-btn"><i class="ti ti-plus" style="font-size:20px"></i>新增旅程</div>`;
   } else {
-    list.innerHTML = DB.trips.slice().reverse().map(t => {
+    list.innerHTML = accessible.slice().reverse().map(t => {
       let total = 0, done = 0;
       t.cats.forEach(c => c.items.forEach(it => { total++; if (isDone(it)) done++; }));
       const pct = total ? Math.round(done / total * 100) : 0;
@@ -1030,7 +1062,7 @@ function showConfirm(title, sub, onOk) {
 
 function openShareModal() {
   const t = trip(); if (!t) return;
-  const url = `${location.origin}${location.pathname}?join=${t.id}`;
+  const url = `${location.origin}${location.pathname}?join=${t.id}&s=${t.secret||''}`;
   modal(`<div class="modal"><span class="mhandle"></span><h3><i class="ti ti-user-plus" style="margin-right:6px"></i>邀請成員加入</h3>
     <p style="font-size:13px;color:var(--text2);margin-bottom:12px">分享以下連結給旅伴，他們打開後可以選擇或建立自己的成員身份，然後一起使用這份清單。</p>
     <div class="share-row">
@@ -1074,10 +1106,19 @@ function openAddTripModal() {
     const name = document.getElementById('trip-name-input').value.trim();
     if (!name) { document.getElementById('trip-name-input').focus(); return; }
     const t = newTrip(name, selEmoji);
+    // Grant creator access immediately
+    grantTripAccess(t.id, t.secret);
     DB.trips.push(t);
-    closeModal(); renderHome(); toast(`旅程「${name}」已建立`);
-    await pushTrip(t);
-    // Auto-open members modal if trip has no members
+    closeModal();
+    // Save to cloud first, then open
+    showSync('home', 'syncing', '建立旅程中...');
+    try {
+      await apiPost('save_trip', { trip: t });
+      showSync('home', 'ok', '已建立');
+    } catch(err) {
+      showSync('home', 'error', '儲存失敗，請重試');
+    }
+    renderHome();
     openTrip(t.id);
     if (t.members.length === 0) {
       setTimeout(() => openMembersModal(), 300);
