@@ -2702,15 +2702,24 @@
               "id": "ykk81x47iq",
               "name": "煮水器",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780394043121,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "電器::煮水器",
               "templateCategory": "電器"
@@ -4848,5 +4857,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780393778053
+  "updatedAt": 1780394043735
 }
