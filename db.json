@@ -1210,7 +1210,7 @@
               "id": "4rfeus20vf",
               "name": "鏟雪刷",
               "qty": 2,
-              "checked": true,
+              "checked": false,
               "members": [
                 {
                   "name": "境",
@@ -1218,7 +1218,7 @@
                 }
               ],
               "mc": {
-                "境": true
+                "境": false
               },
               "checkLog": [
                 {
@@ -1226,6 +1226,12 @@
                   "memberName": "境",
                   "ts": 1780415797502,
                   "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "境",
+                  "ts": 1780415799716,
+                  "action": "uncheck"
                 }
               ],
               "source": "template",
@@ -2805,5 +2811,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780415798380
+  "updatedAt": 1780415801104
 }
