@@ -1129,19 +1129,6 @@
           "expanded": true,
           "items": [
             {
-              "id": "cxdki820vf",
-              "name": "大保溫瓶",
-              "qty": 1,
-              "checked": false,
-              "members": [],
-              "mc": {},
-              "checkLog": [],
-              "source": "template",
-              "templateKey": "開車必備::大保溫瓶",
-              "templateCategory": "開車必備",
-              "retiredByTemplate": false
-            },
-            {
               "id": "vyg1za60vf",
               "name": "悶燒罐（含咖啡包）",
               "qty": 1,
@@ -3177,6 +3164,19 @@
           "templateKey": "開車必備::小酒精瓶",
           "templateCategory": "開車必備",
           "retiredByTemplate": false
+        },
+        {
+          "id": "cxdki820vf",
+          "name": "大保溫瓶",
+          "qty": 1,
+          "checked": false,
+          "members": [],
+          "mc": {},
+          "checkLog": [],
+          "source": "template",
+          "templateKey": "開車必備::大保溫瓶",
+          "templateCategory": "開車必備",
+          "retiredByTemplate": false
         }
       ],
       "templateCatalog": [
@@ -3373,5 +3373,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780460230838
+  "updatedAt": 1780460235953
 }
