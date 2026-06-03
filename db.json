@@ -237,19 +237,6 @@
               "retiredByTemplate": false
             },
             {
-              "id": "lz04rb50vf",
-              "name": "雨傘",
-              "qty": 1,
-              "checked": false,
-              "members": [],
-              "mc": {},
-              "checkLog": [],
-              "source": "template",
-              "templateKey": "服飾::雨傘",
-              "templateCategory": "服飾",
-              "retiredByTemplate": false
-            },
-            {
               "id": "k4gfsjo0vf",
               "name": "防水褲",
               "qty": 1,
@@ -3137,6 +3124,19 @@
           "templateKey": "服飾::防曬帽",
           "templateCategory": "服飾",
           "retiredByTemplate": false
+        },
+        {
+          "id": "lz04rb50vf",
+          "name": "雨傘",
+          "qty": 1,
+          "checked": false,
+          "members": [],
+          "mc": {},
+          "checkLog": [],
+          "source": "template",
+          "templateKey": "服飾::雨傘",
+          "templateCategory": "服飾",
+          "retiredByTemplate": false
         }
       ],
       "templateCatalog": [
@@ -3333,5 +3333,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780460020685
+  "updatedAt": 1780460056640
 }
