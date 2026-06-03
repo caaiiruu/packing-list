@@ -2055,12 +2055,8 @@
               "checked": false,
               "members": [
                 {
-                  "name": "貝",
-                  "qty": 1
-                },
-                {
                   "name": "媽",
-                  "qty": 1
+                  "qty": 2
                 }
               ],
               "mc": {},
@@ -3210,5 +3206,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780459472446
+  "updatedAt": 1780459494311
 }
