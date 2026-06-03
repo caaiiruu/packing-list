@@ -1219,26 +1219,6 @@
               "retiredByTemplate": false
             },
             {
-              "id": "vvacvwx0vf",
-              "name": "2公升水袋",
-              "qty": 2,
-              "checked": false,
-              "members": [],
-              "mc": {},
-              "checkLog": [
-                {
-                  "memberId": "eup4vt8kxk",
-                  "memberName": "貝",
-                  "ts": 1780415768316,
-                  "action": "check"
-                }
-              ],
-              "source": "template",
-              "templateKey": "開車必備::2公升水袋",
-              "templateCategory": "開車必備",
-              "retiredByTemplate": false
-            },
-            {
               "id": "ypp7xfj0vf",
               "name": "脖枕",
               "qty": 1,
@@ -3177,6 +3157,26 @@
           "templateKey": "開車必備::大保溫瓶",
           "templateCategory": "開車必備",
           "retiredByTemplate": false
+        },
+        {
+          "id": "vvacvwx0vf",
+          "name": "2公升水袋",
+          "qty": 2,
+          "checked": false,
+          "members": [],
+          "mc": {},
+          "checkLog": [
+            {
+              "memberId": "eup4vt8kxk",
+              "memberName": "貝",
+              "ts": 1780415768316,
+              "action": "check"
+            }
+          ],
+          "source": "template",
+          "templateKey": "開車必備::2公升水袋",
+          "templateCategory": "開車必備",
+          "retiredByTemplate": false
         }
       ],
       "templateCatalog": [
@@ -3373,5 +3373,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780460250299
+  "updatedAt": 1780460260971
 }
