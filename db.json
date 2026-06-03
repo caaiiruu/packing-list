@@ -2486,7 +2486,7 @@
               "id": "dgfqvc60vf",
               "name": "黑色短袖",
               "qty": 1,
-              "checked": true,
+              "checked": false,
               "members": [],
               "mc": {},
               "checkLog": [
@@ -2495,6 +2495,12 @@
                   "memberName": "貝",
                   "ts": 1780460483907,
                   "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780460486862,
+                  "action": "uncheck"
                 }
               ],
               "source": "template",
@@ -3468,5 +3474,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780460485381
+  "updatedAt": 1780460487462
 }
