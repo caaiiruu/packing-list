@@ -386,7 +386,12 @@
               "name": "轉接頭",
               "qty": 1,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [],
               "source": "template",
@@ -3528,5 +3533,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780460605788
+  "updatedAt": 1780460611422
 }
