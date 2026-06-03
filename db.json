@@ -2662,7 +2662,7 @@
               "id": "bwp06lk0vf",
               "name": "耳塞",
               "qty": 4,
-              "checked": false,
+              "checked": true,
               "members": [],
               "mc": {},
               "checkLog": [
@@ -2677,6 +2677,12 @@
                   "memberName": "貝",
                   "ts": 1780416365827,
                   "action": "uncheck"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780448219388,
+                  "action": "check"
                 }
               ],
               "source": "template",
@@ -3026,5 +3032,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780417466603
+  "updatedAt": 1780448219877
 }
