@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "bce4a8da271ada502066b243",
       "secretIssuedAt": 1780453370528,
-      "activeCat": 1,
+      "activeCat": 0,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -311,6 +311,19 @@
               "source": "template",
               "templateKey": "服飾::登山杖",
               "templateCategory": "服飾",
+              "retiredByTemplate": false
+            },
+            {
+              "id": "dbdjz6gwky",
+              "name": "圍脖",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "custom",
+              "templateKey": null,
+              "templateCategory": null,
               "retiredByTemplate": false
             }
           ]
@@ -3550,5 +3563,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780460617906
+  "updatedAt": 1780460654112
 }
