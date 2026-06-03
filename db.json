@@ -484,32 +484,6 @@
               "retiredByTemplate": false
             },
             {
-              "id": "t6irtvd0vf",
-              "name": "Insta 360",
-              "qty": 1,
-              "checked": false,
-              "members": [],
-              "mc": {},
-              "checkLog": [
-                {
-                  "memberId": "eup4vt8kxk",
-                  "memberName": "貝",
-                  "ts": 1780453414712,
-                  "action": "check"
-                },
-                {
-                  "memberId": "eup4vt8kxk",
-                  "memberName": "貝",
-                  "ts": 1780453415780,
-                  "action": "uncheck"
-                }
-              ],
-              "source": "template",
-              "templateKey": "電器::Insta 360",
-              "templateCategory": "電器",
-              "retiredByTemplate": false
-            },
-            {
               "id": "6ylv3kf0vf",
               "name": "手機掛繩",
               "qty": 1,
@@ -2994,6 +2968,32 @@
           "templateKey": "飛機過夜包::乳霜",
           "templateCategory": "飛機過夜包",
           "retiredByTemplate": false
+        },
+        {
+          "id": "t6irtvd0vf",
+          "name": "Insta 360",
+          "qty": 1,
+          "checked": false,
+          "members": [],
+          "mc": {},
+          "checkLog": [
+            {
+              "memberId": "eup4vt8kxk",
+              "memberName": "貝",
+              "ts": 1780453414712,
+              "action": "check"
+            },
+            {
+              "memberId": "eup4vt8kxk",
+              "memberName": "貝",
+              "ts": 1780453415780,
+              "action": "uncheck"
+            }
+          ],
+          "source": "template",
+          "templateKey": "電器::Insta 360",
+          "templateCategory": "電器",
+          "retiredByTemplate": false
         }
       ],
       "templateCatalog": [
@@ -3190,5 +3190,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780453416483
+  "updatedAt": 1780453419171
 }
