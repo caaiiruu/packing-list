@@ -2775,7 +2775,7 @@
               "id": "vr5twaq0vf",
               "name": "胃藥",
               "qty": 1,
-              "checked": true,
+              "checked": false,
               "members": [],
               "mc": {},
               "checkLog": [
@@ -2784,6 +2784,12 @@
                   "memberName": "貝",
                   "ts": 1780452079565,
                   "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780452085359,
+                  "action": "uncheck"
                 }
               ],
               "source": "template",
@@ -3081,5 +3087,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780452082123
+  "updatedAt": 1780452085888
 }
