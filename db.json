@@ -1188,7 +1188,7 @@
               "checked": false,
               "members": [
                 {
-                  "name": "境",
+                  "name": "阿靜",
                   "qty": 1
                 }
               ],
@@ -3373,5 +3373,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780460235953
+  "updatedAt": 1780460250299
 }
