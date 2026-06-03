@@ -2483,32 +2483,6 @@
               "retiredByTemplate": false
             },
             {
-              "id": "dgfqvc60vf",
-              "name": "黑色短袖",
-              "qty": 1,
-              "checked": false,
-              "members": [],
-              "mc": {},
-              "checkLog": [
-                {
-                  "memberId": "eup4vt8kxk",
-                  "memberName": "貝",
-                  "ts": 1780460483907,
-                  "action": "check"
-                },
-                {
-                  "memberId": "eup4vt8kxk",
-                  "memberName": "貝",
-                  "ts": 1780460486862,
-                  "action": "uncheck"
-                }
-              ],
-              "source": "template",
-              "templateKey": "臥鋪盥洗包::黑色短袖",
-              "templateCategory": "臥鋪盥洗包",
-              "retiredByTemplate": false
-            },
-            {
               "id": "8zzhn050vf",
               "name": "內褲",
               "qty": 1,
@@ -2538,7 +2512,7 @@
               "id": "lr7dcnh0vf",
               "name": "免洗浴巾",
               "qty": 1,
-              "checked": true,
+              "checked": false,
               "members": [],
               "mc": {},
               "checkLog": [
@@ -2547,6 +2521,12 @@
                   "memberName": "貝",
                   "ts": 1780460484849,
                   "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780460487379,
+                  "action": "uncheck"
                 }
               ],
               "source": "template",
@@ -3278,6 +3258,32 @@
           "templateKey": "開車必備::悶燒罐（含咖啡包）",
           "templateCategory": "開車必備",
           "retiredByTemplate": false
+        },
+        {
+          "id": "dgfqvc60vf",
+          "name": "黑色短袖",
+          "qty": 1,
+          "checked": false,
+          "members": [],
+          "mc": {},
+          "checkLog": [
+            {
+              "memberId": "eup4vt8kxk",
+              "memberName": "貝",
+              "ts": 1780460483907,
+              "action": "check"
+            },
+            {
+              "memberId": "eup4vt8kxk",
+              "memberName": "貝",
+              "ts": 1780460486862,
+              "action": "uncheck"
+            }
+          ],
+          "source": "template",
+          "templateKey": "臥鋪盥洗包::黑色短袖",
+          "templateCategory": "臥鋪盥洗包",
+          "retiredByTemplate": false
         }
       ],
       "templateCatalog": [
@@ -3474,5 +3480,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780460487462
+  "updatedAt": 1780460492108
 }
