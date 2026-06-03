@@ -2483,19 +2483,6 @@
               "retiredByTemplate": false
             },
             {
-              "id": "8s38rjy0vf",
-              "name": "小罐洗髮乳",
-              "qty": 1,
-              "checked": false,
-              "members": [],
-              "mc": {},
-              "checkLog": [],
-              "source": "template",
-              "templateKey": "臥鋪盥洗包::小罐洗髮乳",
-              "templateCategory": "臥鋪盥洗包",
-              "retiredByTemplate": false
-            },
-            {
               "id": "czs75bg0vf",
               "name": "小罐洗臉",
               "qty": 1,
@@ -3284,6 +3271,19 @@
           "templateKey": "臥鋪盥洗包::小罐沐浴乳",
           "templateCategory": "臥鋪盥洗包",
           "retiredByTemplate": false
+        },
+        {
+          "id": "8s38rjy0vf",
+          "name": "小罐洗髮乳",
+          "qty": 1,
+          "checked": false,
+          "members": [],
+          "mc": {},
+          "checkLog": [],
+          "source": "template",
+          "templateKey": "臥鋪盥洗包::小罐洗髮乳",
+          "templateCategory": "臥鋪盥洗包",
+          "retiredByTemplate": false
         }
       ],
       "templateCatalog": [
@@ -3480,5 +3480,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780460505141
+  "updatedAt": 1780460507144
 }
