@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "bce4a8da271ada502066b243",
       "secretIssuedAt": 1780453370528,
-      "activeCat": 5,
+      "activeCat": 8,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -2486,10 +2486,17 @@
               "id": "dgfqvc60vf",
               "name": "黑色短袖",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [],
               "mc": {},
-              "checkLog": [],
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780460483907,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "臥鋪盥洗包::黑色短袖",
               "templateCategory": "臥鋪盥洗包",
@@ -3454,5 +3461,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780460467413
+  "updatedAt": 1780460484567
 }
