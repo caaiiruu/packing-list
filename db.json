@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "bce4a8da271ada502066b243",
       "secretIssuedAt": 1780453370528,
-      "activeCat": 4,
+      "activeCat": 0,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -290,8 +290,8 @@
               "checked": false,
               "members": [
                 {
-                  "name": "境",
-                  "qty": 4
+                  "name": "貝",
+                  "qty": 2
                 }
               ],
               "mc": {},
@@ -3324,5 +3324,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780459943090
+  "updatedAt": 1780459964824
 }
