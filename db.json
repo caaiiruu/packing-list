@@ -3003,7 +3003,12 @@
               "name": "洗臉肥皂",
               "qty": 1,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [
                 {
@@ -3811,5 +3816,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780474220826
+  "updatedAt": 1780474224353
 }
