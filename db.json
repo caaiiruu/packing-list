@@ -312,16 +312,14 @@
               "id": "tx4yptp0vf",
               "name": "煮水器",
               "qty": 1,
-              "checked": true,
+              "checked": false,
               "members": [
                 {
                   "name": "貝",
                   "qty": 1
                 }
               ],
-              "mc": {
-                "貝": true
-              },
+              "mc": {},
               "checkLog": [
                 {
                   "memberId": "eup4vt8kxk",
@@ -406,16 +404,14 @@
               "id": "09dpfam0vf",
               "name": "吹風機",
               "qty": 1,
-              "checked": true,
+              "checked": false,
               "members": [
                 {
                   "name": "貝",
                   "qty": 1
                 }
               ],
-              "mc": {
-                "貝": true
-              },
+              "mc": {},
               "checkLog": [
                 {
                   "memberId": "eup4vt8kxk",
@@ -451,7 +447,7 @@
               "id": "imcb7pq0vf",
               "name": "行動電源",
               "qty": 2,
-              "checked": true,
+              "checked": false,
               "members": [],
               "mc": {},
               "checkLog": [
@@ -471,7 +467,7 @@
               "id": "kcit3yi0vf",
               "name": "Google TV + 遙控器",
               "qty": 1,
-              "checked": true,
+              "checked": false,
               "members": [],
               "mc": {},
               "checkLog": [
@@ -504,7 +500,7 @@
               "id": "6ylv3kf0vf",
               "name": "手機掛繩",
               "qty": 1,
-              "checked": true,
+              "checked": false,
               "members": [],
               "mc": {},
               "checkLog": [
@@ -537,7 +533,7 @@
               "id": "ktggujl0vf",
               "name": "手機充電線",
               "qty": 2,
-              "checked": true,
+              "checked": false,
               "members": [],
               "mc": {},
               "checkLog": [
@@ -570,7 +566,7 @@
               "id": "ydvub4d0vf",
               "name": "Type C充電線",
               "qty": 1,
-              "checked": true,
+              "checked": false,
               "members": [],
               "mc": {},
               "checkLog": [
@@ -616,7 +612,7 @@
               "id": "nrtc6oe0vf",
               "name": "頭燈",
               "qty": 2,
-              "checked": true,
+              "checked": false,
               "members": [],
               "mc": {},
               "checkLog": [
@@ -675,7 +671,7 @@
               "id": "ltduem20vf",
               "name": "鎖頭",
               "qty": 4,
-              "checked": true,
+              "checked": false,
               "members": [],
               "mc": {},
               "checkLog": [
@@ -695,12 +691,9 @@
               "id": "h8gkif50vf",
               "name": "電蚊香",
               "qty": 1,
-              "checked": true,
+              "checked": false,
               "members": [],
-              "mc": {
-                "貝": false,
-                "卡老公": false
-              },
+              "mc": {},
               "checkLog": [
                 {
                   "memberId": "eup4vt8kxk",
@@ -2606,7 +2599,7 @@
               "id": "cvme3js0vf",
               "name": "牙線",
               "qty": 1,
-              "checked": true,
+              "checked": false,
               "members": [],
               "mc": {},
               "checkLog": [
@@ -3184,5 +3177,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780453371295
+  "updatedAt": 1780453403563
 }
