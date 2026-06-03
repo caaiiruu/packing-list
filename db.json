@@ -514,10 +514,17 @@
               "id": "ktggujl0vf",
               "name": "手機充電線",
               "qty": 2,
-              "checked": false,
+              "checked": true,
               "members": [],
               "mc": {},
-              "checkLog": [],
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780452774428,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "電器::手機充電線",
               "templateCategory": "電器",
@@ -3133,5 +3140,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780452774026
+  "updatedAt": 1780452775213
 }
