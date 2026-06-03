@@ -2939,7 +2939,12 @@
               "name": "水袋",
               "qty": 1,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "卡老公",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [],
               "source": "template",
@@ -3781,5 +3786,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780474197126
+  "updatedAt": 1780474207274
 }
