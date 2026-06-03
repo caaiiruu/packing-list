@@ -2637,7 +2637,7 @@
               "id": "legx72o0vf",
               "name": "發熱眼罩",
               "qty": 1,
-              "checked": true,
+              "checked": false,
               "members": [],
               "mc": {},
               "checkLog": [
@@ -2646,6 +2646,12 @@
                   "memberName": "貝",
                   "ts": 1780448220370,
                   "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780452086857,
+                  "action": "uncheck"
                 }
               ],
               "source": "template",
@@ -2657,7 +2663,7 @@
               "id": "bwp06lk0vf",
               "name": "耳塞",
               "qty": 4,
-              "checked": true,
+              "checked": false,
               "members": [],
               "mc": {},
               "checkLog": [
@@ -2678,6 +2684,12 @@
                   "memberName": "貝",
                   "ts": 1780448219388,
                   "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780452087420,
+                  "action": "uncheck"
                 }
               ],
               "source": "template",
@@ -3099,5 +3111,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780452087112
+  "updatedAt": 1780452087961
 }
