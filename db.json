@@ -2347,15 +2347,24 @@
               "id": "231524x0vf",
               "name": "折疊碗",
               "qty": 2,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
                   "qty": 2
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780473572944,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "備品雜物::折疊碗",
               "templateCategory": "備品雜物",
@@ -3609,5 +3618,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780473032016
+  "updatedAt": 1780473573659
 }
