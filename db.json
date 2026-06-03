@@ -2568,32 +2568,6 @@
               "retiredByTemplate": false
             },
             {
-              "id": "c7a0cto0vf",
-              "name": "乳霜",
-              "qty": 1,
-              "checked": false,
-              "members": [],
-              "mc": {},
-              "checkLog": [
-                {
-                  "memberId": "eup4vt8kxk",
-                  "memberName": "貝",
-                  "ts": 1780417464883,
-                  "action": "check"
-                },
-                {
-                  "memberId": "eup4vt8kxk",
-                  "memberName": "貝",
-                  "ts": 1780417465734,
-                  "action": "uncheck"
-                }
-              ],
-              "source": "template",
-              "templateKey": "飛機過夜包::乳霜",
-              "templateCategory": "飛機過夜包",
-              "retiredByTemplate": false
-            },
-            {
               "id": "jueximv0vf",
               "name": "眼鏡盒",
               "qty": 1,
@@ -2843,6 +2817,32 @@
           "templateKey": "電器::360夾背帶",
           "templateCategory": "電器",
           "retiredByTemplate": false
+        },
+        {
+          "id": "c7a0cto0vf",
+          "name": "乳霜",
+          "qty": 1,
+          "checked": false,
+          "members": [],
+          "mc": {},
+          "checkLog": [
+            {
+              "memberId": "eup4vt8kxk",
+              "memberName": "貝",
+              "ts": 1780417464883,
+              "action": "check"
+            },
+            {
+              "memberId": "eup4vt8kxk",
+              "memberName": "貝",
+              "ts": 1780417465734,
+              "action": "uncheck"
+            }
+          ],
+          "source": "template",
+          "templateKey": "飛機過夜包::乳霜",
+          "templateCategory": "飛機過夜包",
+          "retiredByTemplate": false
         }
       ],
       "templateCatalog": [
@@ -3039,5 +3039,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780448221070
+  "updatedAt": 1780448222193
 }
