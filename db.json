@@ -2649,10 +2649,17 @@
               "id": "legx72o0vf",
               "name": "發熱眼罩",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [],
               "mc": {},
-              "checkLog": [],
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780448220370,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "飛機過夜包::發熱眼罩",
               "templateCategory": "飛機過夜包",
@@ -3032,5 +3039,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780448219877
+  "updatedAt": 1780448221070
 }
