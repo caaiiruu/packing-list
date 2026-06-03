@@ -637,7 +637,7 @@
               "id": "h8gkif50vf",
               "name": "電蚊香",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [],
               "mc": {
                 "貝": false,
@@ -715,6 +715,12 @@
                   "memberName": "貝",
                   "ts": 1780416360295,
                   "action": "uncheck"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "阿明(改)",
+                  "ts": 1780452425367,
+                  "action": "check"
                 }
               ],
               "source": "template",
@@ -3120,5 +3126,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780452189943
+  "updatedAt": 1780452425870
 }
