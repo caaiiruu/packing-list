@@ -232,19 +232,6 @@
               "retiredByTemplate": false
             },
             {
-              "id": "3i9t0050vf",
-              "name": "防曬帽",
-              "qty": 1,
-              "checked": false,
-              "members": [],
-              "mc": {},
-              "checkLog": [],
-              "source": "template",
-              "templateKey": "服飾::防曬帽",
-              "templateCategory": "服飾",
-              "retiredByTemplate": false
-            },
-            {
               "id": "lz04rb50vf",
               "name": "雨傘",
               "qty": 1,
@@ -3132,6 +3119,19 @@
           "templateKey": "服飾::防蒼蠅頭套",
           "templateCategory": "服飾",
           "retiredByTemplate": false
+        },
+        {
+          "id": "3i9t0050vf",
+          "name": "防曬帽",
+          "qty": 1,
+          "checked": false,
+          "members": [],
+          "mc": {},
+          "checkLog": [],
+          "source": "template",
+          "templateKey": "服飾::防曬帽",
+          "templateCategory": "服飾",
+          "retiredByTemplate": false
         }
       ],
       "templateCatalog": [
@@ -3328,5 +3328,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780459997876
+  "updatedAt": 1780460001625
 }
