@@ -2708,10 +2708,17 @@
               "id": "krx1fi50vf",
               "name": "護手霜",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [],
               "mc": {},
-              "checkLog": [],
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780449097780,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "飛機過夜包::護手霜",
               "templateCategory": "飛機過夜包",
@@ -3053,5 +3060,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780449095970
+  "updatedAt": 1780449098290
 }
