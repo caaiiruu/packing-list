@@ -480,7 +480,12 @@
               "name": "Google TV + 遙控器",
               "qty": 1,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [
                 {
@@ -3521,5 +3526,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780460538248
+  "updatedAt": 1780460552968
 }
