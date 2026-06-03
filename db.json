@@ -1427,19 +1427,6 @@
               "retiredByTemplate": false
             },
             {
-              "id": "i8xhriw0vf",
-              "name": "手機架",
-              "qty": 1,
-              "checked": false,
-              "members": [],
-              "mc": {},
-              "checkLog": [],
-              "source": "template",
-              "templateKey": "開車必備::手機架",
-              "templateCategory": "開車必備",
-              "retiredByTemplate": false
-            },
-            {
               "id": "9kti66s0vf",
               "name": "行車記錄器",
               "qty": 1,
@@ -3393,6 +3380,19 @@
           "templateKey": "臥鋪盥洗包::一包衛生紙",
           "templateCategory": "臥鋪盥洗包",
           "retiredByTemplate": false
+        },
+        {
+          "id": "i8xhriw0vf",
+          "name": "手機架",
+          "qty": 1,
+          "checked": false,
+          "members": [],
+          "mc": {},
+          "checkLog": [],
+          "source": "template",
+          "templateKey": "開車必備::手機架",
+          "templateCategory": "開車必備",
+          "retiredByTemplate": false
         }
       ],
       "templateCatalog": [
@@ -3589,5 +3589,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780460685714
+  "updatedAt": 1780460691784
 }
