@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "bce4a8da271ada502066b243",
       "secretIssuedAt": 1780453370528,
-      "activeCat": 6,
+      "activeCat": 1,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -884,7 +884,9 @@
                   "qty": 1
                 }
               ],
-              "mc": {},
+              "mc": {
+                "貝": true
+              },
               "checkLog": [
                 {
                   "memberId": "eup4vt8kxk",
@@ -903,6 +905,12 @@
                   "memberName": "貝",
                   "ts": 1780416357844,
                   "action": "uncheck"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780473586274,
+                  "action": "check"
                 }
               ],
               "source": "template",
@@ -2347,7 +2355,7 @@
               "id": "231524x0vf",
               "name": "折疊碗",
               "qty": 2,
-              "checked": true,
+              "checked": false,
               "members": [
                 {
                   "name": "貝",
@@ -2355,7 +2363,7 @@
                 }
               ],
               "mc": {
-                "貝": true
+                "貝": false
               },
               "checkLog": [
                 {
@@ -2363,6 +2371,12 @@
                   "memberName": "貝",
                   "ts": 1780473572944,
                   "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780473573805,
+                  "action": "uncheck"
                 }
               ],
               "source": "template",
@@ -3618,5 +3632,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780473573659
+  "updatedAt": 1780473586929
 }
