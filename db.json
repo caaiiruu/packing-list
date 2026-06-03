@@ -2558,10 +2558,17 @@
               "id": "z23uvmx0vf",
               "name": "面膜",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [],
               "mc": {},
-              "checkLog": [],
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780448222536,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "飛機過夜包::面膜",
               "templateCategory": "飛機過夜包",
@@ -3039,5 +3046,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780448222193
+  "updatedAt": 1780448223005
 }
