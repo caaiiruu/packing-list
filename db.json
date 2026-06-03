@@ -5,8 +5,8 @@
       "name": "冰島吃冰",
       "emoji": "🏕️",
       "createdAt": 1780414656170,
-      "secret": "1c11af2035db564df431781e",
-      "secretIssuedAt": 1780473749555,
+      "secret": "51dc6f85a89207528b35973c",
+      "secretIssuedAt": 1780476734531,
       "activeCat": 8,
       "members": [
         {
@@ -3810,5 +3810,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780476716247
+  "updatedAt": 1780476738779
 }
