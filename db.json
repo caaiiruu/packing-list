@@ -1053,6 +1053,19 @@
               "templateKey": null,
               "templateCategory": null,
               "retiredByTemplate": false
+            },
+            {
+              "id": "ppfuz0mmyg",
+              "name": "悶燒罐",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "custom",
+              "templateKey": null,
+              "templateCategory": null,
+              "retiredByTemplate": false
             }
           ]
         },
@@ -3234,5 +3247,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780459766552
+  "updatedAt": 1780459801695
 }
