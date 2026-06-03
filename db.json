@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "bce4a8da271ada502066b243",
       "secretIssuedAt": 1780453370528,
-      "activeCat": 7,
+      "activeCat": 5,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -1886,7 +1886,12 @@
               "name": "綁腳趾頭繃帶",
               "qty": 1,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [],
               "source": "template",
@@ -3440,5 +3445,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780460452114
+  "updatedAt": 1780460461468
 }
