@@ -487,10 +487,17 @@
               "id": "t6irtvd0vf",
               "name": "Insta 360",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [],
               "mc": {},
-              "checkLog": [],
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780453414712,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "電器::Insta 360",
               "templateCategory": "電器",
@@ -3177,5 +3184,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780453403563
+  "updatedAt": 1780453415503
 }
