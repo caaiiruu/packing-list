@@ -2483,19 +2483,6 @@
               "retiredByTemplate": false
             },
             {
-              "id": "iczir830vf",
-              "name": "內衣",
-              "qty": 1,
-              "checked": false,
-              "members": [],
-              "mc": {},
-              "checkLog": [],
-              "source": "template",
-              "templateKey": "臥鋪盥洗包::內衣",
-              "templateCategory": "臥鋪盥洗包",
-              "retiredByTemplate": false
-            },
-            {
               "id": "gku2hdl0vf",
               "name": "小罐沐浴乳",
               "qty": 1,
@@ -3284,6 +3271,19 @@
           "templateKey": "臥鋪盥洗包::內褲",
           "templateCategory": "臥鋪盥洗包",
           "retiredByTemplate": false
+        },
+        {
+          "id": "iczir830vf",
+          "name": "內衣",
+          "qty": 1,
+          "checked": false,
+          "members": [],
+          "mc": {},
+          "checkLog": [],
+          "source": "template",
+          "templateKey": "臥鋪盥洗包::內衣",
+          "templateCategory": "臥鋪盥洗包",
+          "retiredByTemplate": false
         }
       ],
       "templateCatalog": [
@@ -3480,5 +3480,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780460496890
+  "updatedAt": 1780460499096
 }
