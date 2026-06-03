@@ -2034,7 +2034,7 @@
             },
             {
               "id": "n4efigv0vf",
-              "name": "衣架（貝）",
+              "name": "衣架",
               "qty": 10,
               "checked": false,
               "members": [
@@ -3206,5 +3206,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780453541814
+  "updatedAt": 1780453552308
 }
