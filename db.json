@@ -570,10 +570,17 @@
               "id": "ydvub4d0vf",
               "name": "Type C充電線",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [],
               "mc": {},
-              "checkLog": [],
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780452781288,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "電器::Type C充電線",
               "templateCategory": "電器",
@@ -3177,5 +3184,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780452780686
+  "updatedAt": 1780452781828
 }
