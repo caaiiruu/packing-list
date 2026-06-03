@@ -1129,19 +1129,6 @@
           "expanded": true,
           "items": [
             {
-              "id": "vyg1za60vf",
-              "name": "悶燒罐（含咖啡包）",
-              "qty": 1,
-              "checked": false,
-              "members": [],
-              "mc": {},
-              "checkLog": [],
-              "source": "template",
-              "templateKey": "開車必備::悶燒罐（含咖啡包）",
-              "templateCategory": "開車必備",
-              "retiredByTemplate": false
-            },
-            {
               "id": "rqpre9l0vf",
               "name": "濕紙巾（大）",
               "qty": 2,
@@ -3177,6 +3164,19 @@
           "templateKey": "開車必備::2公升水袋",
           "templateCategory": "開車必備",
           "retiredByTemplate": false
+        },
+        {
+          "id": "vyg1za60vf",
+          "name": "悶燒罐（含咖啡包）",
+          "qty": 1,
+          "checked": false,
+          "members": [],
+          "mc": {},
+          "checkLog": [],
+          "source": "template",
+          "templateKey": "開車必備::悶燒罐（含咖啡包）",
+          "templateCategory": "開車必備",
+          "retiredByTemplate": false
         }
       ],
       "templateCatalog": [
@@ -3373,5 +3373,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780460260971
+  "updatedAt": 1780460295714
 }
