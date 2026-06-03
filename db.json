@@ -2313,7 +2313,12 @@
               "name": "國際駕照",
               "qty": 1,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "卡老公",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [],
               "source": "template",
@@ -3435,5 +3440,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780460444119
+  "updatedAt": 1780460452114
 }
