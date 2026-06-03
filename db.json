@@ -1232,19 +1232,6 @@
               "retiredByTemplate": false
             },
             {
-              "id": "x329git0vf",
-              "name": "小酒精瓶",
-              "qty": 1,
-              "checked": false,
-              "members": [],
-              "mc": {},
-              "checkLog": [],
-              "source": "template",
-              "templateKey": "開車必備::小酒精瓶",
-              "templateCategory": "開車必備",
-              "retiredByTemplate": false
-            },
-            {
               "id": "vvacvwx0vf",
               "name": "2公升水袋",
               "qty": 2,
@@ -3154,6 +3141,19 @@
           "templateKey": "開車必備::露營車馬桶分解劑",
           "templateCategory": "開車必備",
           "retiredByTemplate": false
+        },
+        {
+          "id": "x329git0vf",
+          "name": "小酒精瓶",
+          "qty": 1,
+          "checked": false,
+          "members": [],
+          "mc": {},
+          "checkLog": [],
+          "source": "template",
+          "templateKey": "開車必備::小酒精瓶",
+          "templateCategory": "開車必備",
+          "retiredByTemplate": false
         }
       ],
       "templateCatalog": [
@@ -3350,5 +3350,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780460178695
+  "updatedAt": 1780460196734
 }
