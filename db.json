@@ -2728,10 +2728,17 @@
               "id": "e51m1xi0vf",
               "name": "洗臉肥皂",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [],
               "mc": {},
-              "checkLog": [],
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780452080525,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "飛機過夜包::洗臉肥皂",
               "templateCategory": "飛機過夜包",
@@ -3067,5 +3074,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780452080140
+  "updatedAt": 1780452081072
 }
