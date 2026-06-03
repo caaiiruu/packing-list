@@ -2509,32 +2509,6 @@
               "retiredByTemplate": false
             },
             {
-              "id": "lr7dcnh0vf",
-              "name": "免洗浴巾",
-              "qty": 1,
-              "checked": false,
-              "members": [],
-              "mc": {},
-              "checkLog": [
-                {
-                  "memberId": "eup4vt8kxk",
-                  "memberName": "貝",
-                  "ts": 1780460484849,
-                  "action": "check"
-                },
-                {
-                  "memberId": "eup4vt8kxk",
-                  "memberName": "貝",
-                  "ts": 1780460487379,
-                  "action": "uncheck"
-                }
-              ],
-              "source": "template",
-              "templateKey": "臥鋪盥洗包::免洗浴巾",
-              "templateCategory": "臥鋪盥洗包",
-              "retiredByTemplate": false
-            },
-            {
               "id": "gku2hdl0vf",
               "name": "小罐沐浴乳",
               "qty": 1,
@@ -3284,6 +3258,32 @@
           "templateKey": "臥鋪盥洗包::黑色短袖",
           "templateCategory": "臥鋪盥洗包",
           "retiredByTemplate": false
+        },
+        {
+          "id": "lr7dcnh0vf",
+          "name": "免洗浴巾",
+          "qty": 1,
+          "checked": false,
+          "members": [],
+          "mc": {},
+          "checkLog": [
+            {
+              "memberId": "eup4vt8kxk",
+              "memberName": "貝",
+              "ts": 1780460484849,
+              "action": "check"
+            },
+            {
+              "memberId": "eup4vt8kxk",
+              "memberName": "貝",
+              "ts": 1780460487379,
+              "action": "uncheck"
+            }
+          ],
+          "source": "template",
+          "templateKey": "臥鋪盥洗包::免洗浴巾",
+          "templateCategory": "臥鋪盥洗包",
+          "retiredByTemplate": false
         }
       ],
       "templateCatalog": [
@@ -3480,5 +3480,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780460492108
+  "updatedAt": 1780460494354
 }
