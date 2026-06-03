@@ -1997,24 +1997,6 @@
           "expanded": false,
           "items": [
             {
-              "id": "sr0kjo90vf",
-              "name": "衣架（媽）",
-              "qty": 10,
-              "checked": false,
-              "members": [
-                {
-                  "name": "媽",
-                  "qty": 10
-                }
-              ],
-              "mc": {},
-              "checkLog": [],
-              "source": "template",
-              "templateKey": "備品雜物::衣架（媽）",
-              "templateCategory": "備品雜物",
-              "retiredByTemplate": false
-            },
-            {
               "id": "n4efigv0vf",
               "name": "衣架",
               "qty": 10,
@@ -3005,6 +2987,24 @@
           "templateKey": "備品雜物::衣架（境）",
           "templateCategory": "備品雜物",
           "retiredByTemplate": false
+        },
+        {
+          "id": "sr0kjo90vf",
+          "name": "衣架（媽）",
+          "qty": 10,
+          "checked": false,
+          "members": [
+            {
+              "name": "媽",
+              "qty": 10
+            }
+          ],
+          "mc": {},
+          "checkLog": [],
+          "source": "template",
+          "templateKey": "備品雜物::衣架（媽）",
+          "templateCategory": "備品雜物",
+          "retiredByTemplate": false
         }
       ],
       "templateCatalog": [
@@ -3201,5 +3201,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780453560387
+  "updatedAt": 1780453567304
 }
