@@ -2468,21 +2468,7 @@
           "cat": "臥鋪盥洗包",
           "icon": "ti-moon",
           "expanded": true,
-          "items": [
-            {
-              "id": "ttvp1e80vf",
-              "name": "一包衛生紙",
-              "qty": 1,
-              "checked": false,
-              "members": [],
-              "mc": {},
-              "checkLog": [],
-              "source": "template",
-              "templateKey": "臥鋪盥洗包::一包衛生紙",
-              "templateCategory": "臥鋪盥洗包",
-              "retiredByTemplate": false
-            }
-          ]
+          "items": []
         },
         {
           "cat": "飛機過夜包",
@@ -3284,6 +3270,19 @@
           "templateKey": "臥鋪盥洗包::小罐洗臉",
           "templateCategory": "臥鋪盥洗包",
           "retiredByTemplate": false
+        },
+        {
+          "id": "ttvp1e80vf",
+          "name": "一包衛生紙",
+          "qty": 1,
+          "checked": false,
+          "members": [],
+          "mc": {},
+          "checkLog": [],
+          "source": "template",
+          "templateKey": "臥鋪盥洗包::一包衛生紙",
+          "templateCategory": "臥鋪盥洗包",
+          "retiredByTemplate": false
         }
       ],
       "templateCatalog": [
@@ -3480,5 +3479,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780460509032
+  "updatedAt": 1780460510972
 }
