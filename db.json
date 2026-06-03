@@ -1381,6 +1381,26 @@
               "templateKey": null,
               "templateCategory": null,
               "retiredByTemplate": false
+            },
+            {
+              "id": "vvacvwx0vf",
+              "name": "2公升水袋",
+              "qty": 2,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780415768316,
+                  "action": "check"
+                }
+              ],
+              "source": "template",
+              "templateKey": "開車必備::2公升水袋",
+              "templateCategory": "開車必備",
+              "retiredByTemplate": false
             }
           ]
         },
@@ -3146,26 +3166,6 @@
           "retiredByTemplate": false
         },
         {
-          "id": "vvacvwx0vf",
-          "name": "2公升水袋",
-          "qty": 2,
-          "checked": false,
-          "members": [],
-          "mc": {},
-          "checkLog": [
-            {
-              "memberId": "eup4vt8kxk",
-              "memberName": "貝",
-              "ts": 1780415768316,
-              "action": "check"
-            }
-          ],
-          "source": "template",
-          "templateKey": "開車必備::2公升水袋",
-          "templateCategory": "開車必備",
-          "retiredByTemplate": false
-        },
-        {
           "id": "vyg1za60vf",
           "name": "悶燒罐（含咖啡包）",
           "qty": 1,
@@ -3373,5 +3373,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780460295714
+  "updatedAt": 1780460315279
 }
