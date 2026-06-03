@@ -2761,10 +2761,17 @@
               "id": "vr5twaq0vf",
               "name": "胃藥",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [],
               "mc": {},
-              "checkLog": [],
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780452079565,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "飛機過夜包::胃藥",
               "templateCategory": "飛機過夜包",
@@ -3060,5 +3067,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780450278693
+  "updatedAt": 1780452080140
 }
