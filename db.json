@@ -210,7 +210,12 @@
               "name": "棉褲",
               "qty": 1,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [],
               "source": "template",
@@ -3328,5 +3333,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780460001625
+  "updatedAt": 1780460020685
 }
