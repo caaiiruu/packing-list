@@ -1421,19 +1421,6 @@
               "templateKey": "開車必備::蛋白粉杯",
               "templateCategory": "開車必備",
               "retiredByTemplate": false
-            },
-            {
-              "id": "5gu5vlo0vf",
-              "name": "露營車馬桶分解劑",
-              "qty": 1,
-              "checked": false,
-              "members": [],
-              "mc": {},
-              "checkLog": [],
-              "source": "template",
-              "templateKey": "開車必備::露營車馬桶分解劑",
-              "templateCategory": "開車必備",
-              "retiredByTemplate": false
             }
           ]
         },
@@ -3158,6 +3145,19 @@
           "templateKey": "開車必備::除臭噴霧",
           "templateCategory": "開車必備",
           "retiredByTemplate": false
+        },
+        {
+          "id": "5gu5vlo0vf",
+          "name": "露營車馬桶分解劑",
+          "qty": 1,
+          "checked": false,
+          "members": [],
+          "mc": {},
+          "checkLog": [],
+          "source": "template",
+          "templateKey": "開車必備::露營車馬桶分解劑",
+          "templateCategory": "開車必備",
+          "retiredByTemplate": false
         }
       ],
       "templateCatalog": [
@@ -3354,5 +3354,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780460093195
+  "updatedAt": 1780460098635
 }
