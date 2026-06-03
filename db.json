@@ -1409,6 +1409,19 @@
               "templateKey": "開車必備::蛋白粉杯",
               "templateCategory": "開車必備",
               "retiredByTemplate": false
+            },
+            {
+              "id": "lqtfr26q70",
+              "name": "垃圾袋（小）",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "custom",
+              "templateKey": null,
+              "templateCategory": null,
+              "retiredByTemplate": false
             }
           ]
         },
@@ -3355,5 +3368,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780460218486
+  "updatedAt": 1780460226010
 }
