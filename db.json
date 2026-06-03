@@ -1161,11 +1161,11 @@
               "checked": false,
               "members": [
                 {
-                  "name": "卡老公",
+                  "name": "媽",
                   "qty": 1
                 },
                 {
-                  "name": "媽",
+                  "name": "小盈盈",
                   "qty": 1
                 }
               ],
@@ -3354,5 +3354,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780460118897
+  "updatedAt": 1780460125858
 }
