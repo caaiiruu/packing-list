@@ -2190,7 +2190,7 @@
               "id": "30ajg320vf",
               "name": "吊衣繩",
               "qty": 1,
-              "checked": true,
+              "checked": false,
               "members": [
                 {
                   "name": "媽",
@@ -2198,7 +2198,7 @@
                 }
               ],
               "mc": {
-                "媽": true
+                "媽": false
               },
               "checkLog": [
                 {
@@ -2206,6 +2206,12 @@
                   "memberName": "貝",
                   "ts": 1780473028183,
                   "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780473031509,
+                  "action": "uncheck"
                 }
               ],
               "source": "template",
@@ -3603,5 +3609,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780473028810
+  "updatedAt": 1780473032016
 }
