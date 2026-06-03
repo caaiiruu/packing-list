@@ -2138,7 +2138,12 @@
               "name": "環保袋",
               "qty": 1,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [],
               "source": "template",
@@ -3206,5 +3211,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780459494311
+  "updatedAt": 1780459508132
 }
