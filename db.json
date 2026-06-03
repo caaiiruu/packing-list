@@ -754,19 +754,6 @@
               "retiredByTemplate": false
             },
             {
-              "id": "zw3hx470vf",
-              "name": "手機腳架",
-              "qty": 1,
-              "checked": false,
-              "members": [],
-              "mc": {},
-              "checkLog": [],
-              "source": "template",
-              "templateKey": "電器::手機腳架",
-              "templateCategory": "電器",
-              "retiredByTemplate": false
-            },
-            {
               "id": "wnvgqdd0vf",
               "name": "防水手機袋（泡溫泉用）",
               "qty": 1,
@@ -2994,6 +2981,19 @@
           "templateKey": "電器::自拍棒",
           "templateCategory": "電器",
           "retiredByTemplate": false
+        },
+        {
+          "id": "zw3hx470vf",
+          "name": "手機腳架",
+          "qty": 1,
+          "checked": false,
+          "members": [],
+          "mc": {},
+          "checkLog": [],
+          "source": "template",
+          "templateKey": "電器::手機腳架",
+          "templateCategory": "電器",
+          "retiredByTemplate": false
         }
       ],
       "templateCatalog": [
@@ -3190,5 +3190,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780453429640
+  "updatedAt": 1780453438459
 }
