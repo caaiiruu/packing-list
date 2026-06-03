@@ -2254,7 +2254,7 @@
             },
             {
               "id": "2eusfy50vf",
-              "name": "絲瓜巾",
+              "name": "洗澡絲瓜巾",
               "qty": 1,
               "checked": false,
               "members": [],
@@ -3216,5 +3216,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780459620863
+  "updatedAt": 1780459674176
 }
