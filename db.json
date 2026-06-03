@@ -285,7 +285,7 @@
             },
             {
               "id": "6qrtprj0vf",
-              "name": "登山杖",
+              "name": "登山杖（組）",
               "qty": 4,
               "checked": false,
               "members": [
@@ -3328,5 +3328,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780459981185
+  "updatedAt": 1780459991415
 }
