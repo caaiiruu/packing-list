@@ -382,11 +382,15 @@
             {
               "id": "nf57g6x0vf",
               "name": "洗衣蛋",
-              "qty": 1,
+              "qty": 2,
               "checked": false,
               "members": [
                 {
                   "name": "貝",
+                  "qty": 1
+                },
+                {
+                  "name": "媽",
                   "qty": 1
                 }
               ],
@@ -3654,5 +3658,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780473871971
+  "updatedAt": 1780473889805
 }
