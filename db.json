@@ -2001,12 +2001,7 @@
               "name": "衣架（境）",
               "qty": 4,
               "checked": false,
-              "members": [
-                {
-                  "name": "境",
-                  "qty": 4
-                }
-              ],
+              "members": [],
               "mc": {},
               "checkLog": [],
               "source": "template",
@@ -3206,5 +3201,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780453552308
+  "updatedAt": 1780453557476
 }
