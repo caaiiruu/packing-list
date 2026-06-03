@@ -1997,19 +1997,6 @@
           "expanded": false,
           "items": [
             {
-              "id": "27834dk0vf",
-              "name": "衣架（境）",
-              "qty": 4,
-              "checked": false,
-              "members": [],
-              "mc": {},
-              "checkLog": [],
-              "source": "template",
-              "templateKey": "備品雜物::衣架（境）",
-              "templateCategory": "備品雜物",
-              "retiredByTemplate": false
-            },
-            {
               "id": "sr0kjo90vf",
               "name": "衣架（媽）",
               "qty": 10,
@@ -3005,6 +2992,19 @@
           "templateKey": "電器::手機腳架",
           "templateCategory": "電器",
           "retiredByTemplate": false
+        },
+        {
+          "id": "27834dk0vf",
+          "name": "衣架（境）",
+          "qty": 4,
+          "checked": false,
+          "members": [],
+          "mc": {},
+          "checkLog": [],
+          "source": "template",
+          "templateKey": "備品雜物::衣架（境）",
+          "templateCategory": "備品雜物",
+          "retiredByTemplate": false
         }
       ],
       "templateCatalog": [
@@ -3201,5 +3201,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780453557476
+  "updatedAt": 1780453560387
 }
