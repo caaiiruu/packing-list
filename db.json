@@ -2233,7 +2233,12 @@
               "name": "洗衣折疊袋（洗衣蛋用）",
               "qty": 1,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [],
               "source": "template",
@@ -3205,5 +3210,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780453607154
+  "updatedAt": 1780453617072
 }
