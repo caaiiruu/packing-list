@@ -861,7 +861,7 @@
               "id": "wnvgqdd0vf",
               "name": "防水手機袋（泡溫泉用）",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
@@ -885,7 +885,11 @@
                 }
               ],
               "mc": {
-                "貝": false
+                "貝": true,
+                "卡老公": true,
+                "媽": true,
+                "小盈盈": true,
+                "阿靜": true
               },
               "checkLog": [
                 {
@@ -917,6 +921,12 @@
                   "memberName": "貝",
                   "ts": 1780473589169,
                   "action": "uncheck"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780473868036,
+                  "action": "check"
                 }
               ],
               "source": "template",
@@ -3638,5 +3648,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780473800393
+  "updatedAt": 1780473868628
 }
