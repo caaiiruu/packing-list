@@ -1161,12 +1161,8 @@
               "checked": false,
               "members": [
                 {
-                  "name": "媽",
-                  "qty": 1
-                },
-                {
                   "name": "小盈盈",
-                  "qty": 1
+                  "qty": 2
                 }
               ],
               "mc": {},
@@ -3354,5 +3350,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780460125858
+  "updatedAt": 1780460153984
 }
