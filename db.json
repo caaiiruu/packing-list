@@ -2734,10 +2734,17 @@
               "id": "qivqckv0vf",
               "name": "喉糖",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [],
               "mc": {},
-              "checkLog": [],
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780449095276,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "飛機過夜包::喉糖",
               "templateCategory": "飛機過夜包",
@@ -3046,5 +3053,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780448245376
+  "updatedAt": 1780449095970
 }
