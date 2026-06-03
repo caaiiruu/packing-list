@@ -2532,10 +2532,17 @@
               "id": "lr7dcnh0vf",
               "name": "免洗浴巾",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [],
               "mc": {},
-              "checkLog": [],
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780460484849,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "臥鋪盥洗包::免洗浴巾",
               "templateCategory": "臥鋪盥洗包",
@@ -3461,5 +3468,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780460484567
+  "updatedAt": 1780460485381
 }
