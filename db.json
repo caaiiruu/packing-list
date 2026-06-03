@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "1c11af2035db564df431781e",
       "secretIssuedAt": 1780473749555,
-      "activeCat": 2,
+      "activeCat": 3,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -1376,9 +1376,18 @@
             {
               "id": "ypp7xfj0vf",
               "name": "脖枕",
-              "qty": 1,
+              "qty": 2,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                },
+                {
+                  "name": "卡老公",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [
                 {
@@ -3694,5 +3703,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780474117111
+  "updatedAt": 1780474125512
 }
