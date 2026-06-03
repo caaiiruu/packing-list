@@ -1387,7 +1387,12 @@
               "name": "2公升水袋",
               "qty": 2,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "卡老公",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [
                 {
@@ -3373,5 +3378,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780460315279
+  "updatedAt": 1780460322153
 }
