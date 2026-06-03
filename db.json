@@ -1291,10 +1291,15 @@
             },
             {
               "id": "1xklow60vf",
-              "name": "垃圾袋",
+              "name": "垃圾袋（大）",
               "qty": 1,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "媽",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [],
               "source": "template",
@@ -3350,5 +3355,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780460196734
+  "updatedAt": 1780460218486
 }
