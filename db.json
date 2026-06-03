@@ -2195,7 +2195,12 @@
               "name": "折疊碗",
               "qty": 2,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 2
+                }
+              ],
               "mc": {},
               "checkLog": [],
               "source": "template",
@@ -3216,5 +3221,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780459674176
+  "updatedAt": 1780459717038
 }
