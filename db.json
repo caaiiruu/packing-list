@@ -2565,7 +2565,7 @@
               "id": "z23uvmx0vf",
               "name": "面膜",
               "qty": 1,
-              "checked": true,
+              "checked": false,
               "members": [],
               "mc": {},
               "checkLog": [
@@ -2574,6 +2574,12 @@
                   "memberName": "貝",
                   "ts": 1780448222536,
                   "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780452087956,
+                  "action": "uncheck"
                 }
               ],
               "source": "template",
@@ -2753,7 +2759,7 @@
               "id": "e51m1xi0vf",
               "name": "洗臉肥皂",
               "qty": 1,
-              "checked": true,
+              "checked": false,
               "members": [],
               "mc": {},
               "checkLog": [
@@ -2762,6 +2768,12 @@
                   "memberName": "貝",
                   "ts": 1780452080525,
                   "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780452088385,
+                  "action": "uncheck"
                 }
               ],
               "source": "template",
@@ -3111,5 +3123,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780452087961
+  "updatedAt": 1780452089055
 }
