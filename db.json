@@ -1474,7 +1474,12 @@
               "name": "行車記錄器",
               "qty": 1,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [
                 {
@@ -3703,5 +3708,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780474125512
+  "updatedAt": 1780474135087
 }
