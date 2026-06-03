@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "1c11af2035db564df431781e",
       "secretIssuedAt": 1780473749555,
-      "activeCat": 5,
+      "activeCat": 4,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -1865,9 +1865,14 @@
             {
               "id": "55r634z0vf",
               "name": "防曬乳",
-              "qty": 3,
+              "qty": 1,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [],
               "source": "template",
@@ -3689,5 +3694,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780474078086
+  "updatedAt": 1780474091459
 }
