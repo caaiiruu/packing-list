@@ -2520,19 +2520,6 @@
               "templateKey": "臥鋪盥洗包::小罐洗臉",
               "templateCategory": "臥鋪盥洗包",
               "retiredByTemplate": false
-            },
-            {
-              "id": "0vlh9610vf",
-              "name": "絲瓜巾",
-              "qty": 1,
-              "checked": false,
-              "members": [],
-              "mc": {},
-              "checkLog": [],
-              "source": "template",
-              "templateKey": "臥鋪盥洗包::絲瓜巾",
-              "templateCategory": "臥鋪盥洗包",
-              "retiredByTemplate": false
             }
           ]
         },
@@ -3284,6 +3271,19 @@
           "templateKey": "臥鋪盥洗包::睡衣短褲",
           "templateCategory": "臥鋪盥洗包",
           "retiredByTemplate": false
+        },
+        {
+          "id": "0vlh9610vf",
+          "name": "絲瓜巾",
+          "qty": 1,
+          "checked": false,
+          "members": [],
+          "mc": {},
+          "checkLog": [],
+          "source": "template",
+          "templateKey": "臥鋪盥洗包::絲瓜巾",
+          "templateCategory": "臥鋪盥洗包",
+          "retiredByTemplate": false
         }
       ],
       "templateCatalog": [
@@ -3480,5 +3480,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780460500914
+  "updatedAt": 1780460502966
 }
