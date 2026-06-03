@@ -312,15 +312,24 @@
               "id": "tx4yptp0vf",
               "name": "煮水器",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780452778958,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "電器::煮水器",
               "templateCategory": "電器",
@@ -442,10 +451,17 @@
               "id": "imcb7pq0vf",
               "name": "行動電源",
               "qty": 2,
-              "checked": false,
+              "checked": true,
               "members": [],
               "mc": {},
-              "checkLog": [],
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780452777689,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "電器::行動電源",
               "templateCategory": "電器",
@@ -3154,5 +3170,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780452777640
+  "updatedAt": 1780452779638
 }
