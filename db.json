@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "bce4a8da271ada502066b243",
       "secretIssuedAt": 1780453370528,
-      "activeCat": 6,
+      "activeCat": 2,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -1039,6 +1039,19 @@
               "source": "template",
               "templateKey": "食物廚具::食物保鮮矽膠盒",
               "templateCategory": "食物廚具",
+              "retiredByTemplate": false
+            },
+            {
+              "id": "dbsodq5vnk",
+              "name": "免洗筷餐具",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "custom",
+              "templateKey": null,
+              "templateCategory": null,
               "retiredByTemplate": false
             }
           ]
@@ -3221,5 +3234,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780459717038
+  "updatedAt": 1780459766552
 }
