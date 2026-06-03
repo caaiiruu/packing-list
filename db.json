@@ -1531,19 +1531,6 @@
               "retiredByTemplate": false
             },
             {
-              "id": "q2nip1u0vf",
-              "name": "蛋白粉杯",
-              "qty": 1,
-              "checked": false,
-              "members": [],
-              "mc": {},
-              "checkLog": [],
-              "source": "template",
-              "templateKey": "開車必備::蛋白粉杯",
-              "templateCategory": "開車必備",
-              "retiredByTemplate": false
-            },
-            {
               "id": "lqtfr26q70",
               "name": "垃圾袋（小）",
               "qty": 1,
@@ -3517,6 +3504,19 @@
           "templateKey": "臥鋪盥洗包::一包衛生紙",
           "templateCategory": "臥鋪盥洗包",
           "retiredByTemplate": false
+        },
+        {
+          "id": "q2nip1u0vf",
+          "name": "蛋白粉杯",
+          "qty": 1,
+          "checked": false,
+          "members": [],
+          "mc": {},
+          "checkLog": [],
+          "source": "template",
+          "templateKey": "開車必備::蛋白粉杯",
+          "templateCategory": "開車必備",
+          "retiredByTemplate": false
         }
       ],
       "templateCatalog": [
@@ -3713,5 +3713,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780474137823
+  "updatedAt": 1780474146338
 }
