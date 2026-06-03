@@ -500,7 +500,28 @@
               "name": "手機掛繩",
               "qty": 1,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                },
+                {
+                  "name": "卡老公",
+                  "qty": 1
+                },
+                {
+                  "name": "媽",
+                  "qty": 1
+                },
+                {
+                  "name": "小盈盈",
+                  "qty": 1
+                },
+                {
+                  "name": "阿靜",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [
                 {
@@ -3500,5 +3521,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780460528761
+  "updatedAt": 1780460538248
 }
