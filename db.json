@@ -583,19 +583,6 @@
               "retiredByTemplate": false
             },
             {
-              "id": "sj8unt10vf",
-              "name": "自拍棒",
-              "qty": 1,
-              "checked": false,
-              "members": [],
-              "mc": {},
-              "checkLog": [],
-              "source": "template",
-              "templateKey": "電器::自拍棒",
-              "templateCategory": "電器",
-              "retiredByTemplate": false
-            },
-            {
               "id": "nrtc6oe0vf",
               "name": "頭燈",
               "qty": 2,
@@ -2994,6 +2981,19 @@
           "templateKey": "電器::Insta 360",
           "templateCategory": "電器",
           "retiredByTemplate": false
+        },
+        {
+          "id": "sj8unt10vf",
+          "name": "自拍棒",
+          "qty": 1,
+          "checked": false,
+          "members": [],
+          "mc": {},
+          "checkLog": [],
+          "source": "template",
+          "templateKey": "電器::自拍棒",
+          "templateCategory": "電器",
+          "retiredByTemplate": false
         }
       ],
       "templateCatalog": [
@@ -3190,5 +3190,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780453419171
+  "updatedAt": 1780453429640
 }
