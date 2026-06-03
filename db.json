@@ -2067,24 +2067,6 @@
               "retiredByTemplate": false
             },
             {
-              "id": "hauo0o80vf",
-              "name": "吊衣繩（媽）",
-              "qty": 1,
-              "checked": false,
-              "members": [
-                {
-                  "name": "媽",
-                  "qty": 1
-                }
-              ],
-              "mc": {},
-              "checkLog": [],
-              "source": "template",
-              "templateKey": "備品雜物::吊衣繩（媽）",
-              "templateCategory": "備品雜物",
-              "retiredByTemplate": false
-            },
-            {
               "id": "9nj9fc60vf",
               "name": "洗衣精小瓶",
               "qty": 2,
@@ -3005,6 +2987,24 @@
           "templateKey": "備品雜物::衣架（媽）",
           "templateCategory": "備品雜物",
           "retiredByTemplate": false
+        },
+        {
+          "id": "hauo0o80vf",
+          "name": "吊衣繩（媽）",
+          "qty": 1,
+          "checked": false,
+          "members": [
+            {
+              "name": "媽",
+              "qty": 1
+            }
+          ],
+          "mc": {},
+          "checkLog": [],
+          "source": "template",
+          "templateKey": "備品雜物::吊衣繩（媽）",
+          "templateCategory": "備品雜物",
+          "retiredByTemplate": false
         }
       ],
       "templateCatalog": [
@@ -3201,5 +3201,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780453567304
+  "updatedAt": 1780453578472
 }
