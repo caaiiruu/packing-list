@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "bce4a8da271ada502066b243",
       "secretIssuedAt": 1780453370528,
-      "activeCat": 0,
+      "activeCat": 3,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -1419,67 +1419,6 @@
               "checkLog": [],
               "source": "template",
               "templateKey": "開車必備::蛋白粉杯",
-              "templateCategory": "開車必備",
-              "retiredByTemplate": false
-            },
-            {
-              "id": "4rfeus20vf",
-              "name": "鏟雪刷",
-              "qty": 2,
-              "checked": false,
-              "members": [
-                {
-                  "name": "境",
-                  "qty": 2
-                }
-              ],
-              "mc": {},
-              "checkLog": [
-                {
-                  "memberId": "eup4vt8kxk",
-                  "memberName": "境",
-                  "ts": 1780415797502,
-                  "action": "check"
-                },
-                {
-                  "memberId": "eup4vt8kxk",
-                  "memberName": "境",
-                  "ts": 1780415799716,
-                  "action": "uncheck"
-                },
-                {
-                  "memberId": "eup4vt8kxk",
-                  "memberName": "境",
-                  "ts": 1780415801165,
-                  "action": "check"
-                },
-                {
-                  "memberId": "eup4vt8kxk",
-                  "memberName": "境",
-                  "ts": 1780415801898,
-                  "action": "uncheck"
-                },
-                {
-                  "memberId": "eup4vt8kxk",
-                  "memberName": "境",
-                  "ts": 1780415802401,
-                  "action": "check"
-                },
-                {
-                  "memberId": "eup4vt8kxk",
-                  "memberName": "境",
-                  "ts": 1780415803955,
-                  "action": "uncheck"
-                },
-                {
-                  "memberId": "eup4vt8kxk",
-                  "memberName": "貝",
-                  "ts": 1780415808566,
-                  "action": "check"
-                }
-              ],
-              "source": "template",
-              "templateKey": "開車必備::鏟雪刷",
               "templateCategory": "開車必備",
               "retiredByTemplate": false
             },
@@ -3158,6 +3097,67 @@
           "templateKey": "服飾::雨傘",
           "templateCategory": "服飾",
           "retiredByTemplate": false
+        },
+        {
+          "id": "4rfeus20vf",
+          "name": "鏟雪刷",
+          "qty": 2,
+          "checked": false,
+          "members": [
+            {
+              "name": "境",
+              "qty": 2
+            }
+          ],
+          "mc": {},
+          "checkLog": [
+            {
+              "memberId": "eup4vt8kxk",
+              "memberName": "境",
+              "ts": 1780415797502,
+              "action": "check"
+            },
+            {
+              "memberId": "eup4vt8kxk",
+              "memberName": "境",
+              "ts": 1780415799716,
+              "action": "uncheck"
+            },
+            {
+              "memberId": "eup4vt8kxk",
+              "memberName": "境",
+              "ts": 1780415801165,
+              "action": "check"
+            },
+            {
+              "memberId": "eup4vt8kxk",
+              "memberName": "境",
+              "ts": 1780415801898,
+              "action": "uncheck"
+            },
+            {
+              "memberId": "eup4vt8kxk",
+              "memberName": "境",
+              "ts": 1780415802401,
+              "action": "check"
+            },
+            {
+              "memberId": "eup4vt8kxk",
+              "memberName": "境",
+              "ts": 1780415803955,
+              "action": "uncheck"
+            },
+            {
+              "memberId": "eup4vt8kxk",
+              "memberName": "貝",
+              "ts": 1780415808566,
+              "action": "check"
+            }
+          ],
+          "source": "template",
+          "templateKey": "開車必備::鏟雪刷",
+          "templateCategory": "開車必備",
+          "retiredByTemplate": false
         }
       ],
       "templateCatalog": [
@@ -3354,5 +3354,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780460064339
+  "updatedAt": 1780460083252
 }
