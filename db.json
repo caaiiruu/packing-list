@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "bce4a8da271ada502066b243",
       "secretIssuedAt": 1780453370528,
-      "activeCat": 3,
+      "activeCat": 6,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -2190,15 +2190,24 @@
               "id": "30ajg320vf",
               "name": "吊衣繩",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "媽",
                   "qty": 2
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "媽": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780473028183,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "備品雜物::吊衣繩（貝）",
               "templateCategory": "備品雜物",
@@ -3594,5 +3603,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780460720554
+  "updatedAt": 1780473028810
 }
