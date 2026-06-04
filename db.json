@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "51dc6f85a89207528b35973c",
       "secretIssuedAt": 1780476734531,
-      "activeCat": 2,
+      "activeCat": 5,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -2260,6 +2260,19 @@
               "templateKey": null,
               "templateCategory": null,
               "retiredByTemplate": false
+            },
+            {
+              "id": "ize9gp9r34",
+              "name": "救肺散",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "custom",
+              "templateKey": null,
+              "templateCategory": null,
+              "retiredByTemplate": false
             }
           ]
         },
@@ -3823,5 +3836,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780566063101
+  "updatedAt": 1780566091841
 }
