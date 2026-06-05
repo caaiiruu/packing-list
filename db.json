@@ -2273,6 +2273,19 @@
               "templateKey": null,
               "templateCategory": null,
               "retiredByTemplate": false
+            },
+            {
+              "id": "iy8e17t0i2",
+              "name": "薏仁精華",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "custom",
+              "templateKey": null,
+              "templateCategory": null,
+              "retiredByTemplate": false
             }
           ]
         },
@@ -3836,5 +3849,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780566091841
+  "updatedAt": 1780702477510
 }
