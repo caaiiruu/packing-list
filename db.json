@@ -2279,7 +2279,12 @@
               "name": "薏仁精華",
               "qty": 1,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [],
               "source": "custom",
@@ -3849,5 +3854,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780702477510
+  "updatedAt": 1780702484175
 }
