@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "51dc6f85a89207528b35973c",
       "secretIssuedAt": 1780476734531,
-      "activeCat": 2,
+      "activeCat": 1,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -804,19 +804,6 @@
               ],
               "source": "template",
               "templateKey": "電器::旅行鍋",
-              "templateCategory": "電器",
-              "retiredByTemplate": false
-            },
-            {
-              "id": "fkhf80w0vf",
-              "name": "手電筒",
-              "qty": 1,
-              "checked": false,
-              "members": [],
-              "mc": {},
-              "checkLog": [],
-              "source": "template",
-              "templateKey": "電器::手電筒",
               "templateCategory": "電器",
               "retiredByTemplate": false
             },
@@ -3736,6 +3723,19 @@
           "templateKey": "開車必備::蛋白粉杯",
           "templateCategory": "開車必備",
           "retiredByTemplate": false
+        },
+        {
+          "id": "fkhf80w0vf",
+          "name": "手電筒",
+          "qty": 1,
+          "checked": false,
+          "members": [],
+          "mc": {},
+          "checkLog": [],
+          "source": "template",
+          "templateKey": "電器::手電筒",
+          "templateCategory": "電器",
+          "retiredByTemplate": false
         }
       ],
       "templateCatalog": [
@@ -3932,5 +3932,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780722925370
+  "updatedAt": 1780733510549
 }
