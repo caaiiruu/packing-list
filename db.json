@@ -2416,12 +2416,12 @@
             {
               "id": "9nj9fc60vf",
               "name": "洗衣精小瓶",
-              "qty": 1,
+              "qty": 2,
               "checked": false,
               "members": [
                 {
                   "name": "阿靜",
-                  "qty": 1
+                  "qty": 2
                 }
               ],
               "mc": {},
@@ -3958,5 +3958,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780742771209
+  "updatedAt": 1780742778420
 }
