@@ -2775,6 +2775,19 @@
               "templateKey": null,
               "templateCategory": null,
               "retiredByTemplate": false
+            },
+            {
+              "id": "e72g2oz5z1",
+              "name": "垃圾袋",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "custom",
+              "templateKey": null,
+              "templateCategory": null,
+              "retiredByTemplate": false
             }
           ]
         },
@@ -4059,5 +4072,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780754175552
+  "updatedAt": 1780754645569
 }
