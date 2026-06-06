@@ -1370,9 +1370,18 @@
             {
               "id": "wt1i0t4hvv",
               "name": "米",
-              "qty": 1,
+              "qty": 2,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "媽",
+                  "qty": 1
+                },
+                {
+                  "name": "阿靜",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [],
               "source": "custom",
@@ -3971,5 +3980,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780742857086
+  "updatedAt": 1780742862549
 }
