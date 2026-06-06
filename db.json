@@ -2041,9 +2041,14 @@
             {
               "id": "x21mvl60vf",
               "name": "護髮素",
-              "qty": 1,
+              "qty": 5,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 5
+                }
+              ],
               "mc": {},
               "checkLog": [],
               "source": "template",
@@ -3985,5 +3990,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780744184105
+  "updatedAt": 1780744205556
 }
