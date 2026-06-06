@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "51dc6f85a89207528b35973c",
       "secretIssuedAt": 1780476734531,
-      "activeCat": 5,
+      "activeCat": 2,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -1355,6 +1355,19 @@
             {
               "id": "jrj0umm5p3",
               "name": "咖哩塊",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "custom",
+              "templateKey": null,
+              "templateCategory": null,
+              "retiredByTemplate": false
+            },
+            {
+              "id": "34aiyemz9q",
+              "name": "保冰袋",
               "qty": 1,
               "checked": false,
               "members": [],
@@ -3854,5 +3867,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780702484175
+  "updatedAt": 1780713813201
 }
