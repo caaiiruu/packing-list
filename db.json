@@ -2347,20 +2347,12 @@
             {
               "id": "n4efigv0vf",
               "name": "衣架",
-              "qty": 10,
+              "qty": 15,
               "checked": false,
               "members": [
                 {
-                  "name": "媽",
-                  "qty": 6
-                },
-                {
-                  "name": "小盈盈",
-                  "qty": 6
-                },
-                {
                   "name": "阿靜",
-                  "qty": 6
+                  "qty": 15
                 }
               ],
               "mc": {},
@@ -3966,5 +3958,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780735103552
+  "updatedAt": 1780742738822
 }
