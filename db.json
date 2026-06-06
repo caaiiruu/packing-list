@@ -3866,7 +3866,7 @@
           "id": "nrtc6oe0vf",
           "name": "頭燈",
           "qty": 2,
-          "checked": false,
+          "checked": true,
           "members": [],
           "mc": {},
           "checkLog": [
@@ -3874,6 +3874,12 @@
               "memberId": "eup4vt8kxk",
               "memberName": "貝",
               "ts": 1780452776877,
+              "action": "check"
+            },
+            {
+              "memberId": "anon",
+              "memberName": "匿名",
+              "ts": 1780754661973,
               "action": "check"
             }
           ],
@@ -4077,5 +4083,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780754654451
+  "updatedAt": 1780754662678
 }
