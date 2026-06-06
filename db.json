@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "51dc6f85a89207528b35973c",
       "secretIssuedAt": 1780476734531,
-      "activeCat": 3,
+      "activeCat": 4,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -1966,7 +1966,12 @@
               "name": "白花油",
               "qty": 1,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [],
               "source": "template",
@@ -3910,5 +3915,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780715641583
+  "updatedAt": 1780715672055
 }
