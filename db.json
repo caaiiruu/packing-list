@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "51dc6f85a89207528b35973c",
       "secretIssuedAt": 1780476734531,
-      "activeCat": 1,
+      "activeCat": 6,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -2648,6 +2648,19 @@
               "templateKey": "備品雜物::絲瓜巾",
               "templateCategory": "備品雜物",
               "retiredByTemplate": false
+            },
+            {
+              "id": "4ycjcla7ky",
+              "name": "防水手機套",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "custom",
+              "templateKey": null,
+              "templateCategory": null,
+              "retiredByTemplate": false
             }
           ]
         },
@@ -3932,5 +3945,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780733514459
+  "updatedAt": 1780735098870
 }
