@@ -1267,7 +1267,7 @@
             {
               "id": "dbsodq5vnk",
               "name": "免洗筷餐具",
-              "qty": 1,
+              "qty": 5,
               "checked": false,
               "members": [
                 {
@@ -3980,5 +3980,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780742862549
+  "updatedAt": 1780742863575
 }
