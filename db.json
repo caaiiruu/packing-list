@@ -2162,6 +2162,19 @@
               "templateKey": "梳妝保養::刮鬍刀",
               "templateCategory": "梳妝保養",
               "retiredByTemplate": false
+            },
+            {
+              "id": "uq4h499jq8",
+              "name": "化妝水",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "custom",
+              "templateKey": null,
+              "templateCategory": null,
+              "retiredByTemplate": false
             }
           ]
         },
@@ -4023,5 +4036,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780744270329
+  "updatedAt": 1780744305769
 }
