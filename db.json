@@ -2165,7 +2165,7 @@
             },
             {
               "id": "uq4h499jq8",
-              "name": "化妝水",
+              "name": "化妝水（隨身包）",
               "qty": 1,
               "checked": false,
               "members": [
@@ -4041,5 +4041,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780744313193
+  "updatedAt": 1780744368356
 }
