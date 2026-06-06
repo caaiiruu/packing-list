@@ -762,26 +762,6 @@
               "retiredByTemplate": false
             },
             {
-              "id": "nrtc6oe0vf",
-              "name": "頭燈",
-              "qty": 2,
-              "checked": false,
-              "members": [],
-              "mc": {},
-              "checkLog": [
-                {
-                  "memberId": "eup4vt8kxk",
-                  "memberName": "貝",
-                  "ts": 1780452776877,
-                  "action": "check"
-                }
-              ],
-              "source": "template",
-              "templateKey": "電器::頭燈",
-              "templateCategory": "電器",
-              "retiredByTemplate": false
-            },
-            {
               "id": "bng40kk0vf",
               "name": "旅行鍋",
               "qty": 1,
@@ -3736,6 +3716,26 @@
           "templateKey": "電器::手電筒",
           "templateCategory": "電器",
           "retiredByTemplate": false
+        },
+        {
+          "id": "nrtc6oe0vf",
+          "name": "頭燈",
+          "qty": 2,
+          "checked": false,
+          "members": [],
+          "mc": {},
+          "checkLog": [
+            {
+              "memberId": "eup4vt8kxk",
+              "memberName": "貝",
+              "ts": 1780452776877,
+              "action": "check"
+            }
+          ],
+          "source": "template",
+          "templateKey": "電器::頭燈",
+          "templateCategory": "電器",
+          "retiredByTemplate": false
         }
       ],
       "templateCatalog": [
@@ -3932,5 +3932,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780733510549
+  "updatedAt": 1780733514459
 }
