@@ -2434,12 +2434,12 @@
             {
               "id": "ijuoyqb0vf",
               "name": "洗衣袋（大）",
-              "qty": 2,
+              "qty": 3,
               "checked": false,
               "members": [
                 {
                   "name": "阿靜",
-                  "qty": 2
+                  "qty": 3
                 }
               ],
               "mc": {},
@@ -3958,5 +3958,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780742796561
+  "updatedAt": 1780742800594
 }
