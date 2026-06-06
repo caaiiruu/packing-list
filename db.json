@@ -1753,9 +1753,14 @@
             {
               "id": "hn8h8dx0vf",
               "name": "面膜",
-              "qty": 1,
+              "qty": 11,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 11
+                }
+              ],
               "mc": {},
               "checkLog": [],
               "source": "template",
@@ -3990,5 +3995,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780744205556
+  "updatedAt": 1780744240351
 }
