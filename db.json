@@ -1995,7 +1995,7 @@
               "id": "wkhztqx0vf",
               "name": "卸妝水",
               "qty": 1,
-              "checked": true,
+              "checked": false,
               "members": [],
               "mc": {},
               "checkLog": [
@@ -2004,6 +2004,12 @@
                   "memberName": "貝",
                   "ts": 1780744252109,
                   "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780744254527,
+                  "action": "uncheck"
                 }
               ],
               "source": "template",
@@ -4007,5 +4013,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780744252611
+  "updatedAt": 1780744255293
 }
