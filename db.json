@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "3a895cd6b07e2867601c8c78",
       "secretIssuedAt": 1780752641742,
-      "activeCat": 4,
+      "activeCat": 6,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -4059,5 +4059,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780752642479
+  "updatedAt": 1780754175552
 }
