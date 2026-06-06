@@ -1368,11 +1368,15 @@
             {
               "id": "34aiyemz9q",
               "name": "保冰袋",
-              "qty": 1,
+              "qty": 2,
               "checked": false,
               "members": [
                 {
                   "name": "媽",
+                  "qty": 1
+                },
+                {
+                  "name": "阿靜",
                   "qty": 1
                 }
               ],
@@ -3872,5 +3876,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780713825566
+  "updatedAt": 1780713832445
 }
