@@ -2383,11 +2383,11 @@
             {
               "id": "30ajg320vf",
               "name": "吊衣繩",
-              "qty": 1,
+              "qty": 2,
               "checked": false,
               "members": [
                 {
-                  "name": "媽",
+                  "name": "阿靜",
                   "qty": 2
                 }
               ],
@@ -3958,5 +3958,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780742800594
+  "updatedAt": 1780742812907
 }
