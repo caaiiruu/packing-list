@@ -2168,7 +2168,12 @@
               "name": "化妝水",
               "qty": 1,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [],
               "source": "custom",
@@ -4036,5 +4041,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780744305769
+  "updatedAt": 1780744313193
 }
