@@ -1996,7 +1996,12 @@
               "name": "卸妝水",
               "qty": 1,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [
                 {
@@ -4013,5 +4018,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780744255293
+  "updatedAt": 1780744263648
 }
