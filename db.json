@@ -2452,12 +2452,12 @@
             {
               "id": "83gv1ni0vf",
               "name": "內衣洗衣袋",
-              "qty": 1,
+              "qty": 2,
               "checked": false,
               "members": [
                 {
                   "name": "阿靜",
-                  "qty": 1
+                  "qty": 2
                 }
               ],
               "mc": {},
@@ -3958,5 +3958,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780742789064
+  "updatedAt": 1780742796561
 }
