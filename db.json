@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "51dc6f85a89207528b35973c",
       "secretIssuedAt": 1780476734531,
-      "activeCat": 1,
+      "activeCat": 4,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -2110,9 +2110,14 @@
             {
               "id": "14c5p5l0vf",
               "name": "刮鬍刀",
-              "qty": 1,
+              "qty": 2,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 2
+                }
+              ],
               "mc": {},
               "checkLog": [],
               "source": "template",
@@ -3980,5 +3985,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780742922113
+  "updatedAt": 1780744184105
 }
