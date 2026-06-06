@@ -1995,10 +1995,17 @@
               "id": "wkhztqx0vf",
               "name": "卸妝水",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [],
               "mc": {},
-              "checkLog": [],
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780744252109,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "梳妝保養::卸妝水",
               "templateCategory": "梳妝保養",
@@ -4000,5 +4007,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780744248094
+  "updatedAt": 1780744252611
 }
