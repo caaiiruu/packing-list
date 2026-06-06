@@ -2078,9 +2078,30 @@
             {
               "id": "1d2y4a80vf",
               "name": "小瓶化妝水",
-              "qty": 2,
+              "qty": 5,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                },
+                {
+                  "name": "卡老公",
+                  "qty": 1
+                },
+                {
+                  "name": "媽",
+                  "qty": 1
+                },
+                {
+                  "name": "小盈盈",
+                  "qty": 1
+                },
+                {
+                  "name": "阿靜",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [],
               "source": "template",
@@ -3915,5 +3936,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780715677502
+  "updatedAt": 1780715838567
 }
