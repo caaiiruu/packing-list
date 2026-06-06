@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "51dc6f85a89207528b35973c",
       "secretIssuedAt": 1780476734531,
-      "activeCat": 4,
+      "activeCat": 2,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -1235,28 +1235,28 @@
             {
               "id": "mbzciyl0vf",
               "name": "泡麵",
-              "qty": 1,
+              "qty": 10,
               "checked": false,
               "members": [
                 {
                   "name": "貝",
-                  "qty": 1
+                  "qty": 2
                 },
                 {
                   "name": "卡老公",
-                  "qty": 1
+                  "qty": 2
                 },
                 {
                   "name": "媽",
-                  "qty": 1
+                  "qty": 2
                 },
                 {
                   "name": "小盈盈",
-                  "qty": 1
+                  "qty": 2
                 },
                 {
                   "name": "阿靜",
-                  "qty": 1
+                  "qty": 2
                 }
               ],
               "mc": {},
@@ -3932,5 +3932,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780715840453
+  "updatedAt": 1780722925370
 }
