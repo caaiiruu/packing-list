@@ -2180,6 +2180,19 @@
               "templateKey": null,
               "templateCategory": null,
               "retiredByTemplate": false
+            },
+            {
+              "id": "ktcmsawq3x",
+              "name": "洗面乳（隨身包）",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "custom",
+              "templateKey": null,
+              "templateCategory": null,
+              "retiredByTemplate": false
             }
           ]
         },
@@ -4041,5 +4054,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780744368356
+  "updatedAt": 1780744500869
 }
