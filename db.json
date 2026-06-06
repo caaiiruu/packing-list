@@ -2781,7 +2781,12 @@
               "name": "垃圾袋",
               "qty": 1,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "阿靜",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [],
               "source": "custom",
@@ -4072,5 +4077,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780754645569
+  "updatedAt": 1780754654451
 }
