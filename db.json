@@ -1201,7 +1201,7 @@
             },
             {
               "id": "mbzciyl0vf",
-              "name": "泡麵",
+              "name": "泡麵（五包一組）",
               "qty": 10,
               "checked": false,
               "members": [
@@ -3980,5 +3980,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780742863575
+  "updatedAt": 1780742888547
 }
