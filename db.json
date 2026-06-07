@@ -1827,9 +1827,18 @@
             {
               "id": "ll5j1b60vf",
               "name": "木瓜霜",
-              "qty": 1,
+              "qty": 2,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                },
+                {
+                  "name": "媽",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [],
               "source": "template",
@@ -4607,5 +4616,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780800417893
+  "updatedAt": 1780800424130
 }
