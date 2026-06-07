@@ -3740,9 +3740,26 @@
             {
               "id": "rwau2adapk",
               "name": "眼罩",
-              "qty": 1,
+              "qty": 5,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 2
+                },
+                {
+                  "name": "媽",
+                  "qty": 1
+                },
+                {
+                  "name": "小盈盈",
+                  "qty": 1
+                },
+                {
+                  "name": "阿靜",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [],
               "source": "custom",
@@ -5708,5 +5725,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780840965284
+  "updatedAt": 1780840979068
 }
