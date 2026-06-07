@@ -805,10 +805,15 @@
             },
             {
               "id": "bng40kk0vf",
-              "name": "旅行鍋",
+              "name": "奇美旅行鍋",
               "qty": 1,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "卡老公",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [
                 {
@@ -4183,5 +4188,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780799615509
+  "updatedAt": 1780799839405
 }
