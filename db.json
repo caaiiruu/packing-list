@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "491fdb72aa0be2e996590055",
       "secretIssuedAt": 1780805105353,
-      "activeCat": 5,
+      "activeCat": 1,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -1196,15 +1196,24 @@
               "id": "7ouekl80vf",
               "name": "行李秤",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "卡老公",
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "卡老公": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780838892621,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "電器::行李秤",
               "templateCategory": "電器",
@@ -5580,5 +5589,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780838817927
+  "updatedAt": 1780838893401
 }
