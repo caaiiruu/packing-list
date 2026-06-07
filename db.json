@@ -772,19 +772,27 @@
               "id": "kcit3yi0vf",
               "name": "Google TV + 遙控器（電池已拔掉另隨身帶）",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
                   "qty": 1
                 }
               ],
-              "mc": {},
+              "mc": {
+                "貝": true
+              },
               "checkLog": [
                 {
                   "memberId": "eup4vt8kxk",
                   "memberName": "貝",
                   "ts": 1780452780207,
+                  "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780826599373,
                   "action": "check"
                 }
               ],
@@ -5220,5 +5228,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780826599179
+  "updatedAt": 1780826600107
 }
