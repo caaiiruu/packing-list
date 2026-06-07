@@ -2417,7 +2417,12 @@
               "name": "OK蹦",
               "qty": 1,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [],
               "source": "template",
@@ -4862,5 +4867,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780800636383
+  "updatedAt": 1780800640825
 }
