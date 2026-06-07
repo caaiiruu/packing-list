@@ -874,103 +874,6 @@
               "templateKey": "電器::鎖頭",
               "templateCategory": "電器",
               "retiredByTemplate": false
-            },
-            {
-              "id": "h8gkif50vf",
-              "name": "電蚊香",
-              "qty": 1,
-              "checked": false,
-              "members": [
-                {
-                  "name": "貝",
-                  "qty": 1
-                }
-              ],
-              "mc": {},
-              "checkLog": [
-                {
-                  "memberId": "eup4vt8kxk",
-                  "memberName": "卡老公",
-                  "ts": 1780416210846,
-                  "action": "check"
-                },
-                {
-                  "memberId": "eup4vt8kxk",
-                  "memberName": "卡老公",
-                  "ts": 1780416211512,
-                  "action": "uncheck"
-                },
-                {
-                  "memberId": "eup4vt8kxk",
-                  "memberName": "貝",
-                  "ts": 1780416212397,
-                  "action": "check"
-                },
-                {
-                  "memberId": "eup4vt8kxk",
-                  "memberName": "貝",
-                  "ts": 1780416212846,
-                  "action": "uncheck"
-                },
-                {
-                  "memberId": "eup4vt8kxk",
-                  "memberName": "貝",
-                  "ts": 1780416213329,
-                  "action": "check"
-                },
-                {
-                  "memberId": "eup4vt8kxk",
-                  "memberName": "貝",
-                  "ts": 1780416213896,
-                  "action": "uncheck"
-                },
-                {
-                  "memberId": "eup4vt8kxk",
-                  "memberName": "貝",
-                  "ts": 1780416214296,
-                  "action": "check"
-                },
-                {
-                  "memberId": "eup4vt8kxk",
-                  "memberName": "貝",
-                  "ts": 1780416352810,
-                  "action": "check"
-                },
-                {
-                  "memberId": "eup4vt8kxk",
-                  "memberName": "卡老公",
-                  "ts": 1780416353394,
-                  "action": "check"
-                },
-                {
-                  "memberId": "eup4vt8kxk",
-                  "memberName": "貝",
-                  "ts": 1780416356244,
-                  "action": "uncheck"
-                },
-                {
-                  "memberId": "eup4vt8kxk",
-                  "memberName": "貝",
-                  "ts": 1780416359527,
-                  "action": "check"
-                },
-                {
-                  "memberId": "eup4vt8kxk",
-                  "memberName": "貝",
-                  "ts": 1780416360295,
-                  "action": "uncheck"
-                },
-                {
-                  "memberId": "eup4vt8kxk",
-                  "memberName": "阿明(改)",
-                  "ts": 1780452425367,
-                  "action": "check"
-                }
-              ],
-              "source": "template",
-              "templateKey": "電器::電蚊香",
-              "templateCategory": "電器",
-              "retiredByTemplate": false
             }
           ]
         },
@@ -3992,6 +3895,103 @@
           "templateKey": "電器::防水手機袋（泡溫泉用）",
           "templateCategory": "電器",
           "retiredByTemplate": false
+        },
+        {
+          "id": "h8gkif50vf",
+          "name": "電蚊香",
+          "qty": 1,
+          "checked": false,
+          "members": [
+            {
+              "name": "貝",
+              "qty": 1
+            }
+          ],
+          "mc": {},
+          "checkLog": [
+            {
+              "memberId": "eup4vt8kxk",
+              "memberName": "卡老公",
+              "ts": 1780416210846,
+              "action": "check"
+            },
+            {
+              "memberId": "eup4vt8kxk",
+              "memberName": "卡老公",
+              "ts": 1780416211512,
+              "action": "uncheck"
+            },
+            {
+              "memberId": "eup4vt8kxk",
+              "memberName": "貝",
+              "ts": 1780416212397,
+              "action": "check"
+            },
+            {
+              "memberId": "eup4vt8kxk",
+              "memberName": "貝",
+              "ts": 1780416212846,
+              "action": "uncheck"
+            },
+            {
+              "memberId": "eup4vt8kxk",
+              "memberName": "貝",
+              "ts": 1780416213329,
+              "action": "check"
+            },
+            {
+              "memberId": "eup4vt8kxk",
+              "memberName": "貝",
+              "ts": 1780416213896,
+              "action": "uncheck"
+            },
+            {
+              "memberId": "eup4vt8kxk",
+              "memberName": "貝",
+              "ts": 1780416214296,
+              "action": "check"
+            },
+            {
+              "memberId": "eup4vt8kxk",
+              "memberName": "貝",
+              "ts": 1780416352810,
+              "action": "check"
+            },
+            {
+              "memberId": "eup4vt8kxk",
+              "memberName": "卡老公",
+              "ts": 1780416353394,
+              "action": "check"
+            },
+            {
+              "memberId": "eup4vt8kxk",
+              "memberName": "貝",
+              "ts": 1780416356244,
+              "action": "uncheck"
+            },
+            {
+              "memberId": "eup4vt8kxk",
+              "memberName": "貝",
+              "ts": 1780416359527,
+              "action": "check"
+            },
+            {
+              "memberId": "eup4vt8kxk",
+              "memberName": "貝",
+              "ts": 1780416360295,
+              "action": "uncheck"
+            },
+            {
+              "memberId": "eup4vt8kxk",
+              "memberName": "阿明(改)",
+              "ts": 1780452425367,
+              "action": "check"
+            }
+          ],
+          "source": "template",
+          "templateKey": "電器::電蚊香",
+          "templateCategory": "電器",
+          "retiredByTemplate": false
         }
       ],
       "templateCatalog": [
@@ -4188,5 +4188,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780799839405
+  "updatedAt": 1780799848062
 }
