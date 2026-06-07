@@ -3091,8 +3091,17 @@
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "卡老公": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "卡老公",
+                  "ts": 1780838817405,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "藥品::感冒藥",
               "templateCategory": "藥品",
@@ -5571,5 +5580,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780838816129
+  "updatedAt": 1780838817927
 }
