@@ -1427,8 +1427,17 @@
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "卡老公": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "卡老公",
+                  "ts": 1780825526042,
+                  "action": "check"
+                }
+              ],
               "source": "custom",
               "templateKey": null,
               "templateCategory": null,
@@ -5003,5 +5012,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780825521171
+  "updatedAt": 1780825526751
 }
