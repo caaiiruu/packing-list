@@ -2541,19 +2541,6 @@
               "retiredByTemplate": false
             },
             {
-              "id": "8jmwxgu0vf",
-              "name": "防蚊貼",
-              "qty": 1,
-              "checked": false,
-              "members": [],
-              "mc": {},
-              "checkLog": [],
-              "source": "template",
-              "templateKey": "藥品::防蚊貼",
-              "templateCategory": "藥品",
-              "retiredByTemplate": false
-            },
-            {
               "id": "yqpuc6k0vf",
               "name": "感冒藥",
               "qty": 1,
@@ -4558,6 +4545,19 @@
           "templateKey": "梳妝保養::爽身膏",
           "templateCategory": "梳妝保養",
           "retiredByTemplate": false
+        },
+        {
+          "id": "8jmwxgu0vf",
+          "name": "防蚊貼",
+          "qty": 1,
+          "checked": false,
+          "members": [],
+          "mc": {},
+          "checkLog": [],
+          "source": "template",
+          "templateKey": "藥品::防蚊貼",
+          "templateCategory": "藥品",
+          "retiredByTemplate": false
         }
       ],
       "templateCatalog": [
@@ -4754,5 +4754,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780800503289
+  "updatedAt": 1780800509670
 }
