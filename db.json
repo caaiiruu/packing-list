@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "491fdb72aa0be2e996590055",
       "secretIssuedAt": 1780805105353,
-      "activeCat": 8,
+      "activeCat": 0,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -262,28 +262,6 @@
               "checkLog": [],
               "source": "template",
               "templateKey": "服飾::拖鞋",
-              "templateCategory": "服飾",
-              "retiredByTemplate": false
-            },
-            {
-              "id": "p0vogoi0vf",
-              "name": "耳罩",
-              "qty": 2,
-              "checked": false,
-              "members": [
-                {
-                  "name": "貝",
-                  "qty": 1
-                },
-                {
-                  "name": "卡老公",
-                  "qty": 1
-                }
-              ],
-              "mc": {},
-              "checkLog": [],
-              "source": "template",
-              "templateKey": "服飾::耳罩",
               "templateCategory": "服飾",
               "retiredByTemplate": false
             },
@@ -5402,6 +5380,28 @@
           "templateKey": "開車必備::黏土",
           "templateCategory": "開車必備",
           "retiredByTemplate": false
+        },
+        {
+          "id": "p0vogoi0vf",
+          "name": "耳罩",
+          "qty": 2,
+          "checked": false,
+          "members": [
+            {
+              "name": "貝",
+              "qty": 1
+            },
+            {
+              "name": "卡老公",
+              "qty": 1
+            }
+          ],
+          "mc": {},
+          "checkLog": [],
+          "source": "template",
+          "templateKey": "服飾::耳罩",
+          "templateCategory": "服飾",
+          "retiredByTemplate": false
         }
       ],
       "templateCatalog": [
@@ -5598,5 +5598,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780838948654
+  "updatedAt": 1780838980794
 }
