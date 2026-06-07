@@ -948,13 +948,20 @@
                 }
               ],
               "mc": {
-                "貝": true
+                "貝": true,
+                "卡老公": true
               },
               "checkLog": [
                 {
                   "memberId": "eup4vt8kxk",
                   "memberName": "貝",
                   "ts": 1780826457934,
+                  "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "卡老公",
+                  "ts": 1780826458502,
                   "action": "check"
                 }
               ],
@@ -5180,5 +5187,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780826458633
+  "updatedAt": 1780826459236
 }
