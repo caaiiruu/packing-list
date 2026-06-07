@@ -3204,7 +3204,7 @@
             },
             {
               "id": "rka9sbv0vf",
-              "name": "申根國家文件",
+              "name": "申根國家文件、飯店資訊",
               "qty": 5,
               "checked": false,
               "members": [
@@ -4961,5 +4961,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780824985258
+  "updatedAt": 1780825006321
 }
