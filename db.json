@@ -1604,24 +1604,6 @@
               "retiredByTemplate": false
             },
             {
-              "id": "1xklow60vf",
-              "name": "垃圾袋（大）",
-              "qty": 1,
-              "checked": false,
-              "members": [
-                {
-                  "name": "媽",
-                  "qty": 1
-                }
-              ],
-              "mc": {},
-              "checkLog": [],
-              "source": "template",
-              "templateKey": "開車必備::垃圾袋",
-              "templateCategory": "開車必備",
-              "retiredByTemplate": false
-            },
-            {
               "id": "cqyb0uh0vf",
               "name": "黏土",
               "qty": 1,
@@ -4336,6 +4318,24 @@
           "templateKey": "服飾::圍巾",
           "templateCategory": "服飾",
           "retiredByTemplate": false
+        },
+        {
+          "id": "1xklow60vf",
+          "name": "垃圾袋（大）",
+          "qty": 1,
+          "checked": false,
+          "members": [
+            {
+              "name": "媽",
+              "qty": 1
+            }
+          ],
+          "mc": {},
+          "checkLog": [],
+          "source": "template",
+          "templateKey": "開車必備::垃圾袋",
+          "templateCategory": "開車必備",
+          "retiredByTemplate": false
         }
       ],
       "templateCatalog": [
@@ -4532,5 +4532,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780800137340
+  "updatedAt": 1780800182001
 }
