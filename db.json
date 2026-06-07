@@ -1078,65 +1078,6 @@
           "expanded": true,
           "items": [
             {
-              "id": "2o0yjlt0vf",
-              "name": "湯包/沖泡包",
-              "qty": 2,
-              "checked": false,
-              "members": [
-                {
-                  "name": "小盈盈",
-                  "qty": 1
-                },
-                {
-                  "name": "阿靜",
-                  "qty": 1
-                }
-              ],
-              "mc": {},
-              "checkLog": [
-                {
-                  "memberId": "eup4vt8kxk",
-                  "memberName": "阿靜",
-                  "ts": 1780415713799,
-                  "action": "check"
-                },
-                {
-                  "memberId": "eup4vt8kxk",
-                  "memberName": "小盈盈",
-                  "ts": 1780415714318,
-                  "action": "check"
-                },
-                {
-                  "memberId": "eup4vt8kxk",
-                  "memberName": "媽",
-                  "ts": 1780415714832,
-                  "action": "check"
-                },
-                {
-                  "memberId": "eup4vt8kxk",
-                  "memberName": "媽",
-                  "ts": 1780415715617,
-                  "action": "uncheck"
-                },
-                {
-                  "memberId": "eup4vt8kxk",
-                  "memberName": "小盈盈",
-                  "ts": 1780415716201,
-                  "action": "uncheck"
-                },
-                {
-                  "memberId": "eup4vt8kxk",
-                  "memberName": "阿靜",
-                  "ts": 1780415717017,
-                  "action": "uncheck"
-                }
-              ],
-              "source": "template",
-              "templateKey": "食物廚具::湯包/沖泡包",
-              "templateCategory": "食物廚具",
-              "retiredByTemplate": false
-            },
-            {
               "id": "ufeomi20vf",
               "name": "食物保鮮袋",
               "qty": 1,
@@ -4337,6 +4278,65 @@
           "templateKey": null,
           "templateCategory": null,
           "retiredByTemplate": false
+        },
+        {
+          "id": "2o0yjlt0vf",
+          "name": "湯包/沖泡包",
+          "qty": 2,
+          "checked": false,
+          "members": [
+            {
+              "name": "小盈盈",
+              "qty": 1
+            },
+            {
+              "name": "阿靜",
+              "qty": 1
+            }
+          ],
+          "mc": {},
+          "checkLog": [
+            {
+              "memberId": "eup4vt8kxk",
+              "memberName": "阿靜",
+              "ts": 1780415713799,
+              "action": "check"
+            },
+            {
+              "memberId": "eup4vt8kxk",
+              "memberName": "小盈盈",
+              "ts": 1780415714318,
+              "action": "check"
+            },
+            {
+              "memberId": "eup4vt8kxk",
+              "memberName": "媽",
+              "ts": 1780415714832,
+              "action": "check"
+            },
+            {
+              "memberId": "eup4vt8kxk",
+              "memberName": "媽",
+              "ts": 1780415715617,
+              "action": "uncheck"
+            },
+            {
+              "memberId": "eup4vt8kxk",
+              "memberName": "小盈盈",
+              "ts": 1780415716201,
+              "action": "uncheck"
+            },
+            {
+              "memberId": "eup4vt8kxk",
+              "memberName": "阿靜",
+              "ts": 1780415717017,
+              "action": "uncheck"
+            }
+          ],
+          "source": "template",
+          "templateKey": "食物廚具::湯包/沖泡包",
+          "templateCategory": "食物廚具",
+          "retiredByTemplate": false
         }
       ],
       "templateCatalog": [
@@ -4533,5 +4533,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780800344458
+  "updatedAt": 1780800356405
 }
