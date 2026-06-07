@@ -1080,13 +1080,9 @@
             {
               "id": "2o0yjlt0vf",
               "name": "湯包/沖泡包",
-              "qty": 1,
+              "qty": 2,
               "checked": false,
               "members": [
-                {
-                  "name": "媽",
-                  "qty": 1
-                },
                 {
                   "name": "小盈盈",
                   "qty": 1
@@ -4537,5 +4533,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780800326188
+  "updatedAt": 1780800335173
 }
