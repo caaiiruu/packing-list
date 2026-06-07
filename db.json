@@ -2110,19 +2110,6 @@
               "retiredByTemplate": false
             },
             {
-              "id": "z43opy40vf",
-              "name": "爽身膏",
-              "qty": 1,
-              "checked": false,
-              "members": [],
-              "mc": {},
-              "checkLog": [],
-              "source": "template",
-              "templateKey": "梳妝保養::爽身膏",
-              "templateCategory": "梳妝保養",
-              "retiredByTemplate": false
-            },
-            {
               "id": "9gmclsk0vf",
               "name": "生髮水",
               "qty": 1,
@@ -4430,6 +4417,19 @@
           "templateKey": "食物廚具::湯包/沖泡包",
           "templateCategory": "食物廚具",
           "retiredByTemplate": false
+        },
+        {
+          "id": "z43opy40vf",
+          "name": "爽身膏",
+          "qty": 1,
+          "checked": false,
+          "members": [],
+          "mc": {},
+          "checkLog": [],
+          "source": "template",
+          "templateKey": "梳妝保養::爽身膏",
+          "templateCategory": "梳妝保養",
+          "retiredByTemplate": false
         }
       ],
       "templateCatalog": [
@@ -4626,5 +4626,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780800455813
+  "updatedAt": 1780800458259
 }
