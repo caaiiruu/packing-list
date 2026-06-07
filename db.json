@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "491fdb72aa0be2e996590055",
       "secretIssuedAt": 1780805105353,
-      "activeCat": 7,
+      "activeCat": 3,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -1657,7 +1657,9 @@
                   "qty": 1
                 }
               ],
-              "mc": {},
+              "mc": {
+                "貝": true
+              },
               "checkLog": [
                 {
                   "memberId": "eup4vt8kxk",
@@ -1682,6 +1684,12 @@
                   "memberName": "貝",
                   "ts": 1780415774566,
                   "action": "uncheck"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780827222914,
+                  "action": "check"
                 }
               ],
               "source": "template",
@@ -5293,5 +5301,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780826976541
+  "updatedAt": 1780827223631
 }
