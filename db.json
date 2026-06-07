@@ -1205,7 +1205,7 @@
               "checked": false,
               "members": [
                 {
-                  "name": "阿靜",
+                  "name": "媽",
                   "qty": 1
                 }
               ],
@@ -4533,5 +4533,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780800335173
+  "updatedAt": 1780800344458
 }
