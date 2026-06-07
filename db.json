@@ -489,12 +489,20 @@
             {
               "id": "6qrtprj0vf",
               "name": "登山杖（組）",
-              "qty": 4,
+              "qty": 6,
               "checked": false,
               "members": [
                 {
-                  "name": "貝",
+                  "name": "卡老公",
                   "qty": 2
+                },
+                {
+                  "name": "媽",
+                  "qty": 1
+                },
+                {
+                  "name": "小盈盈",
+                  "qty": 1
                 },
                 {
                   "name": "阿靜",
@@ -570,13 +578,20 @@
                 }
               ],
               "mc": {
-                "貝": true
+                "貝": true,
+                "卡老公": true
               },
               "checkLog": [
                 {
                   "memberId": "eup4vt8kxk",
                   "memberName": "貝",
                   "ts": 1780837343565,
+                  "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "卡老公",
+                  "ts": 1780837344100,
                   "action": "check"
                 }
               ],
@@ -5332,5 +5347,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780837344256
+  "updatedAt": 1780837362424
 }
