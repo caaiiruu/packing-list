@@ -1411,9 +1411,22 @@
             {
               "id": "bd3hmi06aa",
               "name": "餅乾",
-              "qty": 1,
+              "qty": 3,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                },
+                {
+                  "name": "卡老公",
+                  "qty": 1
+                },
+                {
+                  "name": "媽",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [],
               "source": "custom",
@@ -4990,5 +5003,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780825516703
+  "updatedAt": 1780825521171
 }
