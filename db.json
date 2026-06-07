@@ -2511,7 +2511,12 @@
               "name": "食物夾",
               "qty": 1,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [],
               "source": "template",
@@ -4131,5 +4136,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780799559696
+  "updatedAt": 1780799582280
 }
