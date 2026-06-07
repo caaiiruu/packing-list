@@ -2214,14 +2214,16 @@
               "id": "wkhztqx0vf",
               "name": "卸妝水（隨身包）",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
                   "qty": 1
                 }
               ],
-              "mc": {},
+              "mc": {
+                "貝": true
+              },
               "checkLog": [
                 {
                   "memberId": "eup4vt8kxk",
@@ -2234,6 +2236,12 @@
                   "memberName": "貝",
                   "ts": 1780744254527,
                   "action": "uncheck"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780825642675,
+                  "action": "check"
                 }
               ],
               "source": "template",
@@ -5057,5 +5065,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780825640820
+  "updatedAt": 1780825643356
 }
