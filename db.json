@@ -2423,19 +2423,6 @@
               "retiredByTemplate": false
             },
             {
-              "id": "nbvqs230vf",
-              "name": "益生菌",
-              "qty": 1,
-              "checked": false,
-              "members": [],
-              "mc": {},
-              "checkLog": [],
-              "source": "template",
-              "templateKey": "藥品::益生菌",
-              "templateCategory": "藥品",
-              "retiredByTemplate": false
-            },
-            {
               "id": "fwm2h2t0vf",
               "name": "痠痛貼布",
               "qty": 1,
@@ -4640,6 +4627,19 @@
           "templateKey": "藥品::防蚊貼",
           "templateCategory": "藥品",
           "retiredByTemplate": false
+        },
+        {
+          "id": "nbvqs230vf",
+          "name": "益生菌",
+          "qty": 1,
+          "checked": false,
+          "members": [],
+          "mc": {},
+          "checkLog": [],
+          "source": "template",
+          "templateKey": "藥品::益生菌",
+          "templateCategory": "藥品",
+          "retiredByTemplate": false
         }
       ],
       "templateCatalog": [
@@ -4836,5 +4836,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780800611053
+  "updatedAt": 1780800616082
 }
