@@ -2252,15 +2252,24 @@
               "id": "wgmll1z0vf",
               "name": "沐浴乳",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780840720034,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "梳妝保養::沐浴乳",
               "templateCategory": "梳妝保養",
@@ -5679,5 +5688,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780840685779
+  "updatedAt": 1780840720754
 }
