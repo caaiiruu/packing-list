@@ -97,8 +97,17 @@
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "卡老公": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "卡老公",
+                  "ts": 1780838672906,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "服飾::暖暖衣",
               "templateCategory": "服飾",
@@ -5495,5 +5504,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780838636859
+  "updatedAt": 1780838673821
 }
