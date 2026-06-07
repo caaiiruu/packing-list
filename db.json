@@ -3179,8 +3179,17 @@
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780825897138,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "備品雜物::髮圈",
               "templateCategory": "備品雜物",
@@ -5132,5 +5141,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780825885276
+  "updatedAt": 1780825897605
 }
