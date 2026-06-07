@@ -352,16 +352,12 @@
             {
               "id": "l2t0v5k0vf",
               "name": "冰爪",
-              "qty": 1,
+              "qty": 5,
               "checked": false,
               "members": [
                 {
-                  "name": "貝",
-                  "qty": 1
-                },
-                {
                   "name": "卡老公",
-                  "qty": 1
+                  "qty": 2
                 },
                 {
                   "name": "媽",
@@ -5642,5 +5638,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780839883788
+  "updatedAt": 1780839891605
 }
