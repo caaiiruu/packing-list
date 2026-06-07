@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "491fdb72aa0be2e996590055",
       "secretIssuedAt": 1780805105353,
-      "activeCat": 1,
+      "activeCat": 7,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -3600,15 +3600,24 @@
               "id": "gdzle9coa8",
               "name": "活動文件",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780826972587,
+                  "action": "check"
+                }
+              ],
               "source": "custom",
               "templateKey": null,
               "templateCategory": null,
@@ -5271,5 +5280,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780826912236
+  "updatedAt": 1780826973361
 }
