@@ -820,12 +820,20 @@
                   "qty": 1
                 }
               ],
-              "mc": {},
+              "mc": {
+                "貝": true
+              },
               "checkLog": [
                 {
                   "memberId": "eup4vt8kxk",
                   "memberName": "貝",
                   "ts": 1780452773446,
+                  "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780826442665,
                   "action": "check"
                 }
               ],
@@ -5156,5 +5164,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780826388994
+  "updatedAt": 1780826443449
 }
