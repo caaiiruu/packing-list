@@ -1804,15 +1804,24 @@
               "id": "hn8h8dx0vf",
               "name": "面膜",
               "qty": 11,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
                   "qty": 11
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780825684162,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "梳妝保養::面膜",
               "templateCategory": "梳妝保養",
@@ -5065,5 +5074,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780825643356
+  "updatedAt": 1780825685218
 }
