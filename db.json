@@ -4111,7 +4111,7 @@
                 }
               ],
               "mc": {
-                "貝": true
+                "貝": false
               },
               "checkLog": [
                 {
@@ -4119,6 +4119,12 @@
                   "memberName": "貝",
                   "ts": 1780838609693,
                   "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780838612179,
+                  "action": "uncheck"
                 }
               ],
               "source": "template",
@@ -5480,5 +5486,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780838610228
+  "updatedAt": 1780838612746
 }
