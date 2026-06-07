@@ -2542,7 +2542,12 @@
               "name": "口罩",
               "qty": 1,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "媽",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [],
               "source": "template",
@@ -4121,5 +4126,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780799519959
+  "updatedAt": 1780799538281
 }
