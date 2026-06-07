@@ -2111,9 +2111,18 @@
             {
               "id": "2uslxwt0vf",
               "name": "化妝包",
-              "qty": 1,
+              "qty": 2,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                },
+                {
+                  "name": "小盈盈",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [],
               "source": "template",
@@ -4567,5 +4576,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780800391139
+  "updatedAt": 1780800405353
 }
