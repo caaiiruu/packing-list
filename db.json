@@ -3005,7 +3005,12 @@
               "name": "面膜",
               "qty": 1,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [
                 {
@@ -4316,5 +4321,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780799887642
+  "updatedAt": 1780799893936
 }
