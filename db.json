@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "491fdb72aa0be2e996590055",
       "secretIssuedAt": 1780805105353,
-      "activeCat": 4,
+      "activeCat": 3,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -1868,7 +1868,7 @@
               "id": "ypp7xfj0vf",
               "name": "脖枕",
               "qty": 2,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
@@ -1880,7 +1880,8 @@
                 }
               ],
               "mc": {
-                "貝": false
+                "貝": true,
+                "卡老公": true
               },
               "checkLog": [
                 {
@@ -1918,6 +1919,12 @@
                   "memberName": "貝",
                   "ts": 1780827224711,
                   "action": "uncheck"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780840868559,
+                  "action": "check"
                 }
               ],
               "source": "template",
@@ -5688,5 +5695,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780840720754
+  "updatedAt": 1780840869126
 }
