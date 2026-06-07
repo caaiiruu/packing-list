@@ -2505,9 +2505,18 @@
             {
               "id": "v7ke7410vf",
               "name": "隨身藥罐",
-              "qty": 1,
+              "qty": 2,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                },
+                {
+                  "name": "卡老公",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [],
               "source": "template",
@@ -4806,5 +4815,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780800600291
+  "updatedAt": 1780800602709
 }
