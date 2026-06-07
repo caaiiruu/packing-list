@@ -3227,15 +3227,24 @@
               "id": "6rwb85g0vf",
               "name": "食物夾",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780838357795,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "備品雜物::食物夾",
               "templateCategory": "備品雜物",
@@ -5447,5 +5456,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780838353858
+  "updatedAt": 1780838358308
 }
