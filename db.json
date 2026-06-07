@@ -3109,7 +3109,7 @@
               "id": "231524x0vf",
               "name": "折疊碗",
               "qty": 2,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
@@ -3117,7 +3117,7 @@
                 }
               ],
               "mc": {
-                "貝": false
+                "貝": true
               },
               "checkLog": [
                 {
@@ -3131,6 +3131,12 @@
                   "memberName": "貝",
                   "ts": 1780473573805,
                   "action": "uncheck"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780826386323,
+                  "action": "check"
                 }
               ],
               "source": "template",
@@ -5141,5 +5147,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780825897605
+  "updatedAt": 1780826386788
 }
