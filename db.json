@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "491fdb72aa0be2e996590055",
       "secretIssuedAt": 1780805105353,
-      "activeCat": 1,
+      "activeCat": 8,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -4110,8 +4110,17 @@
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780838609693,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "飛機過夜包::綁頭髮",
               "templateCategory": "飛機過夜包",
@@ -5471,5 +5480,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780838519577
+  "updatedAt": 1780838610228
 }
