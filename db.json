@@ -1856,7 +1856,12 @@
               "name": "頭皮藥",
               "qty": 1,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [],
               "source": "template",
@@ -4626,5 +4631,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780800458259
+  "updatedAt": 1780800461057
 }
