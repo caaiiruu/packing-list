@@ -2166,15 +2166,24 @@
               "id": "umt9jbn0vf",
               "name": "蒸眼罩",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780825722030,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "梳妝保養::蒸眼罩",
               "templateCategory": "梳妝保養",
@@ -5083,5 +5092,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780825691966
+  "updatedAt": 1780825722737
 }
