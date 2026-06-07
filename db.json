@@ -1878,8 +1878,17 @@
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780825691210,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "梳妝保養::化妝棉",
               "templateCategory": "梳妝保養",
@@ -5074,5 +5083,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780825685218
+  "updatedAt": 1780825691966
 }
