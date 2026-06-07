@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "491fdb72aa0be2e996590055",
       "secretIssuedAt": 1780805105353,
-      "activeCat": 8,
+      "activeCat": 0,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -495,8 +495,17 @@
                   "qty": 2
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "卡老公": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "卡老公",
+                  "ts": 1780838636160,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "服飾::防水褲",
               "templateCategory": "服飾",
@@ -5486,5 +5495,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780838612746
+  "updatedAt": 1780838636859
 }
