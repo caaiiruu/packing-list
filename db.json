@@ -180,9 +180,18 @@
             {
               "id": "p0vogoi0vf",
               "name": "耳罩",
-              "qty": 1,
+              "qty": 2,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                },
+                {
+                  "name": "卡老公",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [],
               "source": "template",
@@ -4408,5 +4417,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780799960756
+  "updatedAt": 1780800058591
 }
