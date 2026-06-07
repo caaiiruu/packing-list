@@ -402,13 +402,9 @@
             {
               "id": "t40r3850vf",
               "name": "冰爪防水束袋",
-              "qty": 5,
+              "qty": 4,
               "checked": false,
               "members": [
-                {
-                  "name": "貝",
-                  "qty": 1
-                },
                 {
                   "name": "卡老公",
                   "qty": 1
@@ -5646,5 +5642,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780839859509
+  "updatedAt": 1780839883788
 }
