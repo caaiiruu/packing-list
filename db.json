@@ -3476,7 +3476,7 @@
               "id": "rka9sbv0vf",
               "name": "申根國家文件、飯店資訊",
               "qty": 5,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
@@ -3499,8 +3499,21 @@
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true,
+                "卡老公": true,
+                "媽": true,
+                "小盈盈": true,
+                "阿靜": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780826975820,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "重要文件::申根國家文件",
               "templateCategory": "重要文件",
@@ -5280,5 +5293,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780826973361
+  "updatedAt": 1780826976541
 }
