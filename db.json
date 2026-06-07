@@ -1787,9 +1787,18 @@
             {
               "id": "ond127p0vf",
               "name": "化妝棉",
-              "qty": 1,
+              "qty": 2,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                },
+                {
+                  "name": "小盈盈",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [],
               "source": "template",
@@ -4576,5 +4585,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780800405353
+  "updatedAt": 1780800409801
 }
