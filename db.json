@@ -623,8 +623,17 @@
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780826899416,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "電器::洗衣蛋",
               "templateCategory": "電器",
@@ -5254,5 +5263,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780826898732
+  "updatedAt": 1780826900225
 }
