@@ -599,6 +599,19 @@
               "templateKey": null,
               "templateCategory": null,
               "retiredByTemplate": false
+            },
+            {
+              "id": "f89rjht72x",
+              "name": "登山鞋",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "custom",
+              "templateKey": null,
+              "templateCategory": null,
+              "retiredByTemplate": false
             }
           ]
         },
@@ -5347,5 +5360,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780837362424
+  "updatedAt": 1780837461695
 }
