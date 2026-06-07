@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "491fdb72aa0be2e996590055",
       "secretIssuedAt": 1780805105353,
-      "activeCat": 0,
+      "activeCat": 3,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -1968,19 +1968,27 @@
               "id": "vvacvwx0vf",
               "name": "2公升水袋",
               "qty": 2,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "卡老公",
                   "qty": 2
                 }
               ],
-              "mc": {},
+              "mc": {
+                "卡老公": true
+              },
               "checkLog": [
                 {
                   "memberId": "eup4vt8kxk",
                   "memberName": "貝",
                   "ts": 1780415768316,
+                  "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780838691578,
                   "action": "check"
                 }
               ],
@@ -5504,5 +5512,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780838673821
+  "updatedAt": 1780838692085
 }
