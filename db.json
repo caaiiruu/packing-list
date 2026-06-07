@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "491fdb72aa0be2e996590055",
       "secretIssuedAt": 1780805105353,
-      "activeCat": 3,
+      "activeCat": 4,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -2225,15 +2225,24 @@
               "id": "9k5t22j0vf",
               "name": "洗髮乳",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780840684669,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "梳妝保養::洗髮乳",
               "templateCategory": "梳妝保養",
@@ -5670,5 +5679,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780839988929
+  "updatedAt": 1780840685779
 }
