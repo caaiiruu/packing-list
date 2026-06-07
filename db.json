@@ -86,9 +86,30 @@
             {
               "id": "yyiqboj0vf",
               "name": "防水手套",
-              "qty": 1,
+              "qty": 5,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                },
+                {
+                  "name": "卡老公",
+                  "qty": 1
+                },
+                {
+                  "name": "媽",
+                  "qty": 1
+                },
+                {
+                  "name": "小盈盈",
+                  "qty": 1
+                },
+                {
+                  "name": "阿靜",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [],
               "source": "template",
@@ -4438,5 +4459,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780800079136
+  "updatedAt": 1780800081933
 }
