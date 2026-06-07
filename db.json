@@ -3090,7 +3090,12 @@
               "name": "木瓜霜",
               "qty": 1,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [],
               "source": "template",
@@ -4321,5 +4326,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780799893936
+  "updatedAt": 1780799897180
 }
