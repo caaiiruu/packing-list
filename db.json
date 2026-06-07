@@ -1889,14 +1889,16 @@
               "id": "9kti66s0vf",
               "name": "行車記錄器",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "卡老公",
                   "qty": 1
                 }
               ],
-              "mc": {},
+              "mc": {
+                "卡老公": true
+              },
               "checkLog": [
                 {
                   "memberId": "eup4vt8kxk",
@@ -1921,6 +1923,12 @@
                   "memberName": "貝",
                   "ts": 1780415924051,
                   "action": "uncheck"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780838747053,
+                  "action": "check"
                 }
               ],
               "source": "template",
@@ -5521,5 +5529,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780838747141
+  "updatedAt": 1780838747956
 }
