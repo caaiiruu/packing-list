@@ -2408,15 +2408,24 @@
               "id": "uq4h499jq8",
               "name": "化妝水（隨身包）",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780825637041,
+                  "action": "check"
+                }
+              ],
               "source": "custom",
               "templateKey": null,
               "templateCategory": null,
@@ -5030,5 +5039,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780825633047
+  "updatedAt": 1780825637520
 }
