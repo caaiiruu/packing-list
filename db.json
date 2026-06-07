@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "491fdb72aa0be2e996590055",
       "secretIssuedAt": 1780805105353,
-      "activeCat": 6,
+      "activeCat": 1,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -1241,37 +1241,6 @@
               ],
               "source": "template",
               "templateKey": "電器::行李秤",
-              "templateCategory": "電器",
-              "retiredByTemplate": false
-            },
-            {
-              "id": "bng40kk0vf",
-              "name": "奇美旅行鍋",
-              "qty": 1,
-              "checked": false,
-              "members": [
-                {
-                  "name": "卡老公",
-                  "qty": 1
-                }
-              ],
-              "mc": {},
-              "checkLog": [
-                {
-                  "memberId": "eup4vt8kxk",
-                  "memberName": "貝",
-                  "ts": 1780416358445,
-                  "action": "check"
-                },
-                {
-                  "memberId": "eup4vt8kxk",
-                  "memberName": "貝",
-                  "ts": 1780416358894,
-                  "action": "uncheck"
-                }
-              ],
-              "source": "template",
-              "templateKey": "電器::旅行鍋",
               "templateCategory": "電器",
               "retiredByTemplate": false
             },
@@ -5529,6 +5498,37 @@
           "templateKey": "服飾::耳罩",
           "templateCategory": "服飾",
           "retiredByTemplate": false
+        },
+        {
+          "id": "bng40kk0vf",
+          "name": "奇美旅行鍋",
+          "qty": 1,
+          "checked": false,
+          "members": [
+            {
+              "name": "卡老公",
+              "qty": 1
+            }
+          ],
+          "mc": {},
+          "checkLog": [
+            {
+              "memberId": "eup4vt8kxk",
+              "memberName": "貝",
+              "ts": 1780416358445,
+              "action": "check"
+            },
+            {
+              "memberId": "eup4vt8kxk",
+              "memberName": "貝",
+              "ts": 1780416358894,
+              "action": "uncheck"
+            }
+          ],
+          "source": "template",
+          "templateKey": "電器::旅行鍋",
+          "templateCategory": "電器",
+          "retiredByTemplate": false
         }
       ],
       "templateCatalog": [
@@ -5725,5 +5725,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780840979068
+  "updatedAt": 1780840986944
 }
