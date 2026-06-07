@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "491fdb72aa0be2e996590055",
       "secretIssuedAt": 1780805105353,
-      "activeCat": 4,
+      "activeCat": 8,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -3657,11 +3657,15 @@
             {
               "id": "legx72o0vf",
               "name": "發熱眼罩",
-              "qty": 1,
+              "qty": 2,
               "checked": false,
               "members": [
                 {
                   "name": "貝",
+                  "qty": 1
+                },
+                {
+                  "name": "媽",
                   "qty": 1
                 }
               ],
@@ -5092,5 +5096,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780825722737
+  "updatedAt": 1780825751421
 }
