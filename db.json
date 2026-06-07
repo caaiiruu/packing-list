@@ -3046,11 +3046,27 @@
             {
               "id": "jueximv0vf",
               "name": "眼鏡盒",
-              "qty": 1,
+              "qty": 5,
               "checked": false,
               "members": [
                 {
                   "name": "貝",
+                  "qty": 1
+                },
+                {
+                  "name": "卡老公",
+                  "qty": 1
+                },
+                {
+                  "name": "媽",
+                  "qty": 1
+                },
+                {
+                  "name": "小盈盈",
+                  "qty": 1
+                },
+                {
+                  "name": "阿靜",
                   "qty": 1
                 }
               ],
@@ -4355,5 +4371,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780799916759
+  "updatedAt": 1780799941925
 }
