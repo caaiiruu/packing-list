@@ -3234,9 +3234,26 @@
             {
               "id": "krx1fi50vf",
               "name": "護手霜",
-              "qty": 1,
+              "qty": 4,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                },
+                {
+                  "name": "媽",
+                  "qty": 1
+                },
+                {
+                  "name": "小盈盈",
+                  "qty": 1
+                },
+                {
+                  "name": "阿靜",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [
                 {
@@ -4299,5 +4316,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780799882890
+  "updatedAt": 1780799887642
 }
