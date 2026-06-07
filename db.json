@@ -1407,6 +1407,19 @@
               "templateKey": null,
               "templateCategory": null,
               "retiredByTemplate": false
+            },
+            {
+              "id": "bd3hmi06aa",
+              "name": "餅乾",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "custom",
+              "templateKey": null,
+              "templateCategory": null,
+              "retiredByTemplate": false
             }
           ]
         },
@@ -4977,5 +4990,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780825468271
+  "updatedAt": 1780825516703
 }
