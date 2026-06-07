@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "491fdb72aa0be2e996590055",
       "secretIssuedAt": 1780805105353,
-      "activeCat": 7,
+      "activeCat": 8,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -3839,6 +3839,19 @@
               "templateKey": "飛機過夜包::折疊椅（放腳用）",
               "templateCategory": "飛機過夜包",
               "retiredByTemplate": false
+            },
+            {
+              "id": "536595bnsn",
+              "name": "USB充手機",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "custom",
+              "templateKey": null,
+              "templateCategory": null,
+              "retiredByTemplate": false
             }
           ]
         }
@@ -4909,5 +4922,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780805106157
+  "updatedAt": 1780822553466
 }
