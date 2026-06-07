@@ -453,19 +453,6 @@
               "retiredByTemplate": false
             },
             {
-              "id": "45nufc20vf",
-              "name": "圍巾",
-              "qty": 1,
-              "checked": false,
-              "members": [],
-              "mc": {},
-              "checkLog": [],
-              "source": "template",
-              "templateKey": "服飾::圍巾",
-              "templateCategory": "服飾",
-              "retiredByTemplate": false
-            },
-            {
               "id": "k4gfsjo0vf",
               "name": "防水褲",
               "qty": 10,
@@ -4336,6 +4323,19 @@
           "templateKey": "電器::電蚊香",
           "templateCategory": "電器",
           "retiredByTemplate": false
+        },
+        {
+          "id": "45nufc20vf",
+          "name": "圍巾",
+          "qty": 1,
+          "checked": false,
+          "members": [],
+          "mc": {},
+          "checkLog": [],
+          "source": "template",
+          "templateKey": "服飾::圍巾",
+          "templateCategory": "服飾",
+          "retiredByTemplate": false
         }
       ],
       "templateCatalog": [
@@ -4532,5 +4532,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780800104753
+  "updatedAt": 1780800113292
 }
