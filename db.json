@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "491fdb72aa0be2e996590055",
       "secretIssuedAt": 1780805105353,
-      "activeCat": 3,
+      "activeCat": 2,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -1554,8 +1554,17 @@
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "卡老公": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "卡老公",
+                  "ts": 1780838765655,
+                  "action": "check"
+                }
+              ],
               "source": "custom",
               "templateKey": null,
               "templateCategory": null,
@@ -2018,15 +2027,24 @@
               "id": "i8xhriw0vf",
               "name": "手機架",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "卡老公",
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "卡老公": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780838747619,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "開車必備::手機架",
               "templateCategory": "開車必備",
@@ -5529,5 +5547,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780838747956
+  "updatedAt": 1780838766345
 }
