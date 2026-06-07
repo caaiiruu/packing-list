@@ -3003,11 +3003,23 @@
             {
               "id": "z23uvmx0vf",
               "name": "面膜",
-              "qty": 1,
+              "qty": 4,
               "checked": false,
               "members": [
                 {
                   "name": "貝",
+                  "qty": 1
+                },
+                {
+                  "name": "媽",
+                  "qty": 1
+                },
+                {
+                  "name": "小盈盈",
+                  "qty": 1
+                },
+                {
+                  "name": "阿靜",
                   "qty": 1
                 }
               ],
@@ -4343,5 +4355,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780799906471
+  "updatedAt": 1780799916759
 }
