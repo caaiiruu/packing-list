@@ -1420,7 +1420,12 @@
               "name": "咖哩塊",
               "qty": 1,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "媽",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [],
               "source": "custom",
@@ -4532,5 +4537,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780800281007
+  "updatedAt": 1780800294654
 }
