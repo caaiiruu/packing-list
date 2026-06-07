@@ -1500,14 +1500,16 @@
               "id": "qjwvo2t0vf",
               "name": "食物保鮮矽膠盒",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "卡老公",
                   "qty": 1
                 }
               ],
-              "mc": {},
+              "mc": {
+                "卡老公": true
+              },
               "checkLog": [
                 {
                   "memberId": "eup4vt8kxk",
@@ -1520,6 +1522,12 @@
                   "memberName": "卡",
                   "ts": 1780415728183,
                   "action": "uncheck"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "卡老公",
+                  "ts": 1780838777609,
+                  "action": "check"
                 }
               ],
               "source": "template",
@@ -5554,5 +5562,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780838777064
+  "updatedAt": 1780838778167
 }
