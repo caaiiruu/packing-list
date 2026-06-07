@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "491fdb72aa0be2e996590055",
       "secretIssuedAt": 1780805105353,
-      "activeCat": 2,
+      "activeCat": 0,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -376,8 +376,17 @@
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780839857883,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "服飾::冰爪",
               "templateCategory": "服飾",
@@ -5630,5 +5639,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780839782634
+  "updatedAt": 1780839858541
 }
