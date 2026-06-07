@@ -1665,24 +1665,6 @@
               "retiredByTemplate": false
             },
             {
-              "id": "cqyb0uh0vf",
-              "name": "黏土",
-              "qty": 1,
-              "checked": false,
-              "members": [
-                {
-                  "name": "卡老公",
-                  "qty": 1
-                }
-              ],
-              "mc": {},
-              "checkLog": [],
-              "source": "template",
-              "templateKey": "開車必備::黏土",
-              "templateCategory": "開車必備",
-              "retiredByTemplate": false
-            },
-            {
               "id": "k2rx3f80vf",
               "name": "墨鏡",
               "qty": 5,
@@ -5050,6 +5032,24 @@
           "templateKey": "電器::行動洗衣袋",
           "templateCategory": "電器",
           "retiredByTemplate": false
+        },
+        {
+          "id": "cqyb0uh0vf",
+          "name": "黏土",
+          "qty": 1,
+          "checked": false,
+          "members": [
+            {
+              "name": "卡老公",
+              "qty": 1
+            }
+          ],
+          "mc": {},
+          "checkLog": [],
+          "source": "template",
+          "templateKey": "開車必備::黏土",
+          "templateCategory": "開車必備",
+          "retiredByTemplate": false
         }
       ],
       "templateCatalog": [
@@ -5246,5 +5246,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780826648727
+  "updatedAt": 1780826676572
 }
