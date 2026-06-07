@@ -3325,19 +3325,6 @@
               "templateKey": "重要文件::護照",
               "templateCategory": "重要文件",
               "retiredByTemplate": false
-            },
-            {
-              "id": "ppd7ev20vf",
-              "name": "SIM卡（卡套不能丟）",
-              "qty": 1,
-              "checked": false,
-              "members": [],
-              "mc": {},
-              "checkLog": [],
-              "source": "template",
-              "templateKey": "重要文件::SIM卡（卡套不能丟）",
-              "templateCategory": "重要文件",
-              "retiredByTemplate": false
             }
           ]
         },
@@ -4713,6 +4700,19 @@
           "templateKey": "藥品::益生菌",
           "templateCategory": "藥品",
           "retiredByTemplate": false
+        },
+        {
+          "id": "ppd7ev20vf",
+          "name": "SIM卡（卡套不能丟）",
+          "qty": 1,
+          "checked": false,
+          "members": [],
+          "mc": {},
+          "checkLog": [],
+          "source": "template",
+          "templateKey": "重要文件::SIM卡（卡套不能丟）",
+          "templateCategory": "重要文件",
+          "retiredByTemplate": false
         }
       ],
       "templateCatalog": [
@@ -4909,5 +4909,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780800674399
+  "updatedAt": 1780800688299
 }
