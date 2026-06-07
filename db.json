@@ -3122,9 +3122,30 @@
             {
               "id": "bwp06lk0vf",
               "name": "耳塞",
-              "qty": 4,
+              "qty": 5,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                },
+                {
+                  "name": "卡老公",
+                  "qty": 1
+                },
+                {
+                  "name": "媽",
+                  "qty": 1
+                },
+                {
+                  "name": "小盈盈",
+                  "qty": 1
+                },
+                {
+                  "name": "阿靜",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [
                 {
@@ -4268,5 +4289,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780799873541
+  "updatedAt": 1780799876622
 }
