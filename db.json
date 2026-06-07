@@ -2560,7 +2560,12 @@
               "name": "夾鏈袋",
               "qty": 1,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "媽",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [],
               "source": "template",
@@ -4126,5 +4131,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780799538281
+  "updatedAt": 1780799559696
 }
