@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "491fdb72aa0be2e996590055",
       "secretIssuedAt": 1780805105353,
-      "activeCat": 8,
+      "activeCat": 7,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -3325,6 +3325,19 @@
               "templateKey": "重要文件::護照",
               "templateCategory": "重要文件",
               "retiredByTemplate": false
+            },
+            {
+              "id": "gdzle9coa8",
+              "name": "活動文件",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "custom",
+              "templateKey": null,
+              "templateCategory": null,
+              "retiredByTemplate": false
             }
           ]
         },
@@ -4943,5 +4956,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780822556374
+  "updatedAt": 1780824980525
 }
