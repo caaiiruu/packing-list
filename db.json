@@ -631,24 +631,6 @@
               "retiredByTemplate": false
             },
             {
-              "id": "z4ix0v50vf",
-              "name": "行動洗衣袋",
-              "qty": 1,
-              "checked": false,
-              "members": [
-                {
-                  "name": "貝",
-                  "qty": 1
-                }
-              ],
-              "mc": {},
-              "checkLog": [],
-              "source": "template",
-              "templateKey": "電器::行動洗衣袋",
-              "templateCategory": "電器",
-              "retiredByTemplate": false
-            },
-            {
               "id": "9ieg31t0vf",
               "name": "轉接頭",
               "qty": 1,
@@ -4991,6 +4973,24 @@
           "templateKey": "重要文件::SIM卡（卡套不能丟）",
           "templateCategory": "重要文件",
           "retiredByTemplate": false
+        },
+        {
+          "id": "z4ix0v50vf",
+          "name": "行動洗衣袋",
+          "qty": 1,
+          "checked": false,
+          "members": [
+            {
+              "name": "貝",
+              "qty": 1
+            }
+          ],
+          "mc": {},
+          "checkLog": [],
+          "source": "template",
+          "templateKey": "電器::行動洗衣袋",
+          "templateCategory": "電器",
+          "retiredByTemplate": false
         }
       ],
       "templateCatalog": [
@@ -5187,5 +5187,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780826459236
+  "updatedAt": 1780826473561
 }
