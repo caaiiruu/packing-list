@@ -2272,15 +2272,24 @@
               "id": "x21mvl60vf",
               "name": "護髮素",
               "qty": 5,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
                   "qty": 5
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780825632140,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "梳妝保養::護髮素",
               "templateCategory": "梳妝保養",
@@ -5021,5 +5030,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780825631128
+  "updatedAt": 1780825633047
 }
