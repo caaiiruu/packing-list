@@ -1466,7 +1466,12 @@
               "name": "胡椒鹽",
               "qty": 1,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "媽",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [],
               "source": "custom",
@@ -5127,5 +5132,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780825877782
+  "updatedAt": 1780825885276
 }
