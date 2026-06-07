@@ -3331,7 +3331,12 @@
               "name": "活動文件",
               "qty": 1,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [],
               "source": "custom",
@@ -4956,5 +4961,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780824980525
+  "updatedAt": 1780824985258
 }
