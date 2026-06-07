@@ -2471,7 +2471,12 @@
               "name": "喉糖",
               "qty": 1,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "媽",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [],
               "source": "template",
@@ -4775,5 +4780,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780800512188
+  "updatedAt": 1780800517339
 }
