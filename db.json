@@ -403,7 +403,12 @@
               "name": "睡衣黑色短袖",
               "qty": 1,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [],
               "source": "template",
@@ -4527,5 +4532,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780800102490
+  "updatedAt": 1780800104753
 }
