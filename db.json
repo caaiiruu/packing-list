@@ -1811,7 +1811,12 @@
               "name": "酒精棉片",
               "qty": 1,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [],
               "source": "template",
@@ -4585,5 +4590,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780800412810
+  "updatedAt": 1780800414980
 }
