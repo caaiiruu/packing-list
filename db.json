@@ -634,15 +634,24 @@
               "id": "9ieg31t0vf",
               "name": "轉接頭",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780826477255,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "電器::轉接頭",
               "templateCategory": "電器",
@@ -5196,5 +5205,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780826475860
+  "updatedAt": 1780826478036
 }
