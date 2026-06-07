@@ -3098,7 +3098,12 @@
               "name": "發熱眼罩",
               "qty": 1,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [
                 {
@@ -4289,5 +4294,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780799876622
+  "updatedAt": 1780799879521
 }
