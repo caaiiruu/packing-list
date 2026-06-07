@@ -418,8 +418,17 @@
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "卡老公": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "卡老公",
+                  "ts": 1780839893162,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "服飾::冰爪防水束袋",
               "templateCategory": "服飾",
@@ -5638,5 +5647,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780839891605
+  "updatedAt": 1780839894208
 }
