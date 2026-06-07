@@ -509,8 +509,17 @@
                   "qty": 2
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "卡老公": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "卡老公",
+                  "ts": 1780837484142,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "服飾::登山杖",
               "templateCategory": "服飾",
@@ -5397,5 +5406,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780837483683
+  "updatedAt": 1780837484864
 }
