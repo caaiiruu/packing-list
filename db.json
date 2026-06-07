@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "491fdb72aa0be2e996590055",
       "secretIssuedAt": 1780805105353,
-      "activeCat": 0,
+      "activeCat": 6,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -569,13 +569,20 @@
                 }
               ],
               "mc": {
-                "貝": true
+                "貝": true,
+                "卡老公": true
               },
               "checkLog": [
                 {
                   "memberId": "eup4vt8kxk",
                   "memberName": "貝",
                   "ts": 1780838166338,
+                  "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "卡老公",
+                  "ts": 1780838166870,
                   "action": "check"
                 }
               ],
@@ -3349,15 +3356,24 @@
               "id": "gv8jy8e0vf",
               "name": "木頭推拿棒",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780838352950,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "備品雜物::木頭推拿棒",
               "templateCategory": "備品雜物",
@@ -5431,5 +5447,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780838167210
+  "updatedAt": 1780838353858
 }
