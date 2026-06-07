@@ -258,8 +258,17 @@
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780839039129,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "服飾::拖鞋",
               "templateCategory": "服飾",
@@ -5598,5 +5607,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780838980794
+  "updatedAt": 1780839039620
 }
