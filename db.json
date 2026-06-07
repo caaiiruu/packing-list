@@ -652,15 +652,24 @@
               "id": "pi2hdrz0vf",
               "name": "延長線",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780826475190,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "電器::延長線",
               "templateCategory": "電器",
@@ -5187,5 +5196,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780826473561
+  "updatedAt": 1780826475860
 }
