@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "491fdb72aa0be2e996590055",
       "secretIssuedAt": 1780805105353,
-      "activeCat": 1,
+      "activeCat": 8,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -4239,15 +4239,24 @@
               "id": "7u9iy3f0vf",
               "name": "水袋",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "卡老公",
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "卡老公": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780838947933,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "飛機過夜包::水袋",
               "templateCategory": "飛機過夜包",
@@ -5589,5 +5598,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780838893401
+  "updatedAt": 1780838948654
 }
