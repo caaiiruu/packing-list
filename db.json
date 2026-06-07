@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "491fdb72aa0be2e996590055",
       "secretIssuedAt": 1780805105353,
-      "activeCat": 7,
+      "activeCat": 2,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -1246,8 +1246,17 @@
                   "qty": 2
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780825466685,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "食物廚具::泡麵",
               "templateCategory": "食物廚具",
@@ -4961,5 +4970,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780825006321
+  "updatedAt": 1780825467264
 }
