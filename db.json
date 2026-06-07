@@ -1932,15 +1932,24 @@
               "id": "svaurd60vf",
               "name": "USB線",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "卡老公",
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "卡老公": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1780838746222,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "開車必備::USB線",
               "templateCategory": "開車必備",
@@ -5512,5 +5521,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780838692085
+  "updatedAt": 1780838747141
 }
