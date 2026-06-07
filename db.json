@@ -2583,7 +2583,12 @@
               "name": "小塑膠袋",
               "qty": 1,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "媽",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [],
               "source": "template",
@@ -4136,5 +4141,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780799582280
+  "updatedAt": 1780799591784
 }
