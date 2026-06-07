@@ -1503,7 +1503,7 @@
               "checked": false,
               "members": [
                 {
-                  "name": "卡",
+                  "name": "卡老公",
                   "qty": 1
                 }
               ],
@@ -5554,5 +5554,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1780838767011
+  "updatedAt": 1780838777064
 }
