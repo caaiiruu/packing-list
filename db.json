@@ -3763,6 +3763,19 @@
               "templateKey": null,
               "templateCategory": null,
               "retiredByTemplate": false
+            },
+            {
+              "id": "0v1vn134cy",
+              "name": "金色髮蠟",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "custom",
+              "templateKey": null,
+              "templateCategory": null,
+              "retiredByTemplate": false
             }
           ]
         },
@@ -5771,5 +5784,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781010843656
+  "updatedAt": 1781096165878
 }
