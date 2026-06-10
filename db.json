@@ -4657,7 +4657,7 @@
               "id": "hmyt0m6p4c",
               "name": "脖枕",
               "qty": 2,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
@@ -4668,8 +4668,18 @@
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true,
+                "卡老公": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1781097064907,
+                  "action": "check"
+                }
+              ],
               "source": "custom",
               "templateKey": null,
               "templateCategory": null,
@@ -5873,5 +5883,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781097056634
+  "updatedAt": 1781097066042
 }
