@@ -3769,7 +3769,12 @@
               "name": "金色髮蠟",
               "qty": 1,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [],
               "source": "custom",
@@ -5802,5 +5807,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781096175411
+  "updatedAt": 1781096178791
 }
