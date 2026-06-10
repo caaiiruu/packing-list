@@ -4633,17 +4633,17 @@
             },
             {
               "id": "cuqihlght0",
-              "name": "牙刷",
-              "qty": 2,
+              "name": "拋棄式牙刷",
+              "qty": 4,
               "checked": false,
               "members": [
                 {
                   "name": "貝",
-                  "qty": 1
+                  "qty": 2
                 },
                 {
                   "name": "卡老公",
-                  "qty": 1
+                  "qty": 2
                 }
               ],
               "mc": {},
@@ -5883,5 +5883,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781097244204
+  "updatedAt": 1781097257360
 }
