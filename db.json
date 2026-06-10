@@ -959,8 +959,7 @@
                 }
               ],
               "mc": {
-                "阿靜": false,
-                "小盈盈": true
+                "阿靜": false
               },
               "checkLog": [
                 {
@@ -980,12 +979,6 @@
                   "memberName": "阿靜",
                   "ts": 1781097941983,
                   "action": "uncheck"
-                },
-                {
-                  "memberId": "anon",
-                  "memberName": "小盈盈",
-                  "ts": 1781097942602,
-                  "action": "check"
                 }
               ],
               "source": "template",
@@ -1197,8 +1190,7 @@
               ],
               "mc": {
                 "貝": true,
-                "卡老公": true,
-                "小盈盈": true
+                "卡老公": true
               },
               "checkLog": [
                 {
@@ -1211,12 +1203,6 @@
                   "memberId": "eup4vt8kxk",
                   "memberName": "卡老公",
                   "ts": 1780826458502,
-                  "action": "check"
-                },
-                {
-                  "memberId": "anon",
-                  "memberName": "小盈盈",
-                  "ts": 1781097945862,
                   "action": "check"
                 }
               ],
@@ -1254,7 +1240,8 @@
               ],
               "mc": {
                 "貝": true,
-                "卡老公": true
+                "卡老公": true,
+                "小盈盈": true
               },
               "checkLog": [
                 {
@@ -1273,6 +1260,12 @@
                   "memberId": "eup4vt8kxk",
                   "memberName": "卡老公",
                   "ts": 1780826485003,
+                  "action": "check"
+                },
+                {
+                  "memberId": "anon",
+                  "memberName": "小盈盈",
+                  "ts": 1781097950775,
                   "action": "check"
                 }
               ],
@@ -6010,5 +6003,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781097946960
+  "updatedAt": 1781097951558
 }
