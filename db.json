@@ -4669,9 +4669,18 @@
             {
               "id": "o0to9ytw95",
               "name": "拖鞋",
-              "qty": 1,
+              "qty": 2,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                },
+                {
+                  "name": "卡老公",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [],
               "source": "custom",
@@ -5855,5 +5864,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781097046146
+  "updatedAt": 1781097049990
 }
