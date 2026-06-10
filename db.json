@@ -3715,7 +3715,7 @@
               "mc": {
                 "貝": true,
                 "卡老公": true,
-                "阿靜": true
+                "阿靜": false
               },
               "checkLog": [
                 {
@@ -3735,6 +3735,12 @@
                   "memberName": "阿靜",
                   "ts": 1781097652309,
                   "action": "check"
+                },
+                {
+                  "memberId": "fhemj71ohu",
+                  "memberName": "阿靜",
+                  "ts": 1781097653849,
+                  "action": "uncheck"
                 }
               ],
               "source": "custom",
@@ -5931,5 +5937,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781097653131
+  "updatedAt": 1781097654775
 }
