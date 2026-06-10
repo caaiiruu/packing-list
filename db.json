@@ -4643,6 +4643,19 @@
               "templateKey": null,
               "templateCategory": null,
               "retiredByTemplate": false
+            },
+            {
+              "id": "hmyt0m6p4c",
+              "name": "脖枕",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "custom",
+              "templateKey": null,
+              "templateCategory": null,
+              "retiredByTemplate": false
             }
           ]
         }
@@ -5820,5 +5833,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781097023021
+  "updatedAt": 1781097032498
 }
