@@ -4687,17 +4687,17 @@
             },
             {
               "id": "o0to9ytw95",
-              "name": "拖鞋",
-              "qty": 2,
+              "name": "拖鞋（紫色那雙）",
+              "qty": 4,
               "checked": false,
               "members": [
                 {
                   "name": "貝",
-                  "qty": 1
+                  "qty": 2
                 },
                 {
                   "name": "卡老公",
-                  "qty": 1
+                  "qty": 2
                 }
               ],
               "mc": {},
@@ -5883,5 +5883,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781097066042
+  "updatedAt": 1781097244204
 }
