@@ -959,7 +959,7 @@
                 }
               ],
               "mc": {
-                "阿靜": true
+                "阿靜": false
               },
               "checkLog": [
                 {
@@ -973,6 +973,12 @@
                   "memberName": "阿靜",
                   "ts": 1781097940696,
                   "action": "check"
+                },
+                {
+                  "memberId": "anon",
+                  "memberName": "阿靜",
+                  "ts": 1781097941983,
+                  "action": "uncheck"
                 }
               ],
               "source": "template",
@@ -5990,5 +5996,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781097941654
+  "updatedAt": 1781097942770
 }
