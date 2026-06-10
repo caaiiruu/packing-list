@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "491fdb72aa0be2e996590055",
       "secretIssuedAt": 1780805105353,
-      "activeCat": 4,
+      "activeCat": 5,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -3158,28 +3158,6 @@
               "retiredByTemplate": false
             },
             {
-              "id": "3t4572e0vf",
-              "name": "噴鼻藥",
-              "qty": 1,
-              "checked": false,
-              "members": [
-                {
-                  "name": "貝",
-                  "qty": 1
-                },
-                {
-                  "name": "卡老公",
-                  "qty": 1
-                }
-              ],
-              "mc": {},
-              "checkLog": [],
-              "source": "template",
-              "templateKey": "藥品::噴鼻藥",
-              "templateCategory": "藥品",
-              "retiredByTemplate": false
-            },
-            {
               "id": "yqpuc6k0vf",
               "name": "感冒藥",
               "qty": 5,
@@ -5721,6 +5699,28 @@
           "templateKey": null,
           "templateCategory": null,
           "retiredByTemplate": false
+        },
+        {
+          "id": "3t4572e0vf",
+          "name": "噴鼻藥",
+          "qty": 1,
+          "checked": false,
+          "members": [
+            {
+              "name": "貝",
+              "qty": 1
+            },
+            {
+              "name": "卡老公",
+              "qty": 1
+            }
+          ],
+          "mc": {},
+          "checkLog": [],
+          "source": "template",
+          "templateKey": "藥品::噴鼻藥",
+          "templateCategory": "藥品",
+          "retiredByTemplate": false
         }
       ],
       "templateCatalog": [
@@ -5917,5 +5917,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781097297340
+  "updatedAt": 1781097312812
 }
