@@ -792,7 +792,7 @@
               "id": "nf57g6x0vf",
               "name": "洗衣蛋",
               "qty": 2,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
@@ -804,13 +804,20 @@
                 }
               ],
               "mc": {
-                "貝": true
+                "貝": true,
+                "媽": true
               },
               "checkLog": [
                 {
                   "memberId": "eup4vt8kxk",
                   "memberName": "貝",
                   "ts": 1780826899416,
+                  "action": "check"
+                },
+                {
+                  "memberId": "anon",
+                  "memberName": "媽",
+                  "ts": 1781097923838,
                   "action": "check"
                 }
               ],
@@ -5968,5 +5975,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781097750873
+  "updatedAt": 1781097924880
 }
