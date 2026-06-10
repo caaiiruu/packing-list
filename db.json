@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "491fdb72aa0be2e996590055",
       "secretIssuedAt": 1780805105353,
-      "activeCat": 1,
+      "activeCat": 8,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -959,7 +959,8 @@
                 }
               ],
               "mc": {
-                "阿靜": false
+                "阿靜": false,
+                "小盈盈": true
               },
               "checkLog": [
                 {
@@ -979,6 +980,12 @@
                   "memberName": "阿靜",
                   "ts": 1781097941983,
                   "action": "uncheck"
+                },
+                {
+                  "memberId": "anon",
+                  "memberName": "小盈盈",
+                  "ts": 1781097942602,
+                  "action": "check"
                 }
               ],
               "source": "template",
@@ -1190,7 +1197,8 @@
               ],
               "mc": {
                 "貝": true,
-                "卡老公": true
+                "卡老公": true,
+                "小盈盈": true
               },
               "checkLog": [
                 {
@@ -1203,6 +1211,12 @@
                   "memberId": "eup4vt8kxk",
                   "memberName": "卡老公",
                   "ts": 1780826458502,
+                  "action": "check"
+                },
+                {
+                  "memberId": "anon",
+                  "memberName": "小盈盈",
+                  "ts": 1781097945862,
                   "action": "check"
                 }
               ],
@@ -1240,8 +1254,7 @@
               ],
               "mc": {
                 "貝": true,
-                "卡老公": true,
-                "小盈盈": true
+                "卡老公": true
               },
               "checkLog": [
                 {
@@ -1260,12 +1273,6 @@
                   "memberId": "eup4vt8kxk",
                   "memberName": "卡老公",
                   "ts": 1780826485003,
-                  "action": "check"
-                },
-                {
-                  "memberId": "anon",
-                  "memberName": "小盈盈",
-                  "ts": 1781097950775,
                   "action": "check"
                 }
               ],
@@ -4450,7 +4457,8 @@
                 }
               ],
               "mc": {
-                "貝": false
+                "貝": false,
+                "小盈盈": true
               },
               "checkLog": [
                 {
@@ -4464,6 +4472,12 @@
                   "memberName": "貝",
                   "ts": 1780838612179,
                   "action": "uncheck"
+                },
+                {
+                  "memberId": "anon",
+                  "memberName": "小盈盈",
+                  "ts": 1781098083197,
+                  "action": "check"
                 }
               ],
               "source": "template",
@@ -6003,5 +6017,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781097951558
+  "updatedAt": 1781098084118
 }
