@@ -4656,6 +4656,19 @@
               "templateKey": null,
               "templateCategory": null,
               "retiredByTemplate": false
+            },
+            {
+              "id": "o0to9ytw95",
+              "name": "拖鞋",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "custom",
+              "templateKey": null,
+              "templateCategory": null,
+              "retiredByTemplate": false
             }
           ]
         }
@@ -5833,5 +5846,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781097032498
+  "updatedAt": 1781097042209
 }
