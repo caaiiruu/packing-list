@@ -3778,8 +3778,17 @@
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "小盈盈": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "anon",
+                  "memberName": "小盈盈",
+                  "ts": 1781097695164,
+                  "action": "check"
+                }
+              ],
               "source": "custom",
               "templateKey": null,
               "templateCategory": null,
@@ -5944,5 +5953,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781097679617
+  "updatedAt": 1781097695883
 }
