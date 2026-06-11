@@ -3974,7 +3974,12 @@
               "name": "瑞士刀",
               "qty": 1,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [],
               "source": "custom",
@@ -6183,5 +6188,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781215395354
+  "updatedAt": 1781215400971
 }
