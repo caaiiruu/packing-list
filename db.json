@@ -4862,7 +4862,7 @@
               "id": "cuqihlght0",
               "name": "拋棄式牙刷",
               "qty": 4,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
@@ -4873,8 +4873,18 @@
                   "qty": 2
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true,
+                "卡老公": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1781169381613,
+                  "action": "check"
+                }
+              ],
               "source": "custom",
               "templateKey": null,
               "templateCategory": null,
@@ -6132,5 +6142,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781169365839
+  "updatedAt": 1781169382414
 }
