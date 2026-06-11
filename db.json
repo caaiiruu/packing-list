@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "491fdb72aa0be2e996590055",
       "secretIssuedAt": 1780805105353,
-      "activeCat": 6,
+      "activeCat": 8,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -4721,15 +4721,24 @@
               "id": "g4x3iml0vf",
               "name": "折疊椅（放腳用）",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "卡老公",
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "卡老公": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1781161279682,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "飛機過夜包::折疊椅（放腳用）",
               "templateCategory": "飛機過夜包",
@@ -6043,5 +6052,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781098341042
+  "updatedAt": 1781161280736
 }
