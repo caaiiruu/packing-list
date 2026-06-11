@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "491fdb72aa0be2e996590055",
       "secretIssuedAt": 1780805105353,
-      "activeCat": 8,
+      "activeCat": 4,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -3002,6 +3002,19 @@
                   "qty": 1
                 }
               ],
+              "mc": {},
+              "checkLog": [],
+              "source": "custom",
+              "templateKey": null,
+              "templateCategory": null,
+              "retiredByTemplate": false
+            },
+            {
+              "id": "tp880umnrd",
+              "name": "牙膏",
+              "qty": 1,
+              "checked": false,
+              "members": [],
               "mc": {},
               "checkLog": [],
               "source": "custom",
@@ -6052,5 +6065,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781161280736
+  "updatedAt": 1781161369402
 }
