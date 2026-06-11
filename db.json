@@ -4953,6 +4953,19 @@
               "templateKey": null,
               "templateCategory": null,
               "retiredByTemplate": false
+            },
+            {
+              "id": "8xl30orsc2",
+              "name": "髮蠟（金黃色）",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "custom",
+              "templateKey": null,
+              "templateCategory": null,
+              "retiredByTemplate": false
             }
           ]
         }
@@ -6152,5 +6165,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781169464041
+  "updatedAt": 1781188435717
 }
