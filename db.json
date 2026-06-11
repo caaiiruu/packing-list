@@ -4926,7 +4926,7 @@
               "id": "o0to9ytw95",
               "name": "拖鞋（紫色那雙）",
               "qty": 4,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
@@ -4937,8 +4937,18 @@
                   "qty": 2
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true,
+                "卡老公": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1781169463457,
+                  "action": "check"
+                }
+              ],
               "source": "custom",
               "templateKey": null,
               "templateCategory": null,
@@ -6142,5 +6152,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781169382414
+  "updatedAt": 1781169464041
 }
