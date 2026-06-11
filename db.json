@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "491fdb72aa0be2e996590055",
       "secretIssuedAt": 1780805105353,
-      "activeCat": 8,
+      "activeCat": 6,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -3934,24 +3934,6 @@
               "retiredByTemplate": false
             },
             {
-              "id": "0v1vn134cy",
-              "name": "金色髮蠟",
-              "qty": 1,
-              "checked": false,
-              "members": [
-                {
-                  "name": "貝",
-                  "qty": 1
-                }
-              ],
-              "mc": {},
-              "checkLog": [],
-              "source": "custom",
-              "templateKey": null,
-              "templateCategory": null,
-              "retiredByTemplate": false
-            },
-            {
               "id": "v976snt8ai",
               "name": "髮窟",
               "qty": 1,
@@ -5974,6 +5956,24 @@
           "templateKey": "藥品::噴鼻藥",
           "templateCategory": "藥品",
           "retiredByTemplate": false
+        },
+        {
+          "id": "0v1vn134cy",
+          "name": "金色髮蠟",
+          "qty": 1,
+          "checked": false,
+          "members": [
+            {
+              "name": "貝",
+              "qty": 1
+            }
+          ],
+          "mc": {},
+          "checkLog": [],
+          "source": "custom",
+          "templateKey": null,
+          "templateCategory": null,
+          "retiredByTemplate": false
         }
       ],
       "templateCatalog": [
@@ -6170,5 +6170,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781188441518
+  "updatedAt": 1781188448447
 }
