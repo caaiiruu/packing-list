@@ -3968,6 +3968,19 @@
               "templateKey": null,
               "templateCategory": null,
               "retiredByTemplate": false
+            },
+            {
+              "id": "7q1u449mdb",
+              "name": "瑞士刀",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "custom",
+              "templateKey": null,
+              "templateCategory": null,
+              "retiredByTemplate": false
             }
           ]
         },
@@ -6170,5 +6183,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781188448447
+  "updatedAt": 1781215395354
 }
