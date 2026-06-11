@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "491fdb72aa0be2e996590055",
       "secretIssuedAt": 1780805105353,
-      "activeCat": 6,
+      "activeCat": 5,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -3415,6 +3415,19 @@
               "templateKey": null,
               "templateCategory": null,
               "retiredByTemplate": false
+            },
+            {
+              "id": "rdy4h94qql",
+              "name": "鎂",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "custom",
+              "templateKey": null,
+              "templateCategory": null,
+              "retiredByTemplate": false
             }
           ]
         },
@@ -6188,5 +6201,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781215400971
+  "updatedAt": 1781216567349
 }
