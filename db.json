@@ -2434,8 +2434,17 @@
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1781246521154,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "梳妝保養::木瓜霜",
               "templateCategory": "梳妝保養",
@@ -6466,5 +6475,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781246520319
+  "updatedAt": 1781246521966
 }
