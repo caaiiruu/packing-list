@@ -4433,8 +4433,17 @@
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1781241657480,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "飛機過夜包::眼鏡盒",
               "templateCategory": "飛機過夜包",
@@ -6307,5 +6316,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781241641324
+  "updatedAt": 1781241658475
 }
