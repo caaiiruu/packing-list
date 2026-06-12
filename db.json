@@ -4471,15 +4471,24 @@
               "id": "uvx81100vf",
               "name": "眼藥水",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1781241667429,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "飛機過夜包::眼藥水",
               "templateCategory": "飛機過夜包",
@@ -6316,5 +6325,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781241658475
+  "updatedAt": 1781241668245
 }
