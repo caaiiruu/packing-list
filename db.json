@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "491fdb72aa0be2e996590055",
       "secretIssuedAt": 1780805105353,
-      "activeCat": 7,
+      "activeCat": 8,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -5361,14 +5361,16 @@
               "id": "q39yp9w0vf",
               "name": "大腿綁帶（固定腳用）",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
                   "qty": 1
                 }
               ],
-              "mc": {},
+              "mc": {
+                "貝": true
+              },
               "checkLog": [
                 {
                   "memberId": "eup4vt8kxk",
@@ -5381,6 +5383,12 @@
                   "memberName": "貝",
                   "ts": 1780416364012,
                   "action": "uncheck"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1781249469774,
+                  "action": "check"
                 }
               ],
               "source": "template",
@@ -6867,5 +6875,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781249453422
+  "updatedAt": 1781249475489
 }
