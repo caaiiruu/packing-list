@@ -4160,13 +4160,20 @@
                 }
               ],
               "mc": {
-                "小盈盈": true
+                "小盈盈": true,
+                "貝": true
               },
               "checkLog": [
                 {
                   "memberId": "anon",
                   "memberName": "小盈盈",
                   "ts": 1781097695164,
+                  "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1781246994415,
                   "action": "check"
                 }
               ],
@@ -6600,5 +6607,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781246990172
+  "updatedAt": 1781246995183
 }
