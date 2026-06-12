@@ -5039,15 +5039,24 @@
               "id": "rvrbi50s5w",
               "name": "厚衣服 （機上穿）",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1781241221182,
+                  "action": "check"
+                }
+              ],
               "source": "custom",
               "templateKey": null,
               "templateCategory": null,
@@ -6269,5 +6278,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781241068763
+  "updatedAt": 1781241222274
 }
