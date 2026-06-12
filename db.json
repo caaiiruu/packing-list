@@ -4667,15 +4667,24 @@
               "id": "wunydaq0vf",
               "name": "隱形眼鏡",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1781246687915,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "飛機過夜包::隱形眼鏡",
               "templateCategory": "飛機過夜包",
@@ -6578,5 +6587,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781246658535
+  "updatedAt": 1781246688496
 }
