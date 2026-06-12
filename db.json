@@ -2957,8 +2957,17 @@
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1781246533907,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "梳妝保養::小瓶化妝水",
               "templateCategory": "梳妝保養",
@@ -6484,5 +6493,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781246525718
+  "updatedAt": 1781246534702
 }
