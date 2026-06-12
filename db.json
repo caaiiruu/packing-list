@@ -3513,7 +3513,7 @@
               "id": "v7ke7410vf",
               "name": "隨身藥罐",
               "qty": 2,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
@@ -3525,13 +3525,20 @@
                 }
               ],
               "mc": {
-                "貝": true
+                "貝": true,
+                "卡老公": true
               },
               "checkLog": [
                 {
                   "memberId": "eup4vt8kxk",
                   "memberName": "貝",
                   "ts": 1781247705578,
+                  "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "卡老公",
+                  "ts": 1781247706548,
                   "action": "check"
                 }
               ],
@@ -6691,5 +6698,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781247706521
+  "updatedAt": 1781247707325
 }
