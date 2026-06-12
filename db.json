@@ -1407,15 +1407,24 @@
               "id": "ayzlnk5eo2",
               "name": "DJI 相機包（相機、充電器、配件）",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1781247310945,
+                  "action": "check"
+                }
+              ],
               "source": "custom",
               "templateKey": null,
               "templateCategory": null,
@@ -6623,5 +6632,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781247309791
+  "updatedAt": 1781247311521
 }
