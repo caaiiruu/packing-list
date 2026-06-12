@@ -3154,15 +3154,24 @@
               "id": "wt3vojb0vf",
               "name": "OK蹦",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1781246432282,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "藥品::OK蹦",
               "templateCategory": "藥品",
@@ -6409,5 +6418,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781246431721
+  "updatedAt": 1781246433096
 }
