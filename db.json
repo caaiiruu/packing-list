@@ -2500,8 +2500,17 @@
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1781246519403,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "梳妝保養::棉花棒",
               "templateCategory": "梳妝保養",
@@ -6457,5 +6466,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781246518444
+  "updatedAt": 1781246520319
 }
