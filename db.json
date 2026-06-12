@@ -4342,7 +4342,8 @@
                 }
               ],
               "mc": {
-                "貝": true
+                "貝": true,
+                "卡老公": true
               },
               "checkLog": [
                 {
@@ -4355,6 +4356,12 @@
                   "memberId": "eup4vt8kxk",
                   "memberName": "貝",
                   "ts": 1781241701411,
+                  "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "卡老公",
+                  "ts": 1781241702289,
                   "action": "check"
                 }
               ],
@@ -4756,14 +4763,16 @@
               "id": "e51m1xi0vf",
               "name": "洗臉肥皂",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
                   "qty": 1
                 }
               ],
-              "mc": {},
+              "mc": {
+                "貝": true
+              },
               "checkLog": [
                 {
                   "memberId": "eup4vt8kxk",
@@ -4776,6 +4785,12 @@
                   "memberName": "貝",
                   "ts": 1780452088385,
                   "action": "uncheck"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1781241777344,
+                  "action": "check"
                 }
               ],
               "source": "template",
@@ -6333,5 +6348,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781241702444
+  "updatedAt": 1781241778138
 }
