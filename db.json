@@ -3174,15 +3174,24 @@
               "id": "fwm2h2t0vf",
               "name": "痠痛貼布",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1781245534850,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "藥品::痠痛貼布",
               "templateCategory": "藥品",
@@ -6384,5 +6393,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781245525571
+  "updatedAt": 1781245535688
 }
