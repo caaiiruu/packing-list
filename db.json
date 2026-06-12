@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "491fdb72aa0be2e996590055",
       "secretIssuedAt": 1780805105353,
-      "activeCat": 2,
+      "activeCat": 4,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -2705,8 +2705,17 @@
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1781247680847,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "梳妝保養::護手霜（Aesop）",
               "templateCategory": "梳妝保養",
@@ -6664,5 +6673,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781247675695
+  "updatedAt": 1781247681835
 }
