@@ -2454,15 +2454,24 @@
               "id": "qf6enzx0vf",
               "name": "頭皮藥",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1781246524971,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "梳妝保養::頭皮藥",
               "templateCategory": "梳妝保養",
@@ -6475,5 +6484,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781246521966
+  "updatedAt": 1781246525718
 }
