@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "491fdb72aa0be2e996590055",
       "secretIssuedAt": 1780805105353,
-      "activeCat": 8,
+      "activeCat": 0,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -64,13 +64,20 @@
                 }
               ],
               "mc": {
-                "卡老公": true
+                "卡老公": true,
+                "貝": true
               },
               "checkLog": [
                 {
                   "memberId": "eup4vt8kxk",
                   "memberName": "卡老公",
                   "ts": 1780839901681,
+                  "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1781241970640,
                   "action": "check"
                 }
               ],
@@ -6348,5 +6355,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781241778138
+  "updatedAt": 1781241971858
 }
