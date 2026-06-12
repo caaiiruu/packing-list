@@ -3746,15 +3746,24 @@
               "id": "rdy4h94qql",
               "name": "鎂",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1781247809120,
+                  "action": "check"
+                }
+              ],
               "source": "custom",
               "templateKey": null,
               "templateCategory": null,
@@ -6723,5 +6732,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781247711278
+  "updatedAt": 1781247809678
 }
