@@ -1135,8 +1135,17 @@
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1781247308762,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "電器::Apple Watch",
               "templateCategory": "電器",
@@ -6614,5 +6623,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781247304367
+  "updatedAt": 1781247309791
 }
