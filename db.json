@@ -4451,15 +4451,24 @@
               "id": "wr6p1mw0vf",
               "name": "金剛經",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1781247824850,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "重要文件::金剛經",
               "templateCategory": "重要文件",
@@ -6757,5 +6766,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781247821804
+  "updatedAt": 1781247825820
 }
