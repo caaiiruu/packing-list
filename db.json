@@ -3218,9 +3218,13 @@
             {
               "id": "wujui760vf",
               "name": "喉糖",
-              "qty": 1,
+              "qty": 2,
               "checked": false,
               "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                },
                 {
                   "name": "媽",
                   "qty": 1
@@ -6371,5 +6375,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781245504651
+  "updatedAt": 1781245524472
 }
