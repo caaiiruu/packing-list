@@ -2718,7 +2718,7 @@
               "id": "kwowmqg0vf",
               "name": "護髮油",
               "qty": 4,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
@@ -2737,8 +2737,20 @@
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true,
+                "媽": true,
+                "小盈盈": true,
+                "阿靜": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1781246487473,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "梳妝保養::護髮油",
               "templateCategory": "梳妝保養",
@@ -6436,5 +6448,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781246466384
+  "updatedAt": 1781246488433
 }
