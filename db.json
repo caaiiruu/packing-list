@@ -2490,15 +2490,24 @@
               "id": "9urgf490vf",
               "name": "指甲剪",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "卡老公",
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "卡老公": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "卡老公",
+                  "ts": 1781246569954,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "梳妝保養::指甲剪",
               "templateCategory": "梳妝保養",
@@ -6538,5 +6547,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781246568964
+  "updatedAt": 1781246570938
 }
