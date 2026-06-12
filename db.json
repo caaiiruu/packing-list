@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "491fdb72aa0be2e996590055",
       "secretIssuedAt": 1780805105353,
-      "activeCat": 6,
+      "activeCat": 5,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -3451,6 +3451,19 @@
               "templateKey": null,
               "templateCategory": null,
               "retiredByTemplate": false
+            },
+            {
+              "id": "zo02akd7pw",
+              "name": "白色胃藥",
+              "qty": 1,
+              "checked": false,
+              "members": [],
+              "mc": {},
+              "checkLog": [],
+              "source": "custom",
+              "templateKey": null,
+              "templateCategory": null,
+              "retiredByTemplate": false
             }
           ]
         },
@@ -6233,5 +6246,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781223127541
+  "updatedAt": 1781226060373
 }
