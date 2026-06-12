@@ -4566,8 +4566,17 @@
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1781247826984,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "重要文件::Costco卡",
               "templateCategory": "重要文件",
@@ -6766,5 +6775,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781247825820
+  "updatedAt": 1781247827730
 }
