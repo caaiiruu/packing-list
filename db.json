@@ -7,7 +7,7 @@
       "createdAt": 1780414656170,
       "secret": "491fdb72aa0be2e996590055",
       "secretIssuedAt": 1780805105353,
-      "activeCat": 5,
+      "activeCat": 4,
       "members": [
         {
           "id": "eup4vt8kxk",
@@ -2691,15 +2691,24 @@
               "id": "fc6eqdl0vf",
               "name": "白花油",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1781246455854,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "梳妝保養::白花油",
               "templateCategory": "梳妝保養",
@@ -6418,5 +6427,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781246433096
+  "updatedAt": 1781246456790
 }
