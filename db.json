@@ -4354,15 +4354,24 @@
               "id": "v976snt8ai",
               "name": "髮窟",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1781248291155,
+                  "action": "check"
+                }
+              ],
               "source": "custom",
               "templateKey": null,
               "templateCategory": null,
@@ -6793,5 +6802,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781248288062
+  "updatedAt": 1781248291909
 }
