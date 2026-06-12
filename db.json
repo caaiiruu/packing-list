@@ -324,7 +324,7 @@
               ],
               "mc": {
                 "貝": true,
-                "卡老公": true
+                "卡老公": false
               },
               "checkLog": [
                 {
@@ -338,6 +338,12 @@
                   "memberName": "卡老公",
                   "ts": 1781241377679,
                   "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "卡老公",
+                  "ts": 1781241378379,
+                  "action": "uncheck"
                 }
               ],
               "source": "template",
@@ -502,24 +508,6 @@
               "checkLog": [],
               "source": "template",
               "templateKey": "服飾::睡衣短褲",
-              "templateCategory": "服飾",
-              "retiredByTemplate": false
-            },
-            {
-              "id": "4q9cuyf0vf",
-              "name": "棉褲",
-              "qty": 1,
-              "checked": false,
-              "members": [
-                {
-                  "name": "貝",
-                  "qty": 1
-                }
-              ],
-              "mc": {},
-              "checkLog": [],
-              "source": "template",
-              "templateKey": "服飾::棉褲",
               "templateCategory": "服飾",
               "retiredByTemplate": false
             },
@@ -6096,6 +6084,24 @@
           "templateKey": null,
           "templateCategory": null,
           "retiredByTemplate": false
+        },
+        {
+          "id": "4q9cuyf0vf",
+          "name": "棉褲",
+          "qty": 1,
+          "checked": false,
+          "members": [
+            {
+              "name": "貝",
+              "qty": 1
+            }
+          ],
+          "mc": {},
+          "checkLog": [],
+          "source": "template",
+          "templateKey": "服飾::棉褲",
+          "templateCategory": "服飾",
+          "retiredByTemplate": false
         }
       ],
       "templateCatalog": [
@@ -6292,5 +6298,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781241378749
+  "updatedAt": 1781241396721
 }
