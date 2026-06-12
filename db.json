@@ -2591,8 +2591,17 @@
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1781246566539,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "梳妝保養::眼霜",
               "templateCategory": "梳妝保養",
@@ -6520,5 +6529,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781246564535
+  "updatedAt": 1781246567341
 }
