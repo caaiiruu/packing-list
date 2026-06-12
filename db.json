@@ -2239,15 +2239,24 @@
               "id": "8lf3w150vf",
               "name": "隱形眼鏡（拋棄式）",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1781246568186,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "梳妝保養::隱形眼鏡（拋棄式）",
               "templateCategory": "梳妝保養",
@@ -6529,5 +6538,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781246567341
+  "updatedAt": 1781246568964
 }
