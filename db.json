@@ -3127,8 +3127,17 @@
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1781246429333,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "藥品::Eve（止痛藥）",
               "templateCategory": "藥品",
@@ -6393,5 +6402,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781245535688
+  "updatedAt": 1781246430865
 }
