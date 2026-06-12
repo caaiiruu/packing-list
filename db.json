@@ -4043,15 +4043,24 @@
               "id": "2eusfy50vf",
               "name": "洗澡絲瓜巾",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1781246989216,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "備品雜物::絲瓜巾",
               "templateCategory": "備品雜物",
@@ -6591,5 +6600,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781246989083
+  "updatedAt": 1781246990172
 }
