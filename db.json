@@ -3503,13 +3503,20 @@
                 }
               ],
               "mc": {
-                "貝": true
+                "貝": true,
+                "卡老公": true
               },
               "checkLog": [
                 {
                   "memberId": "eup4vt8kxk",
                   "memberName": "貝",
                   "ts": 1781247707895,
+                  "action": "check"
+                },
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "卡老公",
+                  "ts": 1781247708664,
                   "action": "check"
                 }
               ],
@@ -3712,15 +3719,24 @@
               "id": "iy8e17t0i2",
               "name": "薏仁精華",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1781247710744,
+                  "action": "check"
+                }
+              ],
               "source": "custom",
               "templateKey": null,
               "templateCategory": null,
@@ -6707,5 +6723,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781247708873
+  "updatedAt": 1781247711278
 }
