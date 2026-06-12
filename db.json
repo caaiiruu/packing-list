@@ -5040,7 +5040,12 @@
               "name": "厚衣服 （機上穿）",
               "qty": 1,
               "checked": false,
-              "members": [],
+              "members": [
+                {
+                  "name": "貝",
+                  "qty": 1
+                }
+              ],
               "mc": {},
               "checkLog": [],
               "source": "custom",
@@ -6264,5 +6269,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781241063644
+  "updatedAt": 1781241068763
 }
