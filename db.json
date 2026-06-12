@@ -2396,15 +2396,24 @@
               "id": "jfblgtj0vf",
               "name": "酒精棉片",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1781246517621,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "梳妝保養::酒精棉片",
               "templateCategory": "梳妝保養",
@@ -6448,5 +6457,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781246488433
+  "updatedAt": 1781246518444
 }
