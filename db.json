@@ -2787,15 +2787,24 @@
               "id": "55r634z0vf",
               "name": "防曬乳",
               "qty": 1,
-              "checked": false,
+              "checked": true,
               "members": [
                 {
                   "name": "貝",
                   "qty": 1
                 }
               ],
-              "mc": {},
-              "checkLog": [],
+              "mc": {
+                "貝": true
+              },
+              "checkLog": [
+                {
+                  "memberId": "eup4vt8kxk",
+                  "memberName": "貝",
+                  "ts": 1781246465607,
+                  "action": "check"
+                }
+              ],
               "source": "template",
               "templateKey": "梳妝保養::防曬乳",
               "templateCategory": "梳妝保養",
@@ -6427,5 +6436,5 @@
       "name": "阿靜"
     }
   ],
-  "updatedAt": 1781246456790
+  "updatedAt": 1781246466384
 }
